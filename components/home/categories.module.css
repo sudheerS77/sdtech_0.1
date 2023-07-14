@@ -1,0 +1,136 @@
+.category_container {
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: #242538;
+    padding-bottom: 50px;
+}
+.category_header{
+    padding: 40px 0;
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+
+.categories {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.catList {
+    margin: 10px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    gap: 50px;
+    
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+}
+
+/* Styling for the scrollbar */
+.catList::-webkit-scrollbar {
+    width: 8px;
+    /* Adjust the width as per your preference */
+}
+
+.catList::-webkit-scrollbar-track {
+    background-color: #333445;
+    /* Set a light background color */
+}
+
+.catList::-webkit-scrollbar-thumb {
+    background-color: #111120;
+    border: 2px solid #333445;
+    /* Set the desired blue color */
+    border-radius: 4px;
+    /* Add rounded corners to the thumb */
+}
+
+.catList::-webkit-scrollbar-thumb:hover {
+    background-color: #111120;
+    /* Set a darker shade of blue on hover */
+}
+
+.catbtn {
+    padding: 10px 30px;
+    background: #333445;
+    border: 1px solid #333445;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: regular;
+    font-size: 1.2rem;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    
+    width: auto;
+    white-space: nowrap;
+
+}
+
+.caticon {
+    width: 30px;
+    height: 30px;
+    color: #0f1923;
+}
+
+.catbtn:hover {
+    color: #b1b1b1;
+    background-color: #2C2D43;
+    border: 1px solid #333445;
+    transition: .5s;
+}
+
+.catbtn:hover .caticon {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    transform: rotate(20deg);
+    color: white;
+    transition: .5s;
+}
+
+.coursesList {
+    /* height: auto; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    gap: 50px;
+
+}
+
+.coursesList a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.courseName {
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: normal;
+
+    border: 1px solid rgba(128, 128, 128, 0.14);
+    border-radius: 5px;
+}
+
+.courseName:hover {
+    background: rgba(128, 128, 128, 0.14);
+    transition: .4s;
+
+}

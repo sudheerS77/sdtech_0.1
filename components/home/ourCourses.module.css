@@ -1,0 +1,182 @@
+.oc_container {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin: 150px 0;
+}
+
+.oc_header {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oc_header h4 {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.oc_view_all {
+    text-decoration: none;
+    padding: 5px 8px;
+    color: #000;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.oc_view_all:hover {
+    color: #000000c1;
+    border: 2px solid #FFCC00;
+    transition: 0.4s ease-in-out;
+}
+
+.oc_section {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.oc_section a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Course Card */
+
+.oc_card {
+    width: auto;
+    height: auto;
+    /* padding: 10px 10px; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; */
+
+    background: rgba(255, 255, 255, 0.096);
+    /* box-shadow: 0 4px 10px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px ); */
+    border-radius: 3px;
+    border: 1px solid #04233fb5;
+
+}
+
+.oc_card:hover {
+    /* transform: scale(1.1);
+    transition: 0.4s ease-in-out; */
+    /* box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 255, 255, 0.765); */
+    transform: translateY(-0.5em);
+    transition: .5s;
+}
+
+.oc_card a {
+    text-decoration: none;
+    color: #000;
+}
+
+.oc_card_h {
+    /* width: 280px; */
+    height: 190px;
+    margin-bottom: 10px;
+}
+
+.oc_card_h img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+
+}
+
+.oc_card_b {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 10px;
+
+
+}
+
+.oc_card_b h4 {
+    font-size: 1rem;
+    font-weight: medium;
+    color: #000;
+}
+
+.oc_card_b p {
+    max-width: 350px;
+    font-size: 0.9rem;
+    text-align: start;
+
+}
+
+
+.oc_card_bprice {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oc_card_bprice .oc_price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(26, 4, 4);
+}
+
+.oc_card_bprice .oc_live {
+    width: fit-content;
+    color: #fff;
+    background-color: red;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: Light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.oc_card_bprice .oc_live .live__symbol {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.oc_border_line {
+    margin: 20px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.145);
+
+}
+
+.oc_card_f {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    gap: 5px;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.oc_card_f h4 {
+    font-size: 1rem;
+    color: #000000e4;
+
+}

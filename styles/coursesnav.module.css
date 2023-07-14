@@ -1,0 +1,35 @@
+.csnavContainer{
+    width: inherit;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    /* background-color: #fff; */
+    /* border-bottom: 2px solid black; */
+    background: rgba(254, 253, 255, 0.1);
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.126);
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-bottom: 1px solid rgba(255, 255, 255, 0.868);
+    
+}
+.csnav{
+    width: 90%;
+}
+.chip a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    align-content: center;
+    font-size: 1rem;
+    font-weight: medium;
+}
+.chip a:hover{
+    color: #242538;
+}

@@ -1,0 +1,65 @@
+.lsv_container{
+    width: 60%;
+    margin: 50px 0 0 0;
+}
+/* HEADINGS h1-h6 */
+.lsv_container h1{
+    font-size: 1.5em;
+    margin: .67em 0;
+}
+.lsv_container h2{
+    font-size: 1.414em;
+    margin: .75em 0;
+}
+.lsv_container h3{
+    font-size: 1.155em;
+    margin: .83em 0;
+}
+.lsv_container h4{
+    font-size: 1em;
+    margin: .83em 0
+}
+.lsv_container h5{
+    font-size: 0.894em;
+    margin: 1.5em 0
+}
+.lsv_container h6{
+    font-size: 0.816em;
+    margin: 1.67em 0
+}
+.lsv_container h1 h2 h3 h4 h5 h6{
+    font-weight: bolder;
+}
+/* Paragraph */
+.lsv_container p{
+    font-size: 16px;
+}
+
+/* Ordered List */
+.lsv_container ol{
+    margin-left: 40px;
+}
+
+/* Unordered List */
+.lsv_container ul{
+    margin-left: 40px;
+}
+
+/* Image */
+.lsv_container span img{
+    width: 600px;
+    height: 400px;
+    align-content: center;
+    margin: 50px 0;
+
+}
+.lsv_container pre{
+    background-color: rgba(135, 128, 128, 0.518);
+    padding: 30px 20px;
+    display: flex;
+    font-size: 1.1em;
+    width: 100%;
+    overflow-y: auto;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+}

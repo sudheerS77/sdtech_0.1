@@ -1,0 +1,57 @@
+.banner {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.bn__card {
+    padding: 50px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.19);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.banner__left {
+    width: 50%;
+
+}
+
+.banner__left>* {
+    margin: 15px 0;
+}
+
+.banner__left h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.banner__left .banner_bn {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 3px solid yellow;
+}
+
+.banner__right {
+    width: 40%;
+}
+
+.banner__right img {
+    width: 100%;
+    height: 400px;
+    background-color: transparent;   
+}

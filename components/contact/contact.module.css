@@ -1,0 +1,178 @@
+.banner,
+.cnform {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cn__card {
+    padding: 50px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.19);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.banner__left {
+    width: 50%;
+
+}
+
+.banner__left>* {
+    margin: 15px 0;
+}
+
+.banner__left h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.banner__left .banner_cn {
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 3px solid yellow;
+}
+
+.banner__right {
+    width: 40%;
+}
+
+.banner__right img {
+    width: 100%;
+    height: 400px;
+    background-color: transparent;   
+}
+
+
+/* Form */
+.cnform__container {
+    width: 80%;
+    height: auto;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__left {
+    width: 40%;
+}
+
+.form__left form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.form__left form div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form__left form input::placeholder {}
+
+.form__left form textarea {
+    height: 100px;
+    border: 2px solid #2C2D43;
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: none;
+    border-radius: 4px;
+}
+
+.cn__name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.cn_tinput {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #2C2D43;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.form__left form button {
+    width: 100%;
+    height: 40px;
+
+
+
+    padding: 10px 30px;
+    background: #333445;
+    border: 1px solid #333445;
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: regular;
+    font-size: 1.2rem;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    width: auto;
+    white-space: nowrap;
+}
+
+.form__left form button:hover {
+
+    background-color: #2C2D43;
+    border: 1px solid #333445;
+    transition: .5s;
+
+    color: gray;
+    border: 1px solid rgba(128, 128, 128, 0.17);
+    transition: 0.4s;
+
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.126);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.form__right {
+    width: 30%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10px;
+}
+.contact_details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 10px;
+}
