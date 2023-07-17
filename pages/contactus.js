@@ -9,6 +9,7 @@ import ContactForm from "@/components/contact/contactForm";
 import HeroBanner from "@/components/Atoms/Banners/heroBanner";
 
 const ContactUs = () => {
+  
   const bannerData = {
     title: "Contact Us",
     header: "Unlock Your Coding Potential with Us Today!",

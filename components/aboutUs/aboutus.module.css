@@ -1,46 +1,106 @@
-.exp_instructors_container{
+.exp_instructors_container {
     width: 80%;
     margin: 0 auto;
 }
-.exp_instructors_container h1{
+
+.exp_instructors_container h1 {
     text-align: center;
+    color: #0f1923;
 }
-.exp_box{
+
+.exp_box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 80px 0;
 }
-.exp_des{
+
+.exp_des {
     width: 50%;
 }
-.exp_des p{
+
+.exp_des p {
     font-size: 1.1rem;
     color: #000;
     text-align: justify;
 }
-.exp_image{
+
+.exp_image {
     width: 40%;
     height: 400px;
 }
-.exp_image img{
+
+.exp_image img {
     width: 100%;
     height: 100%;
 }
 
 /* AboutusComponents */
-.ccatlog_container{
+.ccatlog_container {
     width: 80%;
     margin: 50px auto;
 }
-.ccatlog_container h1{
+
+.ccatlog_container h1 {
     text-align: center;
     margin: 50px 0;
 }
-.ccatlog_container div{
-}
-.ccatlog_container div ul{
+
+.ccatlog_container div {}
+
+.ccatlog_container div ul {
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .exp_instructors_container {
+        width: 90%;
+    }
+    .exp_instructors_container h1 {
+        font-size: 1.3rem;
+    }
+    .exp_box {
+        flex-direction: column-reverse;
+        margin: 60px 0;
+        gap: 50px;
+    }
+    .exp_des {
+        width: 100%;
+    }    
+    .exp_des p {
+        font-size: 1rem;
+    }
+    
+    .exp_image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .exp_image img {
+        width: 100%;
+        height: 100%;
+    }
+    .ccatlog_container {
+        width: 80%;
+        margin: 50px auto;
+    }
+    
+    .ccatlog_container h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 50px 0;
+    }
+    
+    
+    .ccatlog_container div ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    
 }

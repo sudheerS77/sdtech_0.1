@@ -98,8 +98,33 @@
     border-radius: 50%;
 }
 
-/* .b_right img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-} */
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .b_container {
+        width: 90%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .b_left {
+        width: 100%;
+    }
+
+    .b_left h2 {
+        font-size: 1.6rem;
+    }
+
+    .b_left p {
+        font-size: 1rem;
+    }
+
+    .b_right {
+        width: 100%;
+        height: 200px;
+    }
+
+}

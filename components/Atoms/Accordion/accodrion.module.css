@@ -103,3 +103,32 @@
     font-weight: regular;
     margin: 40px 0 0 60px
 }
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+
+    .accordion_container {
+        width: 100%;
+        margin: 20px 0;
+        padding-bottom: 10px;
+        padding: 5px;
+    }
+    .acc_icon {
+        font-size: 1.1rem;}
+    .acc_head {
+        gap: 10px;
+    }
+
+    .acc_head h4 {
+        font-size: 1.1rem;
+    }
+    .acc_body .acc_list {
+        font-size: 0.9rem;
+        font-weight: normal;
+        padding: 7px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    
+}

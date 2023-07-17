@@ -23,7 +23,7 @@ const SimilarCourses = () => {
 
   return (
     <>
-    <div style={{ margin: '100px'}}>
+    <div className={allc.similar_container}>
         <h3 style={{textAlign: 'center', fontSize: '1.4rem'}}>Similar Courses</h3>
     </div>
       <div className={allc.allc_body}>

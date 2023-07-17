@@ -23,7 +23,6 @@ const Accordion = ({ sno, header, body }) => {
         <div className={acc.accordion}>
           <div className={acc.acc_head} onClick={handleAccordion}>
             <div className={acc.acc_icon}>
-              {" "}
               {clicked === true ? <BiMinus /> : <BiPlus />} {sno + 1}
             </div>
             <h4>{header}</h4>

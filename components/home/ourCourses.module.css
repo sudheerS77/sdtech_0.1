@@ -175,18 +175,23 @@
 .oc_card_f {
     display: flex;
     align-items: center;
-    text-align: start;
     gap: 5px;
     margin: 15px;
     padding: 10px;
-
 }
 
 .oc_card_f h4 {
+    height: auto;
     font-size: 1rem;
     color: #000000e4;
 
 }
+
+.oc_card_f_icon {
+    height: 15px;
+
+}
+
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
@@ -196,5 +201,23 @@
         grid-template-columns: auto;
         gap: 50px;
     }
+    .oc_card_b {
+        
+        gap: 5px;
+        padding: 5px;
     
+    
+    }
+    .oc_border_line {
+        margin: 10px 0;
+    }    
+    .oc_card_f {
+        display: flex;
+        align-items: center;
+        text-align: start;
+        gap: 5px;
+        margin: 8px;
+        padding: 5px;
+
+    }
 }

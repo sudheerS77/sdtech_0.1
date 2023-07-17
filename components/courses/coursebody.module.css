@@ -114,20 +114,80 @@
     border: none;
     border-radius: 3px;
 }
+
 .level_Section button:hover {
     color: #04233f;
     background-color: #fff;
     border: 2px solid #04233f;
     transition: 0.4s ease-in;
 }
-.level_Section .active_btn{
+
+.level_Section .active_btn {
     color: #04233f;
     background-color: #fff;
     border: 2px solid #04233f;
     transition: 0.4s ease-in;
 }
+
 /* .acc_container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 } */
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .cb_container {
+        width: 90%;
+    }
+
+    .wul_container {
+        /* display: flex; */
+        flex-direction: column;
+        /* align-items: flex-start;
+        justify-content: space-between; */
+        gap: 25px;
+        /* position: relative; */
+    }
+
+    .cb_wul_section h3 {
+        font-size: 1.4rem;
+    }
+
+    .cb_wul {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .cb_wul ul {
+        margin: 0px 25px;
+    }
+
+    .cb_wul ul li {
+        padding: 3px 0;
+    }
+
+    .cb_course_features {
+        width: 100%;
+        gap: 13px;
+    }
+
+    /* What you will learn */
+    .cb_card {
+
+        padding: 10px;
+
+    }
+
+
+    .level_Section {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .level_Section button {
+        padding: 8px 20px;
+       
+    }
+
+}
