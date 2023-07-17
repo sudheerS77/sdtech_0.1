@@ -134,3 +134,21 @@
     transition: .4s;
 
 }
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .categories {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .catbtn {
+        padding: 5px 15px;
+    }
+    .coursesList {
+        grid-template-columns: auto auto;
+        gap: 30px;    
+    }
+    .courseName {
+        padding: 5px 10px;
+    }
+  }

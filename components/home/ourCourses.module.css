@@ -67,7 +67,14 @@
     backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 0.5px ); */
     border-radius: 3px;
-    border: 1px solid #04233fb5;
+    /* border: 1px solid #04233fb5; */
+
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 3px 0 rgba(31, 38, 135, 0.19);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+
 
 }
 
@@ -102,7 +109,7 @@
     /* width: 100%; */
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     gap: 10px;
     padding: 10px 10px;
@@ -179,4 +186,15 @@
     font-size: 1rem;
     color: #000000e4;
 
+}
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .oc_section {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 50px;
+    }
+    
 }

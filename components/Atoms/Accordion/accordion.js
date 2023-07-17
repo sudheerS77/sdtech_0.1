@@ -14,13 +14,11 @@ const Accordion = ({ sno, header, body }) => {
     // setClicked(false);
     setClicked(!clicked);
   };
-  console.log(header);
-  console.log(body.length);
   return (
     <>
       <div
         className={acc.accordion_container}
-        style={{ backgroundColor: bg_color, color: txt_color }}
+        // style={{ backgroundColor: bg_color, color: txt_color }}
       >
         <div className={acc.accordion}>
           <div className={acc.acc_head} onClick={handleAccordion}>

@@ -9,11 +9,15 @@ import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 import Link from "next/link";
 
 const Navbar = () => {
+  const {type}   = new URLSearchParams();
+  console.log(type);
   const [openMenu, setOpenMenu] = useState(false);
+  
   const toggle = () => {
     setOpenMenu(!openMenu);
+    
     const show_hide = document.getElementById("navMenu");
-    console.log(show_hide.style.display);
+
     if (show_hide.style.display == "" || show_hide.style.display == "none") {
       show_hide.style.display = "block";
       console.log(show_hide.style.display, "IF");
@@ -21,6 +25,7 @@ const Navbar = () => {
       show_hide.style.display = "none";
       console.log(show_hide.style.display, "ELse");
     }
+
   };
 
   return (
@@ -57,6 +62,7 @@ const Navbar = () => {
               {/* <button>sign in</button> */}
             </div>
           </div>
+
           <div className={navcss.menu} onClick={toggle}>
             {openMenu ? <RiCloseFill /> : <RiMenu3Fill />}
           </div>

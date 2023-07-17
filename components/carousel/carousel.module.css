@@ -44,7 +44,7 @@
 
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   gap: 10px;
 
@@ -127,4 +127,17 @@
 
 .dot.active {
   background-color: #000;
+}
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+  .carousel_box{
+    width: auto;
+    right: 15px;
+    bottom: 0;
+  }
+  
+  .carousel_box h1, .carousel_box p {
+    white-space: wrap;
+  }
 }

@@ -54,6 +54,7 @@ const AllPaidCourses = () => {
       link: "full-stack-web-development",
     },
   ];
+  
   const [filteredCourses, setFilteredCourses] = useState(ourCoursesData);
   console.log(queryString);
   const handleInputChange = (e) => {
@@ -97,7 +98,10 @@ const AllPaidCourses = () => {
               </>
             ) : (
               <>
+              <div className={allc.notFound}>
               <p>!oopse</p>
+
+              </div>
               </>
             )}
           </div>

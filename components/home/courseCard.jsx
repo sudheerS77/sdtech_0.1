@@ -5,10 +5,11 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 
 const CourseCard = ({ data }) => {
+  
   return (
     <>
       <div className={hc.oc_card}>
-        <Link href={`/courses/${data.link}`}>
+        <Link href={{ pathname: `/courses/${data.link}`, query: { coursename: `${data.name}`}}}>
           <div className={hc.oc_card_h}>
             <img src={data.image} alt="" />
           </div>

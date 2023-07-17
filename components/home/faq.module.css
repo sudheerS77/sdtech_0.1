@@ -59,3 +59,29 @@
     font-weight: regular;
     margin: 40px 0 0 60px
 }
+
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .f_container{
+        width: 90%;
+    }
+    /* Accordion */
+.f_acc_container{
+    width: 90%;
+    margin: 10px auto;
+}
+.f_accordion{
+    gap: 25px;
+    margin: 20px 0;
+    padding-bottom: 15px;
+}
+.f_acc_head h4{
+    font-size: 1.2rem;
+}
+.f_acc_body p{
+    color: gray;
+    font-size: 1rem;
+    margin: 10px 0 0 30px
+}
+}

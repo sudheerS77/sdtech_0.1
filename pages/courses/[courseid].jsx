@@ -6,9 +6,11 @@ import { useEffect, useState } from "react";
 
 const { useRouter } = require("next/router");
 
-const PaidCourse = () => {
+const PaidCourse = ({ id }) => {
   const router = useRouter();
+
   const { courseid } = router.query;
+
   const [courseInfo, setCourseInfo] = useState("");
   const courseDetails = [
     {

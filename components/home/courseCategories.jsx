@@ -246,7 +246,7 @@ const CourseCategories = () => {
         <>
             <div className={hcc.category_container} id="courseCategories">
                 <div className={hcc.category_header}>
-                    <h4>Course Categories</h4>
+                    <h1>Course Categories</h1>
                 </div>
                 <div className={hcc.categories}>
                     <div className={hcc.catList}>
