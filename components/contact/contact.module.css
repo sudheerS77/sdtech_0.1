@@ -190,12 +190,14 @@
     /* Form */
     .cnform__container {
         width: 90%;
+        margin: 40px 0;
         flex-direction: column;
         justify-content: center;
     }
 
     .form__left {
         width: 100%;
+        margin-bottom: 50px;
     }
 
     .form__left form {
@@ -204,5 +206,11 @@
 
     .form__right {
         width: 100%;
+    }
+
+    .cn__card {
+        padding: 25px 20px;
+        box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.19);
+        border-radius: 0px;
     }
 }

@@ -75,6 +75,7 @@
 @media (max-width: 768px) {
     .banner {
         height: auto;
+        z-index: 1;
     }
 
     .banner__container {

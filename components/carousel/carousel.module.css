@@ -131,13 +131,19 @@
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
-  .carousel_box{
+  .carousel {
+    z-index: -1;
+
+  }
+
+  .carousel_box {
     width: auto;
     right: 15px;
     bottom: 0;
   }
-  
-  .carousel_box h1, .carousel_box p {
+
+  .carousel_box h1,
+  .carousel_box p {
     white-space: wrap;
   }
 }
