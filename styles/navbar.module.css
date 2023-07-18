@@ -131,7 +131,9 @@
         width: 100%;
         border-bottom: 2px solid white;
             background-color: #fff;
-
+            position: fixed;
+            top: 0;
+            right: 0;
     }
 
     .navlogo {

@@ -9,13 +9,13 @@ import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 import Link from "next/link";
 
 const Navbar = () => {
-  const {type}   = new URLSearchParams();
+  const { type } = new URLSearchParams();
   console.log(type);
   const [openMenu, setOpenMenu] = useState(false);
-  
+
   const toggle = () => {
     setOpenMenu(!openMenu);
-    
+
     const show_hide = document.getElementById("navMenu");
 
     if (show_hide.style.display == "" || show_hide.style.display == "none") {
@@ -25,7 +25,6 @@ const Navbar = () => {
       show_hide.style.display = "none";
       console.log(show_hide.style.display, "ELse");
     }
-
   };
 
   return (
@@ -33,7 +32,9 @@ const Navbar = () => {
       <nav className={navcss.nav}>
         <div className={navcss.navbar}>
           <div className={navcss.navlogo}>
-            <Image src={logo} alt="SD" className={navcss.img} />
+            <Link href="/">
+              <Image src={logo} alt="SD" className={navcss.img} />
+            </Link>
             {/* Tech Academy */}
           </div>
           <div className={navcss.navMenu} id="navMenu">

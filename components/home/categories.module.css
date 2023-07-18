@@ -1,6 +1,6 @@
 .category_container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 60vh;
     max-height: fit-content;
     background-color: #242538;
     padding-bottom: 50px;
@@ -12,6 +12,9 @@
     color: #fff;
     text-align: center;
     font-weight: normal;
+}
+.category_header h1{
+    color: #fff;
 }
 
 .categories {
@@ -117,7 +120,7 @@
 
 .coursesList a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(179, 179, 179);
 }
 
 .courseName {
@@ -137,6 +140,12 @@
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
+    .category_container {
+        width: 100%;
+        height: auto;
+        /* min-height: 100vh;
+        max-height: fit-content; */
+    }
     .categories {
         width: 90%;
         margin: 0 auto;

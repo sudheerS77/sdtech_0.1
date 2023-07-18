@@ -1,6 +1,7 @@
 .register__from__container {
   width: 100vw;
-  height: 90vh;
+  /* height: 90vh; */
+  margin: 50px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +16,7 @@
   gap: 20px;
 }
 
-.register__from__container form label{
+.register__from__container form label {
 
   display: block;
   margin-bottom: 8px;
@@ -102,11 +103,12 @@
 
 } */
 
-.submit_btn{
+.submit_btn {
   width: 82%;
 }
+
 /* Basic button styles */
-.submit_btn button{
+.submit_btn button {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -131,4 +133,21 @@
 .submit_btn button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+  .register__from__container {
+  }
+
+  .register__from__container form {
+    width: 100%;
+   
+  }
+
+
+  .form_group {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
