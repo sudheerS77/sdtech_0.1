@@ -19,10 +19,13 @@ body {
     line-height: 1.5;
     /* color: #333333; */
 }
-
+.container{
+  margin-top: 70px;
+}
 a {
     text-decoration: none;
 }
+
 
 input:focus {
     outline: none;

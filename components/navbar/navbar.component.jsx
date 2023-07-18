@@ -73,15 +73,17 @@ const Navbar = () => {
             className={`${navcss.menu}  ${isMobileMenuOpen ? navcss.open : ""}`}
           >
             {isMobileMenuOpen ? (
-              <div className={navcss.nav_logo}>
-                <Link href="/">
-                  <Image src={logo} alt="SD" className={navcss.img} />
-                </Link>
-                <div
-                  className={navcss.hamburger}
-                  onClick={handleMobileMenuToggle}
-                >
-                  {isMobileMenuOpen ? <RiCloseFill /> : <RiMenu3Fill />}
+              <div className={navcss.nav_head}>
+                <div className={navcss.nav_logo}>
+                  <Link href="/">
+                    <Image src={logo} alt="SD" className={navcss.img} />
+                  </Link>
+                  <div
+                    className={navcss.hamburger}
+                    onClick={handleMobileMenuToggle}
+                  >
+                    {isMobileMenuOpen ? <RiCloseFill /> : <RiMenu3Fill />}
+                  </div>
                 </div>
                 {/* Tech Academy */}
               </div>
