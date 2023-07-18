@@ -1,0 +1,329 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        /* Set the menu height to full viewport height */
+        width: 100%;
+        background-color: #333;
+        padding: 1rem;
+        position: fixed;
+        /* Fix the menu to the top of the viewport */
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        /* Move the menu off-screen initially */
+        transition: transform 0.3s ease;
+        /* Add a smooth transition */
+    }
+
+    .menu.open {
+        transform: translateY(0);
+        /* Move the menu into view */
+    }
+
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 1rem;
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+    .icon {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .icon span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background-color: #fff;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0);
+        transition: all 0.3s ease;
+    }
+
+    .icon span:nth-child(1) {
+        top: 0px;
+    }
+
+    .icon span:nth-child(2) {
+        top: 10px;
+    }
+
+    .icon span:nth-child(3) {
+        top: 20px;
+    }
+
+    .icon.open span:nth-child(1) {
+        top: 10px;
+        transform: rotate(135deg);
+    }
+
+    .icon.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .icon.open span:nth-child(3) {
+        top: 10px;
+        transform: rotate(-135deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav {
+    width: 100%;
+    height: 70px;
+    /* background: #002529; */
+    /* background-color: #242538; */
+    color: #000;
+    background-color: #fff;
+    /* position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0; */
+    border-bottom: 1px solid rgba(150, 151, 154, 0.379);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 3px 0 rgba(31, 38, 135, 0.19);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.18); */
+
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.navlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: auto;
+}
+
+.img {
+    cursor: pointer;
+    width: 150px;
+    height: 55px;
+
+}
+
+.navMenu {
+    min-width: 60%;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 23px;
+}
+
+.navItems li {
+    color: #000;
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    /* font-style: normal; */
+    font-family: 'Barlow', sans-serif;
+    font-weight: semi-bold;
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.navItems li:hover {
+    color: #242538;
+    transition: 0.4s;
+}
+
+.navItems li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn_group button {
+    /* width: 88px; */
+    width: auto;
+    white-space: nowrap;
+    padding: 0 10px;
+    height: 33px;
+    left: 1282px;
+    top: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-family: 'Barlow', sans-serif;
+    font-weight: semi-bold;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #242538;
+    /* background: #002529;
+    border: 2px solid #FFC13B; */
+    border-radius: 113px;
+    cursor: pointer;
+}
+
+.btn_group button:hover {
+    color: gray;
+    border: 1px solid rgba(128, 128, 128, 0.17);
+    transition: 0.4s;
+
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.126);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        width: 100%;
+        border-bottom: 2px solid white;
+        background-color: #fff;
+        position: fixed;
+    }
+
+    .navlogo {
+        margin-left: 15px;
+    }
+
+    .menu {
+        display: block;
+        color: #000;
+        margin-right: 15px;
+        font-size: 1.8rem;
+        transition: .4s;
+    }
+
+    .navMenu {
+        min-width: 100vw;
+        height: calc(100vh - 75px);
+        /* position: absolute; */
+        background: #fff;
+        z-index: 999;
+        top: 70px;
+        left: 0;
+        /* flex-direction: column; */
+        /* display: none; */
+
+        height: 100vh;
+        /* Set the menu height to full viewport height */
+        width: 100%;
+        background-color: #333;
+        padding: 1rem;
+        position: fixed;
+        /* Fix the menu to the top of the viewport */
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        /* Move the menu off-screen initially */
+        transition: transform 0.3s ease;
+        /* Add a smooth transition */
+    }
+
+    .navItems {
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+    }
+
+    .navItems li {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .btn_group {
+        height: 40%;
+        position: absolute;
+        flex-direction: column;
+        gap: 10%;
+        bottom: 50px;
+    }
+
+    .btn_group button {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {}
