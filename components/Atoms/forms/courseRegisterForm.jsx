@@ -4,6 +4,7 @@ import crf from "./courseRegisterForm.module.css";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
 import { useRouter } from "next/router";
+import axios from "axios";
 
 const CourseRegisterForm = ({ courseName }) => {
   console.log(courseName);
@@ -57,7 +58,13 @@ const CourseRegisterForm = ({ courseName }) => {
       whatsAppNumber: phoneNumber,
     }));
 
-    console.log("Student Details", studentDetails);
+    const submitDetails = async () => {
+      const data = await axios.post(
+        "http://localhost:3000//api/courseregister",
+        { data: studentDetails }
+      );
+    };
+    submitDetails();
   };
 
   return (

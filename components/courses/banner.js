@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 const Banner = ({ courseInfo }) => {
 
   const data = courseInfo[0];
+  console.log(courseInfo[0]);
   const [playVideo, setPlayVideo] = useState(false);
   return (
     <>
@@ -27,8 +28,8 @@ const Banner = ({ courseInfo }) => {
           </div>
         </div>
         <div className={b.b_right} onClick={() => setPlayVideo(!playVideo)}>
-          {/* <img src={data?.image} /> */}
-          <div className={b.b_right_container}>
+          <img src={data?.image} alt="image" />
+          {/* <div className={b.b_right_container}>
             {playVideo ? (
               <iframe
                 // width="640"
@@ -45,7 +46,7 @@ const Banner = ({ courseInfo }) => {
                 <FaPlay />
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

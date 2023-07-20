@@ -1,5 +1,6 @@
 .allc_container {
     width: 100%;
+    margin-top: 130px;
 }
 
 .allc_head {
@@ -7,7 +8,7 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin: 60px auto;
+    margin: 0px auto;
 }
 
 .allc_head input[type=search] {
@@ -41,7 +42,7 @@
 
 .allc_body {
     width: 80%;
-    margin: 100px auto;
+    margin: 50px auto;
     /* display: flex;
     flex-wrap: wrap;    */
     display: grid;

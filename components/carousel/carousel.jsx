@@ -76,10 +76,10 @@ const Carousel = () => {
       clearInterval(interval);
     };
   }, [currentImageIndex]);
-  images.map((data, index) => {
-    console.log(data);
-    console.log(data?.image?.poster_1?.src);
-  });
+  // images.map((data, index) => {
+  //   console.log(data);
+  //   console.log(data?.image?.poster_1?.src);
+  // });
   return (
     <>
       <div className={`${ca.carousel}`}>

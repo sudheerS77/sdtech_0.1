@@ -5,65 +5,68 @@ import HomeLayout from "@/Layout/Home.layout";
 import allc from "./index.module.css";
 // Icons
 import { BsSearch } from "react-icons/bs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const AllPaidCourses = () => {
   const [queryString, setQueryString] = useState("");
 
-  const ourCoursesData = [
-    {
-      name: "Full Stack Web Development",
-      image:
-        "https://www.webindiamaster.com/assests/images/web-development-company-1-2022.jpg",
-      cost: 5000,
-      link: "full-stack-web-development",
-    },
-    {
-      name: "Machine Learning BootCamp",
-      image:
-        "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg",
-      cost: 5000,
-      link: "machine-learning-bootcamp",
-    },
-    {
-      name: "Robotics 2.0",
-      image:
-        "https://www.thebigredgroup.com/wp-content/uploads/2021/07/5-reasons.jpg",
-      cost: 5000,
-      link: "robotics-2.0 ",
-    },
-    {
-      name: "Machine Learning BootCamp",
-      image:
-        "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg",
-      cost: 5000,
-      link: "machine-learning-bootcamp",
-    },
-    {
-      name: "Robotics 2.0",
-      image:
-        "https://www.thebigredgroup.com/wp-content/uploads/2021/07/5-reasons.jpg",
-      cost: 5000,
-      link: "robotics-2.0 ",
-    },
-    {
-      name: "Full Stack Web Development",
-      image:
-        "https://www.webindiamaster.com/assests/images/web-development-company-1-2022.jpg",
-      cost: 5000,
-      link: "full-stack-web-development",
-    },
-  ];
-  
+  const [ourCoursesData, setOutCoursesData] = useState([
+    // {
+    //   name: "Full Stack Web Development",
+    //   image:
+    //     "https://www.webindiamaster.com/assests/images/web-development-company-1-2022.jpg",
+    //   cost: 5000,
+    //   link: "full-stack-web-development",
+    // },
+    // {
+    //   name: "Machine Learning BootCamp",
+    //   image:
+    //     "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg",
+    //   cost: 5000,
+    //   link: "machine-learning-bootcamp",
+    // },
+    // {
+    //   name: "Robotics 2.0",
+    //   image:
+    //     "https://www.thebigredgroup.com/wp-content/uploads/2021/07/5-reasons.jpg",
+    //   cost: 5000,
+    //   link: "robotics-2.0 ",
+    // },
+    // {
+    //   name: "Machine Learning BootCamp",
+    //   image:
+    //     "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg",
+    //   cost: 5000,
+    //   link: "machine-learning-bootcamp",
+    // },
+    // {
+    //   name: "Robotics 2.0",
+    //   image:
+    //     "https://www.thebigredgroup.com/wp-content/uploads/2021/07/5-reasons.jpg",
+    //   cost: 5000,
+    //   link: "robotics-2.0 ",
+    // },
+    // {
+    //   name: "Full Stack Web Development",
+    //   image:
+    //     "https://www.webindiamaster.com/assests/images/web-development-company-1-2022.jpg",
+    //   cost: 5000,
+    //   link: "full-stack-web-development",
+    // },
+  ]);
   const [filteredCourses, setFilteredCourses] = useState(ourCoursesData);
-  console.log(queryString);
+
   const handleInputChange = (e) => {
+    // Search string
     const searchInput = e.target.value;
     setQueryString(searchInput);
     if (searchInput !== "") {
-      const filteredResults = ourCoursesData.filter((course) =>
-        course.name.toLowerCase().includes(searchInput.toLowerCase())
+      const filteredResults = ourCoursesData?.filter(
+        (course) =>
+          course?.name?.toLowerCase().includes(searchInput.toLowerCase())
       );
+      console.log(filteredResults);
       setFilteredCourses(filteredResults);
     } else {
       setFilteredCourses(ourCoursesData);
@@ -73,8 +76,17 @@ const AllPaidCourses = () => {
     //   );
     //   setFilteredData(filteredResults);
   };
-  console.log({ ourCoursesData });
-  console.log({ filteredCourses });
+
+  const getCourses = async () => {
+    const data = await axios.get("http://localhost:3000//api/course/route");
+    console.log(data?.data.data);
+    setOutCoursesData(data.data?.data);
+    setFilteredCourses(data.data?.data);
+  };
+  useEffect(() => {
+    getCourses();
+  }, []);
+  // console.log(filteredCourses);
   return (
     <>
       <HomeLayout>
@@ -98,10 +110,9 @@ const AllPaidCourses = () => {
               </>
             ) : (
               <>
-              <div className={allc.notFound}>
-              <p>!oopse</p>
-
-              </div>
+                <div className={allc.notFound}>
+                  <p>!oopse</p>
+                </div>
               </>
             )}
           </div>

@@ -10,15 +10,15 @@ const CourseCard = ({ data }) => {
       <div className={hc.oc_card}>
         <Link
           href={{
-            pathname: `/courses/${data.link}`,
-            query: { coursename: `${data.name}` },
+            pathname: `/courses/${data?.slug}`,
+            query: { coursename: `${data?.name}` },
           }}
         >
           <div className={hc.oc_card_h}>
-            <img src={data.image} alt="" />
+            <img src={data?.image} alt="" />
           </div>
           <div className={hc.oc_card_b}>
-            <h4>{data.name}</h4>
+            <h4>{data?.name}</h4>
             <div>
               <p>
                 Understand how to use the basic Python structures: strings,
@@ -26,7 +26,7 @@ const CourseCard = ({ data }) => {
               </p>
             </div>
             <div className={hc.oc_card_bprice}>
-              <span className={hc.oc_price}>₹ {data.cost}</span>
+              <span className={hc.oc_price}>₹ {data?.cost}</span>
               <span className={hc.oc_live}>
                 <span className={hc.live__symbol}></span>
                 Live

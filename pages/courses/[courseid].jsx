@@ -2,6 +2,7 @@ import HomeLayout from "@/Layout/Home.layout";
 import CourseBody from "@/components/courses/CourseBody";
 import Banner from "@/components/courses/banner";
 import SimilarCourses from "@/components/courses/similarCourses";
+import axios from "axios";
 import { useEffect, useState } from "react";
 
 const { useRouter } = require("next/router");
@@ -9,9 +10,11 @@ const { useRouter } = require("next/router");
 const PaidCourse = ({ id }) => {
   const router = useRouter();
 
-  const { courseid } = router.query;
+  const { courseid, coursename } = router.query;
 
   const [courseInfo, setCourseInfo] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+
   const courseDetails = [
     {
       name: "Full Stack Web Development",
@@ -359,17 +362,52 @@ const PaidCourse = ({ id }) => {
       ],
     },
   ];
+
   useEffect(() => {
     const course_info = courseDetails.filter((data) => data.link === courseid);
+
     setCourseInfo(course_info);
   }, [courseid]);
+
+  useEffect(() => {
+    const getCourse = async () => {
+      setIsLoading(true);
+
+      const data = await axios.get(
+        `http://localhost:3000/api/course/${coursename}`
+      );
+
+      setCourseInfo(data.data);
+      setIsLoading(false);
+    };
+
+    const delay = 0;
+    const timeoutId = setTimeout(() => {
+      getCourse();
+    }, delay);
+
+    return () => clearTimeout(timeoutId);
+    // const timeoutId = setTimeout(() => {
+    //   fetchData();
+    // }, delay);
+
+    // return () => clearTimeout(timeoutId);
+  }, [courseid]);
+  console.log(coursename);
+  console.log();
 
   return (
     <>
       <HomeLayout>
-        <Banner courseInfo={courseInfo} />
-        <CourseBody courseInfo={courseInfo} />
-        <SimilarCourses />
+        {isLoading ? (
+          <>Loading....</>
+        ) : (
+          <>
+            <Banner courseInfo={courseInfo.data} />
+            <CourseBody courseInfo={courseInfo.data} />
+            <SimilarCourses />
+          </>
+        )}
       </HomeLayout>
     </>
   );
