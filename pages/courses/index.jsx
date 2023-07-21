@@ -77,7 +77,7 @@ const AllPaidCourses = () => {
   };
 
   const getCourses = async () => {
-    const data = await axios.get("https://sdtech-0-1.vercel.app/api/course/route");
+    const data = await axios.get("http://localhost:3000//api/course/route");
     console.log(data?.data.data);
     setOutCoursesData(data.data?.data);
     setFilteredCourses(data.data?.data);
