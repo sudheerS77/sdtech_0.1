@@ -62,9 +62,8 @@ const AllPaidCourses = () => {
     const searchInput = e.target.value;
     setQueryString(searchInput);
     if (searchInput !== "") {
-      const filteredResults = ourCoursesData?.filter(
-        (course) =>
-          course?.name?.toLowerCase().includes(searchInput.toLowerCase())
+      const filteredResults = ourCoursesData?.filter((course) =>
+        course?.name?.toLowerCase().includes(searchInput.toLowerCase())
       );
       console.log(filteredResults);
       setFilteredCourses(filteredResults);
