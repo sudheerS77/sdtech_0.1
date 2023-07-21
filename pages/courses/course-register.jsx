@@ -9,7 +9,7 @@ const CourseRegister = ({ name }) => {
   return (
     <>
       <HomeLayout>
-        <CourseRegisterForm courseName={name} />
+        <CourseRegisterrForm courseName={name} />
       </HomeLayout>
     </>
   );

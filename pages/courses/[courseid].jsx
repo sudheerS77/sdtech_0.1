@@ -374,7 +374,7 @@ const PaidCourse = ({ id }) => {
       setIsLoading(true);
 
       const data = await axios.get(
-        `http://localhost:3000/api/course/${coursename}`
+        `https://sdtech-0-1.vercel.app/api/course/${coursename}`
       );
 
       setCourseInfo(data.data);

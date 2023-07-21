@@ -60,7 +60,7 @@ const CourseRegisterForm = ({ courseName }) => {
 
     const submitDetails = async () => {
       const data = await axios.post(
-        "http://localhost:3000//api/courseregister",
+        "https://sdtech-0-1.vercel.app/api/courseregister",
         { data: studentDetails }
       );
     };

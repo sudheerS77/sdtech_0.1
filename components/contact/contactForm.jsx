@@ -22,7 +22,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const submitData = async () => {
-      const data = await axios.post("http://localhost:3000//api/contact", {
+      const data = await axios.post("https://sdtech-0-1.vercel.app/api/contact", {
         data: formDetails,
       });
     };
