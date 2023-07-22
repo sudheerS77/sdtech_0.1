@@ -14,22 +14,25 @@
 }
 
 .oc_header h4 {
-    font-size: 1.7rem;
-    font-weight: 500;
+    
 }
 
 .oc_view_all {
     text-decoration: none;
-    padding: 5px 8px;
-    color: #000;
-    border: 2px solid gray;
-    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #04233f;
+    background-color: #fff;
+    border: 2px solid #04233f;
+    border-radius: 3px;
+    transition: 0.4s ease-in;
 }
 
 .oc_view_all:hover {
-    color: #000000c1;
-    border: 2px solid #FFCC00;
-    transition: 0.4s ease-in-out;
+    background-color: #04233f;
+    color: #fff;
+    border: none;
 }
 
 .oc_section {
@@ -55,33 +58,20 @@
 .oc_card {
     width: auto;
     height: auto;
-    /* padding: 10px 10px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; */
 
-    background: rgba(255, 255, 255, 0.096);
-    /* box-shadow: 0 4px 10px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0.5px );
-    -webkit-backdrop-filter: blur( 0.5px ); */
-    border-radius: 10px;
-    /* border: 1px solid #04233fb5; */
-
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 2px 3px 0 rgba(31, 38, 135, 0.19);
+    /* background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(0.5px);
     -webkit-backdrop-filter: blur(0.5px);
-    border: 2px solid rgba(45, 45, 45, 0.22);
+    border: 1px solid rgba(128, 128, 128, 0.521); */
 
+    background-color: #f0f0f0; /* Adjust the background color of your element */
+    border-radius: 10px; /* Adjust the border radius as per your element's design */
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5), 0 0 0 8px rgba(255, 255, 255, 0.3), 0 0 0 12px rgba(255, 255, 255, 0.2), 0 0 0 16px rgba(255, 255, 255, 0.1);
 
 }
 
 .oc_card:hover {
-    /* transform: scale(1.1);
-    transition: 0.4s ease-in-out; */
-    /* box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 255, 255, 0.765); */
     transform: translateY(-0.5em);
     transition: .5s;
 }
@@ -98,16 +88,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.oc_card_h::before,
+.oc_card_h::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f0f0f027; /* Same as card background color */
+  /* border-radius: 50%; */
 }
 
+/* Left bend design */
+.oc_card_h::before {
+  left: -50%;
+  box-shadow: 30px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Right bend design */
+.oc_card_h::after {
+  right: -25%;
+  box-shadow: -30px 0 30px rgba(0, 0, 0, 0.31);
+}
 .oc_card_h img {
-    /* width: 80%;
-    height: 80%; */
     width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px; */
+    border: 1px solid rgba(128, 128, 128, 0.521);
     /* background: #00d9ff3b; */
 
 
@@ -122,7 +137,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 10px;
+    /* gap: 10px; */
     padding: 10px 10px;
 
 
@@ -178,7 +193,7 @@
 }
 
 .oc_border_line {
-    margin: 20px 0;
+    margin: 20px 0 5px 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.145);
 
 }
@@ -186,20 +201,21 @@
 .oc_card_f {
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin: 15px;
+    gap: 10px;
+    /* margin: 15px; */
     padding: 10px;
 }
 
 .oc_card_f h4 {
-    height: auto;
+    /* height: auto; */
     font-size: 1rem;
     color: #000000e4;
 
 }
 
 .oc_card_f_icon {
-    height: 15px;
+    /* height: 15px; */
+    font-size: 1.2rem;
 
 }
 

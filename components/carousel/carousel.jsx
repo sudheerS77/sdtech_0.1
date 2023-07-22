@@ -52,7 +52,6 @@ const Carousel = () => {
     },
   ];
 
-  console.log(poster_1);
   const nextImage = () => {
     const newIndex = (currentImageIndex + 1) % images.length;
     setCurrentImageIndex(newIndex);
@@ -76,10 +75,7 @@ const Carousel = () => {
       clearInterval(interval);
     };
   }, [currentImageIndex]);
-  // images.map((data, index) => {
-  //   console.log(data);
-  //   console.log(data?.image?.poster_1?.src);
-  // });
+  
   return (
     <>
       <div className={`${ca.carousel}`}>
@@ -138,7 +134,6 @@ const Carousel = () => {
                 }`}
                 onClick={() => setCurrentImageIndex(index)}
               />
-              {/* {index} */}
             </>
           ))}
         </div>

@@ -136,16 +136,17 @@
 
   }
   .carousel__card {
-    width: 90vw;
-    height: 50vh;
+    width: 100vw;
+    height: 70vh;
     /* position: relative; */
   }
   
 
   .carousel_box {
     width: auto;
-    right: 15px;
-    bottom: 0;
+    right: 0;
+    top: auto;
+    bottom: 25px;
   }
 
   .carousel_box h1,

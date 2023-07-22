@@ -3,6 +3,7 @@ import hc from "./ourCourses.module.css";
 import Link from "next/link";
 
 import { FaChevronRight } from "react-icons/fa";
+import { BsArrowRight } from "react-icons/bs";
 
 const CourseCard = ({ data }) => {
   return (
@@ -37,7 +38,8 @@ const CourseCard = ({ data }) => {
           <div className={hc.oc_card_f}>
             <h4>Know More</h4>
             <span className={hc.oc_card_f_icon}>
-              <FaChevronRight />
+              {/* <FaChevronRight /> */}
+              <BsArrowRight />
             </span>
           </div>
         </Link>

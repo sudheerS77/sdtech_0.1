@@ -159,6 +159,7 @@ const CourseCategories = () => {
   ];
   const coursesList = categories.filter((data) => data.name === activeCourse);
 
+  console.log(activeCourse);
   return (
     <>
       <div className={hcc.category_container} id="courseCategories">
@@ -170,7 +171,9 @@ const CourseCategories = () => {
             {categories.map((cdata, indx) => (
               <button
                 key={indx}
-                className={hcc.catbtn}
+                className={`${hcc.catbtn} ${
+                  activeCourse === cdata.name ? hcc.cactive : ""
+                }`}
                 onClick={() => setActiveCourse(cdata.name)}
               >
                 {cdata.icon}

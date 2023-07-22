@@ -50,7 +50,7 @@ const OurCourses = () => {
         <>
             <div className={hc.oc_container}>
                 <div className={hc.oc_header}>
-                    <h4>Our Courses</h4>
+                    <h1>Our Courses</h1>
                     <Link href="/courses" className={hc.oc_view_all}>
                         <span>
                             View All
