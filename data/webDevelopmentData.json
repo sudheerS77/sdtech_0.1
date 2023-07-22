@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Full Stack Web Development",
+        "image":
+          "https://www.webindiamaster.com/assests/images/web-development-company-1-2022.jpg",
+        "cost": 5000,
+        "description":
+          "The MERN Stack is a popular web development technology stack that is widely used for building scalable and dynamic web applications. The MERN Stack comprises of four key technologies: MongoDB, Express.js, React.js, and Node.js, which together provide a powerful, end-to-end framework for developing web applications. By the end of the course, you will have a solid understanding of the MERN Stack",
+        "link": "full-stack-web-development",
+        "learning_outcomes": [
+          "HTML and HTML 5",
+          "CSS and CSS3",
+          "Wokring on Template",
+          "Mobile Responsive Design",
+          "Flex amd Grid",
+          "JavaScript",
+          "Understanding DOM",
+          "Advance JavaScript",
+          "Git and Github",
+          "Starting with React",
+          "Tailwind With React",
+          "Networking and Linux",
+          "Concepts of DataBases",
+          "Understanding MySQL",
+          "Understanding NoSQL",
+          "NodeJS/Express",
+          "Full Fledge Project"
+        ],
+        "course_content": [
+          {
+            "topicName": "Introduction to Course - RoadMap to the Course",
+            "subtopics": ["Course Introduction"]
+          },
+          {
+            "topicName": "Introduction to Course - Fundamental of Development",
+            "subtopics": [
+              "Internet and How it works?",
+              "Understanding IP Address/Domain/Server/DNS",
+              "Understand and Difference between Web and HTTP",
+              "Understanding Protocols",
+              "Browser and Browser Engine",
+              "Test on Fundamental of Development"
+            ]
+          },                   
+          {
+            "topicName": "Introduction to Course - RoadMap to the Course",
+            "subtopics": ["Course Introduction"]
+          }
+        ]
+      }
+]

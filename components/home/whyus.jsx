@@ -16,9 +16,9 @@ const WhyUs = () => {
     },
     {
       icon: <IoMdMedal className={hwu.wu_icon} />,
-      header: "Unparalleled Expertise of Top 1% Global Educators",
+      header: "Unparalleled Expertise of Top Global Educators",
       description:
-        "Experience exceptional learning with passionate, top 1% educators. They nurture curiosity, inspire achievement, and drive remarkable results.",
+        "Experience exceptional learning with passionate, top educators. They nurture curiosity, inspire achievement, and drive remarkable results.",
     },
     {
       icon: (

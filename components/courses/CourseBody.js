@@ -13,7 +13,8 @@ import { AiFillSafetyCertificate } from "react-icons/ai";
 import { useState } from "react";
 
 const CourseBody = ({ courseInfo }) => {
-  const data = courseInfo[0];
+  const data = courseInfo;
+  console.log(data);
   const [level, setLevel] = useState("beginner");
   const levelHandler = (e) => {
     setLevel(e.target.name)
@@ -28,7 +29,7 @@ const CourseBody = ({ courseInfo }) => {
           <div className={cb.wul_container}>
             <div className={cb.cb_wul}>
               <ul>
-                {data?.learning_outcomes.map((wul, indx) => (
+                {data?.learning_outcomes?.map((wul, indx) => (
                   <li key={indx}>{wul}</li>
                 ))}
               </ul>

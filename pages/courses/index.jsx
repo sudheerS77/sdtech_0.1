@@ -55,37 +55,61 @@ const AllPaidCourses = () => {
     //   link: "full-stack-web-development",
     // },
   ]);
-  const [filteredCourses, setFilteredCourses] = useState(ourCoursesData);
+  const [filteredCourses, setFilteredCourses] = useState();
+  const [mergedData, setMergedData] = useState([]);
+
 
   const handleInputChange = (e) => {
     // Search string
     const searchInput = e.target.value;
     setQueryString(searchInput);
     if (searchInput !== "") {
-      const filteredResults = ourCoursesData?.filter((course) =>
+      const filteredResults = mergedData?.filter((course) =>
         course?.name?.toLowerCase().includes(searchInput.toLowerCase())
       );
-      console.log(filteredResults);
       setFilteredCourses(filteredResults);
     } else {
-      setFilteredCourses(ourCoursesData);
+      setFilteredCourses(mergedData);
     }
-    // const filteredResults1 = originalData.filter(item =>
-    //     item.toLowerCase().includes(inputValue.toLowerCase())
-    //   );
-    //   setFilteredData(filteredResults);
+   
   };
 
   const getCourses = async () => {
-    const data = await axios.get("https://sdtech-0-1.vercel.app/api/course/route");
+    const data = await axios.get("http://localhost:3000//api/course/route");
     console.log(data?.data.data);
     setOutCoursesData(data.data?.data);
     setFilteredCourses(data.data?.data);
   };
+  
   useEffect(() => {
-    getCourses();
+    // getCourses();
   }, []);
-  // console.log(filteredCourses);
+
+  useEffect(() => {
+    const fileList = [
+      // "webDevelopmentData",
+      "programming",
+      "robotics",
+    ];
+    var courseData = [];
+    const mergeJSONData = async () => {
+      let mergedData = [];
+      try {
+        for (let i = 0; i < fileList.length; i++) {
+          const jsonModule = await import(`../../data/${fileList[i]}.json`);
+          const jsonData = jsonModule.default;
+          mergedData = mergedData.concat(jsonData);
+        }
+        setMergedData(mergedData);
+        console.log(mergedData);
+        setFilteredCourses(mergedData)
+      } catch (error) {
+        console.error("Error merging JSON files:", error);
+      }
+    };
+    mergeJSONData();
+    console.log(mergedData);
+  }, []);
   return (
     <>
       <HomeLayout>

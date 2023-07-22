@@ -1,11 +1,19 @@
+import React, { useEffect, useState } from "react";
+const { useRouter } = require("next/router");
+import axios from "axios";
+
+// Layout
 import HomeLayout from "@/Layout/Home.layout";
+
+// Components
 import CourseBody from "@/components/courses/CourseBody";
 import Banner from "@/components/courses/banner";
 import SimilarCourses from "@/components/courses/similarCourses";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
-const { useRouter } = require("next/router");
+// import data from '../../lib/mergejsondata';
+// Data
+import programming from "../../data/programming.json";
+import robotics from "../../data/robotics.json";
 
 const PaidCourse = ({ id }) => {
   const router = useRouter();
@@ -13,7 +21,8 @@ const PaidCourse = ({ id }) => {
   const { courseid, coursename } = router.query;
 
   const [courseInfo, setCourseInfo] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+  const [mergedData, setMergedData] = useState([]);
 
   const courseDetails = [
     {
@@ -363,18 +372,25 @@ const PaidCourse = ({ id }) => {
     },
   ];
 
-  useEffect(() => {
-    const course_info = courseDetails.filter((data) => data.link === courseid);
+  // useEffect(() => {
+  //   const course_info = mergedData.filter((data) => data.slug.toLowerCase() === courseid.toLowerCase());
+  //   console.log(mergedData, courseid, course_info);
+  //   setCourseInfo(course_info);
+  //   // const filteredResults = mergedData?.filter((course) =>
+  //   //     course?.name?.toLowerCase().includes(searchInput.toLowerCase())
+  //   //   );
+  //   //   setFilteredCourses(filteredResults);
+  // }, [courseid]);
 
-    setCourseInfo(course_info);
-  }, [courseid]);
 
   useEffect(() => {
+
+
     const getCourse = async () => {
       setIsLoading(true);
 
       const data = await axios.get(
-        `https://sdtech-0-1.vercel.app/api/course/${coursename}`
+        `http://localhost:3000/api/course/${coursename}`
       );
 
       setCourseInfo(data.data);
@@ -383,18 +399,41 @@ const PaidCourse = ({ id }) => {
 
     const delay = 0;
     const timeoutId = setTimeout(() => {
-      getCourse();
+      // getCourse();
     }, delay);
 
     return () => clearTimeout(timeoutId);
-    // const timeoutId = setTimeout(() => {
-    //   fetchData();
-    // }, delay);
-
-    // return () => clearTimeout(timeoutId);
   }, [courseid]);
-  console.log(coursename);
-  console.log();
+
+  useEffect(() => {
+    const fileList = [
+      // "webDevelopmentData",
+      "programming",
+      "robotics",
+    ];
+    var courseData = [];
+    const mergeJSONData = async () => {
+      let mergedData = [];
+      try {
+        for (let i = 0; i < fileList.length; i++) {
+          const jsonModule = await import(`../../data/${fileList[i]}.json`);
+          const jsonData = jsonModule.default;
+          mergedData = mergedData.concat(jsonData);
+        }
+        setMergedData(mergedData);
+        console.log(mergedData);
+        const filteredResults = mergedData?.filter((course) =>
+        course?.slug?.toLowerCase().includes(courseid.toLowerCase())
+        );
+        setCourseInfo(filteredResults[0]);
+      } catch (error) {
+        console.error("Error merging JSON files:", error);
+      }
+    };
+    mergeJSONData();
+    console.log(mergedData);
+  }, []);
+  console.log(courseInfo);
 
   return (
     <>
@@ -403,8 +442,8 @@ const PaidCourse = ({ id }) => {
           <>Loading....</>
         ) : (
           <>
-            <Banner courseInfo={courseInfo.data} />
-            <CourseBody courseInfo={courseInfo.data} />
+            <Banner courseInfo={courseInfo} />
+            <CourseBody courseInfo={courseInfo} />
             <SimilarCourses />
           </>
         )}

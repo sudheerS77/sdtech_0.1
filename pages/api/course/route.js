@@ -26,8 +26,12 @@ export default async function handler(req, res) {
 
 // Get all courses
 const handleGET = async (req, res) => {
-  const courses = await CourseModal.find();
+  const courses = await CourseModal.find({});
   res.status(200).json({ data: courses });
+
+  // const apiUrl = 'https://sdtech-0-1.vercel.app'; // Replace with your API URL
+    // const apiResponse = await axios.get(`${apiUrl}${req.url}`);
+    // res.status(apiResponse.status).json(apiResponse.data);
 };
 
 // Add new course

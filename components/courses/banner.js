@@ -7,8 +7,8 @@ import { useRouter } from "next/router";
 
 const Banner = ({ courseInfo }) => {
 
-  const data = courseInfo[0];
-  console.log(courseInfo[0]);
+  const data = courseInfo;
+  // console.log(courseInfo[0]);
   const [playVideo, setPlayVideo] = useState(false);
   return (
     <>

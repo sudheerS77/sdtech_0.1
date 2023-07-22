@@ -148,7 +148,6 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
 // width:  354.542     207.973
 // height: 105.833     106.541
 
