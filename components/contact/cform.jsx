@@ -10,7 +10,7 @@ const Cform = ({ title, desc, formType }) => {
     firstName: "",
     lastName: "",
     fullName: "",
-    organizationName,
+    organizationName: "",
     email: "",
     phoneNumber: null,
     message: "",
