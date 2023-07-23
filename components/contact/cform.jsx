@@ -34,7 +34,7 @@ const Cform = ({ title, desc, formType }) => {
           organizationName: formDetails.organizationName,
           contactType: "B2B",
           email: formDetails.email,
-          phoneNumber: formDetails.phone,
+          phoneNumber: formDetails.phoneNumber,
           message: formDetails.message,
         };
         result = await axios.post("https://sdtechacademy.com/api/b2bcontact", {
