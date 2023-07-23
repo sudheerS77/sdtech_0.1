@@ -195,7 +195,7 @@
     display: flex;
     align-items: center;
     height: 30px;
-    gap: 20px;    
+    gap: 20px;
 }
 
 .oc_card_f h4 {
@@ -204,7 +204,7 @@
     font-size: 1.2rem;
 
     color: #000000e4;
-    
+
 }
 
 .oc_card_f_icon {
@@ -246,5 +246,14 @@
         margin: 8px;
         padding: 5px;
 
+    }
+}
+
+
+/* Media query for tablets devices (For screens between 768px and 1024px ) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .oc_section {
+        grid-template-columns: auto auto;
+        gap: 50px;
     }
 }

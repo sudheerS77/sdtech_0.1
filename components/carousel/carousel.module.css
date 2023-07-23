@@ -14,7 +14,7 @@
 .carousel__card {
   width: 90vw;
   height: 60vh;
-  /* position: relative; */
+  position: relative;
 }
 
 .image_container {
@@ -133,7 +133,7 @@
 @media (max-width: 768px) {
   .carousel {
     z-index: -1;
-
+    width: 100%;
   }
   .carousel__card {
     width: 100vw;
@@ -153,4 +153,24 @@
   .carousel_box p {
     white-space: wrap;
   }
+}
+/* Media query for tablets devices (For screens between 768px and 1024px ) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel__card {
+    width: 100vw;
+    height: 50vh;
+    /* position: relative; */
+  }
+  .carousel_box {
+    width: auto;
+    right: 0;
+    top: auto;
+    bottom: 25px;
+  }
+
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media screen and (min-width: 1024px) {
+  
 }

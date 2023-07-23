@@ -33,12 +33,12 @@ const WhyUs = () => {
     },
     {
       icon: <Image src={tickmark} alt="image" />,
-        //  (
-        // <BsGlobeCentralSouthAsia
-        //   className={hwu.wu_icon}
-        //   style={{ color: "green" }}
-        // />),
-    
+      //  (
+      // <BsGlobeCentralSouthAsia
+      //   className={hwu.wu_icon}
+      //   style={{ color: "green" }}
+      // />),
+
       header: "Personalized Learning Journey",
       description: "Tailored education for your unique journey.",
     },
@@ -81,7 +81,27 @@ const WhyUs = () => {
           </h2>
         </div>
         <div className={hwu.wu_section}>
-          {/* <div className={hwu.wu_card}>
+          {whyUsData?.map((item, indx) => (
+            <div className={hwu.wu_card} key={indx}>
+              {/* <img src={cuttingedge} alt="image" />            */}
+              <div className={hwu.wu_icon_section}>{item.icon}</div>
+              {/* <div className={hwu.wu_icon_section}>
+                  <img src={`${item?.icon}`} alt="image" />
+                </div> */}
+              <h4>{item.header}</h4>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default WhyUs;
+
+{
+  /* <div className={hwu.wu_card}>
             <IoMdMedal className={hwu.wu_icon} />
             <span>
               Top 1% <br />
@@ -130,26 +150,8 @@ const WhyUs = () => {
               Rigorously trained to nurture the kids interest, curiosity &
               learning.
             </p>
-          </div> */}
-          {whyUsData?.map((item, indx) => (
-            <div className={hwu.wu_card} key={indx}>
-              {/* <img src={cuttingedge} alt="image" />            */}
-              <div className={hwu.wu_icon_section}>{item.icon}</div>
-              {/* <div className={hwu.wu_icon_section}>
-                  <img src={`${item?.icon}`} alt="image" />
-                </div> */}
-              <h4>{item.header}</h4>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default WhyUs;
-
+          </div> */
+}
 // Header: "Cutting-Edge Learning Experience"
 // Description: "Stay ahead with a meticulously crafted curriculum by global expertGain competitive skills for a rapidly evolving world."
 

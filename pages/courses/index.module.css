@@ -1,7 +1,7 @@
 .allc_container {
     width: 100%;
     margin-top: 70px;
-    padding: 50px 0; 
+    padding: 50px 0;
     background-color: #f2f5f7;
 }
 
@@ -57,7 +57,8 @@
 .notFound {
     height: 80vh;
 }
-.similar_container{
+
+.similar_container {
     margin: 50px 0;
 }
 
@@ -71,12 +72,21 @@
     .allc_search_icon {
         font-size: 1rem;
     }
+
     .allc_body {
         width: 90%;
         margin: 50px auto;
         grid-template-columns: auto;
     }
-    .similar_container{
+
+    .similar_container {
         margin: 25px 0;
+    }
+}
+
+/* Media query for tablets devices (For screens between 768px and 1024px ) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .allc_body {
+        grid-template-columns: auto auto;
     }
 }
