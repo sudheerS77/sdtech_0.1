@@ -58,16 +58,7 @@
 
 
 .phoneNumber {
-  /* width: 280px; */
-  /* height: 3px; */
   font-size: 1rem;
-  /* display: flex;
-  justify-content: center; */
-  /* margin-top: 10px;
-  border: 2px solid #04233f;
-  border-radius: 2px; */
-
-
 }
 
 .phoneNumber:outline {
@@ -137,12 +128,11 @@
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
-  .register__from__container {
-  }
+  .register__from__container {}
 
   .register__from__container form {
     width: 100%;
-   
+
   }
 
 
