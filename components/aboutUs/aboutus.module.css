@@ -1,11 +1,17 @@
+.exp_section{
+    width: 100%;
+    background-color: #f2f5f7;
+}
 .exp_instructors_container {
     width: 80%;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 .exp_instructors_container h1 {
     text-align: center;
-    color: #0f1923;
+    color: #04233f;
+    font-size: 2rem;
 }
 
 .exp_box {
@@ -21,7 +27,8 @@
 
 .exp_des p {
     font-size: 1.1rem;
-    color: #000;
+    font-weight: normal;
+    color: #000000de;
     text-align: justify;
 }
 
@@ -33,12 +40,14 @@
 .exp_image img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 /* AboutusComponents */
 .ccatlog_container {
     width: 80%;
-    margin: 50px auto;
+    margin: 0px auto;
+    padding: 100px 0;
 }
 
 .ccatlog_container h1 {
@@ -59,9 +68,11 @@
 @media (max-width: 768px) {
     .exp_instructors_container {
         width: 90%;
+        padding: 50px 0 10px 0;
     }
+    
     .exp_instructors_container h1 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .exp_box {
         flex-direction: column-reverse;
@@ -86,11 +97,12 @@
     }
     .ccatlog_container {
         width: 80%;
-        margin: 50px auto;
+        margin: 0px auto;
+        padding: 50px 0;
     }
     
     .ccatlog_container h1 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: center;
         margin: 50px 0;
     }

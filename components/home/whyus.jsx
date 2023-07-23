@@ -1,53 +1,67 @@
 import React from "react";
+import Image from "next/image";
 
 import hwu from "./whyus.module.css";
-
+// Icons
 import { IoMdMedal } from "react-icons/io";
 import { ImBooks } from "react-icons/im";
 import { BsGlobeCentralSouthAsia } from "react-icons/bs";
+// Images
+import cuttingedge from "../../assets/why/cuttingedge.png";
+import boy from "../../assets/why/boy-cap.png";
+import community from "../../assets/why/community.png";
+import growth from "../../assets/why/growth.png";
+import implementation from "../../assets/why/implementation.png";
+import reward from "../../assets/why/reward.png";
+import tickmark from "../../assets/why/tick-mark.png";
 
 const WhyUs = () => {
   const whyUsData = [
     {
-      icon: <ImBooks className={hwu.wu_icon} style={{ color: "blue" }} />,
+      icon: <Image src={cuttingedge} alt="image" />,
+      //  <ImBooks className={hwu.wu_icon} style={{ color: "blue" }} />,
       header: "Cutting-Edge Learning Experience",
       description:
         "Stay ahead with a meticulously crafted curriculum by global experts. Gain competitive skills for a rapidly evolving world.",
     },
     {
-      icon: <IoMdMedal className={hwu.wu_icon} />,
+      icon: <Image src={boy} alt="image" />,
+      // <IoMdMedal className={hwu.wu_icon} />,
       header: "Unparalleled Expertise of Top Global Educators",
       description:
         "Experience exceptional learning with passionate, top educators. They nurture curiosity, inspire achievement, and drive remarkable results.",
     },
     {
-      icon: (
-        <BsGlobeCentralSouthAsia
-          className={hwu.wu_icon}
-          style={{ color: "green" }}
-        />
-      ),
+      icon: <Image src={tickmark} alt="image" />,
+        //  (
+        // <BsGlobeCentralSouthAsia
+        //   className={hwu.wu_icon}
+        //   style={{ color: "green" }}
+        // />),
+    
       header: "Personalized Learning Journey",
       description: "Tailored education for your unique journey.",
     },
     {
-      icon: <ImBooks className={hwu.wu_icon} style={{ color: "blue" }} />,
+      icon: <Image src={reward} alt="image" />,
+      // icon: <ImBooks className={hwu.wu_icon} style={{ color: "blue" }} />,
       header: "Proven Track Record of Success",
       description: "Join a platform that delivers exceptional results.",
     },
     {
-      icon: <IoMdMedal className={hwu.wu_icon} />,
-
+      icon: <Image src={implementation} alt="image" />,
+      // icon: <IoMdMedal className={hwu.wu_icon} />,
       header: "Revolutionary Learning Methodologies",
       description: "Innovative approach for a transformative education.",
     },
     {
-      icon: (
-        <BsGlobeCentralSouthAsia
-          className={hwu.wu_icon}
-          style={{ color: "green" }}
-        />
-      ),
+      icon: <Image src={community} alt="image" />,
+      // icon: (
+      //   <BsGlobeCentralSouthAsia
+      //     className={hwu.wu_icon}
+      //     style={{ color: "green" }}
+      //   />
+      // ),
       header: "Vibrant Learning Community",
       description: "Connect, collaborate, and grow with like-minded learners.",
     },
@@ -118,9 +132,13 @@ const WhyUs = () => {
             </p>
           </div> */}
           {whyUsData?.map((item, indx) => (
-            <div className={hwu.wu_card} key={indx}>             
-                <div className={hwu.wu_icon_section}>{item.icon}</div>
-                <h4>{item.header}</h4>
+            <div className={hwu.wu_card} key={indx}>
+              {/* <img src={cuttingedge} alt="image" />            */}
+              <div className={hwu.wu_icon_section}>{item.icon}</div>
+              {/* <div className={hwu.wu_icon_section}>
+                  <img src={`${item?.icon}`} alt="image" />
+                </div> */}
+              <h4>{item.header}</h4>
               <p>{item.description}</p>
             </div>
           ))}

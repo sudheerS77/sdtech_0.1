@@ -59,17 +59,21 @@
 
 
 /* Form */
+.cnform{
+    margin: 100px 0;
+}
 .cnform__container {
     width: 80%;
     height: auto;
     /* margin: auto; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .form__left {
-    width: 40%;
+    /* width: 40%; */
+    padding: 50px 60px;
 }
 
 .form__left form {
@@ -77,7 +81,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
 
 .form__left form div {
@@ -85,42 +88,87 @@
     flex-direction: column;
     gap: 30px;
 }
-
-.form__left form input::placeholder {}
+.form__left form div p {
+    width: 280px;
+    /* max-width: 250px;
+    white-space: nowrap; */
+}
 
 .form__left form textarea {
     height: 100px;
+    width: 280px;
+    /* 
     border: 2px solid #04233f;
     padding: 10px;
     font-size: 1.1rem;
     resize: none;
+    border-radius: 4px; */
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-.cn__name {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-
+    outline: none;
 }
 
 .cn_tinput {
-    width: 100%;
+    width: 280px;
+    height: 25px;
+    /* padding: 8px 10px;
+    font-size: 1rem;
+  
+    border: 2px solid #04233f;
+    border-radius: 2px; */
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+
+    /* width: 100%;
     border: none;
     border-bottom: 2px solid #04233f;
     padding: 10px 0;
     font-size: 1.1rem;
     border-radius: 4px;
-    padding-left: 10px;
+    padding-left: 10px; */
 }
 
-.form__left form button {
+/* Style for when the input is focused */
+.form__left form input:focus,
+.form__right form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for placeholder text */
+.form__left form input::placeholder {
+    color: #aaa;
+}
+
+/* Style for disabled input */
+.form__left form input:disabled {
+    background-color: #f2f2f2;
+    color: #888;
+}
+
+.phoneNumber {
+    /* width: 400px; */
     width: 100%;
+    /* height: 3px; */
+    font-size: 1rem;
+}
+
+.phoneNumber:outline {
+    border: none;
+}
+
+
+.submit_btn {
+}
+
+.submit_btn {
+    width: 280px;
     height: 40px;
-
-
 
     padding: 10px 30px;
     background: #04233f;
@@ -144,7 +192,7 @@
     white-space: nowrap;
 }
 
-.form__left form button:hover {
+.submit_btn:hover {
 
     background-color: rgb(24, 25, 52);
     border: 1px solid #333445;
@@ -159,13 +207,12 @@
     -webkit-backdrop-filter: blur(1px);
 }
 
-.form__right {
+/* .form__right {
     width: 30%;
     height: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 10px;
 }
 
@@ -173,10 +220,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
     gap: 10px;
-}
+} */
 
 
 /* Media query for small devices (up to 768px wide) */

@@ -1,6 +1,8 @@
 .allc_container {
     width: 100%;
-    margin-top: 130px;
+    margin-top: 70px;
+    padding: 50px 0; 
+    background-color: #f2f5f7;
 }
 
 .allc_head {
@@ -42,7 +44,7 @@
 
 .allc_body {
     width: 80%;
-    margin: 50px auto;
+    margin: 80px auto;
     /* display: flex;
     flex-wrap: wrap;    */
     display: grid;
@@ -63,7 +65,7 @@
 @media (max-width: 768px) {
     .allc_head {
         width: 90%;
-        margin: 30px auto;
+        /* margin: 10px auto; */
     }
 
     .allc_search_icon {

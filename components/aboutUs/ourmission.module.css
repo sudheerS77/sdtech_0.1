@@ -2,9 +2,12 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
+    padding: 100px 0;
+
 }
 .heading{
     text-align: center;
+    font-size: 2rem;
 }
 .om_details{
     width: 100%;
@@ -22,7 +25,9 @@
     
 }
 .om_card{
-    background-color: #ffffff95;
+    /* background-color: #ffffff95; */
+    background-color: #f2f5f7a0;
+
     /* width: 50%; */
     /* float: left; */
     /* border: 1px solid #04233f; */
@@ -39,7 +44,8 @@
 
 }
 .om_count{
-    background: rgba(255, 255, 255, 0.05);
+    /* background: rgba(255, 255, 255, 0.05); */
+    background-color: #f2f5f7a0;
     box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.19);
     backdrop-filter: blur(0.5px);
     -webkit-backdrop-filter: blur(0.5px);
@@ -82,7 +88,7 @@
     .omc_box{
         display: flex;
         align-items: flex-start;
-        width: 90%;
+        width: 100%;
         gap: 10px;    
 
         background-color: #ffffff95;
@@ -90,11 +96,17 @@
         border-top-right-radius: 3px;
         border-bottom-right-radius: 3px;
     
-        box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.19);
+        box-shadow: none;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border-radius: 0px;
+        border: none;    
+        background-color: #fff;
+        /* box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.19);
         backdrop-filter: blur(0.5px);
         -webkit-backdrop-filter: blur(0.5px);
         border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.18); */
     
     }   
 
