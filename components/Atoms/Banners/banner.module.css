@@ -122,12 +122,24 @@
 /* Media query for tablets devices (For screens between 768px and 1024px ) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .banner {
-        height: auto;
+        height: 50vh;
         padding: 100px 0;
     }
     .banner__container {
         width: 95%;
         flex-direction: column;
+    }
+    .banner__right {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner__right img {
+        height: 300px;
+        width: 100%;
+        background-color: transparent;
     }
     
     
