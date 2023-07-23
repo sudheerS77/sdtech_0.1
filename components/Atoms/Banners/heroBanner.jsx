@@ -14,7 +14,7 @@ const HeroBanner = ({ data }) => {
             <p>{data?.description}</p>
           </div>
           {data?.poster !== null ? (
-            <div className={`${bn.banner__right} ${bn.bn__card}`}>
+            <div className={`${bn.banner__right}`}>
               <img src={data?.poster} alt="" />
             </div>
           ) : (

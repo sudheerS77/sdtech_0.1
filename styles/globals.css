@@ -89,3 +89,77 @@ h1 {
     background-color: none;
     outline: none;
 }
+.react-tel-input {
+  font-family: 'Roboto',sans-serif;
+  font-size: 15px;
+  position: relative;
+  width: 100%;
+}
+.react-tel-input .special-label {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  font-size: 13px;
+  left: 25px;
+  top: -7px;
+  background: #fff;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+.react-tel-input .form-control {
+  width: 100%;
+  font-size: 1px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+  /* width: 300px; */
+  outline: none;
+  padding: 18.5px 14px 18.5px 60px;
+  transition: box-shadow ease .25s,border-color ease .25s;
+  color: #495057;
+  background-color: green;
+}
+.react-tel-input .flag-dropdown {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  border-radius: 3px 0 0 3px;
+}
+.react-tel-input .selected-flag {
+  outline: none;
+  position: relative;
+  width: 52px;
+  height: 100%;
+  padding: 0 0 0 11px;
+  border-radius: 3px 0 0 3px;
+}
+.react-tel-input .in {
+  background-position: -48px -168px;
+}
+.react-tel-input .selected-flag .arrow {
+  position: relative;
+  top: 50%;
+  margin-top: -1px;
+  left: 29px;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #555;
+}
+
+
+/* .react-tel-input .form-control{
+  width: 100%;
+  font-size: 1px;
+    background: #FFFFFF;
+    border: 10px solid #CACACA;
+    border-radius: 5px;
+    width: 300px;
+    outline: none;
+    padding: 18.5px 14px 18.5px 60px;
+    transition: box-shadow ease .25s,border-color ease .25s;
+    color: #495057;
+
+} */

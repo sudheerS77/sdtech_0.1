@@ -36,11 +36,13 @@ const CourseCard = ({ data }) => {
           </div>
           <div className={hc.oc_border_line} />
           <div className={hc.oc_card_f}>
-            <h4>Know More</h4>
-            <span className={hc.oc_card_f_icon}>
-              {/* <FaChevronRight /> */}
-              <BsArrowRight />
-            </span>
+            <div className={hc.oc_f_box}>
+              <h4>Know More</h4>
+              <span className={hc.oc_card_f_icon}>
+                {/* <FaChevronRight /> */}
+                <BsArrowRight />
+              </span>
+            </div>
           </div>
         </Link>
       </div>

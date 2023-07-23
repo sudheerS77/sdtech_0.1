@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 
-const contactSchema = new mongoose.Schema(
+const B2BContactSchema = new mongoose.Schema(
   {
-    firstName: {
+    fullName: {
       type: String,
       required: true,
     },
-    lastName: {
+    organizationName: {
       type: String,
       required: true,
     },
@@ -41,7 +41,7 @@ const contactSchema = new mongoose.Schema(
   }
 );
 
-const contactModal =
-  mongoose.models.contact || mongoose.model("contact", contactSchema);
+const B2BContactModal =
+  mongoose.models.contact || mongoose.model("b2bcontact", B2BContactSchema);
 
-export default contactModal;
+export default B2BContactModal;

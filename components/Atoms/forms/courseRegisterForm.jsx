@@ -50,7 +50,7 @@ const CourseRegisterForm = ({ courseName }) => {
     }));
   };
 
-  const [phoneNumber, setPhoneNumber] = useState();
+  // const [phoneNumber, setPhoneNumber] = useState();
   const handleSubmit = (e) => {
     e.preventDefault();
     setStudentDetails((prev) => ({
@@ -60,7 +60,7 @@ const CourseRegisterForm = ({ courseName }) => {
 
     const submitDetails = async () => {
       const data = await axios.post(
-        "https://sdtech-0-1.vercel.app/api/courseregister",
+        "https://sdtechacademy.com/api/courseregister",
         { data: studentDetails }
       );
     };
@@ -164,7 +164,7 @@ const CourseRegisterForm = ({ courseName }) => {
             <PhoneInput
               className={crf.phoneNumber}
               country={"in"}
-              value={phoneNumber}
+              // value={phoneNumber}
               name="whatsAppNumber"
               required="true"
               inputProps={{

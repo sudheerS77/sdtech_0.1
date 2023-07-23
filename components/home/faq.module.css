@@ -1,7 +1,7 @@
 .f_container{
     width: 80%;
     height: auto;
-    margin: 50px auto;
+    margin: 150px auto;
 }
 .f_header{
     width: 100%;
@@ -66,6 +66,7 @@
 @media (max-width: 768px) {
     .f_container{
         width: 90%;
+        margin: 100px auto;
     }
     /* Accordion */
 .f_acc_container{

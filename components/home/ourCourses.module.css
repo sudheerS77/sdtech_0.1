@@ -67,14 +67,14 @@
     /* box-shadow: 0 4px 10px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 0.5px );
     -webkit-backdrop-filter: blur( 0.5px ); */
-    border-radius: 3px;
+    border-radius: 10px;
     /* border: 1px solid #04233fb5; */
 
     /* background: rgba(255, 255, 255, 0.05); */
     /* box-shadow: 0 2px 3px 0 rgba(31, 38, 135, 0.19); */
     backdrop-filter: blur(0.5px);
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5), 0 0 0 8px rgba(255, 255, 255, 0.3), 0 0 0 12px rgba(255, 255, 255, 0.2), 0 0 0 16px rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.081); 
+    /* border: 1px solid rgba(0, 0, 0, 0.081); */
     -webkit-backdrop-filter: blur(0.5px);
     /* border: 2px solid rgba(45, 45, 45, 0.22); */
 
@@ -109,13 +109,13 @@
     width: 100%;
     height: 100%;
 
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     /* background: #00d9ff3b; */
 
 
-  /* Optional: Add a max-width to prevent the image from stretching too much on larger screens */
-  /* max-width: 100%;  */
+    /* Optional: Add a max-width to prevent the image from stretching too much on larger screens */
+    /* max-width: 100%;  */
 
 }
 
@@ -187,22 +187,32 @@
 }
 
 .oc_card_f {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin: 15px;
+    /* margin: 15px; */
     padding: 10px;
 }
 
-.oc_card_f h4 {
-    height: auto;
-    font-size: 1rem;
-    color: #000000e4;
+.oc_f_box {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 20px;    
+}
 
+.oc_card_f h4 {
+    height: inherit;
+    height: 20px;
+    font-size: 1.2rem;
+
+    color: #000000e4;
+    
 }
 
 .oc_card_f_icon {
-    height: 15px;
+    width: 30px;
+    height: 20px;
+    font-size: 1.2rem;
+    height: inherit;
+    /* height: 15px; */
 
 }
 
@@ -215,16 +225,19 @@
         grid-template-columns: auto;
         gap: 50px;
     }
+
     .oc_card_b {
-        
+
         gap: 5px;
         padding: 5px;
-    
-    
+
+
     }
+
     .oc_border_line {
         margin: 10px 0;
-    }    
+    }
+
     .oc_card_f {
         display: flex;
         align-items: center;
