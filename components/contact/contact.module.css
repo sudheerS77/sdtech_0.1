@@ -8,6 +8,7 @@
 }
 
 .banner__container {
+    border: 2px solid green;
     width: 80%;
     display: flex;
     align-items: center;
@@ -15,7 +16,7 @@
     gap: 50px;
 }
 
-.cn__card {
+/* .cn__card {
     padding: 50px 40px;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.19);
@@ -23,7 +24,7 @@
     -webkit-backdrop-filter: blur(0.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-}
+} */
 
 .banner__left {
     width: 50%;
@@ -243,10 +244,11 @@
         justify-content: center;
         gap: 50px;
     }
-
+    
     .form__left {
-        width: 100%;
+        /* width: 100%; */
         margin-bottom: 50px;
+        padding: 0px 0px;
     }
 
     .form__left form {
@@ -269,9 +271,9 @@
         width: 100%;
     }
 
-    .cn__card {
+    /* .cn__card {
         padding: 25px 20px;
         box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.19);
         border-radius: 0px;
-    }
+    } */
 }

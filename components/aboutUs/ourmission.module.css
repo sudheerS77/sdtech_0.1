@@ -98,9 +98,10 @@
         gap: 10px;
 
         background-color: #ffffff95;
+        /* 
         padding: 10px 30px;
         border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-bottom-right-radius: 3px; */
 
         box-shadow: none;
         backdrop-filter: blur(0px);

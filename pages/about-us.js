@@ -23,10 +23,10 @@ const AboutUs = () => {
       <HomeLayout>
         <HeroBanner data={bannerData} />
         <OurMission />
-        {/* <AboutusCard /> */}
         <ExperiencedFaculty />
         <AboutusComponents />
       </HomeLayout>
+        {/* <AboutusCard /> */}
     </>
   );
 };
