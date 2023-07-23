@@ -59,9 +59,10 @@
 
 
 /* Form */
-.cnform{
+.cnform {
     margin: 100px 0;
 }
+
 .cnform__container {
     width: 80%;
     height: auto;
@@ -88,6 +89,7 @@
     flex-direction: column;
     gap: 30px;
 }
+
 .form__left form div p {
     width: 280px;
     /* max-width: 250px;
@@ -162,10 +164,6 @@
     border: none;
 }
 
-
-.submit_btn {
-}
-
 .submit_btn {
     width: 280px;
     height: 40px;
@@ -233,11 +231,17 @@
     }
 
     /* Form */
+.cnform {
+    margin: 50px 0;
+}
+
     .cnform__container {
         width: 90%;
         margin: 40px 0;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+        gap: 50px;
     }
 
     .form__left {
@@ -247,6 +251,18 @@
 
     .form__left form {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cn_tinput {
+        /* width: 100%; */
+    }
+
+    .submit_btn {
+        width: inherit;
+        height: 40px;
     }
 
     .form__right {

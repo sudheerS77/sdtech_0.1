@@ -15,6 +15,7 @@ const Cform = ({ title, desc, formType }) => {
     phoneNumber: null,
     message: "",
   });
+  console.log(formType);
   const handleChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -64,7 +65,7 @@ const Cform = ({ title, desc, formType }) => {
           <p>{desc}</p>
         </div>
         <div className={cn.cn__name}>
-          {formType !== "BEB" ? (
+          {formType !== "B2B" ? (
             <>
               <input
                 type="text"

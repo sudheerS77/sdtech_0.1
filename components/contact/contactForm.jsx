@@ -22,7 +22,7 @@ const ContactForm = () => {
             <Cform
               title="B2B ENQUERY"
               desc="Submit your details, You will receive a Call Back!"
-              formType="b2b"
+              formType="B2B"
             />
           </div>
         </div>
