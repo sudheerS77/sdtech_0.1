@@ -44,7 +44,7 @@ const Cform = ({ title, desc, formType }) => {
           firstName: formDetails.firstName,
           lastName: formDetails.lastName,
           email: formDetails.email,
-          phoneNumber: formDetails.phone,
+          phoneNumber: formDetails.phoneNumber,
           message: formDetails.message,
           contactType: "CourseContact",
         };
