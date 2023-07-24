@@ -26,36 +26,36 @@ const Cform = ({ title, desc, formType }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const submitData = async () => {
-      var result;
-      if (formType === "B2B") {
-        const b2bData = {
-          fullName: formDetails.fullName,
-          // organizationName: formDetails?.organizationName,
-          contactType: "B2B",
-          email: formDetails.email,
-          phoneNumber: formDetails.phoneNumber,
-          message: formDetails.message,
-        };
-        result = await axios.post("https://sdtechacademy.com/api/b2bcontact", {
-          data: b2bData,
-        });
-      } else {
-        const courseContactData = {
-          firstName: formDetails.firstName,
-          lastName: formDetails.lastName,
-          email: formDetails.email,
-          phoneNumber: formDetails.phoneNumber,
-          message: formDetails.message,
-          contactType: "CourseContact",
-        };
-        result = await axios.post("https://sdtechacademy.com/api/contact", {
-          data: courseContactData,
-        });
-      }
-      console.log(result);
-    };
-    submitData();
+    // const submitData = async () => {
+    //   var result;
+    //   if (formType === "B2B") {
+    //     const b2bData = {
+    //       fullName: formDetails.fullName,
+    //       // organizationName: formDetails?.organizationName,
+    //       contactType: "B2B",
+    //       email: formDetails.email,
+    //       phoneNumber: formDetails.phoneNumber,
+    //       message: formDetails.message,
+    //     };
+    //     result = await axios.post("https://sdtechacademy.com/api/b2bcontact", {
+    //       data: b2bData,
+    //     });
+    //   } else {
+    //     const courseContactData = {
+    //       firstName: formDetails.firstName,
+    //       lastName: formDetails.lastName,
+    //       email: formDetails.email,
+    //       phoneNumber: formDetails.phoneNumber,
+    //       message: formDetails.message,
+    //       contactType: "CourseContact",
+    //     };
+    //     result = await axios.post("https://sdtechacademy.com/api/contact", {
+    //       data: courseContactData,
+    //     });
+    //   }
+    //   console.log(result);
+    // };
+    // submitData();
   };
   return (
     <>
