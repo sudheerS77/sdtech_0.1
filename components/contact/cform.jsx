@@ -10,7 +10,7 @@ const Cform = ({ title, desc, formType }) => {
     firstName: "",
     lastName: "",
     fullName: "",
-    organizationName: "",
+    // organizationName: "",
     email: "",
     phoneNumber: null,
     message: "",
@@ -31,7 +31,7 @@ const Cform = ({ title, desc, formType }) => {
       if (formType === "B2B") {
         const b2bData = {
           fullName: formDetails.fullName,
-          organizationName: formDetails?.organizationName,
+          // organizationName: formDetails?.organizationName,
           contactType: "B2B",
           email: formDetails.email,
           phoneNumber: formDetails.phoneNumber,
@@ -94,14 +94,14 @@ const Cform = ({ title, desc, formType }) => {
                 className={cn.cn_tinput}
                 required
               />
-              <input
+              {/* <input
                 type="text"
                 name="organizationName"
                 onChange={handleChange}
                 placeholder="Organization Name"
                 className={cn.cn_tinput}
                 required
-              />
+              /> */}
             </>
           )}
         </div>
