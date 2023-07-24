@@ -1,5 +1,6 @@
 import React from "react";
 import hhome from "./hero.module.css";
+import Image from "next/image";
 // ffb765f8
 const HomeHero = () => {
   return (
@@ -12,7 +13,7 @@ const HomeHero = () => {
           </div>
           <div className={hhome.img_container}>
             <div>
-              <img
+              <Image
                 src="https://res.cloudinary.com/df8aswwta/image/upload/v1690168556/images/xawffpnubv9iymyyejie.png"
                 alt=""
                 className={hhome.img_1}
@@ -20,14 +21,14 @@ const HomeHero = () => {
             </div>
             <div className={hhome.img_container_2}>
               <div>
-                <img
+                <Image
                   src="https://res.cloudinary.com/df8aswwta/image/upload/v1690168555/images/yrcavkbqjopeddpw9inj.png"
                   alt=""
                   className={hhome.img_2}
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="https://res.cloudinary.com/df8aswwta/image/upload/v1690168555/images/hmawxlrqyizrm5mm7cjx.png"
                   alt=""
                   className={hhome.img_3}
