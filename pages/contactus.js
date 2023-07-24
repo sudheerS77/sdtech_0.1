@@ -23,9 +23,10 @@ const ContactUs = () => {
     <HomeLayout>
       {/* <ContactBanner /> */}
       <HeroBanner data={bannerData} />
-      {/* <ContactForm /> */}
+      <ContactForm />
     </HomeLayout>
   );
 };
 
 export default ContactUs;
+

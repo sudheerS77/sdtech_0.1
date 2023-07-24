@@ -4,6 +4,7 @@ import PhoneInput from "react-phone-input-2";
 
 import cn from "./contact.module.css";
 import "react-phone-input-2/lib/bootstrap.css";
+import { API } from "@/config";
 
 const Cform = ({ title, desc, formType }) => {
   const [formDetails, setFormDetails] = useState({
@@ -31,13 +32,13 @@ const Cform = ({ title, desc, formType }) => {
       if (formType === "B2B") {
         const b2bData = {
           fullName: formDetails.fullName,
-          // organizationName: formDetails?.organizationName,
+          organizationName: formDetails?.organizationName,
           contactType: "B2B",
           email: formDetails.email,
           phoneNumber: formDetails.phoneNumber,
           message: formDetails.message,
         };
-        result = await axios.post("https://sdtechacademy.com/api/b2bcontact", {
+        result = await axios.post(`/api/b2bcontact`, {
           data: b2bData,
         });
       } else {
@@ -49,7 +50,7 @@ const Cform = ({ title, desc, formType }) => {
           message: formDetails.message,
           contactType: "CourseContact",
         };
-        result = await axios.post("https://sdtechacademy.com/api/contact", {
+        result = await axios.post(`/api/contact`, {
           data: courseContactData,
         });
       }
@@ -57,6 +58,7 @@ const Cform = ({ title, desc, formType }) => {
     };
     submitData();
   };
+  console.log({API});
   return (
     <>
       <form onSubmit={handleSubmit} method="POST">

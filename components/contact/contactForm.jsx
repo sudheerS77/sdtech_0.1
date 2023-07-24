@@ -23,18 +23,18 @@ const ContactForm = () => {
       <div className={cn.cnform}>
         <div className={cn.cnform__container}>
           <div className={`${cn.cn__card} ${cn.form__left}`}>
-            {/* <Cform
+            <Cform
               title="COURSE ENQUERY"
               desc="Submit your details, You will receive a Call Back!"
               formType="course"
-            /> */}
+            />
           </div>
           <div className={`${cn.cn__card} ${cn.form__left}`}>
-            {/* <Cform
+            <Cform
               title="B2B ENQUERY"
               desc="Submit your details, You will receive a Call Back!"
               formType="B2B"
-            /> */}
+            />
           </div>
         </div>
       </div>
