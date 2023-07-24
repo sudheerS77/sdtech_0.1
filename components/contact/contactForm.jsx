@@ -23,18 +23,18 @@ const ContactForm = () => {
       <div className={cn.cnform}>
         <div className={cn.cnform__container}>
           <div className={`${cn.cn__card} ${cn.form__left}`}>
-            <Cform
+            {/* <Cform
               title="COURSE ENQUERY"
               desc="Submit your details, You will receive a Call Back!"
               formType="course"
-            />
+            /> */}
           </div>
           <div className={`${cn.cn__card} ${cn.form__left}`}>
-            <Cform
+            {/* <Cform
               title="B2B ENQUERY"
               desc="Submit your details, You will receive a Call Back!"
               formType="B2B"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-<>
+{/* <>
   <div className={`${cn.cn__card} ${cn.contact_details}`}>
     <div>
       <h4>New Customers</h4>
@@ -95,4 +95,4 @@ export default ContactForm;
       <span>info@sdtechacademy.com</span>
     </div>
   </div>
-</>;
+</>; */}
