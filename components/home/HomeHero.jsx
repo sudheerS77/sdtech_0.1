@@ -8,14 +8,14 @@ const HomeHero = () => {
       <div className={hhome.container}>
         <div className={hhome.hero_container}>
           <div className={hhome.Text_box}>
-            <h1>Invest in your child's future</h1>
+            <h1>Invest in your child&apos;s future</h1>
             <p>where innovation and technology thrive.</p>
           </div>
           <div className={hhome.img_container}>
             <div>
               <Image
                 src="https://res.cloudinary.com/df8aswwta/image/upload/v1690168556/images/xawffpnubv9iymyyejie.png"
-                alt=""
+                alt="image...."
                 className={hhome.img_1}
               />
             </div>
@@ -23,14 +23,14 @@ const HomeHero = () => {
               <div>
                 <Image
                   src="https://res.cloudinary.com/df8aswwta/image/upload/v1690168555/images/yrcavkbqjopeddpw9inj.png"
-                  alt=""
+                  alt="image...."
                   className={hhome.img_2}
                 />
               </div>
               <div>
                 <Image
                   src="https://res.cloudinary.com/df8aswwta/image/upload/v1690168555/images/hmawxlrqyizrm5mm7cjx.png"
-                  alt=""
+                  alt="image...."
                   className={hhome.img_3}
                 />
               </div>
