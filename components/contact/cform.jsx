@@ -31,7 +31,7 @@ const Cform = ({ title, desc, formType }) => {
       if (formType === "B2B") {
         const b2bData = {
           fullName: formDetails.fullName,
-          organizationName: formDetails.organizationName,
+          organizationName: formDetails?.organizationName,
           contactType: "B2B",
           email: formDetails.email,
           phoneNumber: formDetails.phoneNumber,
