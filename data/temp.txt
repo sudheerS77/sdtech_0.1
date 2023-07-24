@@ -1,0 +1,32 @@
+[
+    
+   
+]
+
+
+
+// generate the python programming language full courses content in the following form, 
+// {
+//     "topicName: "introduction to python", 
+//     subtopics:["subtopic-1","subtopics-2"]
+// }"
+
+// Note: only python programming language, including oops
+
+Level       basic   intermediate    advance 
+
+No.class     1          1           1
+
+1:1         10           
+
+group       7
+
+            1student
+offline     20
+
+
+2 
+3 
+____
+
+____

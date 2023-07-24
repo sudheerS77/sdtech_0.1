@@ -7,8 +7,8 @@ const HomeLayout = ({ children }) => {
     <>
       <React.Fragment>
         <Navbar />
-        {/* <CoursesNav /> */}
-        <div className="container">{children}</div>
+        <CoursesNav />
+        <div>{children}</div>
       </React.Fragment>
     </>
   );

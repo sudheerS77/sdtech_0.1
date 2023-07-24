@@ -11,28 +11,38 @@ import ca from "./carousel.module.css";
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
+    // {
+    //   image: { poster_1 },
+    //   title: "Invest in your child's future, ",
+    //   text: "where innovation and technology thrive.",
+    //   link: "",
+    // },
+    // {
+    //   image: { poster_2 },
+    //   title: "Invest in your child's future, ",
+    //   text: "where innovation and technology thrive.",
+    //   link: "",
+    // },
     {
-      image: { poster_1 },
-      title: "Invest in your child's future, ",
-      text: "where innovation and technology thrive.",
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1690168556/images/xawffpnubv9iymyyejie.png",
+      // "https://img-c.udemycdn.com/notices/web_carousel_slide/image/09206fc2-d0f1-41f6-b714-36242be94ee7.jpg",
+      title: "Unleash your digital potential,",
+      text: "Unleash and Amplify Your Digital Potential.",
       link: "",
     },
     {
-      image: { poster_2 },
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1690168555/images/hmawxlrqyizrm5mm7cjx.png",
+      // "https://img.freepik.com/free-vector/seminar-concept-illustration_114360-7480.jpg",
       title: "Invest in your child's future, ",
       text: "where innovation and technology thrive.",
       link: "",
     },
     {
       image:
-        "https://img.freepik.com/free-vector/seminar-concept-illustration_114360-7480.jpg",
-      title: "Invest in your child's future, ",
-      text: "where innovation and technology thrive.",
-      link: "",
-    },
-    {
-      image:
-        "https://img-c.udemycdn.com/notices/web_carousel_slide/image/69094169-f35e-470a-9146-d5955c7330b9.png",
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1690168555/images/yrcavkbqjopeddpw9inj.png",
+      // "https://img-c.udemycdn.com/notices/web_carousel_slide/image/69094169-f35e-470a-9146-d5955c7330b9.png",
       title: "Invest in your child's future, ",
       text: "where innovation and technology thrive.",
       link: "",
@@ -43,13 +53,6 @@ const Carousel = () => {
     //   text: "Prepare your child for a future driven by technology, where possibilities are endless.",
     //   link: "",
     // },
-    {
-      image:
-        "https://img-c.udemycdn.com/notices/web_carousel_slide/image/09206fc2-d0f1-41f6-b714-36242be94ee7.jpg",
-      title: "Unleash your digital potential,",
-      text: "Unleash and Amplify Your Digital Potential.",
-      link: "",
-    },
   ];
 
   const nextImage = () => {
@@ -75,7 +78,7 @@ const Carousel = () => {
       clearInterval(interval);
     };
   }, [currentImageIndex]);
-  
+
   return (
     <>
       <div className={`${ca.carousel}`}>
@@ -89,11 +92,11 @@ const Carousel = () => {
                       key={index}
                       // src={`${data?.image}`}
                       src={
-                        index === 1
-                          ? data?.image?.poster_2?.src
-                          : data?.image?.poster_1?.src
-                          ? data?.image?.poster_1?.src
-                          : data?.image
+                        data?.image
+                        // index === 1
+                        //   ? data?.image?.poster_2?.src
+                        //   : data?.image?.poster_1?.src
+                        //   ? data?.image?.poster_1?.src
                       }
                       alt={`Slide ${index + 1}`}
                       className={index === currentImageIndex ? "active" : ""}

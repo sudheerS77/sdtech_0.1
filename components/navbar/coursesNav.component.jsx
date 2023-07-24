@@ -1,9 +1,7 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
-import cnav from "@/styles/coursesnav.module.css"
-
-
+import cnav from "@/styles/coursesnav.module.css";
 
 const CoursesNav = () => {
   var settings = {
@@ -11,90 +9,128 @@ const CoursesNav = () => {
     infinite: true,
     arrows: true,
     speed: 500,
-    slidesToShow: 12,
-    slidesToScroll: 4
+    slidesToShow: 8,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
   };
+  useEffect(() => {
+    // Mobile settings (up to 767px)
+    if (window.innerWidth <= 767) {
+      settings.slidesToShow = 3;
+      settings.slidesToScroll = 3;
+    }
+    // Tablet settings (768px to 991px)
+    else if (window.innerWidth >= 768 && window.innerWidth <= 991) {
+      settings.slidesToShow = 4;
+      settings.slidesToScroll = 4;
+    }
+  }, []);
   const courses = [
     {
       name: "Python",
-      link: 'python'
+      link: "python",
     },
     {
       name: "Java",
-      link: 'java'
+      link: "java",
     },
     {
       name: "python",
-      link: 'python'
+      link: "python",
     },
     {
       name: "C",
-      link: 'c'
+      link: "c",
     },
     {
       name: "C++",
-      link: 'c++'
+      link: "c++",
     },
     {
       name: "PHP",
-      link: 'php'
+      link: "php",
     },
     {
       name: "MachineLearning",
-      link: 'machine-learning'
+      link: "machine-learning",
     },
     {
       name: "ARM",
-      link: 'arm'
+      link: "arm",
     },
     {
       name: "Arduino",
-      link: 'arduino'
+      link: "arduino",
     },
     {
       name: "Python",
-      link: 'python'
+      link: "python",
     },
     {
       name: "Java",
-      link: 'java'
+      link: "java",
     },
     {
       name: "python",
-      link: 'python'
+      link: "python",
     },
     {
       name: "C",
-      link: 'c'
+      link: "c",
     },
     {
       name: "C++",
-      link: 'c++'
+      link: "c++",
     },
     {
       name: "PHP",
-      link: 'php'
+      link: "php",
     },
     {
       name: "Machine Learning",
-      link: 'machine-learning'
+      link: "machine-learning",
     },
     {
       name: "Arduino",
-      link: 'arduino'
+      link: "arduino",
     },
     {
       name: "ARM",
-      link: 'arm'
-    }
-  ]
+      link: "arm",
+    },
+  ];
   const CourseNameCard = ({ data }) => {
     return (
       <div className={cnav.chip}>
         <Link href={`/${data.link}`}>{data.name}</Link>
       </div>
-    )
-  }
+    );
+  };
   return (
     <>
       <div className={cnav.csnavContainer}>
@@ -102,14 +138,12 @@ const CoursesNav = () => {
           <Slider {...settings}>
             {courses.map((data, indx) => (
               <CourseNameCard key={indx} data={data} />
-            ))
-
-            }
+            ))}
           </Slider>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default CoursesNav;

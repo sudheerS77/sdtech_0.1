@@ -14,7 +14,7 @@ const Banner = ({ courseInfo }) => {
     <>
       <div className={b.b_container}>
         <div className={b.b_left}>
-          <h2>{data?.name}</h2>
+          <h1>{data?.title}</h1>
           <p>{data?.description}</p>
           <div>
             <Link

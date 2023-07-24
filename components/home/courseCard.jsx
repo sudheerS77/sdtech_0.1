@@ -6,6 +6,7 @@ import { FaChevronRight } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 
 const CourseCard = ({ data }) => {
+  console.log(data);
   return (
     <>
       <div className={hc.oc_card}>
@@ -21,10 +22,7 @@ const CourseCard = ({ data }) => {
           <div className={hc.oc_card_b}>
             <h4>{data?.name}</h4>
             <div>
-              <p>
-                Understand how to use the basic Python structures: strings,
-                lists, and dictionaries.
-              </p>
+              <p>{data?.description?.slice(0, 140)+'...'}</p>
             </div>
             <div className={hc.oc_card_bprice}>
               <span className={hc.oc_price}>₹ {data?.cost}</span>

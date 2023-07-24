@@ -10,16 +10,33 @@ import {
   MdLocationOn,
 } from "react-icons/md";
 import { AiFillSafetyCertificate } from "react-icons/ai";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CourseBody = ({ courseInfo }) => {
   const data = courseInfo;
-  console.log(data);
   const [level, setLevel] = useState("beginner");
+  const [courseContent, setCourseContent] = useState();
+
   const levelHandler = (e) => {
-    setLevel(e.target.name)
+    console.log();
+    setLevel(e.target.name);
+  };
+  const getLevelContent = () => {
+    data?.course_content?.filter((item) => {
+      if (item.level === level) {
+        setCourseContent(item?.data);
+      }
+    });
   };
 
+  useEffect(() => {
+    getLevelContent();
+  }, []);
+  
+  useEffect(() => {
+    getLevelContent();
+  }, [level]);
+  
   return (
     <>
       <div className={cb.cb_container}>
@@ -109,7 +126,20 @@ const CourseBody = ({ courseInfo }) => {
           <h3>Technical Roadmap</h3>
           {/* <h3>Course Content</h3> */}
           <div className={cb.level_Section}>
-            <button
+            {data?.levels ? (
+              data?.levels.map((level_name) => (
+                <button
+                  className={level === level_name ? cb.active_btn : ""}
+                  name={level_name}
+                  onClick={levelHandler}
+                >
+                  {level_name}
+                </button>
+              ))
+            ) : (
+              <></>
+            )}
+            {/* <button
               className={level === "beginner" ? cb.active_btn : ""}
               name="beginner"
               onClick={levelHandler}
@@ -129,10 +159,11 @@ const CourseBody = ({ courseInfo }) => {
               onClick={levelHandler}
             >
               Advance
-            </button>
+            </button> */}
           </div>
           <div className={cb.acc_container}>
-            {data?.course_content?.map((acdata, indx) => (
+            {/* {data?.course_content?.map((acdata, indx) => ( */}
+            {courseContent?.map((acdata, indx) => (
               <Accordion
                 key={indx}
                 sno={indx}

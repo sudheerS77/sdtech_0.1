@@ -1,82 +1,174 @@
-.hcontainer{
-    height: 100vh;
-    /* calc(100vh - 90px) */
+.container {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 70vh;
+    position: relative;
 }
-.hcontainer .hhero{
+
+.hero_container {
     width: 80%;
-    margin: 0 auto;
+    height: 70vh;
+    margin: auto auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
 }
-.hleft{
-    width: 60%;
+
+.Text_box {
+    max-width: 30%;
+    height: 150px;
+    /* margin: 50px 0; */
+    background: #fff;
+    box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.133);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+
+    padding: 10px 20px;
 }
-.hleft h2{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #fba441;
+
+.Text_box h1 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+    max-width: 36em;
+    white-space: nowrap;
 }
-.hcontainer span{
+
+.Text_box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-width: 80rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    white-space: nowrap;
+}
+
+.img_container {
     display: flex;
-    align-items: center;
     flex-direction: column;
+
+}
+
+.img_1 {
+    margin-bottom: 200px;
+}
+
+.img_container_2{
+    /* display: flex; */
+}
+.img_2 {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    right: 32%;
+    bottom: -50px;
+}
+
+.img_3 {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    right: 8%;
+    bottom: -25px;
+}
+
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .container{
+        height: 50vh;
+        margin-top: 20px;
+    }
+    .hero_container {
+        width: 90%;
+        /* 
+        height: 70vh;
+        margin: auto auto;
+        display: flex;    
+        align-items: center; */
+        /* justify-content: center; */
+
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Text_box {
+        /* position: static; */
+        max-width: 100%;
+        width: 100%;
+        height: fit-content;
+        gap: 0px;
+    padding: 5px 10px;
+        /* right: 0; */
+        /* top: auto; */
+        /* bottom: 25px; */
+        /* padding: 10px; */
+    }
+
+    .Text_box h1,
+    .Text_box p {
+        white-space: wrap;
+    }
+    
+.img_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_1 {
+    margin-bottom: 200px;
+    width: 100%;
+    height: 90px;
+}
+
+.img_container_2{
+    /* display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 200px; */
+}
+.img_2 {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    bottom: -20px;
 }
 
-.hleft span .hp{
-    font-size: 1rem;
-    font-weight: regular;
-    /* padding: 10px 0; */
-    margin: 10px 0;
+.img_3 {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    right: 10%;
+    bottom: -10px;
 }
-.startbtn{
-    width: 305px;
-    height: 55px;
-
-    background: #fff1e1b1;
-    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.156);
-    border-radius: 27.5px;
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-transform: capitalize;
-    transition: .4s;
-
-    color: #000000;
-    font-variation-settings: 'slnt' -3;
-    border: none;
-    margin: 30px 0 0 0;
 
 }
-.startbtn:hover{
-    background: #fff1e170;
-    color: #ffb765f8;
-
-    /* color: gray; */
-    /* border: 1px solid rgba(128, 128, 128, 0.17); */
-    transition: 0.4s;
-
-    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.126);
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 1px );
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 361px) {
+    .container{
+        height: 65vh;
+        margin-top: 20px;
+    }
 }
-.hright{
-    width: 30%;
-}
-.hright img{
-    width: 250px;
-    height: 250px;
+
+/* Media query for tablets devices (For screens between 768px and 1024px ) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .Text_box {
+        width: auto;
+        right: 0;
+        top: auto;
+        bottom: 25px;
+    }
+
 }

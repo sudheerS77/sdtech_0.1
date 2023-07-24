@@ -53,8 +53,8 @@ export default function Home() {
   return (
     <>
       <HomeLayout>
-        <Carousel />
-        {/* <HomeHero /> */}
+        {/* <Carousel /> */}
+        <HomeHero />
         <CourseCategories />
         <OurCourses />
         <WhyUs />
