@@ -50,7 +50,7 @@ const PaidCourse = ({ id }) => {
           mergedData = mergedData.concat(jsonData);
         }
         setMergedData(mergedData);
-        console.log(mergedData);
+        // console.log(mergedData);
         const filteredResults = mergedData?.filter((course) =>
           course?.slug?.toLowerCase().includes(courseid.toLowerCase())
         );
@@ -120,7 +120,7 @@ const PaidCourse = ({ id }) => {
 
   return (
     <>
-      <HeadSection />
+      {/* <HeadSection /> */}
       <HomeLayout>
         {isLoading ? (
           <>Loading....</>
