@@ -74,12 +74,12 @@ const AllPaidCourses = () => {
    
   };
 
-  const getCourses = async () => {
-    const data = await axios.get("http://localhost:3000//api/course/route");
-    console.log(data?.data.data);
-    setOutCoursesData(data.data?.data);
-    setFilteredCourses(data.data?.data);
-  };
+  // const getCourses = async () => {
+  //   const data = await axios.get("http://localhost:3000//api/course/route");
+  //   console.log(data?.data.data);
+  //   setOutCoursesData(data.data?.data);
+  //   setFilteredCourses(data.data?.data);
+  // };
   
   useEffect(() => {
     // getCourses();
@@ -109,7 +109,7 @@ const AllPaidCourses = () => {
     };
     mergeJSONData();
     console.log(mergedData);
-  });
+  },[]);
   return (
     <>
       <HomeLayout>
