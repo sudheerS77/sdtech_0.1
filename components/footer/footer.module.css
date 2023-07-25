@@ -1,0 +1,88 @@
+.footer_section{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    color: #fff;
+    background-color: #04213e;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.footer_header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.social_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.social_links_icon{
+    width: 25px;
+    height: 25px;
+    /* font-size: 2rem; */
+    color: #fff;
+}
+.logo{
+    width: 200px;
+    height: 50px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.company_info{
+    
+}
+.company_info h4, .terms h4, .quick_links h4{
+    color: #fff;
+}
+.company_info ul, .terms ul, .quick_links ul{
+    list-style: none;
+    
+}
+.company_info ul li, .terms ul li, .quick_links ul li{
+    padding: 5px 0;
+    margin: 10px 0;
+    
+}
+.company_info ul li a, .terms ul li a, .quick_links ul li a{
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+}
+.quick_links ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.quick_links ul li a p{
+    color: rgb(189, 189, 189);
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+.quick_links_icon{
+    width: 20px;
+    height: 20px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .footer_section{
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .footer_header,  .company_info, .terms, .quick_links{
+        padding: 0 25px;
+    }
+}
+
+/* Media query for tablets devices (For screens between 768px and 1024px ) */
+@media (min-width: 768px) and (max-width: 1023px) {}
