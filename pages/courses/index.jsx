@@ -101,14 +101,12 @@ const AllPaidCourses = () => {
           mergedData = mergedData.concat(jsonData);
         }
         setMergedData(mergedData);
-        console.log(mergedData);
         setFilteredCourses(mergedData)
       } catch (error) {
         console.error("Error merging JSON files:", error);
       }
     };
     mergeJSONData();
-    console.log(mergedData);
   },[]);
   return (
     <>
