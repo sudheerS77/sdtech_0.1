@@ -83,7 +83,7 @@ const AllPaidCourses = () => {
   
   useEffect(() => {
     // getCourses();
-  }, []);
+  });
 
   useEffect(() => {
     const fileList = [
@@ -109,7 +109,7 @@ const AllPaidCourses = () => {
     };
     mergeJSONData();
     console.log(mergedData);
-  }, []);
+  });
   return (
     <>
       <HomeLayout>

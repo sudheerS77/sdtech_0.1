@@ -27,18 +27,7 @@ const PaidCourse = ({ id }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [mergedData, setMergedData] = useState([]);
 
-  useEffect(() => {
-    // const getCourse = async () => {
-    //   setIsLoading(true);
-
-    //   const data = await axios.get(
-    //     `http://localhost:3000/api/course/${coursename}`
-    //   );
-
-    //   setCourseInfo(data.data);
-    //   setIsLoading(false);
-    // };
-
+  useEffect(() => {   
     const delay = 0;
     const timeoutId = setTimeout(() => {}, delay);
 

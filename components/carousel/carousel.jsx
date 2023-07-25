@@ -69,15 +69,15 @@ const Carousel = () => {
   //   setCurrentImageIndex(index);
   // };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextImage();
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     nextImage();
+  //   }, 3000);
 
-    return () => {
-      clearInterval(interval);
-    };
-  }, [currentImageIndex]);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, [currentImageIndex]);
 
   return (
     <>
@@ -88,7 +88,7 @@ const Carousel = () => {
               <>
                 <div key={index} className={ca.carousel__card}>
                   <div className={ca.image_container}>
-                    <img
+                    {/* <img
                       key={index}
                       // src={`${data?.image}`}
                       src={
@@ -100,7 +100,7 @@ const Carousel = () => {
                       }
                       alt={`Slide ${index + 1}`}
                       className={index === currentImageIndex ? "active" : ""}
-                    />
+                    /> */}
                   </div>
                   <div className={ca.carousel_box}>
                     <h1>{data.title}</h1>

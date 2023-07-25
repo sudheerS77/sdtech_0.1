@@ -30,7 +30,7 @@ const ExperiencedFaculty = () => {
               </p>
             </div>
             <div className={au.exp_image}>
-              <Image src={expIns} />
+              <Image src={expIns} alt="image" />
             </div>
           </div>
         </div>

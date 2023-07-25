@@ -11,6 +11,7 @@ import {
 } from "react-icons/md";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const CourseBody = ({ courseInfo }) => {
   const data = courseInfo;
@@ -18,12 +19,12 @@ const CourseBody = ({ courseInfo }) => {
   const [courseContent, setCourseContent] = useState();
 
   const levelHandler = (e) => {
-    console.log();
     setLevel(e.target.name);
   };
   const getLevelContent = () => {
     data?.course_content?.filter((item) => {
       if (item.level === level) {
+        console.log(item?.data);
         setCourseContent(item?.data);
       }
     });
@@ -31,12 +32,12 @@ const CourseBody = ({ courseInfo }) => {
 
   useEffect(() => {
     getLevelContent();
-  }, []);
-  
+  });
+
   useEffect(() => {
     getLevelContent();
   }, [level]);
-  
+
   return (
     <>
       <div className={cb.cb_container}>
@@ -116,7 +117,10 @@ const CourseBody = ({ courseInfo }) => {
               </div>
             </div>
             <div className={cb.cb_wul_img}>
-              <img src="https://static.vecteezy.com/system/resources/previews/005/658/299/original/boy-studying-with-computer-and-books-illustration-concept-in-cartoon-style-vector.jpg" />
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/005/658/299/original/boy-studying-with-computer-and-books-illustration-concept-in-cartoon-style-vector.jpg"
+                alt="image"
+              />
             </div>
           </div>
         </div>
@@ -127,8 +131,9 @@ const CourseBody = ({ courseInfo }) => {
           {/* <h3>Course Content</h3> */}
           <div className={cb.level_Section}>
             {data?.levels ? (
-              data?.levels.map((level_name) => (
+              data?.levels.map((level_name, indx) => (
                 <button
+                  key={indx}
                   className={level === level_name ? cb.active_btn : ""}
                   name={level_name}
                   onClick={levelHandler}
