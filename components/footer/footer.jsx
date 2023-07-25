@@ -12,6 +12,7 @@ import {
 } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail, MdFacebook } from "react-icons/md";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -23,37 +24,37 @@ const Footer = () => {
               <Image src={logo} alt="image" />
             </div>
             <div className={footer.social_links}>
-              <a href="#">
+              <Link href="#">
                 <MdFacebook className={footer.social_links_icon} />
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <BsInstagram className={footer.social_links_icon} />
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <BsTwitter className={footer.social_links_icon} />
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <BsLinkedin className={footer.social_links_icon} />
-              </a>
-              <a href="#">
+              </Link>
+              <Link href="#">
                 <BsYoutube className={footer.social_links_icon} />
-              </a>
+              </Link>
             </div>
           </div>
           <div className={footer.company_info}>
             <h4>Company</h4>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="/about-us">About us</a>
+                <Link href="/about-us">About us</Link>
               </li>
               <li>
-                <a href="/faqs">FAQ's</a>
+                <Link href="/faqs">FAQ's</Link>
               </li>
               <li>
-                <a href="/contact-us">contact us</a>
+                <Link href="/contact-us">contact us</Link>
               </li>
             </ul>
           </div>
@@ -61,13 +62,13 @@ const Footer = () => {
             <h4>Terms</h4>
             <ul>
               <li>
-                <a href="#">Refund and Cancellation policy</a>
+                <Link href="#">Refund and Cancellation policy</Link>
               </li>
               <li>
-                <a href="#">Terms and Conditions</a>
+                <Link href="#">Terms and Conditions</Link>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <Link href="#">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -75,28 +76,28 @@ const Footer = () => {
             <h4>Quick Contact</h4>
             <ul>
               <li>
-                <a href="">
+                <Link href="">
                   <span className={footer.quick_links_icon}>
                     <BsPhoneFill />
                   </span>
                   <p>+91 98598 59852</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="">
+                <Link href="">
                   <span className={footer.quick_links_icon}>
                     <IoLogoWhatsapp />
                   </span>
                   <p>+91 98598 59852</p>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="">
+                <Link href="">
                   <span className={footer.quick_links_icon}>
                     <MdEmail />
                   </span>
                   <p>info@gmail.com</p>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
