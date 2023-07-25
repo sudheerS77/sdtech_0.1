@@ -86,32 +86,20 @@
 @media (max-width: 768px) {
     .container{
         height: 50vh;
-        margin-top: 20px;
+        margin-top: 50px;
     }
     .hero_container {
         width: 90%;
-        /* 
-        height: 70vh;
-        margin: auto auto;
-        display: flex;    
-        align-items: center; */
-        /* justify-content: center; */
-
         flex-direction: column;
         gap: 20px;
     }
     
     .Text_box {
-        /* position: static; */
         max-width: 100%;
         width: 100%;
         height: fit-content;
         gap: 0px;
-    padding: 5px 10px;
-        /* right: 0; */
-        /* top: auto; */
-        /* bottom: 25px; */
-        /* padding: 10px; */
+        padding: 5px 10px;
     }
 
     .Text_box h1,
@@ -131,10 +119,6 @@
 }
 
 .img_container_2{
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px; */
 }
 .img_2 {
     width: 150px;
@@ -157,7 +141,7 @@
 @media (max-width: 361px) {
     .container{
         height: 65vh;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 }
 
