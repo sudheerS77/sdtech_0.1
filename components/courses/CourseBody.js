@@ -12,11 +12,24 @@ import {
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import CourseFee from "./courseFee/courseFee";
+
+// CF
+// Icons
+import { MdGroups } from "react-icons/md";
+import { BsFillPersonFill } from "react-icons/bs";
+
+// Components
+import FeeCard from "./courseFee/feeCard";
+// CSS
+import cf from "./courseFee/courseFee.module.css";
 
 const CourseBody = ({ courseInfo }) => {
   const data = courseInfo;
-  const [level, setLevel] = useState("beginner");
+  const [level, setLevel] = useState(courseInfo?.levels[0] || null);
   const [courseContent, setCourseContent] = useState();
+  const [openIndex, setOpenIndex] = useState([]);
+  const [expandAll, setExpandAll] = useState(false);
 
   const levelHandler = (e) => {
     setLevel(e.target.name);
@@ -24,7 +37,6 @@ const CourseBody = ({ courseInfo }) => {
   const getLevelContent = () => {
     data?.course_content?.filter((item) => {
       if (item.level === level) {
-        console.log(item?.data);
         setCourseContent(item?.data);
       }
     });
@@ -38,6 +50,27 @@ const CourseBody = ({ courseInfo }) => {
     getLevelContent();
   }, [level]);
 
+  const toggleAccordion = (index) => {
+    console.log(index);
+    // setOpenIndex((prev) => (prev === index ? null : index));
+    setOpenIndex((prevIndexes) => {
+      if (prevIndexes.includes(index)) {
+        return prevIndexes.filter((item) => item !== index);
+      } else {
+        return [index];
+      }
+    });
+  };
+
+  const handleExpandAll = () => {
+    setExpandAll(!expandAll);
+    if (expandAll) {
+      setOpenIndex([]);
+    } else {
+      if (level !== null) setOpenIndex([...Array(courseContent.length).keys()]);
+      else setOpenIndex([...Array(courseInfo?.course_content.length).keys()]);
+    }
+  };
   return (
     <>
       <div className={cb.cb_container}>
@@ -124,60 +157,68 @@ const CourseBody = ({ courseInfo }) => {
             </div>
           </div>
         </div>
-
         {/* Course Content */}
         <div className={cb.cc_section}>
           <h3>Technical Roadmap</h3>
           {/* <h3>Course Content</h3> */}
-          <div className={cb.level_Section}>
-            {data?.levels ? (
-              data?.levels.map((level_name, indx) => (
-                <button
-                  key={indx}
-                  className={level === level_name ? cb.active_btn : ""}
-                  name={level_name}
-                  onClick={levelHandler}
-                >
-                  {level_name}
-                </button>
-              ))
-            ) : (
-              <></>
-            )}
-            {/* <button
-              className={level === "beginner" ? cb.active_btn : ""}
-              name="beginner"
-              onClick={levelHandler}
-            >
-              Beginner
-            </button>
-            <button
-              className={level === "intermediate" ? cb.active_btn : ""}
-              name="intermediate"
-              onClick={levelHandler}
-            >
-              Intermediate
-            </button>
-            <button
-              className={level === "advance" ? cb.active_btn : ""}
-              name="advance"
-              onClick={levelHandler}
-            >
-              Advance
-            </button> */}
+          <div className={cb.tr_header}>
+            <div className={cb.level_Section}>
+              {data?.levels[0] !== null ? (
+                data?.levels.map((level_name, indx) => (
+                  <button
+                    key={indx}
+                    className={level === level_name ? cb.active_btn : ""}
+                    name={level_name}
+                    onClick={levelHandler}
+                  >
+                    {level_name}
+                  </button>
+                ))
+              ) : (
+                <></>
+              )}
+            </div>
+            <div className={cb.expand_collapse_btn}>
+              <button onClick={handleExpandAll}>
+                {expandAll ? "Collapse All" : "Expand All"}
+              </button>
+            </div>
           </div>
+
           <div className={cb.acc_container}>
-            {/* {data?.course_content?.map((acdata, indx) => ( */}
-            {courseContent?.map((acdata, indx) => (
-              <Accordion
-                key={indx}
-                sno={indx}
-                header={acdata.topicName}
-                body={acdata.subtopics}
-              />
-            ))}
+            {level !== null
+              ? courseContent?.map((acdata, index) => (
+                  <Accordion
+                    key={index}
+                    sno={index}
+                    header={acdata.topicName}
+                    body={acdata.subtopics}
+                    isOpen={openIndex.includes(index)}
+                    toggleAccordion={() => toggleAccordion(index)}
+                  />
+                ))
+              : courseInfo.course_content.map((acdata, index) => (
+                  <Accordion
+                    key={index}
+                    sno={index}
+                    header={acdata.topicName}
+                    body={acdata.subtopics}
+                    isOpen={openIndex.includes(index)}
+                    toggleAccordion={() => toggleAccordion(index)}
+                  />
+                ))}
           </div>
         </div>
+      </div>
+      <div className={cb.fee_container}>
+        {level !== null ? (
+          <CourseFee
+            course_content={data?.course_content}
+            pricing={data?.pricing}
+          />
+        ) : (
+          <></>
+        )}
       </div>
     </>
   );

@@ -1,10 +1,13 @@
 import Link from "next/link";
 import React, { useState } from "react";
-
+// Icons
 import { BsCode, BsRobot } from "react-icons/bs";
 import { SiWebflow } from "react-icons/si";
-
+// CSS
 import hcc from "./categories.module.css";
+// Images
+import robotImage from "../../assets/images/robot.png";
+import Image from "next/image";
 
 const CourseCategories = () => {
   const [activeCourse, setActiveCourse] = useState("Programming");
@@ -187,7 +190,13 @@ const CourseCategories = () => {
                 <div className={hcc.courseName}>{courses.name}</div>
               </Link>
             ))}
+            <div className={hcc.animate}>
+              <Image src={robotImage} alt="" width={100} height={100}/>
+            </div>
           </div>
+        </div>
+        <div>
+          
         </div>
       </div>
     </>

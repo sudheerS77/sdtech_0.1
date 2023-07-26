@@ -1,0 +1,467 @@
+[
+    {
+        "name": "React Native Mastery: Comprehensive Guide to Mobile App Development",
+        "title": "React Native Mastery: Comprehensive Guide to Mobile App Development",
+        "description": "Learn React Native from the basics to advanced techniques for building cross-platform mobile applications.",
+        "meta-title": "React Native Mastery | Comprehensive Guide to Mobile App Development",
+        "meta-description": "Join our comprehensive React Native course and become proficient in building cross-platform mobile applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690380107/images/eqzugbvssj15xcdhqgkf.png",
+        "slug": "react-native",
+        "categories": [
+            "Mobile App Development",
+            "React Native"
+        ],
+        "tags": [
+            "React Native",
+            "Mobile App Development",
+            "JavaScript",
+            "Cross-Platform Development",
+            "Expo"
+        ],
+        "pricing": [
+            {
+                "beginner": {
+                    "rupees": 30000,
+                    "dollars": 365
+                },
+                "intermediate": {
+                    "rupees": 30000,
+                    "dollars": 365
+                },
+                "advance": {
+                    "rupees": 30000,
+                    "dollars": 365
+                }
+            }
+        ],
+        "levels": [
+            null
+        ],
+        "learning_outcomes": [
+            "Understand the fundamentals of React Native",
+            "Set up the development environment for React Native apps",
+            "Build cross-platform mobile apps for iOS and Android",
+            "Work with React Native components and APIs",
+            "Implement navigation and routing in React Native",
+            "Integrate with external APIs and services",
+            "Handle user input and data storage",
+            "Deploy and publish React Native apps to app stores"
+        ],
+        "course_content": [
+            {
+                "topicName": "Introduction to React Native",
+                "subtopics": [
+                    "What is React Native?",
+                    "Advantages and Use Cases of React Native",
+                    "Setting up the Development Environment",
+                    "React Native Architecture",
+                    "Creating Your First React Native App"
+                ]
+            },
+            {
+                "topicName": "React Native Components and Styling",
+                "subtopics": [
+                    "React Native Components and JSX",
+                    "Styling React Native Components",
+                    "Flexbox Layout in React Native",
+                    "Handling Text and Images",
+                    "Using Icons and Custom Fonts",
+                    "Responsive Design in React Native"
+                ]
+            },
+            {
+                "topicName": "Navigation and Routing",
+                "subtopics": [
+                    "Implementing Stack Navigation",
+                    "Creating Tabs and Drawer Navigation",
+                    "Passing Data Between Screens",
+                    "Handling Deep Linking",
+                    "Custom Transitions and Animations"
+                ]
+            },
+            {
+                "topicName": "Working with Native APIs",
+                "subtopics": [
+                    "Accessing Device Features (Camera, Geolocation, etc.)",
+                    "Using Permissions in React Native",
+                    "Working with Native Modules",
+                    "Integrating with Third-Party Libraries",
+                    "Push Notifications in React Native"
+                ]
+            },
+            {
+                "topicName": "State Management in React Native",
+                "subtopics": [
+                    "Managing State with React Hooks",
+                    "Using Redux for State Management",
+                    "Async Storage and Local Data Persistence",
+                    "Handling User Authentication",
+                    "Implementing User Settings and Preferences"
+                ]
+            },
+            {
+                "topicName": "Networking and API Integration",
+                "subtopics": [
+                    "Making API Requests with Fetch",
+                    "Handling HTTP Responses and Errors",
+                    "Authentication with APIs",
+                    "WebSocket Integration for Real-Time Communication",
+                    "Caching and Optimizing API Requests"
+                ]
+            },
+            {
+                "topicName": "React Native Best Practices",
+                "subtopics": [
+                    "Code Organization and Folder Structure",
+                    "Debugging and Error Handling",
+                    "Performance Optimization for Mobile Apps",
+                    "Testing React Native Apps",
+                    "Internationalization and Localization"
+                ]
+            },
+            {
+                "topicName": "Deployment and App Store Publishing",
+                "subtopics": [
+                    "Preparing Your App for Deployment",
+                    "Building and Testing the App for iOS and Android",
+                    "Generating App Icons and Splash Screens",
+                    "App Store Guidelines and Submission",
+                    "App Store Optimization (ASO) and Marketing"
+                ]
+            },
+            {
+                "topicName": "Projects for React Native Mastery",
+                "subtopics": [
+                    "Weather App with API Integration",
+                    "Social Media Feed App with Navigation",
+                    "E-commerce Mobile App with User Authentication",
+                    "Real-Time Chat App with WebSockets",
+                    "Task Management App with Local Data Persistence"
+                ]
+            }
+        ],
+        "projects": []
+    },
+    {
+        "name": "Dart Mastery: Comprehensive Guide to Modern App Development",
+        "title": "Dart Mastery: Comprehensive Guide to Modern App Development",
+        "description": "Learn Dart from the basics to advanced techniques for building web, mobile, and desktop applications.",
+        "meta-title": "Dart Mastery | Comprehensive Guide to Modern App Development",
+        "meta-description": "Join our comprehensive Dart course and become proficient in building web, mobile, and desktop applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690380107/images/ctlcyp9ztsbow0anjxqw.png",
+        "slug": "dart",
+        "categories": [
+            "App Development",
+            "Dart"
+        ],
+        "tags": [
+            "Dart",
+            "Flutter",
+            "Web Development",
+            "Mobile App Development",
+            "Desktop App Development"
+        ],
+        "pricing": [
+            {
+                "beginner": {
+                    "rupees": 30000,
+                    "dollars": 365
+                },
+                "intermediate": {
+                    "rupees": 30000,
+                    "dollars": 365
+                },
+                "advance": {
+                    "rupees": 30000,
+                    "dollars": 365
+                }
+            }
+        ],
+        "levels": [
+            null
+        ],
+        "learning_outcomes": [
+            "Understand the fundamentals of Dart programming language",
+            "Set up the development environment for Dart applications",
+            "Build web applications with Dart (using AngularDart or Flutter for Web)",
+            "Create cross-platform mobile apps with Flutter",
+            "Develop desktop applications with Flutter for Windows, macOS, and Linux",
+            "Use Dart for server-side development",
+            "Work with databases and external APIs",
+            "Publish and distribute Dart applications"
+        ],
+        "course_content": [
+            {
+                "topicName": "Introduction to Dart",
+                "subtopics": [
+                    "What is Dart?",
+                    "Dart Language Features",
+                    "Setting up Dart Development Environment",
+                    "Your First Dart Program",
+                    "Dart Syntax and Data Types"
+                ]
+            },
+            {
+                "topicName": "Object-Oriented Programming in Dart",
+                "subtopics": [
+                    "Classes and Objects",
+                    "Constructors and Named Constructors",
+                    "Inheritance and Polymorphism",
+                    "Abstract Classes and Interfaces",
+                    "Mixins in Dart"
+                ]
+            },
+            {
+                "topicName": "Dart Collections and Control Flow",
+                "subtopics": [
+                    "Lists, Sets, and Maps",
+                    "Iterating and Modifying Collections",
+                    "Conditional Statements",
+                    "Loops and Iteration",
+                    "Exception Handling in Dart"
+                ]
+            },
+            {
+                "topicName": "Asynchronous Programming in Dart",
+                "subtopics": [
+                    "Understanding Asynchronous Programming",
+                    "Future and FutureBuilder",
+                    "Async and Await",
+                    "Streams and StreamBuilder",
+                    "Working with Asynchronous APIs"
+                ]
+            },
+            {
+                "topicName": "Web Development with Dart",
+                "subtopics": [
+                    "Introduction to Web Development in Dart",
+                    "Using AngularDart for Web Applications",
+                    "Web Components and Custom Elements",
+                    "Routing and Navigation in Web Apps",
+                    "HTTP Requests and AJAX with Dart"
+                ]
+            },
+            {
+                "topicName": "Flutter for Mobile App Development",
+                "subtopics": [
+                    "Introduction to Flutter",
+                    "Setting up Flutter Development Environment",
+                    "Flutter Widgets and Material Design",
+                    "Stateful and Stateless Widgets",
+                    "Navigation and Routing in Flutter",
+                    "Building Responsive UIs with Flutter"
+                ]
+            },
+            {
+                "topicName": "Mobile App Development with Flutter",
+                "subtopics": [
+                    "Working with Forms and User Input",
+                    "Data Storage and Persistence",
+                    "Flutter Packages and Plugins",
+                    "Working with Device Features (Camera, Geolocation, etc.)",
+                    "Animations and Gestures in Flutter",
+                    "Building Custom Widgets"
+                ]
+            },
+            {
+                "topicName": "Desktop App Development with Flutter",
+                "subtopics": [
+                    "Flutter for Windows, macOS, and Linux",
+                    "Designing Desktop UIs with Flutter",
+                    "Interacting with Native APIs",
+                    "Handling Platform-Specific Features",
+                    "Testing and Debugging Desktop Apps"
+                ]
+            },
+            {
+                "topicName": "Server-Side Development with Dart",
+                "subtopics": [
+                    "Dart for Server-Side Programming",
+                    "Working with HTTP and REST APIs",
+                    "Creating Web Servers with Dart",
+                    "Using Databases with Dart (SQL and NoSQL)",
+                    "Authentication and Security in Server-Side Apps"
+                ]
+            },
+            {
+                "topicName": "Publishing and Distributing Dart Applications",
+                "subtopics": [
+                    "Building and Compiling Dart Apps",
+                    "App Deployment for Web, Mobile, and Desktop",
+                    "App Store and Play Store Guidelines",
+                    "Continuous Integration and Delivery (CI/CD)"
+                ]
+            },
+            {
+                "topicName": "Projects for Dart Mastery",
+                "subtopics": [
+                    "Personal Portfolio Website with Dart for Web",
+                    "Task Management Mobile App with Flutter",
+                    "Cross-Platform Note Taking App with Dart",
+                    "E-commerce Web App with AngularDart",
+                    "Desktop To-Do List App with Flutter for Desktop"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Flutter Mastery: Comprehensive Guide to Cross-Platform App Development",
+        "title": "Flutter Mastery: Comprehensive Guide to Cross-Platform App Development",
+        "description": "Learn Flutter from the basics to advanced techniques for building beautiful and performant cross-platform mobile applications.",
+        "meta-title": "Flutter Mastery | Comprehensive Guide to Cross-Platform App Development",
+        "meta-description": "Join our comprehensive Flutter course and become proficient in building cross-platform mobile applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690380107/images/uo0eg33uxxutogvwuvvj.png",
+        "slug": "flutter",
+        "categories": [
+            "Mobile App Development",
+            "Flutter"
+        ],
+        "tags": [
+            "Flutter",
+            "Mobile App Development",
+            "Dart",
+            "iOS",
+            "Android"
+        ],
+        "pricing": [
+            {
+                "beginner": {
+                    "rupees": 30000,
+                    "dollars": 365
+                },
+                "intermediate": {
+                    "rupees": 30000,
+                    "dollars": 365
+                },
+                "advance": {
+                    "rupees": 30000,
+                    "dollars": 365
+                }
+            }
+        ],
+        "levels": [
+            null
+        ],
+        "learning_outcomes": [
+            "Understand the fundamentals of Flutter framework",
+            "Set up the development environment for Flutter apps",
+            "Build and customize user interfaces with Flutter Widgets",
+            "Work with state management solutions like Provider and Bloc",
+            "Integrate with external APIs and services",
+            "Handle user input and data storage",
+            "Implement navigation and routing in Flutter",
+            "Deploy and publish Flutter apps to app stores"
+        ],
+        "course_content": [
+            {
+                "topicName": "Introduction to Flutter",
+                "subtopics": [
+                    "What is Flutter?",
+                    "Advantages of Flutter for Cross-Platform Development",
+                    "Setting up Flutter Development Environment",
+                    "Flutter Architecture Overview",
+                    "Creating Your First Flutter App"
+                ]
+            },
+            {
+                "topicName": "Flutter Widgets and Layouts",
+                "subtopics": [
+                    "Understanding Flutter Widgets",
+                    "Using Material Design and Cupertino Widgets",
+                    "Layouts and Containers in Flutter",
+                    "Working with Rows, Columns, and Flex",
+                    "Responsive Design in Flutter"
+                ]
+            },
+            {
+                "topicName": "State Management in Flutter",
+                "subtopics": [
+                    "Managing State with setState",
+                    "Using Provider for State Management",
+                    "BLoC Pattern for Reactive State Management",
+                    "Using Redux with Flutter",
+                    "Local State vs. Global State"
+                ]
+            },
+            {
+                "topicName": "Navigation and Routing in Flutter",
+                "subtopics": [
+                    "Implementing Navigation in Flutter",
+                    "Navigating with Named Routes",
+                    "Passing Data Between Screens",
+                    "Handling Deep Linking",
+                    "Custom Transitions and Animations"
+                ]
+            },
+            {
+                "topicName": "Working with Data and APIs",
+                "subtopics": [
+                    "Fetching and Displaying Data from APIs",
+                    "Working with HTTP Requests",
+                    "Parsing JSON Data in Flutter",
+                    "Caching and Optimizing API Requests",
+                    "Handling Network Errors and Exceptions"
+                ]
+            },
+            {
+                "topicName": "User Input and Forms",
+                "subtopics": [
+                    "Handling User Input and Gestures",
+                    "Form Validation in Flutter",
+                    "Working with Text Fields and Input Controls",
+                    "Building Custom Form Widgets"
+                ]
+            },
+            {
+                "topicName": "Working with Device Features",
+                "subtopics": [
+                    "Accessing Device Camera and Gallery",
+                    "Using Geolocation and Maps",
+                    "Working with Sensors (Accelerometer, Gyroscope, etc.)",
+                    "Push Notifications in Flutter",
+                    "Working with Device Permissions"
+                ]
+            },
+            {
+                "topicName": "Animations and Gestures",
+                "subtopics": [
+                    "Creating Animations in Flutter",
+                    "Implicit vs. Explicit Animations",
+                    "Gesture Detection and Handling",
+                    "Animating Page Transitions",
+                    "Customizing Animation Behaviors"
+                ]
+            },
+            {
+                "topicName": "Flutter Best Practices",
+                "subtopics": [
+                    "Code Organization and Project Structure",
+                    "Debugging and Logging in Flutter",
+                    "Performance Optimization Techniques",
+                    "Testing Flutter Apps",
+                    "Internationalization and Localization"
+                ]
+            },
+            {
+                "topicName": "Publishing and Distribution",
+                "subtopics": [
+                    "Preparing Your App for Deployment",
+                    "Building and Compiling Flutter Apps",
+                    "App Store and Play Store Guidelines",
+                    "Continuous Integration and Delivery (CI/CD)",
+                    "App Store Optimization (ASO) and Marketing"
+                ]
+            },
+            {
+                "topicName": "Projects for Flutter Mastery",
+                "subtopics": [
+                    "Personal Portfolio App with Flutter",
+                    "Task Management Mobile App with State Management",
+                    "E-commerce App with API Integration",
+                    "Real-Time Chat App with Firebase",
+                    "Weather App with Location-Based Services"
+                ]
+            }
+        ]
+    }
+]

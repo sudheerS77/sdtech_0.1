@@ -6,7 +6,6 @@ import { FaChevronRight } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 
 const CourseCard = ({ data }) => {
-  console.log(data);
   return (
     <>
       <div className={hc.oc_card}>

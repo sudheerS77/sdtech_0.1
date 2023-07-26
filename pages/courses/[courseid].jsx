@@ -27,44 +27,37 @@ const PaidCourse = ({ id }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [mergedData, setMergedData] = useState([]);
 
-  useEffect(() => {   
-    const delay = 0;
-    const timeoutId = setTimeout(() => {}, delay);
-
-    return () => clearTimeout(timeoutId);
-  }, [courseid]);
-
-  useEffect(() => {
+  const mergeJSONData = async () => {
     const fileList = [
-      // "webDevelopmentData",
       "programming",
+      "webDevelopment",
       "robotics",
+      "mobileAppDevelopment",
+      "databases"
     ];
     var courseData = [];
-    const mergeJSONData = async () => {
-      let mergedData = [];
-      try {
-        for (let i = 0; i < fileList.length; i++) {
-          const jsonModule = await import(`../../data/${fileList[i]}.json`);
-          const jsonData = jsonModule.default;
-          mergedData = mergedData.concat(jsonData);
-        }
-        setMergedData(mergedData);
-        // console.log(mergedData);
-        const filteredResults = mergedData?.filter((course) =>
-          course?.slug?.toLowerCase().includes(courseid.toLowerCase())
-        );
-        setCourseInfo(filteredResults[0]);
-      } catch (error) {
-        console.error("Error merging JSON files:", error);
+    let mergedData = [];
+    try {
+      for (let i = 0; i < fileList.length; i++) {
+        const jsonModule = await import(`../../data/${fileList[i]}.json`);
+        const jsonData = jsonModule.default;
+        mergedData = mergedData.concat(jsonData);
       }
-    };
+      setMergedData(mergedData);
+      const filteredResults = mergedData?.filter((course) =>
+        course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
+      );
+      setCourseInfo(filteredResults[0]);
+    } catch (error) {
+      console.error("Error merging JSON files:", error);
+    }
+  };
+  useEffect(() => {
     mergeJSONData();
   }, []);
-
   useEffect(() => {
-    console.log("REFRESHED");
-  }, [])
+    mergeJSONData();
+  }, [courseid]);
 
   const HeadSection = () => {
     return (
@@ -99,7 +92,10 @@ const PaidCourse = ({ id }) => {
           content="width=device-width, initial-scale=1.0"
         ></meta>
         <link rel="canonical" href={`${DOMAIN}/courses/${courseInfo.slug}`} />
-        <meta property="og:description" content={courseInfo.description?.slice(0, 160)} />
+        <meta
+          property="og:description"
+          content={courseInfo.description?.slice(0, 160)}
+        />
         <meta property="og:type" content="webiste" />
         <meta
           property="og:url"
@@ -124,12 +120,14 @@ const PaidCourse = ({ id }) => {
       <HomeLayout>
         {isLoading ? (
           <>Loading....</>
-        ) : (
+        ) : courseInfo ? (
           <>
             <Banner courseInfo={courseInfo} />
             <CourseBody courseInfo={courseInfo} />
             <SimilarCourses />
           </>
+        ) : (
+          <>OOPSE</>
         )}
       </HomeLayout>
     </>

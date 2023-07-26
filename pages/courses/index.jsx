@@ -58,7 +58,6 @@ const AllPaidCourses = () => {
   const [filteredCourses, setFilteredCourses] = useState();
   const [mergedData, setMergedData] = useState([]);
 
-
   const handleInputChange = (e) => {
     // Search string
     const searchInput = e.target.value;
@@ -71,7 +70,6 @@ const AllPaidCourses = () => {
     } else {
       setFilteredCourses(mergedData);
     }
-   
   };
 
   // const getCourses = async () => {
@@ -80,16 +78,18 @@ const AllPaidCourses = () => {
   //   setOutCoursesData(data.data?.data);
   //   setFilteredCourses(data.data?.data);
   // };
-  
+
   useEffect(() => {
     // getCourses();
   });
 
   useEffect(() => {
     const fileList = [
-      // "webDevelopmentData",
       "programming",
+      "webDevelopment",
       "robotics",
+      "mobileAppDevelopment",
+      "databases"
     ];
     var courseData = [];
     const mergeJSONData = async () => {
@@ -101,13 +101,13 @@ const AllPaidCourses = () => {
           mergedData = mergedData.concat(jsonData);
         }
         setMergedData(mergedData);
-        setFilteredCourses(mergedData)
+        setFilteredCourses(mergedData);
       } catch (error) {
         console.error("Error merging JSON files:", error);
       }
     };
     mergeJSONData();
-  },[]);
+  }, []);
   return (
     <>
       <HomeLayout>

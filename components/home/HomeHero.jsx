@@ -1,24 +1,29 @@
 import React from "react";
 import hhome from "./hero.module.css";
 import Image from "next/image";
+// Icons
+import bookIcon from "../../assets/images/Education.png";
 // ffb765f8
 const HomeHero = () => {
   return (
     <>
       <div className={hhome.container}>
         <div className={hhome.hero_container}>
-          <div className={hhome.Text_box}>
-            <h1>Invest in your child&apos;s future</h1>
-            <p>where innovation and technology thrive.</p>
+          <div className={hhome.Box_container}>
+            <div className={hhome.Text_box}>
+              <h1>Invest in your child&apos;s future</h1>
+              <p>where innovation and technology thrive.</p>
+            </div>
+            <Image src={bookIcon} alt="" className={hhome.bookIcon} />
           </div>
           <div className={hhome.img_container}>
-            <div>
+            {/* <div>
               <img
                 src="https://res.cloudinary.com/df8aswwta/image/upload/v1690168556/images/xawffpnubv9iymyyejie.png"
                 alt="image...."
                 className={hhome.img_1}
               />
-            </div>
+            </div> */}
             <div className={hhome.img_container_2}>
               <div>
                 <img

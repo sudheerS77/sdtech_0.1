@@ -147,6 +147,33 @@
     transition: .4s;
 
 }
+.animate{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    animation: slideAnimation 6s linear infinite;
+}
+@keyframes slideAnimation {
+    0%, 100% {
+        left: 0;
+      }
+      50% {
+        left: 50%; /* Change the value to the desired end position */
+      }
+      60% {
+        left: 60%; /* Stay at the end position for 10% of the animation duration */
+      }
+      90% {
+        left: 0%; /* Move back to the initial position for 30% of the animation duration */
+        rotate: 360deg;
+      }      
+  }
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {

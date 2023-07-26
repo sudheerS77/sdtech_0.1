@@ -38,18 +38,7 @@ const CoursesNav = () => {
       }
     ]
   };
-  useEffect(() => {
-    // Mobile settings (up to 767px)
-    if (window.innerWidth <= 767) {
-      settings.slidesToShow = 3;
-      settings.slidesToScroll = 3;
-    }
-    // Tablet settings (768px to 991px)
-    else if (window.innerWidth >= 768 && window.innerWidth <= 991) {
-      settings.slidesToShow = 4;
-      settings.slidesToScroll = 4;
-    }
-  }, []);
+
   const courses = [
     {
       name: "Python",
