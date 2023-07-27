@@ -87,7 +87,7 @@ const AllPaidCourses = () => {
     const fileList = [
       "programming",
       "webDevelopment",
-      "robotics",
+      // "robotics",
       "mobileAppDevelopment",
       "databases"
     ];

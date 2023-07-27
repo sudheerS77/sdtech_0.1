@@ -71,14 +71,19 @@ const PaidCourse = ({ id }) => {
         : databases.includes(courseid)
         ? "databases"
         : null;
-      const jsonModule = await import(`../../data/${courseFileName}.json`);
-      const jsonData = jsonModule.default;
-      setMergedData(jsonData);
-      console.log(mergedData);
-      const filteredResults = jsonData?.filter((course) =>
-        course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
-      );
-      setCourseInfo(filteredResults[0]);
+      if (courseFileName === null) {
+        setCourseInfo();
+        t;
+      } else {
+        const jsonModule = await import(`../../data/${courseFileName}.json`);
+        const jsonData = jsonModule.default;
+        setMergedData(jsonData);
+        console.log(mergedData);
+        const filteredResults = jsonData?.filter((course) =>
+          course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
+        );
+        setCourseInfo(filteredResults[0]);
+      }
 
       // mergedData = mergedData.concat(jsonData);
       // if () {

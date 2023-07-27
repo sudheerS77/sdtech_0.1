@@ -1005,6 +1005,7 @@
   },
   {
     "name": "Node.js Mastery: Comprehensive Guide to Node.js",
+    "title": "Node.js Mastery: Comprehensive Guide to Node.js",
     "description": "Learn Node.js from the basics to advanced techniques for building scalable server-side applications.",
     "meta-title": "Node.js Mastery | Comprehensive Guide to Node.js",
     "meta-description": "Join our comprehensive Node.js course and become proficient in building scalable server-side applications.",
@@ -1410,7 +1411,7 @@
     "levels": [
       null
     ],
-    "learning-outcomes": [
+    "learning_outcomes": [
       "Understand the architecture and components of the MERN stack",
       "Set up the development environment for MERN applications",
       "Build and interact with MongoDB databases",
@@ -1421,7 +1422,7 @@
       "Use Redux for state management in React applications",
       "Deploy and host MERN applications in production"
     ],
-    "topics": [
+    "course_content": [
       {
         "topicName": "Introduction to MERN Stack",
         "subtopics": [
@@ -1532,6 +1533,7 @@
   },
   {
     "name": "MEAN Stack Mastery: Comprehensive Guide to Full-Stack Web Development",
+    "title": "MEAN Stack Mastery: Comprehensive Guide to Full-Stack Web Development",
     "description": "Learn the MEAN stack to build modern and powerful full-stack web applications.",
     "meta-title": "MEAN Stack Mastery | Comprehensive Guide to Full-Stack Web Development",
     "meta-description": "Join our comprehensive MEAN stack course and become proficient in building full-stack web applications.",
