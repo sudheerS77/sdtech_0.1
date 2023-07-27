@@ -8,13 +8,13 @@ import "react-phone-input-2/lib/bootstrap.css";
 import Cform from "./cform";
 
 const ContactForm = () => {
-  const [userTimezone, setUserTimezone] = useState(null);
+  // const [userTimezone, setUserTimezone] = useState(null);
 
-  useEffect(() => {
-    // Get user's timezone on the client-side
-    // const timezone = moment.tz.guess();
-    // setUserTimezone(timezone);
-  }, []);
+  // useEffect(() => {
+  //   // Get user's timezone on the client-side
+  //   // const timezone = moment.tz.guess();
+  //   // setUserTimezone(timezone);
+  // }, []);
 
   return (
     <>
