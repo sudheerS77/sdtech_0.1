@@ -11,9 +11,9 @@ const Cform = ({ title, desc, formType }) => {
     firstName: "",
     lastName: "",
     fullName: "",
-    organizationName: null,
+    organizationName: "",
     email: "",
-    phoneNumber: null,
+    phoneNumber: "",
     message: "",
   });
   const handleChange = (e) => {
