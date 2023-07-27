@@ -110,7 +110,7 @@ const Navbar = () => {
                   {/* <Link href="#">
                 <li>Blogs</li>
               </Link> */}
-                  <Link href="/contact-us">
+                  <Link href="/contactUs">
                     <li>Contact Us</li>
                   </Link>
                   <Link href="/#faq">
