@@ -19,11 +19,11 @@ const CourseCategories = () => {
       children: [
         {
           name: "Python",
-          link: "python",
+          link: "python-programming",
         },
         {
           name: "Java",
-          link: "java",
+          link: "complete-java-full-stack-development",
         },
         {
           name: "JavaScript",
@@ -31,24 +31,24 @@ const CourseCategories = () => {
         },
         {
           name: "GOLANG",
-          link: "golang",
+          link: "go-programming",
         },
         {
           name: "PHP",
-          link: "php",
+          link: "php-programming",
         },
         {
           name: "R",
-          link: "r",
+          link: "R-programming",
         },
         {
           name: "C",
-          link: "c",
+          link: "c-programming",
         },
-        {
-          name: "C++",
-          link: "c++",
-        },
+        // {
+        //   name: "C++",
+        //   link: "c++",
+        // },
       ],
     },
     {
@@ -73,7 +73,7 @@ const CourseCategories = () => {
         },
         {
           name: "JavaScript",
-          link: "javascript",
+          link: "java-script",
         },
         {
           name: "NodeJS",
@@ -95,21 +95,21 @@ const CourseCategories = () => {
           name: "Mean Stack",
           link: "mean-stack",
         },
-        {
-          name: "Frontend",
-          link: "frontend",
-        },
-        {
-          name: "Backend",
-          link: "backend",
-        },
+        // {
+        //   name: "Frontend",
+        //   link: "frontend",
+        // },
+        // {
+        //   name: "Backend",
+        //   link: "backend",
+        // },
         {
           name: "flask",
           link: "flask",
         },
         {
           name: "Java Full Stack",
-          link: "java-full-stack",
+          link: "complete-java-full-stack-development",
         },
         {
           name: "Python Full Stack",
@@ -155,7 +155,7 @@ const CourseCategories = () => {
         },
         {
           name: "MongoDB",
-          link: "mongoDB",
+          link: "mongodb",
         },
       ],
     },
@@ -190,13 +190,11 @@ const CourseCategories = () => {
               </Link>
             ))}
             <div className={hcc.animate}>
-              <Image src={robotImage} alt="" width={100} height={100}/>
+              <Image src={robotImage} alt="" width={100} height={100} />
             </div>
           </div>
         </div>
-        <div>
-          
-        </div>
+        <div></div>
       </div>
     </>
   );

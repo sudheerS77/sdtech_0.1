@@ -1723,6 +1723,9 @@
       "Python",
       "Web Development"
     ],
+    "levels": [
+      null
+    ],
     "learning_outcomes": [
       "Understand the fundamentals of Flask and its architecture",
       "Set up a development environment for Flask applications",
@@ -1852,6 +1855,11 @@
       "Microservices",
       "Web Development"
     ],
+    "levels": [
+      "beginner",
+      "intermediate",
+      "advance"
+    ],
     "learning_outcomes": [
       "Develop a solid understanding of the Java programming language and its key features.",
       "Apply object-oriented programming (OOP) principles to design and build Java applications.",
@@ -1896,9 +1904,6 @@
           }
         }
       }
-    ],
-    "levels": [
-      null
     ],
     "course_content": [
       {

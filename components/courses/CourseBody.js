@@ -71,6 +71,7 @@ const CourseBody = ({ courseInfo }) => {
       else setOpenIndex([...Array(courseInfo?.course_content.length).keys()]);
     }
   };
+  console.log(courseInfo.course_content);
   return (
     <>
       <div className={cb.cb_container}>
