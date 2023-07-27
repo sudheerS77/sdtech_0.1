@@ -4,7 +4,7 @@ import React from "react";
 import HomeLayout from "@/Layout/Home.layout";
 
 const Faqs = () => {
-  return <></>;
+  return <>FAQS</>;
 };
 
 export default Faqs;
