@@ -16,6 +16,7 @@ const Cform = ({ title, desc, formType }) => {
     phoneNumber: "",
     message: "",
   });
+
   const handleChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -24,6 +25,7 @@ const Cform = ({ title, desc, formType }) => {
       [name]: value,
     }));
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const submitData = async () => {
@@ -56,6 +58,7 @@ const Cform = ({ title, desc, formType }) => {
     };
     submitData();
   };
+
   return (
     <>
       <form onSubmit={handleSubmit} method="POST">

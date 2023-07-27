@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PhoneInput from "react-phone-input-2";
-import moment from 'moment-timezone';
+import moment from "moment-timezone";
 
 import cn from "./contact.module.css";
 import "react-phone-input-2/lib/bootstrap.css";
 import Cform from "./cform";
-
 
 const ContactForm = () => {
   const [userTimezone, setUserTimezone] = useState(null);
@@ -16,7 +15,7 @@ const ContactForm = () => {
     // const timezone = moment.tz.guess();
     // setUserTimezone(timezone);
   }, []);
-  
+
   return (
     <>
       <div className={cn.cnform}>
@@ -42,7 +41,8 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-{/* <>
+{
+  /* <>
   <div className={`${cn.cn__card} ${cn.contact_details}`}>
     <div>
       <h4>New Customers</h4>
@@ -94,4 +94,5 @@ export default ContactForm;
       <span>info@sdtechacademy.com</span>
     </div>
   </div>
-</>; */}
+</>; */
+}
