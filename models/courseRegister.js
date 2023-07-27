@@ -53,7 +53,7 @@ const CourseRegisterSchema = new mongoose.Schema({
 });
 
 const courseRegisterModal =
-  mongoose.model.CourseRegister ||
-  mongoose.model("CourseRegisterd", CourseRegisterSchema);
+  mongoose.models.courseRegister ||
+  mongoose.model("courseRegister", CourseRegisterSchema);
 
 export default courseRegisterModal;

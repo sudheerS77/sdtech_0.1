@@ -16,9 +16,10 @@ export default async function handler(req, res) {
         break;
     }
   } catch (error) {
+    console.log(error);
     if (error.name === "ValidationError")
       console.log("Validation Error", error.errors);
-    else console.log("Error", error);
+    // else console.log("Error", error);
   }
 }
 

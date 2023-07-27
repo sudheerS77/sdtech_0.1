@@ -124,7 +124,7 @@ const PaidCourse = ({ id }) => {
           <>
             <Banner courseInfo={courseInfo} />
             <CourseBody courseInfo={courseInfo} />
-            <SimilarCourses />
+            {/* <SimilarCourses /> */}
           </>
         ) : (
           <>OOPSE</>
