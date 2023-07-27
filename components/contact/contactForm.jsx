@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import PhoneInput from "react-phone-input-2";
 import moment from "moment-timezone";
 
 import cn from "./contact.module.css";
