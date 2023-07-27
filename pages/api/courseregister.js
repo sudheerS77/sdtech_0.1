@@ -31,6 +31,5 @@ export default async function handler(req, res) {
 const handlePOST = async (req, res) => {
   const { data } = req.body;
   const result = await courseRegisterModal.create(data);
-  console.log(result);
-  res.status(200).json({ message: "submitted", result });
+  res.status(200).json({ message: "submitted" });
 };

@@ -31,8 +31,6 @@ const handlerGET = async (req, res) => {
 //
 const handlePOST = async (req, res) => {
   const { data } = req.body;
-  console.log(data);
   const result = await B2BContactModal.create(data);
-  console.log(result);
   return res.status(200).json({ message: "Submitted" });
 };

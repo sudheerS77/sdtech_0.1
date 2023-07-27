@@ -42,6 +42,6 @@ const B2BContactSchema = new mongoose.Schema(
 );
 
 const B2BContactModal =
-  mongoose.models.contact || mongoose.model("b2bcontact", B2BContactSchema);
+  mongoose.models.b2bcontact || mongoose.model("b2bcontact", B2BContactSchema);
 
 export default B2BContactModal;

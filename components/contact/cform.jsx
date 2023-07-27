@@ -53,11 +53,9 @@ const Cform = ({ title, desc, formType }) => {
           data: courseContactData,
         });
       }
-      console.log(result);
     };
     submitData();
   };
-  console.log({API});
   return (
     <>
       <form onSubmit={handleSubmit} method="POST">

@@ -13,10 +13,9 @@ const ContactForm = () => {
 
   useEffect(() => {
     // Get user's timezone on the client-side
-    const timezone = moment.tz.guess();
-    setUserTimezone(timezone);
+    // const timezone = moment.tz.guess();
+    // setUserTimezone(timezone);
   }, []);
-  console.log(userTimezone);
   
   return (
     <>

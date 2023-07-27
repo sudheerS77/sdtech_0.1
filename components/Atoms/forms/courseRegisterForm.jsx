@@ -53,16 +53,18 @@ const CourseRegisterForm = ({ courseName }) => {
   // const [phoneNumber, setPhoneNumber] = useState();
   const handleSubmit = (e) => {
     e.preventDefault();
-    setStudentDetails((prev) => ({
-      ...prev,
-      whatsAppNumber: phoneNumber,
-    }));
+    // setStudentDetails((prev) => ({
+    //   ...prev,
+    //   whatsAppNumber: phoneNumber,
+    // }));
 
     const submitDetails = async () => {
-      const data = await axios.post(
-        "https://sdtechacademy.com/api/courseregister",
-        { data: studentDetails }
-      );
+      const data = await axios.post(`/api/courseregister`, {
+        data: studentDetails,
+      });
+      if (data.status === 200) {
+        alert("Completed");
+      }
     };
     submitDetails();
   };
