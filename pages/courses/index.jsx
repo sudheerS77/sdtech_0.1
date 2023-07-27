@@ -2,7 +2,7 @@ import CourseCard from "@/components/home/courseCard";
 // Layout
 import HomeLayout from "@/Layout/Home.layout";
 // css files
-import allc from "./index.module.css";
+import allc from "../../styles/course.module.css";
 // Icons
 import { BsSearch } from "react-icons/bs";
 import { useEffect, useState } from "react";

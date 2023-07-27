@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 const { useRouter } = require("next/router");
-import axios from "axios";
 import Head from "next/head";
 
 // Layout
@@ -33,21 +32,67 @@ const PaidCourse = ({ id }) => {
       "webDevelopment",
       "robotics",
       "mobileAppDevelopment",
-      "databases"
+      "databases",
     ];
     var courseData = [];
     let mergedData = [];
+    const programming = [
+      "python-programming",
+      "java-script",
+      "R-programming",
+      "php-programming",
+      "go-programming",
+      "c-programming",
+    ];
+    const webDebevelopment = [
+      "html-css-js",
+      "html",
+      "css",
+      "java-script",
+      "react-js",
+      "node-js",
+      "nextjs",
+      "mern-stack",
+      "mean-stack",
+      "flask",
+      "complete-java-full-stack-development",
+      "python-full-stack",
+      "full-stack-web-development",
+    ];
+    const mobileAppDevelopment = ["react-native", "dart", "flutter"];
+    const databases = ["sql", "mongodb"];
     try {
-      for (let i = 0; i < fileList.length; i++) {
-        const jsonModule = await import(`../../data/${fileList[i]}.json`);
-        const jsonData = jsonModule.default;
-        mergedData = mergedData.concat(jsonData);
-      }
-      setMergedData(mergedData);
-      const filteredResults = mergedData?.filter((course) =>
+      const courseFileName = programming.includes(courseid)
+        ? "programming"
+        : webDebevelopment.includes(courseid)
+        ? "webDevelopment"
+        : mobileAppDevelopment.includes(courseid)
+        ? "mobileAppDevelopment"
+        : databases.includes(courseid)
+        ? "databases"
+        : null;
+      const jsonModule = await import(`../../data/${courseFileName}.json`);
+      const jsonData = jsonModule.default;
+      setMergedData(jsonData);
+      console.log(mergedData);
+      const filteredResults = jsonData?.filter((course) =>
         course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
       );
       setCourseInfo(filteredResults[0]);
+
+      // mergedData = mergedData.concat(jsonData);
+      // if () {
+      // }
+      // for (let i = 0; i < fileList.length; i++) {
+      //   const jsonModule = await import(`../../data/${fileList[i]}.json`);
+      //   const jsonData = jsonModule.default;
+      //   mergedData = mergedData.concat(jsonData);
+      // }
+      // setMergedData(mergedData);
+      // const filteredResults = mergedData?.filter((course) =>
+      //   course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
+      // );
+      // setCourseInfo(filteredResults[0]);
     } catch (error) {
       console.error("Error merging JSON files:", error);
     }
@@ -55,6 +100,7 @@ const PaidCourse = ({ id }) => {
   useEffect(() => {
     mergeJSONData();
   }, []);
+
   useEffect(() => {
     mergeJSONData();
   }, [courseid]);
@@ -113,18 +159,19 @@ const PaidCourse = ({ id }) => {
       </Head>
     );
   };
+  console.log(courseInfo);
 
   return (
     <>
-      {/* <HeadSection /> */}
       <HomeLayout>
         {isLoading ? (
           <>Loading....</>
         ) : courseInfo ? (
           <>
+            <HeadSection />
             <Banner courseInfo={courseInfo} />
             <CourseBody courseInfo={courseInfo} />
-            {/* <SimilarCourses /> */}
+            <SimilarCourses />
           </>
         ) : (
           <>OOPSE</>

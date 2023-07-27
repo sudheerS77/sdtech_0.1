@@ -1,5 +1,5 @@
 import React from "react";
-import allc from "@/pages/courses/index.module.css";
+import allc from "@/styles/course.module.css";
 import CourseCard from "../home/courseCard";
 
 const SimilarCourses = () => {
