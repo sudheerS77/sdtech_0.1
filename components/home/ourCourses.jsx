@@ -11,35 +11,35 @@ const OurCourses = () => {
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1689850188/images/pamvha9lzu6mkpmobqep.png",
       cost: 5000,
-      link: "python-programming",
+      slug: "python-programming",
     },
     {
       name: "Mastering JavaScript: From Basics to Advanced",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/enwdonu3ntfbsgpklqht.png",
       cost: 0,
-      link: "java-script",
+      slug: "java-script",
     },
     {
       name: "Web Development: Comprehensive Guide to HTML, CSS, and JavaScript",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1690368005/images/h63ykqvog4i4uht9xzg8.png",
       cost: 0,
-      link: "html-css-js",
+      slug: "html-css-js",
     },
     {
       name: "React.js Mastery: Comprehensive Guide to React.js",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1689850185/images/gwz3e2lo0j30se3qqw3v.png",
       cost: 0,
-      link: "reactjs",
+      slug: "reactjs",
     },
     {
       name: "Complete Java - Full Stack Development",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/u4jzfmfxakcgliqoca0m.png",
       cost: 0,
-      link: "complete-java-full-stack-development",
+      slug: "complete-java-full-stack-development",
     },
   ];
 
