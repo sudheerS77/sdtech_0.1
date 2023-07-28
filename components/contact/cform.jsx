@@ -5,6 +5,7 @@ import PhoneInput from "react-phone-input-2";
 import cn from "./contact.module.css";
 import "react-phone-input-2/lib/bootstrap.css";
 import { API } from "@/config";
+import { useRouter } from "next/router";
 
 const Cform = ({ title, desc, formType }) => {
   const [formDetails, setFormDetails] = useState({
@@ -16,7 +17,7 @@ const Cform = ({ title, desc, formType }) => {
     phoneNumber: "",
     message: "",
   });
-
+  const router = useRouter();
   const handleChange = (e) => {
     e.preventDefault();
     const { name, value } = e.target;
@@ -42,6 +43,13 @@ const Cform = ({ title, desc, formType }) => {
         result = await axios.post(`/api/b2bcontact`, {
           data: b2bData,
         });
+        if (result.status === 200) {
+          router.push("/thanks");
+        } else {
+          alert(
+            "Form not submitted, please contact us throught email or phone"
+          );
+        }
       } else {
         const courseContactData = {
           firstName: formDetails.firstName,
@@ -54,6 +62,13 @@ const Cform = ({ title, desc, formType }) => {
         result = await axios.post(`/api/contact`, {
           data: courseContactData,
         });
+        if (result.status === 200) {
+          router.push("/thanks");
+        } else {
+          alert(
+            "Form not submitted, please contact us throught email or phone"
+          );
+        }
       }
     };
     submitData();

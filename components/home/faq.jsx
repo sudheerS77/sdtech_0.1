@@ -182,16 +182,16 @@ const FAQ = () => {
       ],
       children: [null],
     },
-    {
-      title: "How to register for courses?",
-      description: ["???idk"],
-      children: [null],
-    },
-    {
-      title: "What is the price of the classes and how to pay?",
-      description: ["??"],
-      children: [null],
-    },
+    // {
+    //   title: "How to register for courses?",
+    //   description: ["???idk"],
+    //   children: [null],
+    // },
+    // {
+    //   title: "What is the price of the classes and how to pay?",
+    //   description: ["??"],
+    //   children: [null],
+    // },
     {
       title:
         "Why Choose SD tech academy?/ How is SDTechAcademy different from other Online Coding Class Companies?",

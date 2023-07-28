@@ -25,6 +25,7 @@ const CourseRegisterForm = ({ courseName }) => {
     parentEmail: "",
     registredCourseName: courseName ? courseName : "",
   });
+  const router = useRouter();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -62,7 +63,9 @@ const CourseRegisterForm = ({ courseName }) => {
         data: studentDetails,
       });
       if (data.status === 200) {
-        alert("Completed");
+        router.push("/thanks");
+      } else {
+        alert("Form not submitted, please contact us throught email or phone");
       }
     };
     submitDetails();
