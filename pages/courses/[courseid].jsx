@@ -112,7 +112,7 @@ const PaidCourse = ({ id }) => {
     return (
       <Head>
         <title>
-          {courseInfo.title} | {} {APP_NAME}
+          {courseInfo.title} | sdtechacademy.com
         </title>
         <meta name="description" content={courseInfo.description} />
         <meta name="keywords" content={courseInfo.tags} />
@@ -130,7 +130,7 @@ const PaidCourse = ({ id }) => {
           property="og:url"
           content={`https://sdtechacademy.com/courses/${courseInfo.slug}`}
         />
-        <meta property="og:site_name" content={`${APP_NAME}`} />
+        <meta property="og:site_name" content={"sdtechacademy.com"} />
         {/* <meta property="og:image" content={`${API}/blog/photo/${blog.slug}`} />
         <meta
       property="og:image:secure_url"
