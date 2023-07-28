@@ -1,11 +1,11 @@
 [
     {
-        "name": "SQL Mastery: Comprehensive Guide to Database Management",
-        "title": "SQL Mastery: Comprehensive Guide to Database Management",
-        "description": "Learn SQL from the basics to advanced techniques for managing databases and querying data.",
-        "meta-title": "SQL Mastery | Comprehensive Guide to Database Management",
+        "name": "MYSQL Mastery: Comprehensive Guide to Database Management",
+        "title": "MYSQL Mastery: Comprehensive Guide to Database Management",
+        "description": "Learn MYSQL from the basics to advanced techniques for managing databases and querying data.",
+        "meta-title": "MYSQL Mastery | Comprehensive Guide to Database Management",
         "meta-description": "Join our comprehensive SQL course and become proficient in managing databases and querying data.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690380107/images/dnvlz3zjzce1hkggogef.png",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557497/images/fo0u0zxtcad1clnujwmt.png",
         "slug": "sql",
         "categories": [
             "Database Management",
@@ -136,7 +136,7 @@
         "description": "Learn MongoDB from the basics to advanced techniques for managing NoSQL databases.",
         "meta-title": "MongoDB Mastery | Comprehensive Guide to NoSQL Database Management",
         "meta-description": "Join our comprehensive MongoDB course and become proficient in managing NoSQL databases.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690380107/images/puvoelgwalrr5mmu92is.png",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/oc9erpre9l7ztcd4hvki.png",
         "slug": "mongodb",
         "categories": [
             "Database Management",

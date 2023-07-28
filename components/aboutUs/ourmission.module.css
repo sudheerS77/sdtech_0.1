@@ -29,17 +29,11 @@
 }
 
 .om_card {
-    /* background-color: #ffffff95; */
     background-color: #f2f5f7a0;
-
-    /* width: 50%; */
-    /* float: left; */
-    /* border: 1px solid #04233f; */
     padding: 10px 30px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 
-    /* background: rgba(255, 255, 255, 0.05); */
     box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.19);
     backdrop-filter: blur(0.5px);
     -webkit-backdrop-filter: blur(0.5px);
@@ -49,7 +43,6 @@
 }
 
 .om_count {
-    /* background: rgba(255, 255, 255, 0.05); */
     background-color: #f2f5f7a0;
     box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.19);
     backdrop-filter: blur(0.5px);
@@ -60,7 +53,6 @@
     padding: 10px 20px;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
-    /* border: 1px solid #04233f; */
     transform: skewX(-20deg);
 
     display: flex;
@@ -98,21 +90,11 @@
         gap: 10px;
 
         background-color: #ffffff95;
-        /* 
-        padding: 10px 30px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px; */
-
         box-shadow: none;
         backdrop-filter: blur(0px);
         -webkit-backdrop-filter: blur(0px);
         border-radius: 0px;
         border: none;
-        /* box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.19);
-        backdrop-filter: blur(0.5px);
-        -webkit-backdrop-filter: blur(0.5px);
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.18); */
 
     }
 

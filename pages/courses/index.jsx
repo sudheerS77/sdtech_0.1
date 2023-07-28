@@ -10,51 +10,6 @@ import axios from "axios";
 
 const AllPaidCourses = () => {
   const [queryString, setQueryString] = useState("");
-
-  const [ourCoursesData, setOutCoursesData] = useState([
-    // {
-    //   name: "Full Stack Web Development",
-    //   image:
-    //     "https://www.webindiamaster.com/assests/images/web-development-company-1-2022.jpg",
-    //   cost: 5000,
-    //   link: "full-stack-web-development",
-    // },
-    // {
-    //   name: "Machine Learning BootCamp",
-    //   image:
-    //     "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg",
-    //   cost: 5000,
-    //   link: "machine-learning-bootcamp",
-    // },
-    // {
-    //   name: "Robotics 2.0",
-    //   image:
-    //     "https://www.thebigredgroup.com/wp-content/uploads/2021/07/5-reasons.jpg",
-    //   cost: 5000,
-    //   link: "robotics-2.0 ",
-    // },
-    // {
-    //   name: "Machine Learning BootCamp",
-    //   image:
-    //     "https://www.digitalsilk.com/wp-content/uploads/2022/09/website-development-process-1.jpg",
-    //   cost: 5000,
-    //   link: "machine-learning-bootcamp",
-    // },
-    // {
-    //   name: "Robotics 2.0",
-    //   image:
-    //     "https://www.thebigredgroup.com/wp-content/uploads/2021/07/5-reasons.jpg",
-    //   cost: 5000,
-    //   link: "robotics-2.0 ",
-    // },
-    // {
-    //   name: "Full Stack Web Development",
-    //   image:
-    //     "https://www.webindiamaster.com/assests/images/web-development-company-1-2022.jpg",
-    //   cost: 5000,
-    //   link: "full-stack-web-development",
-    // },
-  ]);
   const [filteredCourses, setFilteredCourses] = useState();
   const [mergedData, setMergedData] = useState([]);
 

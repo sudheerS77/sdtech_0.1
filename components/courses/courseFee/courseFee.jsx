@@ -71,18 +71,3 @@ const CourseFee = ({ course_content, pricing }) => {
 };
 
 export default CourseFee;
-// Easy Level Learning Outcomes:
-
-// Understand fundamental concepts in the subject.
-// Apply basic knowledge to simple tasks and exercises.
-// Build a strong foundation for further learning.
-// Medium Level Learning Outcomes:
-
-// Demonstrate a deeper understanding of advanced concepts.
-// Analyze and solve moderately complex problems.
-// Engage in collaborative learning and discussions.
-// Hard Level Learning Outcomes:
-
-// Master advanced theoretical knowledge and practices.
-// Conduct independent research and projects.
-// Exhibit leadership and critical thinking skills.

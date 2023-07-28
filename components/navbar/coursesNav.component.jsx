@@ -18,105 +18,89 @@ const CoursesNav = () => {
           slidesToShow: 4,
           slidesToScroll: 4,
           infinite: true,
-          dots: false
-        }
+          dots: false,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          initialSlide: 3
-        }
+          initialSlide: 3,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      }
-    ]
+          slidesToScroll: 2,
+        },
+      },
+    ],
   };
 
   const courses = [
     {
       name: "Python",
-      link: "python",
+      link: "python-programming",
     },
     {
       name: "Java",
-      link: "java",
-    },
-    {
-      name: "python",
-      link: "python",
-    },
-    {
-      name: "C",
-      link: "c",
-    },
-    {
-      name: "C++",
-      link: "c++",
+      link: "complete-java-full-stack-development",
     },
     {
       name: "PHP",
-      link: "php",
+      link: "php-programming",
     },
     {
-      name: "MachineLearning",
-      link: "machine-learning",
+      name: "HTML",
+      link: "html",
     },
     {
-      name: "ARM",
-      link: "arm",
+      name: "CSS",
+      link: "css",
     },
     {
-      name: "Arduino",
-      link: "arduino",
+      name: "JavaScript",
+      link: "java-script",
     },
     {
-      name: "Python",
-      link: "python",
+      name: "NodeJS",
+      link: "node-js",
     },
     {
-      name: "Java",
-      link: "java",
+      name: "ReactJS",
+      link: "react-js",
     },
     {
-      name: "python",
-      link: "python",
+      name: "NextJS",
+      link: "nextjs",
     },
     {
-      name: "C",
-      link: "c",
+      name: "React Native",
+      link: "react-native",
     },
     {
-      name: "C++",
-      link: "c++",
+      name: "Dart",
+      link: "dart",
     },
     {
-      name: "PHP",
-      link: "php",
+      name: "Flutter",
+      link: "flutter",
     },
     {
-      name: "Machine Learning",
-      link: "machine-learning",
+      name: "MYSQL",
+      link: "sql",
     },
     {
-      name: "Arduino",
-      link: "arduino",
-    },
-    {
-      name: "ARM",
-      link: "arm",
+      name: "MongoDB",
+      link: "mongodb",
     },
   ];
   const CourseNameCard = ({ data }) => {
     return (
       <div className={cnav.chip}>
-        <Link href={`/${data.link}`}>{data.name}</Link>
+        <Link href={`/courses/${data.link}`}>{data.name}</Link>
       </div>
     );
   };

@@ -1,6 +1,5 @@
 .banner {
     width: 100%;
-    /* margin-top: 70px; */
     height: 80vh;
     display: flex;
     align-items: center;
@@ -18,7 +17,6 @@
 
 .bn__card {
     padding: 50px 40px;
-    /* background: rgba(255, 255, 255, 0.05); */
     background-color: #fff;
     box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.06);
     backdrop-filter: blur(0.5px);
@@ -37,7 +35,6 @@
 
 .banner__left h1 {
     color: #091520;
-    /* white-space: nowrap; */
 
 }
 
@@ -141,8 +138,5 @@
         width: 100%;
         background-color: transparent;
     }
-    
-    
-
 }
 

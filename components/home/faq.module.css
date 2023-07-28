@@ -1,7 +1,7 @@
 .f_container{
     width: 80%;
     height: auto;
-    margin: 150px auto;
+    margin: 50px auto;
 }
 .f_header{
     width: 100%;
@@ -55,12 +55,23 @@
     color: rgb(2, 13, 45);
 }
 .f_acc_body p{
-    color: gray;
+    color: rgb(101, 97, 97);
     font-size: 1.3rem;
     font-weight: regular;
     margin: 40px 0 0 60px
 }
-
+.f_acc_body dl{
+    margin: 40px 0 0 60px
+}
+.f_acc_body dl dt{
+    font-size: 1.3rem;
+    color: rgb(44, 44, 44);
+    
+}
+.f_acc_body dl dd{
+    font-size: 1.2rem;
+    color: gray;
+}
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {

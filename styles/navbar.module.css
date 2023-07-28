@@ -126,13 +126,10 @@
         height: 100vh;
         background-color: #fff;
         position: fixed;
-        /* Fix the menu to the top of the viewport */
         top: 0;
         left: 0;
         transform: translateY(-100%);
-        /* Move the menu off-screen initially */
         transition: transform 0.3s ease;
-        /* Add a smooth transition */
         padding: 10px 0;
     }
 

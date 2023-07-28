@@ -5,7 +5,6 @@
     background-color: #242538;
     padding-top: 50px;
     padding-bottom: 150px;
-    /* border: 2px solid red; */
 }
 
 .category_header {
@@ -112,14 +111,12 @@
 
 .catbtn:hover .caticon {
     -ms-transform: rotate(180deg);
-    /* IE 9 */
     transform: rotate(20deg);
     color: white;
     transition: .5s;
 }
 
 .coursesList {
-    /* height: auto; */
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -180,8 +177,6 @@
     .category_container {
         width: 100%;
         height: auto;
-        /* min-height: 100vh;
-        max-height: fit-content; */
     }
 
     .categories {
@@ -205,8 +200,6 @@
 
 /* Media query for tablets devices (For screens between 768px and 1024px ) */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .categories {}
-
     .catbtn {
         padding: 15px 25px;
     }

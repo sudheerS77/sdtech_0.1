@@ -37,16 +37,12 @@
     background-color: #04233f;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    /* border: 1px solid gray; */
-    /* background-color: #FFCC00; */
-    /* border: 1px solid #FFCC00; */
+    
 }
 
 .allc_body {
     width: 80%;
     margin: 80px auto;
-    /* display: flex;
-    flex-wrap: wrap;    */
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;

@@ -48,21 +48,3 @@ const CourseCard = ({ data }) => {
 };
 
 export default CourseCard;
-{
-  /* <div className={hc.oc_card}>
-          <div className={hc.oc_card_h}>
-            <img src={data.image} alt="" />
-            <div className={hc.oc_card_tags}>
-                            <span>50% OFF</span>
-                            <span>10% OFF</span>
-                        </div>
-          </div>
-          <div className={hc.oc_card_b}>
-            <h4>{data.name}</h4>
-            <div className={hc.oc_card_bprice}>
-              <span className={hc.oc_price}>₹ {data.cost}</span>
-              <span className={hc.oc_live}>Live</span>
-            </div>
-          </div>
-        </div> */
-}

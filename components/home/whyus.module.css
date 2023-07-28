@@ -22,9 +22,6 @@
 .wu_section {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: flex-start;
-    justify-content: center;
-    */
     gap: 50px;
     margin-top: 100px;
 }
@@ -32,9 +29,6 @@
 .wu_card {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
-
     width: 400px;
     flex: 1 0 300px;
 
@@ -42,7 +36,6 @@
     padding: 10px 10px;
     background-color: white;
     box-shadow: none;
-    /* border: 1px solid #04233fb5; */
     border-radius: 15px;
 
     background: rgba(255, 255, 255, 0.05);
@@ -54,7 +47,6 @@
 }
 
 .wu_card:hover {
-    /* transform: translateX(-1em); */
     transform: translateY(-1em);
     transition: .5s;
     box-shadow: 5px 15px 15px rgba(128, 128, 128, 0.288);
@@ -82,7 +74,6 @@
 }
 
 .wu_card h4 {
-    /* width: 80%; */
     font-size: 1.5rem;
     font-weight: bold;
     font-family: serif;
@@ -91,7 +82,6 @@
 }
 
 .wu_card p {
-    /* color: rgba(0, 0, 0, 0.819); */
     font-size: 1rem;
     font-weight: light;
     text-align: start;

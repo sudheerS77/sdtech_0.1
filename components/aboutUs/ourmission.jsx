@@ -5,7 +5,7 @@ import om from "./ourmission.module.css";
 
 import ourmissionBg from "../../assets/images/ourmisisonbg.png";
 
-const OurMission = () => {
+const   OurMission = () => {
   return (
     <>
       <div className={om.om_container}>

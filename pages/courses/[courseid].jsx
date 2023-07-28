@@ -73,7 +73,6 @@ const PaidCourse = ({ id }) => {
         : null;
       if (courseFileName === null) {
         setCourseInfo();
-        t;
       } else {
         const jsonModule = await import(`../../data/${courseFileName}.json`);
         const jsonData = jsonModule.default;
@@ -113,26 +112,6 @@ const PaidCourse = ({ id }) => {
   const HeadSection = () => {
     return (
       <Head>
-        {/* <title>
-      {blog.title} | {APP_NAME}
-    </title>
-    <meta name="description" content={blog.mdesc} />
-    <link rel="canonical" href={`${DOMAIN}/blogs/${query.slug}`} />
-
-    <meta property="og:title" content={`${blog.title}| ${APP_NAME}`} />
-    
-    <meta property="og:description" content={blog.mdesc} />
-    <meta property="og:type" content="webiste" />
-    <meta property="og:url" content={`${DOMAIN}/blogs/${query.slug}`} />
-    <meta property="og:site_name" content={`${APP_NAME}`} />
-
-    <meta property="og:image" content={`${API}/blog/photo/${blog.slug}`} />
-    <meta
-      property="og:image:secure_url"
-      ccontent={`${API}/blog/photo/${blog.slug}`}
-    />
-    <meta property="og:image:type" content="image/jpg" />
-    <meta property="fb:app_id" content={`${FB_APP_ID}`} /> */}
         <title>
           {courseInfo.title} | {} {APP_NAME}
         </title>
@@ -176,7 +155,7 @@ const PaidCourse = ({ id }) => {
             <HeadSection />
             <Banner courseInfo={courseInfo} />
             <CourseBody courseInfo={courseInfo} />
-            <SimilarCourses />
+            {/* <SimilarCourses /> */}
           </>
         ) : (
           <>OOPSE</>

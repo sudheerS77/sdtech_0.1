@@ -13,9 +13,6 @@
     justify-content: space-between;
 }
 
-.oc_header h4 {
-    
-}
 
 .oc_view_all {
     text-decoration: none;
@@ -57,14 +54,8 @@
 .oc_card {
     width: auto;
     height: auto;
-
-    /* background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(0.5px);
-    -webkit-backdrop-filter: blur(0.5px);
-    */
     border: 1px solid rgba(0, 0, 0, 0.2); 
-    border-radius: 10px; /* Adjust the border radius as per your element's design */
+    border-radius: 10px;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5), 0 0 0 8px rgba(255, 255, 255, 0.3), 0 0 0 12px rgba(255, 255, 255, 0.2), 0 0 0 16px rgba(255, 255, 255, 0.1);
 
 }
@@ -80,7 +71,6 @@
 }
 
 .oc_card_h {
-    /* width: 280px; */
     height: 190px;
     margin-bottom: 10px;
     display: flex;
@@ -97,8 +87,7 @@
   top: 0;
   width: 50%;
   height: 100%;
-  background-color: #f0f0f027; /* Same as card background color */
-  /* border-radius: 50%; */
+  background-color: #f0f0f027;
 }
 
 /* Left bend design */
@@ -121,25 +110,16 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border: 1px solid rgba(128, 128, 128, 0.521);
-    /* background: #00d9ff3b; */
-
-
-  /* Optional: Add a max-width to prevent the image from stretching too much on larger screens */
-  /* max-width: 100%;  */
 
 }
 
 .oc_card_b {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     background-color: #fff;
-    /* gap: 10px; */
     padding: 10px 10px;
-
-
 }
 
 .oc_card_b h4 {

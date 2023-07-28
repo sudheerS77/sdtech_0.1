@@ -130,7 +130,7 @@ const CourseCategories = () => {
           link: "dart",
         },
         {
-          name: "FLutter",
+          name: "Flutter",
           link: "flutter",
         },
       ],

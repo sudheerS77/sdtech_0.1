@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import HomeLayout from "@/Layout/Home.layout";
 import HomeHero from "@/components/home/HomeHero";
 import CourseCategories from "@/components/home/courseCategories";
@@ -58,7 +57,7 @@ export default function Home() {
         <CourseCategories />
         <OurCourses />
         <WhyUs />
-        <FAQ />
+        {/* <FAQ /> */}
       </HomeLayout>
     </>
   );
