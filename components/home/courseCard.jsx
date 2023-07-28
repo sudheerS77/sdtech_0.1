@@ -24,7 +24,9 @@ const CourseCard = ({ data }) => {
               <p>{data?.description?.slice(0, 140)+'...'}</p>
             </div>
             <div className={hc.oc_card_bprice}>
-              <span className={hc.oc_price}>₹ {data?.cost}</span>
+              <span className={hc.oc_price}>
+                {/* ₹ {data?.cost} */}
+                </span>
               <span className={hc.oc_live}>
                 <span className={hc.live__symbol}></span>
                 Live
