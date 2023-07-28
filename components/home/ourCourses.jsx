@@ -40,7 +40,7 @@ const OurCourses = () => {
       cost: 0,
       description:
         "Learn React.js from the basics to advanced techniques for building modern web applications.",
-      slug: "reactjs",
+      slug: "react-js",
     },
     {
       name: "Complete Java - Full Stack Development",
