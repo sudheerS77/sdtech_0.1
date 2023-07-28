@@ -20,7 +20,7 @@ import robotics from "../../data/robotics.json";
 const PaidCourse = ({ id }) => {
   const router = useRouter();
 
-  const { courseid, coursename } = router.query;
+  const { courseid } = router.query;
 
   const [courseInfo, setCourseInfo] = useState("");
   const [isLoading, setIsLoading] = useState(false);

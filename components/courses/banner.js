@@ -19,10 +19,11 @@ const Banner = ({ courseInfo }) => {
           <p>{data?.description}</p>
           <div>
             <Link
-              href={{
-                pathname: "/courses/course-register",
-                query: { name: data?.name },
-              }}
+              href="/courses/course-register"
+              // {{
+              //   pathname: "/courses/course-register",
+              //   // query: { name: data?.name },
+              // }}
             >
               <button>Enroll Now</button>
             </Link>

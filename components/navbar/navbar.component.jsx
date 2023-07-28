@@ -14,7 +14,6 @@ const Navbar = () => {
 
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    console.log(openMenu);
   };
 
   return (
