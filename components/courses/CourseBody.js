@@ -51,7 +51,6 @@ const CourseBody = ({ courseInfo }) => {
   }, [level]);
 
   const toggleAccordion = (index) => {
-    console.log(index);
     // setOpenIndex((prev) => (prev === index ? null : index));
     setOpenIndex((prevIndexes) => {
       if (prevIndexes.includes(index)) {
@@ -71,7 +70,6 @@ const CourseBody = ({ courseInfo }) => {
       else setOpenIndex([...Array(courseInfo?.course_content.length).keys()]);
     }
   };
-  console.log(courseInfo.course_content);
   return (
     <>
       <div className={cb.cb_container}>

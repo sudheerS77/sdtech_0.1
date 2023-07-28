@@ -77,7 +77,6 @@ const PaidCourse = ({ id }) => {
         const jsonModule = await import(`../../data/${courseFileName}.json`);
         const jsonData = jsonModule.default;
         setMergedData(jsonData);
-        console.log(mergedData);
         const filteredResults = jsonData?.filter((course) =>
           course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
         );
@@ -143,7 +142,6 @@ const PaidCourse = ({ id }) => {
       </Head>
     );
   };
-  console.log(courseInfo);
 
   return (
     <>
