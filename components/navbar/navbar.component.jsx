@@ -78,8 +78,8 @@ const Navbar = () => {
                   </Link>
                 </ul>
                 <div className={navcss.btn_group}>
-                  <button className={navcss.signin_btn}>SignIn</button>
-                  <button className={navcss.signup_btn}>SignUp</button>
+                  {/* <button className={navcss.signin_btn}>SignIn</button>
+                  <button className={navcss.signup_btn}>SignUp</button> */}
                 </div>
               </div>
             </div>
