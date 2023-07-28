@@ -211,7 +211,7 @@ const CourseBody = ({ courseInfo }) => {
           </div>
         </div>
       </div>
-      <div className={cb.fee_container}>
+      {/* <div className={cb.fee_container}>
         {level !== null ? (
           <CourseFee
             course_content={data?.course_content}
@@ -220,7 +220,7 @@ const CourseBody = ({ courseInfo }) => {
         ) : (
           <></>
         )}
-      </div>
+      </div> */}
     </>
   );
 };

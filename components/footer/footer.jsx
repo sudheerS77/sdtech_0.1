@@ -80,7 +80,7 @@ const Footer = () => {
                   <span className={footer.quick_links_icon}>
                     <BsPhoneFill />
                   </span>
-                  <p>+91 98598 59852</p>
+                  <p>+98 991 203 9806</p>
                 </Link>
               </li>
               <li>
@@ -88,7 +88,7 @@ const Footer = () => {
                   <span className={footer.quick_links_icon}>
                     <IoLogoWhatsapp />
                   </span>
-                  <p>+91 98598 59852</p>
+                  <p>+98 991 203 9806</p>
                 </Link>
               </li>
               <li>
@@ -96,7 +96,7 @@ const Footer = () => {
                   <span className={footer.quick_links_icon}>
                     <MdEmail />
                   </span>
-                  <p>info@gmail.com</p>
+                  <p>contact@sdtechacademy.com</p>
                 </Link>
               </li>
             </ul>
