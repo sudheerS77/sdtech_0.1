@@ -97,7 +97,7 @@ const PaidCourse = ({ id }) => {
       // );
       // setCourseInfo(filteredResults[0]);
     } catch (error) {
-      console.error("Error merging JSON files:", error);
+      // console.error("Error merging JSON files:", error);
     }
   };
   useEffect(() => {
@@ -120,7 +120,7 @@ const PaidCourse = ({ id }) => {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <link rel="canonical" href={`${DOMAIN}/courses/${courseInfo.slug}`} />
+        <link rel="canonical" href={`https://sdtechacademy.com/courses/${courseInfo.slug}`} />
         <meta
           property="og:description"
           content={courseInfo.description?.slice(0, 160)}
@@ -128,7 +128,7 @@ const PaidCourse = ({ id }) => {
         <meta property="og:type" content="webiste" />
         <meta
           property="og:url"
-          content={`${DOMAIN}/courses/${courseInfo.slug}`}
+          content={`https://sdtechacademy.com/courses/${courseInfo.slug}`}
         />
         <meta property="og:site_name" content={`${APP_NAME}`} />
         {/* <meta property="og:image" content={`${API}/blog/photo/${blog.slug}`} />
