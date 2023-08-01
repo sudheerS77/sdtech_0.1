@@ -5,10 +5,9 @@ import { BiPlus, BiMinus } from "react-icons/bi";
 
 const Accordion = ({ data, count }) => {
   const [clicked, setClicked] = useState(false);
-  console.log(data, count);
   return (
     <>
-      <div className={hf.f_accordion}>
+      <div className={hf.f_accordion} key={count}>
         <div>
           <div className={hf.f_acc_head} onClick={() => setClicked(!clicked)}>
             <div className={hf.f_acc_icon}>
@@ -24,11 +23,11 @@ const Accordion = ({ data, count }) => {
               ))}
               <dl>
                 {data?.children.length > 0 ? (
-                  data.children.map((c_data, index) => (
+                  data.children.map((c_data, indx) => (
                     <>
-                      <dt>{c_data?.title}</dt>
-                      {c_data?.data?.map((c_data, ind) => (
-                        <dd key={ind}> - {c_data}</dd>
+                      <dt key={indx + "1"}>{c_data?.title}</dt>
+                      {c_data?.data?.map((c_data, ind2x) => (
+                        <dd key={indx + "12"}> - {c_data}</dd>
                       ))}
                     </>
                   ))
@@ -49,6 +48,7 @@ const Accordion = ({ data, count }) => {
 const FAQ = () => {
   const faqs = [
     {
+      id: "1",
       title: "What is SD tech academy?",
       description: [
         "SD Tech Academy is an international education and tech research company.",
@@ -57,6 +57,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "Tell us more about your academy?",
       description: [
         "We are a team of senior programmers and engineers who have taught for years in the field of robotics, programming, Web development, industrial design, etc., and have carried out various industrial projects nationally and internationally, and members of this team have more than 12 international positions and awards In international competitions.",
@@ -64,6 +65,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "What is the purpose of SD Tech Academy?",
       description: [
         "Our purpose is to create an international and safe platform for learning everything you want to learn with guaranteed quality and expertise. Also, our guidance and support team will be by your side in this learning path to make the path smoother and clear for you and we prepare you to enter the job market and the real world.",
@@ -87,6 +89,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "Can I take this course if I am from non-technical background?",
       description: [
         "Yes, most of our courses start from the very basic and since it is a technology anybody and everyone can take part in it. (However please check course pre-requisites once before enrolling)",
@@ -94,6 +97,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "How do I know that this course is right for me?",
       description: [
         "If you don&#39;t know which course is right for you or if you have doubts about your interests, our expert team is here to help you and you can use our free consultation. We are always here to help and guide you.",
@@ -101,12 +105,14 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "7.How are the courses held?",
       description: [
         "Our courses are divided into two categories that you can customize according to your needs.",
       ],
       children: [
         {
+          id: "1",
           title: "Online classes:",
           data: [
             "Online group classes (7 to 13 students)",
@@ -115,6 +121,7 @@ const FAQ = () => {
           ],
         },
         {
+          id: "1",
           title: "Offline classes:",
           data: [
             "Face-to-face offline classes (in person)",
@@ -125,6 +132,7 @@ const FAQ = () => {
       ],
     },
     {
+      id: "1",
       title: "How can I contact you (real person)?",
       description: [
         "You can contact us through the contact section on the site or by email or contact number, and our support team is ready to answer your questions.",
@@ -132,6 +140,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "How can I communicate with you (business and cooperation)?",
       description: [
         "Please fill out the relevant form in the contact section or via email or contact number. We are ready to cooperate with universities, schools and institutes",
@@ -139,6 +148,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "Is there a section to order a project in SD Tech Academy?",
       description: [
         "Yes, but currently this section is not active on the site and you can send your request to do this through the contact form.",
@@ -146,6 +156,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "How to check the information of each course?",
       description: [
         "Enter the page of your desired course, All the contents are completely detailed and exclusive to SD Tech Academy.",
@@ -154,6 +165,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "Are sd tech academy courses suitable for freshers?",
       description: [
         "Yes, most of our courses have no pre-requisite until and unless it is specifically mentioned in the course description. And in most courses, we teach everything that is needed.",
@@ -161,6 +173,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "Can we contact the trainer directly?",
       description: [
         "Unfortunately, that cannot be done. We monitor each and every student and teacher to maintain quality and educational and moral evaluation , so all the work is done through our communication.",
@@ -168,6 +181,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "Does SDTechAcademy only provide online classes?",
       description: [
         "No, we hold online and offline classes in several models so that you can find the course that suits your needs.",
@@ -175,6 +189,7 @@ const FAQ = () => {
       children: [null],
     },
     {
+      id: "1",
       title: "What is the age group for which SDTechAcademy offers classes?",
       description: [
         "The courses are completely assigned for each age group, which can be seen in the description of each course.",
@@ -183,16 +198,19 @@ const FAQ = () => {
       children: [null],
     },
     // {
+    // id: "1",
     //   title: "How to register for courses?",
     //   description: ["???idk"],
     //   children: [null],
     // },
     // {
+    // id: "1",
     //   title: "What is the price of the classes and how to pay?",
     //   description: ["??"],
     //   children: [null],
     // },
     {
+      id: "1",
       title:
         "Why Choose SD tech academy?/ How is SDTechAcademy different from other Online Coding Class Companies?",
       description: [
@@ -224,13 +242,15 @@ const FAQ = () => {
           </p>
         </div>
         <div className={hf.f_acc_container}>
-          {faqs.length > 0 ? (
-            faqs.map((data, indx) => (
-              <Accordion data={data} key={indx} count={indx} />
-            ))
-          ) : (
-            <></>
-          )}
+          {
+            faqs.length > 0 &&
+              faqs.map((data, indx) => (
+                <Accordion data={data} key={indx} count={indx} />
+              ))
+            // : (
+            //   <></>
+            // )
+          }
         </div>
       </div>
     </>

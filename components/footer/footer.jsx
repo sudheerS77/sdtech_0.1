@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import footer from "./footer.module.css";
 import logo from "../../assets/logos/logo.png";
@@ -15,6 +15,14 @@ import { MdEmail, MdFacebook } from "react-icons/md";
 import Link from "next/link";
 
 const Footer = () => {
+  const [timezone, setTimezone] = useState("");
+
+  useEffect(() => {
+    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    setTimezone(userTimezone);
+  }, []);
+
+  // const rup = timezone === "Asia/Calcutta" ? "rupees" : "$";
   return (
     <>
       <footer>
@@ -76,28 +84,56 @@ const Footer = () => {
             <h4>Quick Contact</h4>
             <ul>
               <li>
-                <Link href="">
+                <a
+                  href={`tel:${
+                    timezone === "Asia/Calcutta"
+                      ? "+917032918003"
+                      : "+989912039806"
+                  }`}
+                  // target="_blank"
+                >
+                  {/* <Link href=""> */}
                   <span className={footer.quick_links_icon}>
                     <BsPhoneFill />
                   </span>
-                  <p>+98 991 203 9806</p>
-                </Link>
+                  <p>
+                    {timezone === "Asia/Calcutta"
+                      ? "+91 7032908003"
+                      : "+98 991 203 9806"}
+                  </p>
+                  {/* </Link> */}
+                </a>
               </li>
               <li>
-                <Link href="">
+                <a
+                  href={`https://wa.me/${
+                    timezone === "Asia/Calcutta"
+                      ? "+917032918003"
+                      : "+989912039806"
+                  }`}
+                  target="_blank"
+                >
+                  {/* <Link href=""> */}
                   <span className={footer.quick_links_icon}>
                     <IoLogoWhatsapp />
                   </span>
-                  <p>+98 991 203 9806</p>
-                </Link>
+                  <p>
+                    {timezone === "Asia/Calcutta"
+                      ? "+91 7032908003"
+                      : "+98 991 203 9806"}
+                  </p>
+                  {/* </Link> */}
+                </a>
               </li>
               <li>
-                <Link href="">
+                {/* <Link href=""> */}
+                <a href="mailto:contact@sdtechacademy.com" target="_blank">
                   <span className={footer.quick_links_icon}>
                     <MdEmail />
                   </span>
                   <p>contact@sdtechacademy.com</p>
-                </Link>
+                </a>
+                {/* </Link> */}
               </li>
             </ul>
           </div>
