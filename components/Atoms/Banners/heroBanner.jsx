@@ -3,7 +3,7 @@ import React from "react";
 import bn from "./banner.module.css";
 import Image from "next/image";
 
-const HeroBanner = ({ bannerData }) => {
+const HeroBanner = ({ bannerData, poster }) => {
   return (
     <>
       <div className={bn.banner}>
@@ -14,13 +14,13 @@ const HeroBanner = ({ bannerData }) => {
             <b>{bannerData?.header2}</b>
             <p>{bannerData?.description}</p>
           </div>
-          {/* {bannerData?.poster !== null ? (
+          {poster === true ? (
             <div className={`${bn.banner__right}`}>
               <img src={bannerData?.poster} alt="image" />
             </div>
           ) : (
             <></>
-          )} */}
+          )}
         </div>
       </div>
     </>

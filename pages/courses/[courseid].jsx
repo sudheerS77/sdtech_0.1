@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 const { useRouter } = require("next/router");
 import Head from "next/head";
@@ -111,16 +112,17 @@ const PaidCourse = ({ id }) => {
   const HeadSection = () => {
     return (
       <Head>
-        <title>
-          {courseInfo.title} | sdtechacademy.com
-        </title>
+        <title>{courseInfo.title} | sdtechacademy.com</title>
         <meta name="description" content={courseInfo.description} />
         <meta name="keywords" content={courseInfo.tags} />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <link rel="canonical" href={`https://sdtechacademy.com/courses/${courseInfo.slug}`} />
+        <link
+          rel="canonical"
+          href={`https://sdtechacademy.com/courses/${courseInfo.slug}`}
+        />
         <meta
           property="og:description"
           content={courseInfo.description?.slice(0, 160)}

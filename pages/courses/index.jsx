@@ -1,3 +1,4 @@
+"use client";
 import CourseCard from "@/components/home/courseCard";
 // Layout
 import HomeLayout from "@/Layout/Home.layout";
@@ -9,14 +10,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const AllPaidCourses = () => {
-  const [queryString, setQueryString] = useState("");
+  // const [queryString, setQueryString] = useState("");
   const [filteredCourses, setFilteredCourses] = useState();
   const [mergedData, setMergedData] = useState([]);
 
   const handleInputChange = (e) => {
     // Search string
     const searchInput = e.target.value;
-    setQueryString(searchInput);
+    // setQueryString(searchInput);
     if (searchInput !== "") {
       const filteredResults = mergedData?.filter((course) =>
         course?.name?.toLowerCase().includes(searchInput.toLowerCase())
@@ -44,7 +45,7 @@ const AllPaidCourses = () => {
       "webDevelopment",
       // "robotics",
       "mobileAppDevelopment",
-      "databases"
+      "databases",
     ];
     var courseData = [];
     const mergeJSONData = async () => {

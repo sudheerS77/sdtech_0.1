@@ -21,7 +21,7 @@ const AboutUs = () => {
   return (
     <>
       <HomeLayout>
-        <HeroBanner data={bannerData} />
+        <HeroBanner bannerData={bannerData} poster={false} />
         <OurMission />
         <ExperiencedFaculty />
         <AboutusComponents />
