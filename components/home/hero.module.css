@@ -55,7 +55,8 @@
 
 .home_image {
     width: 50%;
-    height: 60vh;
+    height: auto;
+    /* height: 60vh; */
 }
 
 .programming_list_image {

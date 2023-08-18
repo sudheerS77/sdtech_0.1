@@ -10,10 +10,13 @@
 
 .csnav {
     width: 90%;
+    /* border: 2px solid green; */
+    text-align: center;
 }
 
 .chip {
-    width: fit-content;
+    width: auto;
+    /* border: 2px solid red; */
 }
 
 .chip a {

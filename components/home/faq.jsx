@@ -82,7 +82,7 @@ const FAQ = () => {
     },
     {
       title:
-        "If I don&#39;t have any previous background, can I use SD Tech Academy courses?",
+        "If I don't have any previous background, can I use SD Tech Academy courses?",
       description: [
         "Yes, The course is designed and leveled in such a way that it will match your age and level. Even if you are a beginner or zero-beginner we have courses that suits you.",
       ],
@@ -100,7 +100,7 @@ const FAQ = () => {
       id: "1",
       title: "How do I know that this course is right for me?",
       description: [
-        "If you don&#39;t know which course is right for you or if you have doubts about your interests, our expert team is here to help you and you can use our free consultation. We are always here to help and guide you.",
+        "If you don't know which course is right for you or if you have doubts about your interests, our expert team is here to help you and you can use our free consultation. We are always here to help and guide you.",
       ],
       children: [null],
     },
