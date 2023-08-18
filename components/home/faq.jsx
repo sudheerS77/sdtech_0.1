@@ -106,7 +106,7 @@ const FAQ = () => {
     },
     {
       id: "1",
-      title: "7.How are the courses held?",
+      title: "How are the courses held?",
       description: [
         "Our courses are divided into two categories that you can customize according to your needs.",
       ],
