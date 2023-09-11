@@ -26,7 +26,8 @@ import cf from "./courseFee/courseFee.module.css";
 
 const CourseBody = ({ courseInfo }) => {
   const data = courseInfo;
-  const [level, setLevel] = useState(courseInfo?.levels[0] || null);
+  console.log(courseInfo);
+  const [level, setLevel] = useState(data?.levels[0] || "default");
   const [courseContent, setCourseContent] = useState();
   const [openIndex, setOpenIndex] = useState([]);
   const [expandAll, setExpandAll] = useState(false);
@@ -35,7 +36,7 @@ const CourseBody = ({ courseInfo }) => {
     setLevel(e.target.name);
   };
   const getLevelContent = () => {
-    data?.course_content?.filter((item) => {
+    data?.course_content?.technicalRoadMap?.filter((item) => {
       if (item.level === level) {
         setCourseContent(item?.data);
       }
@@ -70,6 +71,7 @@ const CourseBody = ({ courseInfo }) => {
       else setOpenIndex([...Array(courseInfo?.course_content.length).keys()]);
     }
   };
+
   return (
     <>
       <div className={cb.cb_container}>

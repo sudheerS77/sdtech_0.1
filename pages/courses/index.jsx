@@ -8,10 +8,14 @@ import allc from "../../styles/course.module.css";
 import { BsSearch } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import FilterComponent from "@/components/courses/filters/filter.component";
+import RowCourseCard from "@/components/home/rowCourse.card";
+import allCourses from "../../data/allcourses.json";
 
 const AllPaidCourses = () => {
   // const [queryString, setQueryString] = useState("");
   const [filteredCourses, setFilteredCourses] = useState();
+  const [allCoursesData, setAllCoursesData] = useState([]);
   const [mergedData, setMergedData] = useState([]);
 
   const handleInputChange = (e) => {
@@ -19,25 +23,28 @@ const AllPaidCourses = () => {
     const searchInput = e.target.value;
     // setQueryString(searchInput);
     if (searchInput !== "") {
-      const filteredResults = mergedData?.filter((course) =>
+      const filteredResults = allCoursesData?.filter((course) =>
         course?.name?.toLowerCase().includes(searchInput.toLowerCase())
       );
       setFilteredCourses(filteredResults);
     } else {
-      setFilteredCourses(mergedData);
+      setFilteredCourses(allCoursesData);
     }
   };
 
-  // const getCourses = async () => {
-  //   const data = await axios.get("http://localhost:3000//api/course/route");
-  //   console.log(data?.data.data);
-  //   setOutCoursesData(data.data?.data);
-  //   setFilteredCourses(data.data?.data);
-  // };
+  const getCourses = async () => {
+    const data = await axios.get("http://localhost:3000/api/course/route");
+    console.log(data?.data.data);
+    // setOutCoursesData(data.data?.data);
+    setFilteredCourses(data.data?.data);
+  };
 
   useEffect(() => {
     // getCourses();
-  });
+    console.log(allCourses);
+    setAllCoursesData(allCourses);
+    setFilteredCourses(allCourses);
+  }, []);
 
   useEffect(() => {
     const fileList = [
@@ -62,8 +69,8 @@ const AllPaidCourses = () => {
         console.error("Error merging JSON files:", error);
       }
     };
-    mergeJSONData();
-  }, []);
+    // mergeJSONData();
+  }, [false]);
   return (
     <>
       <HomeLayout>
@@ -78,20 +85,23 @@ const AllPaidCourses = () => {
               <BsSearch />
             </span>
           </div>
-          <div className={allc.allc_body}>
-            {filteredCourses?.length !== 0 ? (
-              <>
-                {filteredCourses?.map((data, indx) => (
-                  <CourseCard key={indx} data={data} />
-                ))}
-              </>
-            ) : (
-              <>
-                <div className={allc.notFound}>
-                  <p>!oopse</p>
-                </div>
-              </>
-            )}
+          <div className={allc.allc_courses_container}>
+            <FilterComponent />
+            <div className={allc.allc_body}>
+              {filteredCourses?.length !== 0 ? (
+                <>
+                  {filteredCourses?.map((data, indx) => (
+                    <RowCourseCard key={indx} data={data} />
+                  ))}
+                </>
+              ) : (
+                <>
+                  <div className={allc.notFound}>
+                    <p>!oopse</p>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </HomeLayout>

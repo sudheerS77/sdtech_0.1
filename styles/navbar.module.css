@@ -16,6 +16,9 @@
     top: 0;
     left: 0;
     z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar {
@@ -31,17 +34,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70px;
+    /* height: 50px; */
     width: auto;
 }
 
 .img {
+    /* border: 2px solid green; */
     cursor: pointer;
-    width: 150px;
-    height: 55px;
+    /* width: 100%; */
+    /* width: 200px; */
+    width: auto;
+    height: auto;
+    /* width: 200px;
+    height: 60px; */
+    background-color: red;
 
 }
-
+.mimg{
+    display: none;
+}
 .menu ul {
     display: flex;
 }
@@ -176,3 +187,6 @@
         flex-direction: column;
     }
 }
+
+
+

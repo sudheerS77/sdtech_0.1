@@ -1,0 +1,3324 @@
+[
+    {
+        "_id": "64eed26eda05b4219356ef4c",
+        "name": "Web Development: Comprehensive Guide to HTML, CSS, and JavaScript",
+        "title": "Web Development: Comprehensive Guide to HTML, CSS, and JavaScript",
+        "description": "Learn web development from the basics of HTML, CSS to building interactive websites with JavaScript.",
+        "meta_title": "Web Development Course | Comprehensive Guide to HTML, CSS, and JavaScript",
+        "meta_description": "Join our comprehensive web development course and become proficient in creating dynamic websites using HTML, CSS, and JavaScript.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690558647/images/fcvphmn3rdszg3vausn0.png",
+        "slug": "html-css-js",
+        "categories": [
+            "Web Development",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Front-end Development",
+            "Web Design"
+        ],
+        "course_category": "64eed1a5f83277710d14b98f",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the core concepts of HTML, CSS, and JavaScript",
+            "Create static web pages using HTML and CSS",
+            "Implement responsive web design with CSS media queries",
+            "Add interactivity and dynamic content using JavaScript",
+            "Build interactive web applications and projects",
+            "Optimize websites for performance and accessibility",
+            "Deploy websites to hosting platforms"
+        ],
+        "course_content": {
+            "_id": "64eed26dda05b4219356ef28",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to Web Development",
+                            "subtopics": [
+                                "Welcome & Course Introduction",
+                                "Understanding the Role of HTML in Web Development",
+                                "Exploring the Web Development Workflow",
+                                "Overview of HTML, CSS, and JavaScript",
+                                "Setting Up Your Development Environment",
+                                "Configuring Visual Studio Code (VSCode)"
+                            ],
+                            "_id": "64eed26dda05b4219356ef2a"
+                        },
+                        {
+                            "topicName": "HTML Basics",
+                            "subtopics": [
+                                "Anatomy of an HTML Document",
+                                "Creating a Simple Web Page",
+                                "Using Paragraph and Heading Elements",
+                                "Introduction to Chrome Developer Tools",
+                                "Document Structure: Head and Body",
+                                "Creating and Using HTML Comments",
+                                "Semantic HTML Elements for Improved Accessibility",
+                                "Practical Exercise: Building a Basic Web Page"
+                            ],
+                            "_id": "64eed26dda05b4219356ef2b"
+                        },
+                        {
+                            "topicName": "Working with Content",
+                            "subtopics": [
+                                "Organizing Information with Lists",
+                                "Enhancing Text with Emphasis and Strong Elements",
+                                "Nesting HTML Elements for Hierarchical Structure",
+                                "Creating Superscripts and Subscripts",
+                                "Inline vs. Block-Level Elements",
+                                "Crafting Hyperlinks with <a> Tags",
+                                "Exploring Various Link Types (Internal, External, Email)",
+                                "Adding Images to Web Pages: <img> Element"
+                            ],
+                            "_id": "64eed26dda05b4219356ef2c"
+                        },
+                        {
+                            "topicName": "Creating Interactive Forms",
+                            "subtopics": [
+                                "Understanding the Role of Forms in Web Applications",
+                                "Building Text Inputs and Buttons",
+                                "The <form> Element: Capturing User Input",
+                                "Using Attributes like Name, Placeholder, and Label",
+                                "Working with Different Input Types (Checkbox, Radio, Textarea)",
+                                "Creating Dropdown Menus with <select> and <option>",
+                                "Form Validation and Security Best Practices",
+                                "Practical Exercise: Designing a User Registration Form"
+                            ],
+                            "_id": "64eed26dda05b4219356ef2d"
+                        },
+                        {
+                            "topicName": "Advanced HTML Elements",
+                            "subtopics": [
+                                "Introduction to Span and Div Elements",
+                                "Constructing Tables for Structured Data Display",
+                                "Utilizing Semantic HTML for Improved SEO",
+                                "Exploring HTML5 Semantic Elements (header, nav, article, footer, etc.)",
+                                "Responsive Web Design and Media Queries",
+                                "HTML Entities and Special Characters",
+                                "Practical Exercise: Creating a Simple Web Page Using Semantic Elements"
+                            ],
+                            "_id": "64eed26dda05b4219356ef2e"
+                        },
+                        {
+                            "topicName": "HTML and Accessibility",
+                            "subtopics": [
+                                "Importance of Accessibility in Web Development",
+                                "A11y Standards and Guidelines",
+                                "Using Semantic HTML for Accessibility",
+                                "Adding ARIA Roles and Attributes",
+                                "Testing Web Pages for Accessibility"
+                            ],
+                            "_id": "64eed26dda05b4219356ef2f"
+                        },
+                        {
+                            "topicName": "Introduction to CSS Basics",
+                            "subtopics": [
+                                "Introduction to CSS",
+                                "Working Within Inline Styles",
+                                "Writing Internal Styles",
+                                "External Styles: The Optimal Approach",
+                                "Anatomy of CSS",
+                                "The Element Selector",
+                                "CSS Basics Exercise"
+                            ],
+                            "_id": "64eed26dda05b4219356ef30"
+                        },
+                        {
+                            "topicName": "Exploring CSS Colors",
+                            "subtopics": [
+                                "Working with background-color",
+                                "Quick Tip: MDN and Comments",
+                                "Named Colors",
+                                "Understanding RGB Colors",
+                                "Hexadecimal Colors",
+                                "RGBA Colors and Opacity"
+                            ],
+                            "_id": "64eed26dda05b4219356ef31"
+                        },
+                        {
+                            "topicName": "Text Styling",
+                            "subtopics": [
+                                "Changing Fonts using Font-Family",
+                                "Font-size, Font-weight, and Font-style",
+                                "Adjusting Text Alignment",
+                                "Line-height, Letter-spacing, and Word-spacing",
+                                "Enhancing Typography with Google Fonts",
+                                "Creating Text Shadows",
+                                "Text-transform and Text-decoration",
+                                "The Font Shorthand Property"
+                            ],
+                            "_id": "64eed26dda05b4219356ef32"
+                        },
+                        {
+                            "topicName": "Understanding Selectors",
+                            "subtopics": [
+                                "Targeting Elements with The ID Selector",
+                                "Utilizing Classes for Precise Styling",
+                                "Selecting Elements Universally",
+                                "Navigating Elements by Their Attributes",
+                                "Combining Selectors for Efficient Styling",
+                                "Selecting Descendants and Child Elements",
+                                "Creating Compound Selectors for Flexibility",
+                                "CSS Selectors Exercise"
+                            ],
+                            "_id": "64eed26dda05b4219356ef33"
+                        },
+                        {
+                            "topicName": "The Box Model Demystified",
+                            "subtopics": [
+                                "Introduction to The Box Model",
+                                "Styling Borders for Visual Impact",
+                                "Controlling Element Dimensions: Width and Height",
+                                "Adding Padding to Enhance Layout",
+                                "Managing Spacing with Margins",
+                                "Alternate Box Model: box-sizing Property",
+                                "The Display Property and Layout Types",
+                                "Display: None for Element Hiding",
+                                "Mastering Negative Margin and Margin Auto",
+                                "Establishing Min and Max Widths",
+                                "Crafting Rounded Elements with Border Radius",
+                                "Elevating Designs with Box Shadows",
+                                "Managing Overflow for Content Control"
+                            ],
+                            "_id": "64eed26dda05b4219356ef34"
+                        },
+                        {
+                            "topicName": "Backgrounds, Gradients, and Filters",
+                            "subtopics": [
+                                "Utilizing Background Images for Impact",
+                                "Managing Background-Repeat for Aesthetic Control",
+                                "Sizing Backgrounds: From Cover to Contain",
+                                "Positioning Backgrounds: Fine-Tuning Placement",
+                                "Controlling Background-Clip for Advanced Styling",
+                                "Crafting Linear Gradients for Dynamic Backgrounds",
+                                "The Background Shorthand Property Demystified"
+                            ],
+                            "_id": "64eed26dda05b4219356ef35"
+                        },
+                        {
+                            "topicName": "Mastering Positioning",
+                            "subtopics": [
+                                "Positioning Unveiled: Understanding the Basics",
+                                "Employing Relative Positioning for Layout Control",
+                                "Managing Layers with Z-Index for Visual Hierarchy",
+                                "Absolute Positioning: Pinning Elements in Place",
+                                "Fixed Positioning: Elements That Stay in Place"
+                            ],
+                            "_id": "64eed26dda05b4219356ef36"
+                        },
+                        {
+                            "topicName": "Transitions and Transformations",
+                            "subtopics": [
+                                "Transition Magic: Introduction to Transitions",
+                                "Basic Transition Syntax: Creating Smooth Effects",
+                                "Multifaceted Transitions: Managing Multiple Properties",
+                                "Transition Timing Functions: Perfecting the Timing",
+                                "Transition Delays: Crafting Delightful Delays",
+                                "Understanding Animation Performance: Essential Insights",
+                                "Transforming Elements: Introduction to CSS Transforms",
+                                "Exploring Different Types of Transformations",
+                                "Transform Origin: Controlling the Transformation Pivot"
+                            ],
+                            "_id": "64eed26dda05b4219356ef37"
+                        },
+                        {
+                            "topicName": "Flexbox",
+                            "subtopics": [
+                                "Unveiling Flexbox: A Comprehensive Introduction",
+                                "The Flex Display and Main Axis Concepts",
+                                "Navigating Flex-Direction for Layout Control",
+                                "Flex-Wrap: Managing Items Within Flex Containers",
+                                "Justify-Content: Aligning Content Horizontally",
+                                "Align-Items: Vertical Alignment Within Flex Containers",
+                                "Align-Content: Managing Space in Flex Containers",
+                                "Align-Self: Individual Alignment for Flex Items"
+                            ],
+                            "_id": "64eed26dda05b4219356ef38"
+                        },
+                        {
+                            "topicName": "Responsive Design with Media Queries",
+                            "subtopics": [
+                                "Introduction to Responsive Web Design",
+                                "Introducing Media Queries: Adapting to Screen Sizes",
+                                "Working with Different Media Features",
+                                "Combining Media Queries with Logical Operators",
+                                "Standard Responsive Breakpoints for Consistency",
+                                "Creating a Responsive Navbar: Mobile to Desktop",
+                                "Responsive Flexbox Grid",
+                                "Mobile First Desktop First: Design Approach",
+                                "Creating a Mobile-First Layout"
+                            ],
+                            "_id": "64eed26dda05b4219356ef39"
+                        },
+                        {
+                            "topicName": "Exploring CSS Grid",
+                            "subtopics": [
+                                "CSS Grid Explored: Introduction to Grid Layout",
+                                "Enabling CSS Grid for Powerful Layout Management",
+                                "Grid-Template-Columns: Defining Grid Columns",
+                                "Grid-Template-Rows: Specifying Grid Rows",
+                                "Grid Exercise : Practical Column and Row Use",
+                                "Grid-Template Shorthand Property: Simplifying Grids",
+                                "Mastering Minmax() Function for Flexible Grids",
+                                "Creating Efficient Grid Patterns with Repeat()",
+                                "Fit-Content: Creating Flexible Grid Tracks",
+                                "Mastering Grid Gaps: Precise Spacing"
+                            ],
+                            "_id": "64eed26dda05b4219356ef3a"
+                        },
+                        {
+                            "topicName": "Mastering CSS Animations",
+                            "subtopics": [
+                                "Comprehensive Guide to CSS Animations",
+                                "Unveiling Keyframes Animations: A Deeper Look",
+                                "Defining Keyframes: Crafting Animation Sequences",
+                                "Advanced Practice with Keyframes: Enhanced Animation",
+                                "Animation Delay, Repeat, and Other Attributes",
+                                "Reusing Animations for Efficient Styling",
+                                "Animation Shorthand Property: Simplified Animation",
+                                "Creating a Simple Spinner Animation",
+                                "Building a More Complex Loader Animation",
+                                "Understanding Animation Fill Mode Property"
+                            ],
+                            "_id": "64eed26dda05b4219356ef3b"
+                        },
+                        {
+                            "topicName": "Introduction to JavaScript",
+                            "subtopics": [
+                                "What is JavaScript?",
+                                "How JavaScript Is Executed",
+                                "JavaScript Executes In A Hosted Environment",
+                                "A Brief History Of JavaScript",
+                                "Setting Up a Development Environment"
+                            ],
+                            "_id": "64eed26dda05b4219356ef3c"
+                        },
+                        {
+                            "topicName": "JavaScript Basics: Variables, Data Types, and Operators",
+                            "subtopics": [
+                                "Introduction to Variables & Constants",
+                                "Working with Variables & Operators",
+                                "Data Types: Numbers & Strings"
+                            ],
+                            "_id": "64eed26dda05b4219356ef3d"
+                        },
+                        {
+                            "topicName": "Functions in JavaScript",
+                            "subtopics": [
+                                "Introducing Functions",
+                                "Adding Custom Functions",
+                                "Returning Values from Functions",
+                                "An Introduction to Global & Local Scope",
+                                "More about the return Statement",
+                                "Splitting Code into Functions"
+                            ],
+                            "_id": "64eed26dda05b4219356ef3e"
+                        },
+                        {
+                            "topicName": "Arrays and Objects",
+                            "subtopics": [
+                                "Array Declaration and Initialization",
+                                "Modifying Array Elements",
+                                "Array Methods",
+                                "Iterating Through Arrays",
+                                "Multi-dimensional Arrays",
+                                "Object Declaration and Initialization",
+                                "Accessing Object Properties",
+                                "Modifying Object Properties",
+                                "Object Methods"
+                            ],
+                            "_id": "64eed26dda05b4219356ef3f"
+                        },
+                        {
+                            "topicName": "Control Structures: Conditional Statements and Loops",
+                            "subtopics": [
+                                "Introducing if Statements & Boolean Operators",
+                                "Using if Statements",
+                                "Working with Loops: for, for-of, for-in, while, do-while",
+                                "Controlling Loops with break and continue"
+                            ],
+                            "_id": "64eed26dda05b4219356ef40"
+                        },
+                        {
+                            "topicName": "JavaScript Evolution: ES3, ES5, and ES6+",
+                            "subtopics": [
+                                "ES5 vs ES6+ Evolution of JavaScript,Block Scope with var, let & const",
+                                "Understanding Hoisting",
+                                "Strict Mode & Writing Good Code",
+                                "JavaScript Engine Execution Process",
+                                "Primitive vs Reference Values",
+                                "Garbage Collection & Memory Management"
+                            ],
+                            "_id": "64eed26dda05b4219356ef41"
+                        },
+                        {
+                            "topicName": "Working with the Document Object Model (DOM)",
+                            "subtopics": [
+                                "Introduction to the DOM",
+                                "Selecting and Changing DOM Elements",
+                                "Traversing the DOM",
+                                "Styling DOM Elements",
+                                "Creating and Manipulating DOM Elements",
+                                "Removing Elements from the DOM"
+                            ],
+                            "_id": "64eed26dda05b4219356ef42"
+                        },
+                        {
+                            "topicName": "Object-Oriented Programming (OOP) in JavaScript",
+                            "subtopics": [
+                                "Introduction to Object-Oriented Programming (OOP)",
+                                "Defining and Using Classes",
+                                "Constructor Methods and Fields",
+                                "Inheritance and Method Overriding",
+                                "Static Methods and Properties",
+                                "Getters and Setters",
+                                "Private Properties and Pseudo-Private Properties",
+                                "The instanceof Operator"
+                            ],
+                            "_id": "64eed26dda05b4219356ef43"
+                        },
+                        {
+                            "topicName": "Constructor Functions, Prototypes, and Classes",
+                            "subtopics": [
+                                "Constructor Functions vs Classes",
+                                "Working with Prototypes and Prototype Chain",
+                                "Methods in Classes and Constructors",
+                                "Built-in Prototypes in JavaScript",
+                                "Setting and Getting Prototypes"
+                            ],
+                            "_id": "64eed26dda05b4219356ef44"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 50,
+                    "no_of_months": "2",
+                    "certification_name": "",
+                    "_id": "64eed26dda05b4219356ef29"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64eed26eda05b4219356ef46",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "375",
+                            "_id": "64eed26eda05b4219356ef48"
+                        }
+                    ],
+                    "_id": "64eed26eda05b4219356ef47"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20000",
+                            "dollars": "250",
+                            "_id": "64eed26eda05b4219356ef4a"
+                        }
+                    ],
+                    "_id": "64eed26eda05b4219356ef49"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-08-30T05:23:58.167Z",
+        "updatedAt": "2023-08-30T05:23:58.167Z",
+        "__v": 0
+    },
+    {
+        "_id": "64eee221da05b4219356f062",
+        "name": "HTML Mastery: Comprehensive Guide to HTML",
+        "title": "HTML Mastery: Comprehensive Guide to HTML",
+        "description": "Learn HTML from the basics to advanced techniques for building modern web pages.",
+        "meta_title": "HTML Mastery | Comprehensive Guide to HTML",
+        "meta_description": "Join our comprehensive HTML course and become proficient in building modern web pages.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850186/images/xockg9oohd2zexldmxni.png",
+        "slug": "html",
+        "categories": [
+            "Web Development",
+            "HTML"
+        ],
+        "tags": [
+            "HTML",
+            "Web Design",
+            "Front-end Development"
+        ],
+        "course_category": "64eed1a5f83277710d14b98f",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [],
+        "course_content": {
+            "_id": "64eee220da05b4219356f04d",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to HTML",
+                            "subtopics": [
+                                "What is HTML?",
+                                "HTML Versions and History",
+                                "Setting up an HTML Document",
+                                "HTML Document Structure",
+                                "HTML Elements and Tags",
+                                "HTML Basic Syntax"
+                            ],
+                            "_id": "64eee220da05b4219356f04f"
+                        },
+                        {
+                            "topicName": "Text and Semantic Elements",
+                            "subtopics": [
+                                "Headings and Paragraphs",
+                                "Text Formatting Tags (Bold, Italic, Underline)",
+                                "Semantic Elements (Section, Article, Header, Footer, etc.)",
+                                "Block vs. Inline Elements",
+                                "Line Breaks and Horizontal Rules",
+                                "Preformatted Text (pre tag)"
+                            ],
+                            "_id": "64eee220da05b4219356f050"
+                        },
+                        {
+                            "topicName": "Links and Navigation",
+                            "subtopics": [
+                                "Creating Hyperlinks (anchor tag)",
+                                "Linking to External Websites",
+                                "Linking to Internal Pages",
+                                "Linking to Email Addresses",
+                                "Opening Links in New Windows or Tabs",
+                                "Creating Anchors for Page Navigation",
+                                "Working with Bookmark Links"
+                            ],
+                            "_id": "64eee220da05b4219356f051"
+                        },
+                        {
+                            "topicName": "Lists and Tables",
+                            "subtopics": [
+                                "Ordered and Unordered Lists (ol, ul, li tags)",
+                                "Nested Lists",
+                                "Definition Lists (dl, dt, dd tags)",
+                                "Creating Tables (table, tr, th, td tags)",
+                                "Table Headers and Captions",
+                                "Spanning Columns and Rows",
+                                "Styling Tables with CSS"
+                            ],
+                            "_id": "64eee220da05b4219356f052"
+                        },
+                        {
+                            "topicName": "Forms and Input Elements",
+                            "subtopics": [
+                                "Creating Forms (form tag)",
+                                "Text Input Fields (input type=\"text\")",
+                                "Password Fields (input type=\"password\")",
+                                "Radio Buttons (input type=\"radio\")",
+                                "Checkboxes (input type=\"checkbox\")",
+                                "Dropdown Menus (select, option tags)",
+                                "Textarea (textarea tag)",
+                                "File Upload (input type=\"file\")",
+                                "Form Validation and Error Handling"
+                            ],
+                            "_id": "64eee220da05b4219356f053"
+                        },
+                        {
+                            "topicName": "Images and Multimedia",
+                            "subtopics": [
+                                "Inserting Images (img tag)",
+                                "Setting Image Dimensions and Alt Text",
+                                "Working with Responsive Images",
+                                "Adding Audio (audio tag)",
+                                "Adding Video (video tag)",
+                                "Video Formats and Codecs",
+                                "Video Controls and Captions"
+                            ],
+                            "_id": "64eee220da05b4219356f054"
+                        },
+                        {
+                            "topicName": "HTML5 Semantic Elements",
+                            "subtopics": [
+                                "Main, Section, Article, and Aside",
+                                "Header, Footer, and Nav",
+                                "Mark, Time, and Details",
+                                "Progress and Meter",
+                                "HTML5 Outline Algorithm",
+                                "Support and Polyfills for Older Browsers"
+                            ],
+                            "_id": "64eee220da05b4219356f055"
+                        },
+                        {
+                            "topicName": "HTML Forms Advanced Techniques",
+                            "subtopics": [
+                                "Customizing Form Styles with CSS",
+                                "Working with Fieldset and Legend",
+                                "Form Elements Grouping",
+                                "Form Validation with JavaScript",
+                                "Handling Form Submissions",
+                                "Using Hidden Fields",
+                                "Autocomplete and Autofocus",
+                                "Placeholder Text"
+                            ],
+                            "_id": "64eee220da05b4219356f056"
+                        },
+                        {
+                            "topicName": "HTML Multimedia Advanced Techniques",
+                            "subtopics": [
+                                "Adding Audio and Video Controls",
+                                "Video Poster Images",
+                                "Media Fragments (start, end, time)",
+                                "Looping and Autoplaying Videos",
+                                "Audio and Video Preload",
+                                "Responsive Images with srcset and sizes",
+                                "Lazy Loading Images"
+                            ],
+                            "_id": "64eee220da05b4219356f057"
+                        },
+                        {
+                            "topicName": "Accessibility and SEO in HTML",
+                            "subtopics": [
+                                "Semantic HTML for Accessibility",
+                                "Using ARIA (Accessible Rich Internet Applications)",
+                                "Alt Text for Images and Multimedia",
+                                "Structuring Content for Screen Readers",
+                                "SEO Best Practices with HTML",
+                                "Meta Tags (meta, title, description)",
+                                "Open Graph and Twitter Cards"
+                            ],
+                            "_id": "64eee220da05b4219356f058"
+                        },
+                        {
+                            "topicName": "HTML5 APIs and Advanced Features",
+                            "subtopics": [
+                                "Geolocation API",
+                                "Web Storage (localStorage, sessionStorage)",
+                                "Application Cache (Offline Web Applications)",
+                                "Web Workers (Multithreading)",
+                                "Drag and Drop API",
+                                "History API (Changing URLs without page refresh)",
+                                "Canvas API for Graphics",
+                                "Introduction to Web Components"
+                            ],
+                            "_id": "64eee220da05b4219356f059"
+                        },
+                        {
+                            "topicName": "Projects for HTML Mastery",
+                            "subtopics": [
+                                "Personal Portfolio Page",
+                                "Basic Blog Website",
+                                "Product Landing Page",
+                                "Responsive Webpage Layout"
+                            ],
+                            "_id": "64eee220da05b4219356f05a"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 15,
+                    "no_of_months": "1",
+                    "certification_name": "",
+                    "_id": "64eee220da05b4219356f04e"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64eee221da05b4219356f05c",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "9000",
+                            "dollars": "110",
+                            "_id": "64eee221da05b4219356f05e"
+                        }
+                    ],
+                    "_id": "64eee221da05b4219356f05d"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "6000",
+                            "dollars": "75",
+                            "_id": "64eee221da05b4219356f060"
+                        }
+                    ],
+                    "_id": "64eee221da05b4219356f05f"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-08-30T06:30:57.546Z",
+        "updatedAt": "2023-08-30T06:30:57.546Z",
+        "__v": 0
+    },
+    {
+        "_id": "64eee228da05b4219356f07b",
+        "name": "CSS Mastery: Comprehensive Guide to CSS",
+        "title": "CSS Mastery: Comprehensive Guide to CSS",
+        "description": "Learn CSS from the basics to advanced techniques for styling modern web pages.",
+        "meta_title": "CSS Mastery | Comprehensive Guide to CSS",
+        "meta_description": "Join our comprehensive CSS course and become proficient in styling modern web pages.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/kuody8ih8nzxnfept76o.png",
+        "slug": "css",
+        "categories": [
+            "Web Development",
+            "CSS"
+        ],
+        "tags": [
+            "CSS",
+            "Web Design",
+            "Front-end Development"
+        ],
+        "course_category": "64eed1a5f83277710d14b98f",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand CSS syntax and cascading rules",
+            "Apply different CSS selectors to target HTML elements",
+            "Master box model and positioning techniques",
+            "Work with colors, backgrounds, and gradients",
+            "Create responsive layouts using Flexbox and Grid",
+            "Use CSS transitions and animations for dynamic effects",
+            "Implement CSS transforms and 2D/3D animations",
+            "Style forms, tables, and multimedia elements",
+            "Optimize CSS for performance and maintainability"
+        ],
+        "course_content": {
+            "_id": "64eee228da05b4219356f064",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to CSS Basics",
+                            "subtopics": [
+                                "Introduction to CSS",
+                                "Working Within Inline Styles",
+                                "Writing Internal Styles",
+                                "External Styles: The Optimal Approach",
+                                "Anatomy of CSS",
+                                "The Element Selector",
+                                "CSS Basics Exercise"
+                            ],
+                            "_id": "64eee228da05b4219356f066"
+                        },
+                        {
+                            "topicName": "Exploring CSS Colors",
+                            "subtopics": [
+                                "Working with background-color",
+                                "Named Colors",
+                                "Understanding RGB Colors",
+                                "Hexadecimal Colors",
+                                "RGBA Colors and Opacity"
+                            ],
+                            "_id": "64eee228da05b4219356f067"
+                        },
+                        {
+                            "topicName": "Text Styling",
+                            "subtopics": [
+                                "Changing Fonts using Font-Family",
+                                "Font-size, Font-weight, and Font-style",
+                                "Adjusting Text Alignment",
+                                "Line-height, Letter-spacing, and Word-spacing",
+                                "Enhancing Typography with Google Fonts",
+                                "Creating Text Shadows",
+                                "Text-transform and Text-decoration",
+                                "The Font Shorthand Property",
+                                "Styling Links and Buttons",
+                                "Styling Lists (list-style)"
+                            ],
+                            "_id": "64eee228da05b4219356f068"
+                        },
+                        {
+                            "topicName": "CSS Selectors",
+                            "subtopics": [
+                                "Universal Selector (*)",
+                                "Type Selector (Element Selector)",
+                                "Class Selector (.)",
+                                "ID Selector (#)",
+                                "Descendant Selector (Space)",
+                                "Child Selector (>)",
+                                "Adjacent Sibling Selector (+)",
+                                "Attribute Selector ([])",
+                                "Pseudo-classes (:)",
+                                "Pseudo-elements (::)"
+                            ],
+                            "_id": "64eee228da05b4219356f069"
+                        },
+                        {
+                            "topicName": "The Box Model Demystified",
+                            "subtopics": [
+                                "Introduction to The Box Model",
+                                "Styling Borders for Visual Impact",
+                                "Controlling Element Dimensions: Width and Height",
+                                "Adding Padding to Enhance Layout",
+                                "Managing Spacing with Margins",
+                                "Alternate Box Model: box-sizing Property",
+                                "The Display Property and Layout Types",
+                                "Display: None for Element Hiding",
+                                "Mastering Negative Margin and Margin Auto",
+                                "Establishing Min and Max Widths",
+                                "Crafting Rounded Elements with Border Radius",
+                                "Elevating Designs with Box Shadows",
+                                "Managing Overflow for Content Control"
+                            ],
+                            "_id": "64eee228da05b4219356f06a"
+                        },
+                        {
+                            "topicName": "Backgrounds, Gradients, and Filters",
+                            "subtopics": [
+                                "Utilizing Background Images for Impact",
+                                "Managing Background-Repeat for Aesthetic Control",
+                                "Sizing Backgrounds: From Cover to Contain",
+                                "Positioning Backgrounds: Fine-Tuning Placement",
+                                "Controlling Background-Clip for Advanced Styling",
+                                "Crafting Linear Gradients for Dynamic Backgrounds",
+                                "The Background Shorthand Property Demystified"
+                            ],
+                            "_id": "64eee228da05b4219356f06b"
+                        },
+                        {
+                            "topicName": "Mastering Positioning",
+                            "subtopics": [
+                                "Positioning Unveiled: Understanding the Basics",
+                                "Employing Relative Positioning for Layout Control",
+                                "Managing Layers with Z-Index for Visual Hierarchy",
+                                "Absolute Positioning: Pinning Elements in Place",
+                                "Fixed Positioning: Elements That Stay in Place"
+                            ],
+                            "_id": "64eee228da05b4219356f06c"
+                        },
+                        {
+                            "topicName": "Transitions and Transformations",
+                            "subtopics": [
+                                "Transition Magic: Introduction to Transitions",
+                                "Basic Transition Syntax: Creating Smooth Effects",
+                                "Multifaceted Transitions: Managing Multiple Properties",
+                                "Transition Timing Functions: Perfecting the Timing",
+                                "Transition Delays: Crafting Delightful Delays",
+                                "Understanding Animation Performance: Essential Insights",
+                                "Transforming Elements: Introduction to CSS Transforms",
+                                "Exploring Different Types of Transformations",
+                                "Transform Origin: Controlling the Transformation Pivot"
+                            ],
+                            "_id": "64eee228da05b4219356f06d"
+                        },
+                        {
+                            "topicName": "Flexbox",
+                            "subtopics": [
+                                "Unveiling Flexbox: A Comprehensive Introduction",
+                                "The Flex Display and Main Axis Concepts",
+                                "Navigating Flex-Direction for Layout Control",
+                                "Flex-Wrap: Managing Items Within Flex Containers",
+                                "Justify-Content: Aligning Content Horizontally",
+                                "Align-Items: Vertical Alignment Within Flex Containers",
+                                "Align-Content: Managing Space in Flex Containers",
+                                "Align-Self: Individual Alignment for Flex Items"
+                            ],
+                            "_id": "64eee228da05b4219356f06e"
+                        },
+                        {
+                            "topicName": "Styling Forms, Tables, and Multimedia",
+                            "subtopics": [
+                                "Styling Form Elements (Input, Select, Textarea)",
+                                "Customizing Form Controls",
+                                "CSS Styling for Tables (Table, tr, th, td)",
+                                "Table Borders and Spacing",
+                                "Styling Images and Image Galleries",
+                                "CSS for Audio and Video Elements"
+                            ],
+                            "_id": "64eee228da05b4219356f06f"
+                        },
+                        {
+                            "topicName": "Responsive Design with Media Queries",
+                            "subtopics": [
+                                "Introduction to Responsive Web Design",
+                                "Introducing Media Queries: Adapting to Screen Sizes",
+                                "Working with Different Media Features",
+                                "Combining Media Queries with Logical Operators",
+                                "Standard Responsive Breakpoints for Consistency",
+                                "Creating a Responsive Navbar: Mobile to Desktop",
+                                "Responsive Flexbox Grid",
+                                "Mobile First Desktop First: Design Approach",
+                                "Creating a Mobile-First Layout"
+                            ],
+                            "_id": "64eee228da05b4219356f070"
+                        },
+                        {
+                            "topicName": "Exploring CSS Grid",
+                            "subtopics": [
+                                "CSS Grid Explored: Introduction to Grid Layout",
+                                "Enabling CSS Grid for Powerful Layout Management",
+                                "Grid-Template-Columns: Defining Grid Columns",
+                                "Grid-Template-Rows: Specifying Grid Rows",
+                                "Grid Exercise : Practical Column and Row Use",
+                                "Grid-Template Shorthand Property: Simplifying Grids",
+                                "Mastering Minmax() Function for Flexible Grids",
+                                "Creating Efficient Grid Patterns with Repeat()",
+                                "Fit-Content: Creating Flexible Grid Tracks",
+                                "Mastering Grid Gaps: Precise Spacing"
+                            ],
+                            "_id": "64eee228da05b4219356f071"
+                        },
+                        {
+                            "topicName": "Mastering CSS Animations",
+                            "subtopics": [
+                                "Comprehensive Guide to CSS Animations",
+                                "Unveiling Keyframes Animations: A Deeper Look",
+                                "Defining Keyframes: Crafting Animation Sequences",
+                                "Advanced Practice with Keyframes: Enhanced Animation",
+                                "Animation Delay, Repeat, and Other Attributes",
+                                "Reusing Animations for Efficient Styling",
+                                "Animation Shorthand Property: Simplified Animation",
+                                "Creating a Simple Spinner Animation",
+                                "Building a More Complex Loader Animation",
+                                "Understanding Animation Fill Mode Property"
+                            ],
+                            "_id": "64eee228da05b4219356f072"
+                        },
+                        {
+                            "topicName": "Projects for CSS Mastery",
+                            "subtopics": [
+                                "Stylish Personal Portfolio",
+                                "Responsive Blog Website",
+                                "E-commerce Product Page",
+                                "Interactive Landing Page"
+                            ],
+                            "_id": "64eee228da05b4219356f073"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 15,
+                    "no_of_months": "1",
+                    "certification_name": "",
+                    "_id": "64eee228da05b4219356f065"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64eee228da05b4219356f075",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "9000",
+                            "dollars": "110",
+                            "_id": "64eee228da05b4219356f077"
+                        }
+                    ],
+                    "_id": "64eee228da05b4219356f076"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "6000",
+                            "dollars": "75",
+                            "_id": "64eee228da05b4219356f079"
+                        }
+                    ],
+                    "_id": "64eee228da05b4219356f078"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-08-30T06:31:04.886Z",
+        "updatedAt": "2023-08-30T06:31:04.886Z",
+        "__v": 0
+    },
+    {
+        "_id": "64ef26b4da05b4219356f17c",
+        "name": "JavaScript Mastery: Comprehensive Guide to JavaScript",
+        "title": "JavaScript Mastery: Comprehensive Guide to JavaScript",
+        "description": "Learn JavaScript from the basics to advanced techniques for building interactive web applications.",
+        "meta_title": "JavaScript Mastery | Comprehensive Guide to JavaScript",
+        "meta_description": "Join our comprehensive JavaScript course and become proficient in building interactive web applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/enwdonu3ntfbsgpklqht.png",
+        "slug": "java-script",
+        "categories": [
+            "Web Development",
+            "JavaScript"
+        ],
+        "tags": [
+            "JavaScript",
+            "Front-end Development",
+            "Web Programming"
+        ],
+        "course_category": "64eed1a5f83277710d14b98f",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [],
+        "course_content": {
+            "_id": "64ef26b3da05b4219356f165",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to JavaScript",
+                            "subtopics": [
+                                "What is JavaScript?",
+                                "How JavaScript Is Executed",
+                                "JavaScript Executes In A Hosted Environment",
+                                "A Brief History Of JavaScript",
+                                "Setting Up a Development Environment"
+                            ],
+                            "_id": "64ef26b3da05b4219356f167"
+                        },
+                        {
+                            "topicName": "JavaScript Basics: Variables, Data Types, and Operators",
+                            "subtopics": [
+                                "Introduction to Variables & Constants",
+                                "Working with Variables & Operators",
+                                "Data Types: Numbers & Strings"
+                            ],
+                            "_id": "64ef26b3da05b4219356f168"
+                        },
+                        {
+                            "topicName": "Functions in JavaScript",
+                            "subtopics": [
+                                "Introducing Functions",
+                                "Adding Custom Functions",
+                                "Returning Values from Functions",
+                                "An Introduction to Global & Local Scope",
+                                "More about the return Statement",
+                                "Splitting Code into Functions"
+                            ],
+                            "_id": "64ef26b3da05b4219356f169"
+                        },
+                        {
+                            "topicName": "Arrays and Objects",
+                            "subtopics": [
+                                "Array Declaration and Initialization",
+                                "Modifying Array Elements",
+                                "Array Methods",
+                                "Iterating Through Arrays",
+                                "Multi-dimensional Arrays",
+                                "Object Declaration and Initialization",
+                                "Accessing Object Properties",
+                                "Modifying Object Properties",
+                                "Object Methods"
+                            ],
+                            "_id": "64ef26b3da05b4219356f16a"
+                        },
+                        {
+                            "topicName": "Control Structures: Conditional Statements and Loops",
+                            "subtopics": [
+                                "Introducing if Statements & Boolean Operators",
+                                "Using if Statements",
+                                "Working with Loops: for, for-of, for-in, while, do-while",
+                                "Controlling Loops with break and continue"
+                            ],
+                            "_id": "64ef26b3da05b4219356f16b"
+                        },
+                        {
+                            "topicName": "JavaScript Evolution: ES3, ES5, and ES6+",
+                            "subtopics": [
+                                "ES5 vs ES6+ Evolution of JavaScript,Block Scope with var, let & const",
+                                "Understanding Hoisting",
+                                "Strict Mode & Writing Good Code",
+                                "JavaScript Engine Execution Process",
+                                "Primitive vs Reference Values",
+                                "Garbage Collection & Memory Management"
+                            ],
+                            "_id": "64ef26b3da05b4219356f16c"
+                        },
+                        {
+                            "topicName": "Working with the Document Object Model (DOM)",
+                            "subtopics": [
+                                "Introduction to the DOM",
+                                "Selecting and Changing DOM Elements",
+                                "Traversing the DOM",
+                                "Styling DOM Elements",
+                                "Creating and Manipulating DOM Elements",
+                                "Removing Elements from the DOM"
+                            ],
+                            "_id": "64ef26b3da05b4219356f16d"
+                        },
+                        {
+                            "topicName": "Object-Oriented Programming (OOP) in JavaScript",
+                            "subtopics": [
+                                "Introduction to Object-Oriented Programming (OOP)",
+                                "Defining and Using Classes",
+                                "Constructor Methods and Fields",
+                                "Inheritance and Method Overriding",
+                                "Static Methods and Properties",
+                                "Getters and Setters",
+                                "Private Properties and Pseudo-Private Properties",
+                                "The instanceof Operator"
+                            ],
+                            "_id": "64ef26b3da05b4219356f16e"
+                        },
+                        {
+                            "topicName": "Constructor Functions, Prototypes, and Classes",
+                            "subtopics": [
+                                "Constructor Functions vs Classes",
+                                "Working with Prototypes and Prototype Chain",
+                                "Methods in Classes and Constructors",
+                                "Built-in Prototypes in JavaScript",
+                                "Setting and Getting Prototypes"
+                            ],
+                            "_id": "64ef26b3da05b4219356f16f"
+                        },
+                        {
+                            "topicName": "Asynchronous JavaScript",
+                            "subtopics": [
+                                "Understanding Asynchronous Programming",
+                                "Callbacks and Callback Hell",
+                                "Promises and Chaining",
+                                "Async/Await and Error Handling",
+                                "Working with Timers (setTimeout, setInterval)",
+                                "Fetching Data with Fetch API",
+                                "Working with AJAX and XMLHTTPRequests"
+                            ],
+                            "_id": "64ef26b3da05b4219356f170"
+                        },
+                        {
+                            "topicName": "Modern JavaScript (ES6+)",
+                            "subtopics": [
+                                "Let, Const, and Block Scope",
+                                "Destructuring Assignment",
+                                "Default Parameters",
+                                "Spread and Rest Operators",
+                                "Template Literals",
+                                "Enhanced Object Literals",
+                                "Arrow Functions",
+                                "Classes and Prototypes (OOP in ES6+)",
+                                "Modules and Imports/Exports",
+                                "Iterators and Generators",
+                                "Sets and Maps",
+                                "Symbol Data Type"
+                            ],
+                            "_id": "64ef26b3da05b4219356f171"
+                        },
+                        {
+                            "topicName": "Working with APIs and Data",
+                            "subtopics": [
+                                "Understanding APIs (Application Programming Interfaces)",
+                                "Consuming RESTful APIs",
+                                "Parsing JSON Data",
+                                "Working with External Libraries",
+                                "Working with Third-Party APIs",
+                                "Error Handling in APIs"
+                            ],
+                            "_id": "64ef26b3da05b4219356f172"
+                        },
+                        {
+                            "topicName": "Interactive Web Applications",
+                            "subtopics": [
+                                "Creating Dynamic Content",
+                                "Building Interactive Forms",
+                                "Image Sliders and Carousels",
+                                "Interactive Maps and Geolocation",
+                                "Real-Time Data Updates with WebSockets",
+                                "Dynamic Quiz Applications",
+                                "Building SPA (Single Page Applications)",
+                                "Browser Storage (localStorage, sessionStorage)"
+                            ],
+                            "_id": "64ef26b3da05b4219356f173"
+                        },
+                        {
+                            "topicName": "Projects for JavaScript Mastery",
+                            "subtopics": [
+                                "Interactive Image Gallery",
+                                "Simple To-Do List",
+                                "Basic Calculator",
+                                "Dynamic Content Tabs",
+                                "Weather App using API",
+                                "Movie Search App with AJAX",
+                                "Dynamic Quiz Application",
+                                "Interactive Image Slider",
+                                "Real-Time Chat Application"
+                            ],
+                            "_id": "64ef26b3da05b4219356f174"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 45,
+                    "no_of_months": "1 - 2",
+                    "certification_name": "",
+                    "_id": "64ef26b3da05b4219356f166"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64ef26b4da05b4219356f176",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "27000",
+                            "dollars": "330",
+                            "_id": "64ef26b4da05b4219356f178"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f177"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "18000",
+                            "dollars": "220",
+                            "_id": "64ef26b4da05b4219356f17a"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f179"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-08-30T11:23:32.189Z",
+        "updatedAt": "2023-08-30T11:23:32.189Z",
+        "__v": 0
+    },
+    {
+        "_id": "64ef29bfda05b4219356f207",
+        "name": "React.js Mastery: Comprehensive Guide to React.js",
+        "title": "React.js Mastery: Comprehensive Guide to React.js",
+        "description": "Learn React.js from the basics to advanced techniques for building modern web applications.",
+        "meta_title": "React.js Mastery | Comprehensive Guide to React.js",
+        "meta_description": "Join our comprehensive React.js course and become proficient in building modern web applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850185/images/gwz3e2lo0j30se3qqw3v.png",
+        "slug": "react-js",
+        "categories": [
+            "Web Development",
+            "React.js"
+        ],
+        "tags": [
+            "React.js",
+            "Front-end Development",
+            "Web Development"
+        ],
+        "course_category": "64eed1a5f83277710d14b98f",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the fundamentals of React.js and its core concepts",
+            "Work with React components and props",
+            "Manage state and implement event handling in React",
+            "Use React hooks for functional components",
+            "Implement React forms and validation",
+            "Work with React Router for navigation",
+            "Use React Context for state management",
+            "Fetch data from APIs and handle asynchronous operations",
+            "Create reusable and maintainable React applications",
+            "Build single-page applications (SPAs) with React"
+        ],
+        "course_content": {
+            "_id": "64ef29bfda05b4219356f1f2",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to React.js",
+                            "subtopics": [
+                                "What is React.js and Why Use It",
+                                "The Role of React in Modern Web Development",
+                                "Setting Up Your Development Environment"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1f4"
+                        },
+                        {
+                            "topicName": "Understanding Components",
+                            "subtopics": [
+                                "Components in React: Basics and Importance",
+                                "Creating Functional Components",
+                                "Creating Class Components",
+                                "Component Communication and Reusability",
+                                "Conditional Rendering and Toggling",
+                                "Lists and Keys: Rendering Dynamic Data",
+                                "Mapping Components for Lists"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1f5"
+                        },
+                        {
+                            "topicName": "JSX and Rendering",
+                            "subtopics": [
+                                "Introduction to JSX",
+                                "JSX Expressions and Embedding",
+                                "Rendering Components and JSX Elements"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1f6"
+                        },
+                        {
+                            "topicName": "State and Props",
+                            "subtopics": [
+                                "State in React Components",
+                                "Props: Passing Data to Components",
+                                "Managing State and Props in Components"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1f7"
+                        },
+                        {
+                            "topicName": "Event Handling and User Interaction",
+                            "subtopics": [
+                                "Handling Events in React",
+                                "Forms and Form Handling",
+                                "Controlled Components vs Uncontrolled Components"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1f8"
+                        },
+                        {
+                            "topicName": "Basic CSS Styling",
+                            "subtopics": [
+                                "Introduction to CSS Styling",
+                                "Adding Styles to React Components",
+                                "Styling Best Practices and Strategies"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1f9"
+                        },
+                        {
+                            "topicName": "Styling with Tailwind CSS",
+                            "subtopics": [
+                                "Introduction to Tailwind CSS",
+                                "Using Tailwind Classes for Styling",
+                                "Customizing and Extending Tailwind"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1fa"
+                        },
+                        {
+                            "topicName": "React Router and Navigation",
+                            "subtopics": [
+                                "Navigating Between Pages with React Router",
+                                "Dynamic Route Parameters and URL Parameters",
+                                "Nested Routes and Layout Management"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1fb"
+                        },
+                        {
+                            "topicName": "Context API for State Management",
+                            "subtopics": [
+                                "Introduction to Context API",
+                                "Creating and Using Context Providers",
+                                "Consuming Context in Components"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1fc"
+                        },
+                        {
+                            "topicName": "Hooks for Advanced State and Effects",
+                            "subtopics": [
+                                "Understanding and Using the `useEffect` Hook",
+                                "Managing Complex State with the `useReducer` Hook",
+                                "Custom Hooks: Reusable Logic and Abstraction"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1fd"
+                        },
+                        {
+                            "topicName": "Form Handling with Formik",
+                            "subtopics": [
+                                "Introduction to Formik for Complex Form Handling",
+                                "Creating Forms with Formik Components",
+                                "Handling Validation with Yup Schema",
+                                "Nested and Complex Forms",
+                                "Dynamically Adding and Removing Form Fields"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1fe"
+                        },
+                        {
+                            "topicName": "Error Handling and Debugging",
+                            "subtopics": [
+                                "Common Types of React Errors",
+                                "Using Error Boundaries to Catch Errors",
+                                "Debugging Techniques and Tools"
+                            ],
+                            "_id": "64ef29bfda05b4219356f1ff"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 50,
+                    "no_of_months": "1 - 2",
+                    "certification_name": "",
+                    "_id": "64ef29bfda05b4219356f1f3"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64ef29bfda05b4219356f201",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "375",
+                            "_id": "64ef29bfda05b4219356f203"
+                        }
+                    ],
+                    "_id": "64ef29bfda05b4219356f202"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20000",
+                            "dollars": "250",
+                            "_id": "64ef29bfda05b4219356f205"
+                        }
+                    ],
+                    "_id": "64ef29bfda05b4219356f204"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-08-30T11:36:31.147Z",
+        "updatedAt": "2023-08-30T11:36:31.147Z",
+        "__v": 0
+    },
+    {
+        "_id": "64ef3dbbda05b4219356f28a",
+        "name": "Next.js Mastery: Comprehensive Guide to Next.js",
+        "title": "Next.js Mastery: Comprehensive Guide to Next.js",
+        "description": "Learn Next.js from the basics to advanced techniques for building modern and server-rendered React applications.",
+        "meta_title": "Next.js Mastery | Comprehensive Guide to Next.js",
+        "meta_description": "Join our comprehensive Next.js course and become proficient in building modern and server-rendered React applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/gzgedeevea8juoif6u2t.png",
+        "slug": "nextjs",
+        "categories": [
+            "Web Development",
+            "Next.js"
+        ],
+        "tags": [
+            "Next.js",
+            "React.js",
+            "Server-side Rendering",
+            "Front-end Development"
+        ],
+        "course_category": "64eed1a5f83277710d14b98f",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the fundamentals of Next.js and its benefits",
+            "Build server-rendered React applications with Next.js",
+            "Use Next.js Routing and Navigation",
+            "Implement Static Site Generation (SSG) with Next.js",
+            "Work with Dynamic Server-side Rendering (SSR)",
+            "Manage Data Fetching in Next.js",
+            "Optimize Next.js applications for performance",
+            "Deploy Next.js applications to production"
+        ],
+        "course_content": {
+            "_id": "64ef3dbbda05b4219356f278",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to Next.js",
+                            "subtopics": [
+                                "Welcome and Course Introduction",
+                                "What is Next.js and its Benefits?",
+                                "Exploring Key Features: Server-side Rendering, File-based Routing",
+                                "Setting Up the Development Environment and IDE",
+                                "Navigating the Next.js App Router",
+                                "Analyzing the Initial Project Structure",
+                                "Practical Demonstration: Next.js in Action!",
+                                "Joining the Learning Community"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f27a"
+                        },
+                        {
+                            "topicName": "React Fundamentals Review",
+                            "subtopics": [
+                                "Optional: Refreshing React Basics",
+                                "Component-based Architecture and State Management",
+                                "Passing Data via Props and Dynamic Content",
+                                "Handling Events and React Hooks",
+                                "Styling Components with CSS Modules"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f27b"
+                        },
+                        {
+                            "topicName": "File-based Routing and Pages",
+                            "subtopics": [
+                                "Introduction to File-based Routing",
+                                "Creating Static Routes and Pages",
+                                "Nested Paths, Routes, and Dynamic Routing",
+                                "Extracting Dynamic Path Segment Data",
+                                "Building Nested Dynamic Routes",
+                                "Adding Catch-All Routes and Custom 404 Page",
+                                "Navigating between Pages with Link Component"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f27c"
+                        },
+                        {
+                            "topicName": "Data Pre-rendering and Fetching",
+                            "subtopics": [
+                                "Understanding Traditional React App Rendering",
+                                "Introducing Static Site Generation (SSG)",
+                                "Utilizing Incremental Static Generation (ISR)",
+                                "Fetching Data with the getStaticProps Method",
+                                "Dynamic Routes and getStaticPaths",
+                                "Fallback Pages and Error Handling",
+                                "Introduction to Server-side Rendering (SSR)",
+                                "Fetching Data with getServerSideProps",
+                                "Client-side Data Fetching with useSWR"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f27d"
+                        },
+                        {
+                            "topicName": "Backend Integration with API Routes",
+                            "subtopics": [
+                                "Introduction to API Routes in Next.js",
+                                "Creating and Accessing Custom API Routes",
+                                "Sending Requests to API Routes",
+                                "Utilizing API Routes for Data Fetching and Pre-rendering",
+                                "Structuring API Route Files Effectively",
+                                "Connecting to a Backend: Setting Up MongoDB",
+                                "Handling Database Operations within API Routes"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f27e"
+                        },
+                        {
+                            "topicName": "State Management and UI Optimization",
+                            "subtopics": [
+                                "Managing App-wide State with React Context",
+                                "Creating and Consuming Context Providers",
+                                "Implementing Example: Notifications using Context",
+                                "Deployment Strategies for Next.js Applications",
+                                "Optimizing Images with the Next Image Component",
+                                "Next.js Configuration and Environment Variables"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f27f"
+                        },
+                        {
+                            "topicName": "Authentication and Security",
+                            "subtopics": [
+                                "Introduction to Authentication in React and Next.js Apps",
+                                "Setting Up Authentication with next-auth",
+                                "User Signup and Login using API Routes",
+                                "Managing Active Sessions and Logout",
+                                "Client-side and Server-side Route Protection",
+                                "Protecting API Routes and Server-side Actions",
+                                "Implementing Password Change Functionality"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f280"
+                        },
+                        {
+                            "topicName": "Building a Complete Blog Application",
+                            "subtopics": [
+                                "Starting a Comprehensive Blog Project",
+                                "Core Page Setup and Layout Components",
+                                "Rendering and Styling Blog Posts",
+                                "Implementing Markdown Rendering and Images",
+                                "Adding a Contact Form and API Route",
+                                "Connecting to MongoDB for Data Storage",
+                                "Enhancing User Experience with Notifications",
+                                "SEO Optimization through head Metadata",
+                                "Leveraging React Portals for Advanced UI Elements"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f281"
+                        },
+                        {
+                            "topicName": "Advanced Concepts and Conclusion",
+                            "subtopics": [
+                                "Recap of Key Next.js Features and Concepts",
+                                "Optional: Exploring Advanced Topics",
+                                "Roundup of the Course Journey and Final Thoughts",
+                                "Bonus Content (if applicable)"
+                            ],
+                            "_id": "64ef3dbbda05b4219356f282"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 35,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64ef3dbbda05b4219356f279"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64ef3dbbda05b4219356f284",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "21000",
+                            "dollars": "260",
+                            "_id": "64ef3dbbda05b4219356f286"
+                        }
+                    ],
+                    "_id": "64ef3dbbda05b4219356f285"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "14000",
+                            "dollars": "170",
+                            "_id": "64ef3dbbda05b4219356f288"
+                        }
+                    ],
+                    "_id": "64ef3dbbda05b4219356f287"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-08-30T13:01:47.566Z",
+        "updatedAt": "2023-08-30T13:01:47.566Z",
+        "__v": 0
+    },
+    {
+        "_id": "64ef43fbda05b4219356f430",
+        "name": "MERN Stack Mastery: Comprehensive Guide to Full-Stack Web Development",
+        "title": "MERN Stack Mastery: Comprehensive Guide to Full-Stack Web Development",
+        "description": "Learn the MERN stack to build modern and powerful full-stack web applications.",
+        "meta_title": "MERN Stack Mastery | Comprehensive Guide to Full-Stack Web Development",
+        "meta_description": "Join our comprehensive MERN stack course and become proficient in building full-stack web applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690558939/images/uccycj0urlhlnaka12la.png",
+        "slug": "mern-stack",
+        "categories": [
+            "Web Development",
+            "Full-Stack Development",
+            "MERN Stack"
+        ],
+        "tags": [
+            "MERN Stack",
+            "Full-Stack Web Development",
+            "MongoDB",
+            "Express.js",
+            "React.js",
+            "Node.js"
+        ],
+        "course_category": "64eed1a5f83277710d14b98f",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the architecture and components of the MERN stack",
+            "Set up the development environment for MERN applications",
+            "Build and interact with MongoDB databases",
+            "Create RESTful APIs with Express.js",
+            "Develop interactive front-end applications with React.js",
+            "Implement user authentication and authorization",
+            "Work with JSON Web Tokens (JWT) for secure communication",
+            "Use Redux for state management in React applications",
+            "Deploy and host MERN applications in production"
+        ],
+        "course_content": {
+            "_id": "64ef43fbda05b4219356f41a",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to MERN Stack",
+                            "subtopics": [
+                                "Welcome and Course Introduction",
+                                "Understanding the MERN Stack and Its Components",
+                                "Key Benefits and Use Cases",
+                                "Setting Up the Development Environment",
+                                "Introduction to Git and Version Control"
+                            ],
+                            "_id": "64ef43fbda05b4219356f41c"
+                        },
+                        {
+                            "topicName": "Frontend Development with React",
+                            "subtopics": [
+                                "Introduction to React and Component-based Architecture",
+                                "JSX Syntax and React Elements",
+                                "State and Props: Managing Data in React",
+                                "Event Handling and Conditional Rendering",
+                                "Styling React Components",
+                                "Creating Reusable Components",
+                                "Working with Lists and Forms"
+                            ],
+                            "_id": "64ef43fbda05b4219356f41d"
+                        },
+                        {
+                            "topicName": "Building RESTful APIs with Express.js",
+                            "subtopics": [
+                                "Introduction to Express.js Framework",
+                                "Setting Up a Basic Express Application",
+                                "Creating Routes and Handling HTTP Requests",
+                                "Middleware: Authentication, Logging, and Error Handling",
+                                "Connecting to MongoDB Using Mongoose",
+                                "Implementing CRUD Operations",
+                                "Validating and Sanitizing User Input"
+                            ],
+                            "_id": "64ef43fbda05b4219356f41e"
+                        },
+                        {
+                            "topicName": "Backend Development with Node.js",
+                            "subtopics": [
+                                "Introduction to Node.js and Non-blocking Architecture",
+                                "Core Modules and the Event Loop",
+                                "Building RESTful APIs with Express.js",
+                                "Implementing Authentication and Authorization",
+                                "File Upload and Handling",
+                                "Error Handling and Logging",
+                                "Deploying a Node.js Application"
+                            ],
+                            "_id": "64ef43fbda05b4219356f41f"
+                        },
+                        {
+                            "topicName": "Data Storage and MongoDB",
+                            "subtopics": [
+                                "Introduction to Databases and MongoDB",
+                                "Setting Up MongoDB and Compass",
+                                "Defining Schemas and Models with Mongoose",
+                                "Querying Data with CRUD Operations",
+                                "Advanced MongoDB Features: Indexing, Aggregation, Transactions"
+                            ],
+                            "_id": "64ef43fbda05b4219356f420"
+                        },
+                        {
+                            "topicName": "User Authentication and Authorization",
+                            "subtopics": [
+                                "Importance of User Authentication and Authorization",
+                                "Implementing User Registration and Login",
+                                "Secure Password Storage with Hashing and Salting",
+                                "JSON Web Tokens (JWT) for Token-based Authentication",
+                                "Role-based Access Control (RBAC)",
+                                "Protecting Routes and Resources"
+                            ],
+                            "_id": "64ef43fbda05b4219356f421"
+                        },
+                        {
+                            "topicName": "Frontend-Backend Integration",
+                            "subtopics": [
+                                "Creating React Components for User Authentication",
+                                "Handling HTTP Requests with Axios",
+                                "User Registration and Login Frontend Implementation",
+                                "Storing JWT Tokens and Managing User Sessions",
+                                "Accessing Protected Routes and Resources"
+                            ],
+                            "_id": "64ef43fbda05b4219356f422"
+                        },
+                        {
+                            "topicName": "Real-time Communication with WebSockets",
+                            "subtopics": [
+                                "Introduction to WebSockets and Real-time Communication",
+                                "Building a Real-time Chat Application",
+                                "Setting Up WebSocket Integration",
+                                "Sending and Receiving Real-time Messages",
+                                "Handling WebSocket Failures and Error Handling"
+                            ],
+                            "_id": "64ef43fbda05b4219356f423"
+                        },
+                        {
+                            "topicName": "State Management with Redux",
+                            "subtopics": [
+                                "Understanding State Management",
+                                "Introduction to Redux and its Concepts",
+                                "Setting Up Redux in a React Application",
+                                "Actions, Reducers, and Store",
+                                "Connecting React Components to Redux",
+                                "Asynchronous Actions with Redux Thunk"
+                            ],
+                            "_id": "64ef43fbda05b4219356f424"
+                        },
+                        {
+                            "topicName": "Advanced React and Performance Optimization",
+                            "subtopics": [
+                                "Advanced React Patterns: Render Props, Higher-order Components",
+                                "React Router and Navigation",
+                                "Code Splitting and Lazy Loading with React Suspense",
+                                "Memoization and Performance Optimization",
+                                "Server-side Rendering (SSR) with React",
+                                "Progressive Web App (PWA) Features"
+                            ],
+                            "_id": "64ef43fbda05b4219356f425"
+                        },
+                        {
+                            "topicName": "Deployment and Scaling",
+                            "subtopics": [
+                                "Deployment Strategies for MERN Stack Apps",
+                                "Setting Up a Production-ready Environment",
+                                "Optimizing Frontend and Backend for Performance",
+                                "Continuous Integration and Deployment (CI/CD)",
+                                "Load Balancing and Scaling with Containerization (Docker)",
+                                "Monitoring and Debugging in Production"
+                            ],
+                            "_id": "64ef43fbda05b4219356f426"
+                        },
+                        {
+                            "topicName": "Project 1: E-Commerce Application",
+                            "subtopics": [
+                                "Building a Full-stack E-Commerce Platform",
+                                "User Registration, Login, and Authentication",
+                                "Product Listings and Details",
+                                "Shopping Cart and Order Processing",
+                                "Payment Integration",
+                                "Deploying the E-Commerce Application"
+                            ],
+                            "_id": "64ef43fbda05b4219356f427"
+                        },
+                        {
+                            "topicName": "Project 2: Social Media Platform",
+                            "subtopics": [
+                                "Creating a Social Media Platform",
+                                "User Profiles and Posts",
+                                "Liking, Commenting, and Sharing Posts",
+                                "Real-time Notifications",
+                                "Deploying the Social Media Platform"
+                            ],
+                            "_id": "64ef43fbda05b4219356f428"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 50,
+                    "no_of_months": "1 - 2",
+                    "certification_name": "",
+                    "_id": "64ef43fbda05b4219356f41b"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64ef43fbda05b4219356f42a",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "370",
+                            "_id": "64ef43fbda05b4219356f42c"
+                        }
+                    ],
+                    "_id": "64ef43fbda05b4219356f42b"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20000",
+                            "dollars": "245",
+                            "_id": "64ef43fbda05b4219356f42e"
+                        }
+                    ],
+                    "_id": "64ef43fbda05b4219356f42d"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-08-30T13:28:27.975Z",
+        "updatedAt": "2023-08-30T13:28:27.975Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f80f84323f1823e59db11c",
+        "name": "Foundations of Robotics: From History to AI Integration",
+        "title": "Foundations of Robotics: From History to AI Integration",
+        "description": "Learn the fundamentals of robotics in our introductory course, Introduction to Robotics. Dive into the exciting world of robots, their history, and their applications. Discover the types of robots, the connection between robotics and artificial intelligence, and explore various career opportunities in this dynamic field. Whether you're a curious beginner or aspiring robotics engineer, this course will equip you with essential knowledge and skills to kickstart your journey into robotics.",
+        "meta_title": "Introduction to Robotics: Explore History, Types, and AI Connection | Beginner Course",
+        "meta_description": "Unlock the world of robotics in our beginner course. Explore the history of robotics, learn about different robot types, and understand the link between AI and robotics. Discover exciting career opportunities in this rapidly evolving field.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "slug": "zero-beginner",
+        "categories": [
+            "Robotics Fundamentals",
+            "Robotic Programming"
+        ],
+        "tags": [
+            "Industrial Robots"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Gain a comprehensive understanding of what robotics is and its historical evolution.",
+            "Identify and classify various types of robots, from industrial to service robots.",
+            "Explore the interplay between artificial intelligence and robotics, understanding how AI drives robotic capabilities.",
+            "Discover a range of career opportunities in the field of robotics and automation.",
+            "Develop a foundation in electronics, mechanics, and programming relevant to robotics.",
+            "Acquire problem-solving skills necessary for addressing real-world robotics challenges.",
+            "Be prepared to advance to more specialized robotics courses and projects."
+        ],
+        "course_content": {
+            "_id": "64f80f83323f1823e59db10b",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "introduction to robotics",
+                            "subtopics": [
+                                "What is robotics",
+                                "The history of robotics and its first appearance",
+                                "Entering the world of robotics",
+                                "What is a robot?",
+                                "Types of robots",
+                                "Categories in Robot Studies",
+                                "The connection between artificial intelligence and robotics",
+                                "career opportunities"
+                            ],
+                            "_id": "64f80f83323f1823e59db10d"
+                        },
+                        {
+                            "topicName": "Introducing Robotics Learning Path",
+                            "subtopics": [
+                                "Why robotics?",
+                                "How to enter the world of robotics",
+                                "Educational Resources",
+                                "Educational roadmaps",
+                                "Finding your interests and talents",
+                                "self-study or training class",
+                                "How to find your interest in robotics",
+                                "robotic learning roadmap ",
+                                "A variety of teaching and learning methods"
+                            ],
+                            "_id": "64f80f83323f1823e59db10e"
+                        },
+                        {
+                            "topicName": "Fundamentals of Robotics and Robotics Technology",
+                            "subtopics": [
+                                "Introduction to electronics in robotics",
+                                "Introduction to mechanics in robotics",
+                                "Introduction to programming in robotics",
+                                "Professional branches of robotics",
+                                "Robotics competitions and challenges"
+                            ],
+                            "_id": "64f80f83323f1823e59db10f"
+                        },
+                        {
+                            "topicName": "The role of other sciences in robotics",
+                            "subtopics": [
+                                "Artificial Intelligence and Robotics",
+                                "The role of economics and optimization",
+                                "safety",
+                                "inventions",
+                                "industrialization",
+                                "The future of robots and robotics"
+                            ],
+                            "_id": "64f80f83323f1823e59db110"
+                        },
+                        {
+                            "topicName": "Conclusion",
+                            "subtopics": [
+                                "Educational steps and levels in robotics",
+                                "Introduction of robotics course of SD Tech Academy",
+                                "Educational components of the robotics course"
+                            ],
+                            "_id": "64f80f83323f1823e59db111"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f80f83323f1823e59db10c"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f80f84323f1823e59db115",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f80f84323f1823e59db117"
+                        }
+                    ],
+                    "_id": "64f80f84323f1823e59db116"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f80f84323f1823e59db119"
+                        }
+                    ],
+                    "_id": "64f80f84323f1823e59db118"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T05:35:00.671Z",
+        "updatedAt": "2023-09-06T05:35:00.671Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f81c64ceb2f722072323bc",
+        "name": "Electronics Essentials: From Current to Transistors",
+        "title": "Electronics Essentials: From Current to Transistors",
+        "description": "Explore the fundamental principles of electronics in our comprehensive beginner course, Electronics Essentials: From Current to Transistors. From the basics of electricity and circuit components to advanced concepts like transistors, you'll build a strong foundation in electronics. Dive into practical projects, including LED control, circuit analysis, and component understanding. This course is your gateway to mastering the world of electronics.",
+        "meta_title": "Beginner Electronics Course: Learn Electronics Essentials and Practical Projects",
+        "meta_description": "Start your journey into electronics with our beginner course. Understand electricity, components, circuits, and even transistors. Hands-on projects included. Join today!",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "slug": "beginner-1",
+        "categories": [
+            "Electronics",
+            "Beginner Electronics Course",
+            "Electrical Engineering Fundamentals"
+        ],
+        "tags": [
+            "Electronics Basics",
+            "Electronic Components",
+            "Circuit Analysis",
+            "Hands-On Electronics",
+            "Ohm's Law",
+            "Breadboards",
+            "Diodes",
+            "Transistors"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the fundamental concepts of electricity, current, voltage, and resistance.",
+            "Apply Ohm's Law to solve electrical problems and design circuits.",
+            "Identify and utilize various electronic components and their functions.",
+            "Create and analyze electronic circuits, including series and parallel circuits.",
+            "Gain practical experience with breadboards, diodes, LEDs, and transistors.",
+            "Learn to read and interpret datasheets for electronic components.",
+            "Develop skills in circuit drawing, analysis, and troubleshooting.",
+            "Explore the applications of buttons, switches, capacitors, and more in electronic projects."
+        ],
+        "course_content": {
+            "_id": "64f81c64ceb2f722072323a9",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Concepts and basics of electronics",
+                            "subtopics": [
+                                "What is electricity and where does it come from?",
+                                "current",
+                                "Voltage",
+                                "Resistance & resistor",
+                                "Ohm's Law",
+                                "Electrical quantities and units",
+                                "The list of robotic parts required for this course ",
+                                "Knowing all the parts and uses",
+                                "How to prepare and explanations related to each"
+                            ],
+                            "_id": "64f81c64ceb2f722072323ab"
+                        },
+                        {
+                            "topicName": "Schematic and Electronic circuits",
+                            "subtopics": [
+                                "basic circuits",
+                                "Schematic understanding",
+                                "Scientific symbol of electronic components",
+                                "What is a datasheet and how to understand it",
+                                "Power supply ",
+                                "Multimeter and how to work with it"
+                            ],
+                            "_id": "64f81c64ceb2f722072323ac"
+                        },
+                        {
+                            "topicName": "breadboard and regulator",
+                            "subtopics": [
+                                "What is a breadboard?",
+                                "breadboard structure",
+                                "Placement of parts on breadboard",
+                                "Wires",
+                                "Checking the voltage conversion with a multimeter"
+                            ],
+                            "_id": "64f81c64ceb2f722072323ad"
+                        },
+                        {
+                            "topicName": "Diodes",
+                            "subtopics": [
+                                "Types of diodes",
+                                "LED",
+                                "LED RGB ",
+                                "Project 1- Turn on the LED Turn off the LED",
+                                "Project 2- Flashing LED",
+                                "Project 3- Turn on/off multiple LEDs",
+                                "Project 4- Turn on/off the RGB LED",
+                                "Project 4- Combined LEDs",
+                                "Project 6- Control the amount of light with resistance",
+                                "Project 7- Combination of lights in LED RGB"
+                            ],
+                            "_id": "64f81c64ceb2f722072323ae"
+                        },
+                        {
+                            "topicName": "Series and parallel circuits",
+                            "subtopics": [
+                                "Series and parallel circuit",
+                                "Current and voltage in series circuit",
+                                "Current and voltage in parallel circuit",
+                                "Resistance in parallel circuit",
+                                "Resistance in series circuit",
+                                "Concepts of branch and node in the circuit",
+                                "circuit breaker",
+                                "short circuit",
+                                "KVL and KCL rules",
+                                "Loop",
+                                "Mesh",
+                                "Circuit drawing and analysis"
+                            ],
+                            "_id": "64f81c64ceb2f722072323af"
+                        },
+                        {
+                            "topicName": "Buttons and switches",
+                            "subtopics": [
+                                "push button",
+                                "Lever microswitch"
+                            ],
+                            "_id": "64f81c64ceb2f722072323b0"
+                        },
+                        {
+                            "topicName": "Beezer and capacitor ",
+                            "subtopics": [],
+                            "_id": "64f81c64ceb2f722072323b1"
+                        },
+                        {
+                            "topicName": "Seven segment",
+                            "subtopics": [],
+                            "_id": "64f81c64ceb2f722072323b2"
+                        },
+                        {
+                            "topicName": "Potentiometer and LDR ",
+                            "subtopics": [],
+                            "_id": "64f81c64ceb2f722072323b3"
+                        },
+                        {
+                            "topicName": "Transistor",
+                            "subtopics": [],
+                            "_id": "64f81c64ceb2f722072323b4"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f81c64ceb2f722072323aa"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f81c64ceb2f722072323b6",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81c64ceb2f722072323b8"
+                        }
+                    ],
+                    "_id": "64f81c64ceb2f722072323b7"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81c64ceb2f722072323ba"
+                        }
+                    ],
+                    "_id": "64f81c64ceb2f722072323b9"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T06:29:56.410Z",
+        "updatedAt": "2023-09-06T06:29:56.410Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f81c6bceb2f722072323cb",
+        "name": "Mechanics for Robotics: Mastering the Basics",
+        "title": "Mechanics for Robotics: Mastering the Basics",
+        "description": "Embark on your journey into the world of robotics with our Mechanics for Robotics beginner course. This course serves as your gateway to understanding the fundamental mechanical principles that underpin robotics. Delve into the history and significance of mechanics in robotics, explore core concepts such as force, energy, and motion, and grasp essential units of measurement. Gain insights into the role of simple machines and structural strength, setting the stage for your robotics adventure. By the end of this course, you'll be well-prepared to dive deeper into the mechanical aspects of robotics.",
+        "meta_title": "Mechanics for Robotics: Master the Basics | Beginner Robotics Mechanics Course",
+        "meta_description": "Discover the essentials of robotics mechanics in our beginner course. From understanding the history of mechanics in robotics to mastering concepts like force and power transmission systems, this course equips you with the mechanical knowledge required for building and designing robots.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "slug": "mechanics-for-robotics",
+        "categories": [
+            "Robotics Mechanics",
+            "Beginner Robotics Course",
+            "Mechanical Engineering Fundamentals"
+        ],
+        "tags": [
+            "Mechanics Basics",
+            "Mechanical Components",
+            "Robot Building",
+            "Power Transmission",
+            "Robotics History",
+            "Simple Machines"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the historical context and importance of mechanics in robotics.",
+            "Grasp fundamental mechanical concepts, including force, energy, and motion.",
+            "Familiarize themselves with key units of measurement relevant to robotics.",
+            "Identify and utilize various mechanical components and tools.",
+            "Explore the mechanics of engines and power transmission systems.",
+            "Gain hands-on experience in assembling and testing a basic robot, Robmothy.",
+            "Develop the skills needed to build and control a robot's mechanical structure."
+        ],
+        "course_content": {
+            "_id": "64f81c6bceb2f722072323be",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "An introduction to mechanics and basic concepts",
+                            "subtopics": [
+                                "A history and background on the science of mechanics",
+                                "The impact and importance of mechanics in robotics",
+                                "Mechanical robots",
+                                "Basic concepts (force, energy, motion, etc.)",
+                                "Units of measurement (position, time, mass, length, velocity, etc.)",
+                                "Simple machines ",
+                                "Structural strength in mechanics"
+                            ],
+                            "_id": "64f81c6bceb2f722072323c0"
+                        },
+                        {
+                            "topicName": "Mechanical components",
+                            "subtopics": [
+                                "the wheel",
+                                "bolt and nut",
+                                "lever",
+                                "Pulley and gear",
+                                "Body and fittings",
+                                "Joints and connection points",
+                                "Power transmission systems",
+                                "Tools and materials"
+                            ],
+                            "_id": "64f81c6bceb2f722072323c1"
+                        },
+                        {
+                            "topicName": "Engines",
+                            "subtopics": [
+                                "Types of engines",
+                                "Components and structure of engines",
+                                "Armatures",
+                                "Start the engine",
+                                "H bridge circuit",
+                                "Motor driver",
+                                "Starting and testing the engine",
+                                "gearbox"
+                            ],
+                            "_id": "64f81c6bceb2f722072323c2"
+                        },
+                        {
+                            "topicName": "Robmothy (your first robot)",
+                            "subtopics": [
+                                "Body and mechanics of your robot",
+                                "Preparing the robot ",
+                                "Making electronic remote control",
+                                "Testing the movement of the robot in different directions"
+                            ],
+                            "_id": "64f81c6bceb2f722072323c3"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f81c6bceb2f722072323bf"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f81c6bceb2f722072323c5",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81c6bceb2f722072323c7"
+                        }
+                    ],
+                    "_id": "64f81c6bceb2f722072323c6"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81c6bceb2f722072323c9"
+                        }
+                    ],
+                    "_id": "64f81c6bceb2f722072323c8"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T06:30:03.130Z",
+        "updatedAt": "2023-09-06T06:30:03.130Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f81f47ceb2f72207232795",
+        "name": "Programming Fundamentals for Robotics: Mastering the Basics",
+        "title": "Programming Fundamentals for Robotics: Mastering the Basics",
+        "description": "Unlock the power of programming in the realm of robotics with our Programming Fundamentals for Robotics beginner course. This course offers a comprehensive introduction to the world of programming, covering its history, different programming languages, and its unique applications in robotics. Explore the nuances that distinguish robot programming from other forms of programming and get to grips with numbering systems. By the end of this course, you'll be well-equipped to tackle programming challenges in the robotics field.",
+        "meta_title": "Programming Fundamentals for Robotics: Master the Basics | Beginner Robotics Programming Course",
+        "meta_description": "Embark on your programming journey in robotics with our beginner course. Explore the history of programming, grasp fundamental programming concepts, and dive into hands-on programming using Scratch. Get ready to create your first robot program and unleash your creativity in the world of robotics.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "slug": "programming-fundamentals-for-robotics",
+        "categories": [
+            "Robotics Programming",
+            "Beginner Robotics Course",
+            "Programming Fundamentals"
+        ],
+        "tags": [
+            "Programming Basics",
+            "Scratch Programming",
+            "Robot Programming",
+            "Coding for Robotics",
+            "Numbering Systems"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the historical evolution of programming and its relevance to robotics.",
+            "Familiarize themselves with various programming languages and their applications in robotics.",
+            "Differentiate between robot programming and other programming disciplines.",
+            "Gain proficiency in numbering systems crucial for robotics.",
+            "Master programming basics, including flowcharts, algorithms, and control structures.",
+            "Utilize Scratch-based programming to create robot programs.",
+            "Create and run their first robot program and understand variables and their application."
+        ],
+        "course_content": {
+            "_id": "64f81f47ceb2f72207232788",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "What is programming?",
+                            "subtopics": [
+                                "History of programming",
+                                "programming languages",
+                                "Programming in robotics",
+                                "The difference between robot programming and other programming ",
+                                "Numbering systems"
+                            ],
+                            "_id": "64f81f47ceb2f7220723278a"
+                        },
+                        {
+                            "topicName": "Programming Basics",
+                            "subtopics": [
+                                "Flowcharts",
+                                "Algorithms",
+                                "Commands",
+                                "Controls and conditions",
+                                "loop and infinite conditional loops and their application"
+                            ],
+                            "_id": "64f81f47ceb2f7220723278b"
+                        },
+                        {
+                            "topicName": "Scratch-based programming",
+                            "subtopics": [
+                                "Introduction and introduction in Scratch",
+                                "Why scratch?",
+                                "Scratch installation",
+                                "Scratch editor review",
+                                "Start with scratch",
+                                "general parts of the Scratch",
+                                "how to change the language in Scratch",
+                                "scenes, objects and how to use them",
+                                "Getting to know the commands tab and its different parts",
+                                "How to save the project and open it"
+                            ],
+                            "_id": "64f81f47ceb2f7220723278c"
+                        },
+                        {
+                            "topicName": "Variable and its application",
+                            "subtopics": [],
+                            "_id": "64f81f47ceb2f7220723278d"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f81f47ceb2f72207232789"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f81f47ceb2f7220723278f",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81f47ceb2f72207232791"
+                        }
+                    ],
+                    "_id": "64f81f47ceb2f72207232790"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81f47ceb2f72207232793"
+                        }
+                    ],
+                    "_id": "64f81f47ceb2f72207232792"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T06:42:15.725Z",
+        "updatedAt": "2023-09-06T06:42:15.725Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f81f54ceb2f72207232863",
+        "name": "Intermediate Arduino and Sensors with M-Block Software",
+        "title": "Intermediate Arduino and Sensors with M-Block Software",
+        "description": "Master the world of Arduino and sensors in our intermediate course, Arduino and Sensors with M-Block Software. Begin with a comprehensive introduction to Arduino, exploring its history, types, components, and the significance of microcontrollers. Discover the differences between microcontrollers and CPUs and delve into the world of IoT (Internet of Things). In this course, we will focus on coding using SCRATCH-based M-Block Software, Arduino IDE, and sensor integration. By the end of this course, you'll be proficient in using Arduino to create a wide range of projects and applications.",
+        "meta_title": "Intermediate Arduino and Sensors Course: M-Block Software Mastery",
+        "meta_description": "Take your Arduino skills to the next level with our intermediate course. Explore Arduino history, coding with M-Block Software, and dive into exciting projects with LEDs, ultrasonic modules, buzzers, and more. Master sensor integration and unleash your creativity in the world of electronics and IoT.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693982427/images/uuanphcdti9em2r1c6k7.jpg",
+        "slug": "Arduino-and-sensors-(M-Block_Software)",
+        "categories": [
+            "Arduino Programming",
+            "Sensors Integration",
+            "Intermediate Electronics Course"
+        ],
+        "tags": [
+            "M-Block Software",
+            "IoT",
+            "Arduino Projects",
+            "Sensor Coding",
+            "Microcontroller Programming",
+            "Electronics Intermediate Course"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the history and significance of Arduino in the field of electronics.",
+            "Master the coding structure using SCRATCH-based M-Block Software and Arduino IDE.",
+            "Learn how to work with various Arduino boards and microcontrollers.",
+            "Create projects that involve LEDs, seven-segment displays, RGB LEDs, ultrasonic modules, buzzers, and more.",
+            "Develop proficiency in sensor integration and data collection.",
+            "Apply programming concepts like variables, loops, and conditions to Arduino projects.",
+            "Build a comprehensive understanding of advanced sensor modules such as LDRs and joystick modules.",
+            "Complete a final project that showcases their Arduino and sensor skills"
+        ],
+        "course_content": {
+            "_id": "64f81f54ceb2f72207232851",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Introduction to Arduino",
+                            "subtopics": [
+                                "What is Arduino?",
+                                "Why Arduino?",
+                                "Arduino board history",
+                                "Types of Arduino",
+                                "Arduino components",
+                                "What is a microcontroller?",
+                                "Types of microcontrollers",
+                                "Components of microcontrollers",
+                                "Difference between mcu and cpu",
+                                "IOT"
+                            ],
+                            "_id": "64f81f54ceb2f72207232853"
+                        },
+                        {
+                            "topicName": "Arduino coding structure",
+                            "subtopics": [
+                                "SCRATCH based M-Block Software",
+                                "Arduino IDE",
+                                "Download and install ",
+                                "Introduction to compilers",
+                                "introduction to the software environment",
+                                "Board health test",
+                                "Installing drivers",
+                                "Block coding structure",
+                                "Full explanation of each section"
+                            ],
+                            "_id": "64f81f54ceb2f72207232854"
+                        },
+                        {
+                            "topicName": "Get start- led ",
+                            "subtopics": [
+                                "Launch the software",
+                                "Connecting Arduino to the device",
+                                "project 1 - hello world in the world of microcontrollers",
+                                "Analog and digital",
+                                "Project 2 – turn off led ",
+                                "Arduino pins",
+                                "LED test",
+                                "Project 3: Flashing LED",
+                                "Delay",
+                                "Project 4: states of two LEDs",
+                                "Project 5: Colored lights",
+                                "Project 6: Traffic light",
+                                "Timer",
+                                "Project 7: Dancing Light",
+                                "Project 8: Idea with LED",
+                                "Project 9: experiments with LED"
+                            ],
+                            "_id": "64f81f54ceb2f72207232855"
+                        },
+                        {
+                            "topicName": "sevensegments & LED RGB",
+                            "subtopics": [
+                                "An overview of sevensegment ",
+                                "cathode and anode",
+                                "Seven segment test methods",
+                                "Project 10: Lighting each segment",
+                                "Project 11: Showing the number 0 to 9",
+                                "Project 12: Showing digital letters",
+                                "difference between the anode and cathode of the electric circuit",
+                                "Variables",
+                                "variable defining",
+                                "Project 13: Rotation on segments",
+                                "Project 14: Traffic light display",
+                                "Project 15: Countdown",
+                                "Project 16: Delay game",
+                                "An overview of RGB LEDs",
+                                "Project 17: Composition of light",
+                                "Project 19: Dance of Light",
+                                "Project 20: Light and button",
+                                "Project 21: Reverse Traffic Light"
+                            ],
+                            "_id": "64f81f54ceb2f72207232856"
+                        },
+                        {
+                            "topicName": "Ultrasonic module",
+                            "subtopics": [
+                                "What is ultrasonic?",
+                                "Ultrasonic applications",
+                                "Introducing the srf05 module",
+                                "Distance calculation",
+                                "Project 22: Distance detection",
+                                "Project 23: Obstacle detection",
+                                "condition structure",
+                                "Repeat structure",
+                                "Com-project 1",
+                                "Com-project 2",
+                                "Com-project 3",
+                                "Com-project 4",
+                                "Com-project 5"
+                            ],
+                            "_id": "64f81f54ceb2f72207232857"
+                        },
+                        {
+                            "topicName": "buzzer & pwm",
+                            "subtopics": [
+                                "Project 22: Sound production",
+                                "Project 23: Blowing the horn",
+                                "what is pwm",
+                                "Project 24: Volume increase and decrease with PWM",
+                                "Project 25:",
+                                "Project 26:"
+                            ],
+                            "_id": "64f81f54ceb2f72207232858"
+                        },
+                        {
+                            "topicName": "joystick module",
+                            "subtopics": [
+                                "Introducing the joystick module And overview of potentiometers ",
+                                "X and Y axes",
+                                "Coordinate",
+                                "Read and write Command",
+                                "Live and upload",
+                                "Set",
+                                "Project 27: ",
+                                "Project 28: ",
+                                "Project 29:",
+                                "Project 30: ",
+                                "Project 31: "
+                            ],
+                            "_id": "64f81f54ceb2f72207232859"
+                        },
+                        {
+                            "topicName": "LDR",
+                            "subtopics": [
+                                "Calibrate intervals",
+                                "Project 32: lamp",
+                                "Project 33: reverse light",
+                                "Project 34: light sound",
+                                "Project 35: Degrees of light"
+                            ],
+                            "_id": "64f81f54ceb2f7220723285a"
+                        },
+                        {
+                            "topicName": "final project",
+                            "subtopics": [
+                                "An overview of commands and structures",
+                                "Summary of topics taught",
+                                "Complete the final project"
+                            ],
+                            "_id": "64f81f54ceb2f7220723285b"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f81f54ceb2f72207232852"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f81f54ceb2f7220723285d",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81f54ceb2f7220723285f"
+                        }
+                    ],
+                    "_id": "64f81f54ceb2f7220723285e"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f81f54ceb2f72207232861"
+                        }
+                    ],
+                    "_id": "64f81f54ceb2f72207232860"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T06:42:28.450Z",
+        "updatedAt": "2023-09-06T06:42:28.450Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f822c9ceb2f7220723294e",
+        "name": "Advanced Robotics: Intermediate 2 - Mastering Robot Control",
+        "title": "intermediate 2: robot",
+        "description": "Elevate your robotics skills in our Intermediate 2: Robot course. This advanced program delves into the essential topics required to become a proficient roboticist. You'll explore the intricacies of engines, motor drivers, H-bridge circuits, and robot body optimization while prioritizing safety. Learn about various types of motor drivers, how to program them, and establish connections. Discover the power of Module L298 and embark on projects involving motor control, PWM (Pulse Width Modulation), and advanced robot movements. With a focus on balance, safety, and real-world applications, this course prepares you to create and control robots for various purposes.",
+        "meta_title": "Advanced Robotics: Intermediate 2 - Mastering Robot Control",
+        "meta_description": "Take your robotics skills to the next level with our Intermediate 2 course. Dive deep into motor drivers, H-bridge circuits, and robot optimization while creating robots for various applications. Explore advanced control methods, obstacle detection, line tracking, and more.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693982427/images/uuanphcdti9em2r1c6k7.jpg",
+        "slug": "mastering-robot-control",
+        "categories": [
+            "Advanced Robotics",
+            "Robot Control",
+            "Intermediate Electronics Course"
+        ],
+        "tags": [
+            "Motor Drivers",
+            "H-Bridge Circuits",
+            "Robot Balance",
+            "Advanced Control",
+            "Real-World Applications",
+            "Robotics Intermediate Course"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Gain expertise in engine types, H-bridge circuits, and motor rotation.",
+            "Understand the principles of motor drivers and their role in robot control.",
+            "Program motor drivers effectively for precise robot movements.",
+            "Develop advanced robot control structures using the Module L298.",
+            "Create and implement projects involving motor control, PWM, and robot balance.",
+            "Master real-world robot applications such as obstacle detection, light detection, line tracking, and fire detection.",
+            "Complete a series of challenging projects demonstrating proficiency in robot control.",
+            "Prioritize safety and optimization in robot design and operation."
+        ],
+        "course_content": {
+            "_id": "64f822c9ceb2f7220723293e",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Overview of required topics",
+                            "subtopics": [
+                                "Engine and types of engine",
+                                "H bridge circuit",
+                                "Motor rotation directions",
+                                "Start the engine",
+                                "Robot body",
+                                "optimization and safety"
+                            ],
+                            "_id": "64f822c9ceb2f72207232940"
+                        },
+                        {
+                            "topicName": "Motor driver",
+                            "subtopics": [
+                                "What is a motor driver?",
+                                "Types of motor drivers",
+                                "How to program drivers",
+                                "Connections and components",
+                                "Robot control structure",
+                                "Module L 298",
+                                "Introducing the module and how it works",
+                                "Project 1: Starting a motor and turning it forward and backward",
+                                "Project 2: Delay in motion",
+                                "Project 3: Setting up two engines",
+                                "Project 4: Motion directions for 2 motors",
+                                "Project 5: Broken movements",
+                                "Project 6: forward, backward, rotary movement in robot ",
+                                "PWM ",
+                                "Speed and direction control",
+                                "The importance of delay in movement",
+                                "Project 7: 10 examples of motor movement states in the robot",
+                                "Safety tips",
+                                "Robot balance",
+                                "Homework: 10 projects of different robot movements"
+                            ],
+                            "_id": "64f822c9ceb2f72207232941"
+                        },
+                        {
+                            "topicName": "Control robot with joystick",
+                            "subtopics": [],
+                            "_id": "64f822c9ceb2f72207232942"
+                        },
+                        {
+                            "topicName": "Obstacle detection robot",
+                            "subtopics": [],
+                            "_id": "64f822c9ceb2f72207232943"
+                        },
+                        {
+                            "topicName": "Light detection robot",
+                            "subtopics": [],
+                            "_id": "64f822c9ceb2f72207232944"
+                        },
+                        {
+                            "topicName": "Line tracking robot",
+                            "subtopics": [],
+                            "_id": "64f822c9ceb2f72207232945"
+                        },
+                        {
+                            "topicName": "Fire detection robots",
+                            "subtopics": [],
+                            "_id": "64f822c9ceb2f72207232946"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f822c9ceb2f7220723293f"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f822c9ceb2f72207232948",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f822c9ceb2f7220723294a"
+                        }
+                    ],
+                    "_id": "64f822c9ceb2f72207232949"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f822c9ceb2f7220723294c"
+                        }
+                    ],
+                    "_id": "64f822c9ceb2f7220723294b"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T06:57:13.584Z",
+        "updatedAt": "2023-09-06T06:57:13.584Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f8237eceb2f72207232a35",
+        "name": "Advanced Robotics: Intermediate 3 - Multi-Robots Projects Mastery",
+        "title": "Multi-robots projects",
+        "description": "Take your robotics expertise to the next level with our Intermediate 3: Multi-Robots Projects course. In this advanced program, you'll dive into a series of challenging multi-robot projects designed to showcase your skills and creativity. From maze-solving robots to firefighter robots, advanced line followers, and robotic arms, you'll explore diverse applications of robotics technology. Work on projects that demand problem-solving, precision, and innovation. By the end of this course, you'll have the experience and knowledge to tackle complex multi-robot challenges and contribute to the field of robotics.",
+        "meta_title": "Advanced Robotics: Intermediate 3 - Multi-Robots Projects Mastery",
+        "meta_description": "Challenge yourself with our Intermediate 3 course focused on Multi-Robots Projects. Embark on diverse robotics endeavors, including maze-solving robots, firefighter robots, and advanced line followers. Build a robotic arm and explore obstacle-moving robots. Get ready for a series of combined final projects that showcase your robotics prowess.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693982427/images/uuanphcdti9em2r1c6k7.jpg",
+        "slug": "mulit-robots-projects",
+        "categories": [
+            "Advanced Robotics",
+            "Multi-Robot Projects",
+            "Robotics Challenges"
+        ],
+        "tags": [
+            "Maze Solvers",
+            "Firefighter Robots",
+            "Line Followers",
+            "Robotic Arms",
+            "Multi-Robot Projects",
+            "Robotics Mastery"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Gain hands-on experience in designing and building a variety of robots.",
+            "Develop problem-solving skills by working on complex multi-robot challenges.",
+            "Master maze-solving techniques and create efficient maze-solving robots.",
+            "Build firefighter robots capable of handling fire-related scenarios.",
+            "Create advanced line-following robots that can navigate intricate paths.",
+            "Assemble and program robotic arms for precise tasks.",
+            "Design obstacle-moving robots with advanced control systems.",
+            "Collaborate on combined final projects that demonstrate innovative robotic solutions."
+        ],
+        "course_content": {
+            "_id": "64f8237eceb2f72207232a24",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "maze solvers robot",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a26"
+                        },
+                        {
+                            "topicName": "firefighter robots",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a27"
+                        },
+                        {
+                            "topicName": "advanced line follower robot",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a28"
+                        },
+                        {
+                            "topicName": "Robotic arm",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a29"
+                        },
+                        {
+                            "topicName": "Obstacle moving robot",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a2a"
+                        },
+                        {
+                            "topicName": "Combined final project 1",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a2b"
+                        },
+                        {
+                            "topicName": "Combined final project 2",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a2c"
+                        },
+                        {
+                            "topicName": "Combined final project 3",
+                            "subtopics": [],
+                            "_id": "64f8237eceb2f72207232a2d"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f8237eceb2f72207232a25"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f8237eceb2f72207232a2f",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f8237eceb2f72207232a31"
+                        }
+                    ],
+                    "_id": "64f8237eceb2f72207232a30"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f8237eceb2f72207232a33"
+                        }
+                    ],
+                    "_id": "64f8237eceb2f72207232a32"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T07:00:14.472Z",
+        "updatedAt": "2023-09-06T07:00:14.472Z",
+        "__v": 0
+    },
+    {
+        "_id": "64f83b6aceb2f72207232c0e",
+        "name": "Mechanical Design Mastery with SOLIDWORKS: Proficient 1 Course",
+        "title": "Mechanical design ( SOLIDWORKS )",
+        "description": "Master the art of mechanical design with SOLIDWORKS in our Proficient 1: Mechanical Design (SOLIDWORKS) course. Dive into the world of 3D design, CAD (Computer-Aided Design), and discover the power of SOLIDWORKS. Explore industrial design principles, sketching, and design intent. Familiarize yourself with the SOLIDWORKS user interface and learn about industrial sketching and its application in robotics. This course equips you with the skills needed for mechanical design, referencing standards, and understanding design planes. Whether you're an aspiring industrial designer or a robotics enthusiast, this course will take your design capabilities to the next level.",
+        "meta_title": "Mechanical Design Mastery with SOLIDWORKS: Proficient 1 Course",
+        "meta_description": "Advance your mechanical design skills with SOLIDWORKS in our Proficient 1 course. Learn 3D design, CAD principles, and delve into industrial sketching. Gain expertise in SOLIDWORKS basics, part modeling, patterning, and advanced features. Explore assembly techniques and robotics projects to showcase your mechanical design proficiency",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693989697/images/e0ababy2ivsos6xfab7t.jpg",
+        "slug": "mechanical-desin-solidWorks",
+        "categories": [
+            "Mechanical Design",
+            "SOLIDWORKS",
+            "Proficient-Level Course",
+            "CAD Mastery"
+        ],
+        "tags": [
+            "3D Design",
+            "Industrial Sketching",
+            "Part Modeling",
+            "Assembly Design",
+            "Robotics Projects",
+            "Mechanical Design Proficiency"
+        ],
+        "course_category": "64c9f7b15794d7e86283a106",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Master 3D design principles and CAD techniques using SOLIDWORKS.",
+            "Understand the significance of SOLIDWORKS in industrial design and robotics.",
+            "Develop advanced sketching skills and sketch entities.",
+            "Navigate the SOLIDWORKS user interface and efficiently use the software.",
+            "Create basic parts and models with SOLIDWORKS.",
+            "Apply advanced modeling techniques, including patterning and feature editing.",
+            "Gain proficiency in assembly design, including various mates and assembly modes.",
+            "Work on robotics projects, including robot chassis, body, and component design.",
+            "Complete a final project that demonstrates mechanical design mastery."
+        ],
+        "course_content": {
+            "_id": "64f83b68ceb2f72207232bf9",
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Industrial Design",
+                            "subtopics": [
+                                "What is 3D Design",
+                                "CAD ",
+                                "What is SOLIDWORKS",
+                                "Why SOLIDWORKS",
+                                "Comparison of SolidWorks and catia software",
+                                "introduction to industrial Sketching",
+                                "Design Intent",
+                                "SOLIDWORKS User Interface",
+                                "Industrial Design Path",
+                                "Application of industrial design in robotics",
+                                "References",
+                                "Standards",
+                                "Design plane",
+                                "Perspective of an industrial designer",
+                                "What is industrial engineering?"
+                            ],
+                            "_id": "64f83b68ceb2f72207232bfb"
+                        },
+                        {
+                            "topicName": "Introduction to Sketching",
+                            "subtopics": [
+                                "2D Sketching",
+                                "Sketching Guidelines",
+                                "Basic Sketching",
+                                "Sketch Entities",
+                                "Dimensions ",
+                                "Symmetry in the Sketch",
+                                "Lines",
+                                "Scales",
+                                "Measurement",
+                                "Measurement methods",
+                                "Distances",
+                                "Design of different shapes",
+                                "Drawing Sheets"
+                            ],
+                            "_id": "64f83b68ceb2f72207232bfc"
+                        },
+                        {
+                            "topicName": "SOLIDWORKS Basics",
+                            "subtopics": [
+                                "Software installation",
+                                "Introduction of Part, Assembly and Drawing environment",
+                                "Units of measurement in SolidWorks",
+                                "Task Pan",
+                                "Saving and opening Files ",
+                                "Template",
+                                "File Management",
+                                "Basic Sketching",
+                                "Dimensions",
+                                "Plane",
+                                "Various methods of entering the Sketch space",
+                                "drawing commands",
+                                "Types of drag methods",
+                                "Working with the Display/Delete Relations option",
+                                "Sketch editing methods",
+                                "Methods of exiting a command",
+                                "Explanation of the For Construction option",
+                                "Spline Tools menu"
+                            ],
+                            "_id": "64f83b68ceb2f72207232bfd"
+                        },
+                        {
+                            "topicName": "Basic Part Modeling",
+                            "subtopics": [
+                                "Basic Modeling and Terminology",
+                                "Choosing the Best Profile",
+                                "Choosing the Sketch Plane",
+                                "Details of the Part",
+                                "Boss Feature",
+                                "Sketching on a Planar Face",
+                                "Cut Feature",
+                                "View Selector",
+                                "Using the Hole Wizard",
+                                "Filleting",
+                                "Editing Tools",
+                                "Detailing Basics",
+                                "Drawing Views",
+                                "Center Marks",
+                                "Dimensioning",
+                                "Changing Parameters"
+                            ],
+                            "_id": "64f83b68ceb2f72207232bfe"
+                        },
+                        {
+                            "topicName": "Patterning",
+                            "subtopics": [
+                                "Why Use Patterns?",
+                                "Linear Patterns",
+                                "Circular Patterns",
+                                "Reference Geometry",
+                                "Planes",
+                                "Mirror Patterns",
+                                "Using Pattern Seed Only",
+                                "Up To Reference",
+                                "Sketch Driven Patterns"
+                            ],
+                            "_id": "64f83b68ceb2f72207232bff"
+                        },
+                        {
+                            "topicName": "commands",
+                            "subtopics": [
+                                "Line",
+                                "Centerline",
+                                "Circle",
+                                "Rectangle",
+                                "Scroll ",
+                                "Pan",
+                                "Parallelogram",
+                                "Arc",
+                                "Zoom to fit",
+                                "Polygon",
+                                "Slot",
+                                "Ellipse",
+                                "Spline",
+                                "Spline on Surface",
+                                "Point",
+                                "Fillet",
+                                "Chamfer",
+                                "Trim",
+                                "Extend",
+                                "Offset",
+                                "Mirror",
+                                "Linear Sketch Pattern",
+                                "Circular Sketch Pattern",
+                                "Move",
+                                "Rotate",
+                                "Copy",
+                                "Scale",
+                                "Stretch"
+                            ],
+                            "_id": "64f83b68ceb2f72207232c00"
+                        },
+                        {
+                            "topicName": "Features",
+                            "subtopics": [
+                                "Revolved Features",
+                                "Building the Rim",
+                                "Building the Spoke",
+                                "Edit Material",
+                                "Mass Properties",
+                                "File Properties",
+                                "Shelling and Ribs",
+                                "Draft",
+                                "Shelling",
+                                "Ribs",
+                                "Full Round Fillets",
+                                "Thin Features",
+                                "Freezing Features",
+                                "Part Editing",
+                                "Editing Topics",
+                                "Sketch Issues",
+                                "Design Changes",
+                                "Information From a Model",
+                                "Rebuilding Tools",
+                                "Sketch Contours",
+                                "Replace Sketch Entity"
+                            ],
+                            "_id": "64f83b68ceb2f72207232c01"
+                        },
+                        {
+                            "topicName": "more commands",
+                            "subtopics": [
+                                "Reference Geometry",
+                                "Swept Boss/Base",
+                                "Loft",
+                                "Boundary",
+                                "Extrude Cut",
+                                "Revolved Cut",
+                                "Swept Cut",
+                                "Lofted Cut",
+                                "Boundary Cut",
+                                "Hole Wizard",
+                                "Fillet",
+                                "Linear Pattern",
+                                "Circular Pattern",
+                                "Curve Driven Pattern",
+                                "Sketch Driven Pattern",
+                                "Table Driven Pattern",
+                                "Fill Pattern",
+                                "Chamfer",
+                                "Shell",
+                                "Rib",
+                                "Draft",
+                                "Wrap",
+                                "Mirror",
+                                "Curve",
+                                "Simple Hole",
+                                "Scale",
+                                "Dome",
+                                "Freeform",
+                                "Indent",
+                                "Deform",
+                                "Flex"
+                            ],
+                            "_id": "64f83b68ceb2f72207232c02"
+                        },
+                        {
+                            "topicName": "more on commands",
+                            "subtopics": [
+                                "Zoom to Fit",
+                                "Zoom to Area",
+                                "Previous View",
+                                "View Orientation",
+                                "New View",
+                                "Link Views",
+                                "Display Style",
+                                "Hide/Show Items",
+                                "View Temporary Axes",
+                                "Section View",
+                                "Edit Sketch or Curve Color",
+                                "Shadow in Shaded Mode",
+                                "Perspective",
+                                "Ambient Occlusion"
+                            ],
+                            "_id": "64f83b68ceb2f72207232c03"
+                        },
+                        {
+                            "topicName": "Assembly",
+                            "subtopics": [
+                                "Different modes of assembly file",
+                                "Convert an external file to an Virtual",
+                                "Mates",
+                                "View Mates",
+                                "Coincident Mate",
+                                "Parallel Mate",
+                                "Concentric Mate",
+                                "Perpendicular Mate",
+                                "Tangent Mate",
+                                "Distance Mate",
+                                "Angle Mate",
+                                "Lock Mate",
+                                "Symmetric Mate",
+                                "Width Mate",
+                                "Path Mate",
+                                "Linear/Linear Coupler Mate",
+                                "Angle Limit Mate",
+                                "Distance Limit Mate",
+                                "Cam Mate",
+                                "Hinge Mate",
+                                "Gear Mate",
+                                "Rack Pinion Mate",
+                                "Screw Mate",
+                                "Universal Mate",
+                                "Patterns in assembly",
+                                "Exploded View",
+                                "Fix and Float",
+                                "Multiple binding",
+                                "Move Component command",
+                                "Weld Bead",
+                                "Select Other",
+                                "Belt/Chain",
+                                "Resolved Mode",
+                                "Light Weight Mode",
+                                "Large Assembly Mode",
+                                "Large Design Review",
+                                "Copy with Mates",
+                                "Make Virtual",
+                                "Comment",
+                                "Use for Positioning Only",
+                                "Feature Driven Component Pattern",
+                                "Mirror Component"
+                            ],
+                            "_id": "64f83b68ceb2f72207232c04"
+                        },
+                        {
+                            "topicName": "Projects",
+                            "subtopics": [
+                                "Robot chassis design 1",
+                                "Robot chassis design 2",
+                                "Robot chassis design 3",
+                                "Robot body design 1",
+                                "Robot body design 2",
+                                "Robot body design 3",
+                                "Desing Parts 1",
+                                "Desing Parts 2",
+                                "Desing Parts 3",
+                                "Final Project 1",
+                                "Final Project 2",
+                                "Final Project 3"
+                            ],
+                            "_id": "64f83b68ceb2f72207232c05"
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": "",
+                    "_id": "64f83b68ceb2f72207232bfa"
+                }
+            ],
+            "__v": 0
+        },
+        "pricing": {
+            "_id": "64f83b6aceb2f72207232c08",
+            "pricing": [
+                {
+                    "course_level_category": "",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f83b6aceb2f72207232c0a"
+                        }
+                    ],
+                    "_id": "64f83b6aceb2f72207232c09"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "0",
+                            "_id": "64f83b6aceb2f72207232c0c"
+                        }
+                    ],
+                    "_id": "64f83b6aceb2f72207232c0b"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active",
+        "createdAt": "2023-09-06T08:42:18.554Z",
+        "updatedAt": "2023-09-06T08:42:18.554Z",
+        "__v": 0
+    }
+]

@@ -1,6 +1,13 @@
 .csnavContainer {
     height: 45px;
     background: #242539;
+    /* background: #04213e; */
+    
+    /* background: #064273; */
+    /* background: #021E44; */
+    /* background: #043464; */
+    /* background: #001F3F; */
+    /* background: #033E6B; */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
     display: flex;
     align-items: center;

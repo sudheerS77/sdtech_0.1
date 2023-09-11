@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from "react";
 const { useRouter } = require("next/router");
 import Head from "next/head";
+import axios from "axios";
+import { APP_NAME, DOMAIN } from "@/config";
 
 // Layout
 import HomeLayout from "@/Layout/Home.layout";
@@ -11,19 +13,19 @@ import CourseBody from "@/components/courses/CourseBody";
 import Banner from "@/components/courses/banner";
 import SimilarCourses from "@/components/courses/similarCourses";
 
-import { APP_NAME, DOMAIN } from "@/config";
-
 // import data from '../../lib/mergejsondata';
+
 // Data
 import programming from "../../data/programming.json";
 import robotics from "../../data/robotics.json";
+import allCourses from "../../data/allcourses.json";
 
-const PaidCourse = ({ id }) => {
+const PaidCourse = ({ courseid, data }) => {
   const router = useRouter();
 
-  const { courseid } = router.query;
+  // const { coursename } = router.query;
 
-  const [courseInfo, setCourseInfo] = useState("");
+  const [courseInfo, setCourseInfo] = useState(data);
   const [isLoading, setIsLoading] = useState(false);
   const [mergedData, setMergedData] = useState([]);
 
@@ -102,35 +104,60 @@ const PaidCourse = ({ id }) => {
     }
   };
   useEffect(() => {
-    mergeJSONData();
-  }, []);
+    // mergeJSONData();
+  }, [false]);
+
+  // useEffect(() => {
+  //   mergeJSONData();
+  // }, [courseid]);
+
+  console.log(courseid);
+  const getCourses = async () => {
+    setIsLoading(true);
+    const data = await axios.get(
+      `http://localhost:3000//api/course/${coursename}`
+    );
+    console.log(data?.data.data);
+    // setOutCoursesData(data.data?.data);
+    setCourseInfo(data.data?.data);
+    if (data?.data?.data) {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    mergeJSONData();
-  }, [courseid]);
+    // getCourses();
+    const filteredResults = allCourses?.filter(
+      (course) =>
+        // course?.name?.toLowerCase().includes(courseid?.toLowerCase())
+        course?.slug.toLowerCase() === courseid?.toLowerCase()
+    );
+    console.log(filteredResults[0]);
+    setCourseInfo(filteredResults[0]);
+  }, []);
 
   const HeadSection = () => {
     return (
       <Head>
-        <title>{courseInfo.title} | sdtechacademy.com</title>
-        <meta name="description" content={courseInfo.description} />
-        <meta name="keywords" content={courseInfo.tags} />
+        <title>{courseInfo?.title} | sdtechacademy.com</title>
+        <meta name="description" content={courseInfo?.description} />
+        <meta name="keywords" content={courseInfo?.tags} />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
         <link
           rel="canonical"
-          href={`https://sdtechacademy.com/courses/${courseInfo.slug}`}
+          href={`https://sdtechacademy.com/courses/${courseInfo?.slug}`}
         />
         <meta
           property="og:description"
-          content={courseInfo.description?.slice(0, 160)}
+          content={courseInfo?.description?.slice(0, 160)}
         />
         <meta property="og:type" content="webiste" />
         <meta
           property="og:url"
-          content={`https://sdtechacademy.com/courses/${courseInfo.slug}`}
+          content={`https://sdtechacademy.com/courses/${courseInfo?.slug}`}
         />
         <meta property="og:site_name" content={"sdtechacademy.com"} />
         {/* <meta property="og:image" content={`${API}/blog/photo/${blog.slug}`} />
@@ -144,25 +171,27 @@ const PaidCourse = ({ id }) => {
       </Head>
     );
   };
-
+  console.log({ courseInfo });
   return (
     <>
       <HomeLayout>
-        {isLoading ? (
-          <>Loading....</>
-        ) : courseInfo ? (
-          <>
-            <HeadSection />
-            <Banner courseInfo={courseInfo} />
-            <CourseBody courseInfo={courseInfo} />
-            {/* <SimilarCourses /> */}
-          </>
-        ) : (
-          <>OOPSE</>
-        )}
+        <HeadSection />
+        <Banner courseInfo={courseInfo} />
+        <CourseBody courseInfo={courseInfo} />
+        {/* <SimilarCourses /> */}
       </HomeLayout>
     </>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { courseid } = context.params;
+  return {
+    props: {
+      courseid,
+      allCourses,
+    },
+  };
+}
 
 export default PaidCourse;

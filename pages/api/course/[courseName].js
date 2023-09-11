@@ -22,7 +22,10 @@ export default async function handler(req, res) {
 // Get individual course
 const handleGET = async (req, res) => {
   const { courseName } = req.query;
-  const courseData = await CourseModal.find({ name: courseName });
+  const courseData = await CourseModal.find({ name: courseName })
+    .populate("course_category")
+    .populate("course_content")
+    .populate("pricing");
   // console.log(courseData);
   res.status(200).json({ data: courseData });
 };

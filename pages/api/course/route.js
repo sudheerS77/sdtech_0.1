@@ -2,7 +2,6 @@ import connectMongoDB from "@/lib/mongodb";
 import CourseModal from "@/models/course";
 import { NextResponse } from "next/server";
 
-
 export default async function handler(req, res) {
   const { method } = req;
 
@@ -26,12 +25,18 @@ export default async function handler(req, res) {
 
 // Get all courses
 const handleGET = async (req, res) => {
-  const courses = await CourseModal.find({});
-  res.status(200).json({ data: courses });
-
+  try {
+    const courses = await CourseModal.find({})
+      // .populate("course_category")
+      // .populate("course_content")
+      // .populate("pricing");
+    res.status(200).json({ data: courses });
+  } catch (error) {
+    res.status(500).json(error);
+  }
   // const apiUrl = 'https://sdtech-0-1.vercel.app'; // Replace with your API URL
-    // const apiResponse = await axios.get(`${apiUrl}${req.url}`);
-    // res.status(apiResponse.status).json(apiResponse.data);
+  // const apiResponse = await axios.get(`${apiUrl}${req.url}`);
+  // res.status(apiResponse.status).json(apiResponse.data);
 };
 
 // Add new course
@@ -57,11 +62,11 @@ const handlePOST = async (req, res) => {
     .save()
     .then((createdCourse) => {
       // console.log("Course Added to List", createdCourse);
-      res.status(200).json({ message: "course added successfully", data: createdCourse});
-
+      res
+        .status(200)
+        .json({ message: "course added successfully", data: createdCourse });
     })
     .catch((err) => {
       console.log("Error creating course", err);
     });
-
 };

@@ -1,9 +1,6 @@
-import mongoose from "mongoose";
+import { Schema, model, models } from "mongoose";
 
-const subSchema = new mongoose.Schema({
-  subtopics: { type: [String], required: true },
-});
-const courseSchema = new mongoose.Schema(
+const courseSchema = new Schema(
   {
     name: { type: String, unique: true, required: true },
     title: { type: String, unique: true, required: true },
@@ -13,65 +10,36 @@ const courseSchema = new mongoose.Schema(
     image: { type: String, required: true },
     slug: { type: String, required: true, trim: true },
     categories: [String],
-    tags: [],
-    pricing: [
-      {
-        beginner: {
-          rupess: Number,
-          dollars: Number,
-        },
-      },
-    ],
+    tags: [String],
+    course_category: {
+      type: Schema.Types.ObjectId,
+      ref: "CourseCategories",
+      required: true,
+    },
     levels: [String],
     learning_cutcomes: [String],
-    course_content: [
-      {
-        level: String,
-        data: [
-          {
-            topicName: String,
-            subtopics: [String],
-          },
-        ],
-        level_learning_outcomes: [String],
-        no_of_classes: Number,
-        no_of_months: String,
-        certification_name: String,
-        pricing: [
-          {
-            course_level_category: String,
-            course_level_pricing: [
-              {
-                level: String,
-                rupees: Number,
-                dollars: Number,
-              },
-            ],
-          },
-        ],
-      },
-    ],
+    course_content: {
+      type: Schema.Types.ObjectId,
+      ref: "technicalRoadMap",
+      required: true,
+    },
+    pricing: {
+      type: Schema.Types.ObjectId,
+      ref: "coursePricing",
+      required: true,
+    },
+    status: {
+      type: String,
+      enum: ["active", "inactive", "pending", "approved", "reject"],
+      default: "active",
+      required: true,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-const CourseModal =
-  mongoose.models.Course123 || mongoose.model("Course123", courseSchema);
+const CourseModal = models?.Courses || model("Courses", courseSchema);
 
 export default CourseModal;
-
-// courseContent: {
-//   type: [
-//     {
-//       topicName: {
-//         type: String,
-//         required: true,
-//         maxlength: 100,
-//       },
-//       subtopics: { type: [String], required: true },
-//     },
-//   ],
-// },
-// tags: [String],
