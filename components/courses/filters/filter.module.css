@@ -1,3 +1,27 @@
-.filters_container{
+.filters_container {
     width: 20%;
+}
+
+.filters_acc_header {
+    
+}
+.filters_acc_header h4{
+    font-size: 1rem;
+    color: #000;
+}
+
+.filters_acc_body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.filters_acc_body label {
+    display: block;
+}
+
+.filters_acc_body input {
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
 }

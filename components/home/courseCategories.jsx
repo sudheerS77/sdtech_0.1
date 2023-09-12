@@ -10,9 +10,55 @@ import robotImage from "../../assets/images/robot.png";
 import Image from "next/image";
 
 const CourseCategories = () => {
-  const [activeCourse, setActiveCourse] = useState("Programming");
+  const [activeCourse, setActiveCourse] = useState("Robotics");
 
   const categories = [
+    {
+      name: "Robotics",
+      icon: <BsRobot className={hcc.caticon} />,
+      children: [
+        {
+          name: "Zero Beginner",
+          link: "zero-beginner",
+        },
+        {
+          name: "beginner 1",
+          link: "beginner-1",
+        },
+        {
+          name: "Mechanics For Robotics",
+          link: "mechanics-for-robotics",
+        },
+        {
+          name: "Programming fundamentals for robotics",
+          link: "programming-fundamentals-for-robotics",
+        },
+        {
+          name: "Arduino and sensors ( M-Block Software)",
+          link: "Arduino-and-sensors-(M-Block_Software)",
+        },
+        {
+          name: "Mastering Robot Control",
+          link: "mastering-robot-control",
+        },
+        {
+          name: "Multi-Robots Projects Mastery",
+          link: "mulit-robots-projects",
+        },
+        {
+          name: "Mechanical Design Mastery with SOLIDWORKS",
+          link: "mechanical-desin-solidWorks",
+        },
+        // {
+        //   name: "",
+        //   link: "",
+        // },
+        // {
+        //   name: "",
+        //   link: "",
+        // },
+      ],
+    },
     {
       name: "Programming",
       icon: <BsCode className={hcc.caticon} />,
@@ -135,16 +181,7 @@ const CourseCategories = () => {
         },
       ],
     },
-    {
-      name: "Robotics",
-      icon: <BsRobot className={hcc.caticon} />,
-      children: [
-        {
-          name: "Arduino",
-          link: "arduino",
-        },
-      ],
-    },
+
     {
       name: "DataBases",
       icon: <BsRobot className={hcc.caticon} />,

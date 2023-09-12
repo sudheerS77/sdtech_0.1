@@ -7,17 +7,38 @@ import allc from "../../styles/course.module.css";
 // Icons
 import { BsSearch } from "react-icons/bs";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import FilterComponent from "@/components/courses/filters/filter.component";
 import RowCourseCard from "@/components/home/rowCourse.card";
 import allCourses from "../../data/allcourses.json";
 
 const AllPaidCourses = () => {
-  // const [queryString, setQueryString] = useState("");
   const [filteredCourses, setFilteredCourses] = useState();
   const [allCoursesData, setAllCoursesData] = useState([]);
-  const [mergedData, setMergedData] = useState([]);
+  const [filters, setFilters] = useState({
+    language: { English: false, Hindi: false, Persian: false },
+    courseCategory: {
+      programming: false,
+      robotics: false,
+      web_Development: false,
+      mobile_App_Development: false,
+      data_Bases: false,
+    },
+    level: {
+      beginner: false,
+      intermediate: false,
+      advance: false,
+    },
+    // price: {
 
+    // },
+    // duration: {
+    //   one_month: false,
+    //   two_months: false,
+    //   three_months: false,
+    // },
+
+    
+  });
   const handleInputChange = (e) => {
     // Search string
     const searchInput = e.target.value;
@@ -32,12 +53,61 @@ const AllPaidCourses = () => {
     }
   };
 
-  const getCourses = async () => {
-    const data = await axios.get("http://localhost:3000/api/course/route");
-    console.log(data?.data.data);
-    // setOutCoursesData(data.data?.data);
-    setFilteredCourses(data.data?.data);
+  const applyFilters = () => {
+    const filteredCoursesData = allCoursesData.filter((item) => {
+      // Language Filter
+      const languageKeys = Object.keys(filters.language).filter((data) => {
+        return filters.language[data];
+      });
+      if (
+        languageKeys.length > 0 &&
+        !item.languages.some((lan) => languageKeys.includes(lan))
+      ) {
+        return false;
+      }
+
+      // Course Category Filter
+      const courseCategoryKeys = Object.keys(filters.courseCategory).filter(
+        (data) => {
+          return filters.courseCategory[data];
+        }
+      );
+      if (
+        courseCategoryKeys.length > 0 &&
+        !courseCategoryKeys.some((cat) =>
+          item.course_category.includes(cat.split("_").join(" ").toLowerCase())
+        )
+      ) {
+        return false;
+      }
+
+      // Level Filter
+      const levelKeys = Object.keys(filters.level).filter((data) => {
+        return filters.level[data];
+      });
+      if (
+        levelKeys.length > 0 &&
+        !item.level.some((lvl) => levelKeys.includes(lvl))
+        // !levelKeys.some((lvl) => item.level.includes(lvl.toLowerCase()))
+      ) {
+        return false;
+      }
+      if (
+        Object.keys(filters.level).some(
+          (level) =>
+            filters.level[level] && !item.level.includes(level.toLowerCase())
+        )
+      )
+        return false;
+      return true;
+    });
+    console.log(filteredCoursesData);
+    setFilteredCourses(filteredCoursesData);
   };
+
+  useEffect(() => {
+    applyFilters();
+  }, [filters]);
 
   useEffect(() => {
     // getCourses();
@@ -46,31 +116,6 @@ const AllPaidCourses = () => {
     setFilteredCourses(allCourses);
   }, []);
 
-  useEffect(() => {
-    const fileList = [
-      "programming",
-      "webDevelopment",
-      // "robotics",
-      "mobileAppDevelopment",
-      "databases",
-    ];
-    var courseData = [];
-    const mergeJSONData = async () => {
-      let mergedData = [];
-      try {
-        for (let i = 0; i < fileList.length; i++) {
-          const jsonModule = await import(`../../data/${fileList[i]}.json`);
-          const jsonData = jsonModule.default;
-          mergedData = mergedData.concat(jsonData);
-        }
-        setMergedData(mergedData);
-        setFilteredCourses(mergedData);
-      } catch (error) {
-        console.error("Error merging JSON files:", error);
-      }
-    };
-    // mergeJSONData();
-  }, [false]);
   return (
     <>
       <HomeLayout>
@@ -86,7 +131,7 @@ const AllPaidCourses = () => {
             </span>
           </div>
           <div className={allc.allc_courses_container}>
-            <FilterComponent />
+            <FilterComponent filters={filters} setFilters={setFilters} />
             <div className={allc.allc_body}>
               {filteredCourses?.length !== 0 ? (
                 <>

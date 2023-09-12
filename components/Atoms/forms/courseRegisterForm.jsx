@@ -201,7 +201,7 @@ const CourseRegisterForm = ({ courseName }) => {
     },
   ];
 
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({});
   const isLastStep = currentStep === stepData.length - 1;
 
@@ -247,8 +247,8 @@ const CourseRegisterForm = ({ courseName }) => {
           setFieldValue,
         }) => (
           <Form>
-            {JSON.stringify({ isSubmitting, isValid, isValidating, errors })}
-            {JSON.stringify({ values })}
+            {/* {JSON.stringify({ isSubmitting, isValid, isValidating, errors })}
+            {JSON.stringify({ values })} */}
             <div className={crf.step_container}>{stepCounter}</div>
             <div>
               <p>Student Details - Step 1 of 4</p>

@@ -6,11 +6,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Banner = ({ courseInfo }) => {
-
   const data = courseInfo;
-  // console.log(data);
-  // console.log(courseInfo[0]);
   const [playVideo, setPlayVideo] = useState(false);
+
   return (
     <>
       <div className={b.b_container}>
@@ -18,13 +16,7 @@ const Banner = ({ courseInfo }) => {
           <h1>{data?.title}</h1>
           <p>{data?.description}</p>
           <div>
-            <Link
-              href="/courses/course-register"
-              // {{
-              //   pathname: "/courses/course-register",
-              //   // query: { name: data?.name },
-              // }}
-            >
+            <Link href="/courses/course-register">
               <button>Enroll Now</button>
             </Link>
           </div>
@@ -56,9 +48,3 @@ const Banner = ({ courseInfo }) => {
 };
 
 export default Banner;
-
-// Banner.getInitialProps = ({ query }) => {
-//   const {name} = query;
-
-//   return { name }
-// }

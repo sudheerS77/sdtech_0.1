@@ -13,128 +13,23 @@ import CourseBody from "@/components/courses/CourseBody";
 import Banner from "@/components/courses/banner";
 import SimilarCourses from "@/components/courses/similarCourses";
 
-// import data from '../../lib/mergejsondata';
-
 // Data
-import programming from "../../data/programming.json";
-import robotics from "../../data/robotics.json";
 import allCourses from "../../data/allcourses.json";
 
 const PaidCourse = ({ courseid, data }) => {
   const router = useRouter();
 
-  // const { coursename } = router.query;
-
+  console.log(courseid, data);
   const [courseInfo, setCourseInfo] = useState(data);
+  console.log(courseInfo);
   const [isLoading, setIsLoading] = useState(false);
-  const [mergedData, setMergedData] = useState([]);
-
-  const mergeJSONData = async () => {
-    const fileList = [
-      "programming",
-      "webDevelopment",
-      "robotics",
-      "mobileAppDevelopment",
-      "databases",
-    ];
-    var courseData = [];
-    let mergedData = [];
-    const programming = [
-      "python-programming",
-      "java-script",
-      "R-programming",
-      "php-programming",
-      "go-programming",
-      "c-programming",
-    ];
-    const webDebevelopment = [
-      "html-css-js",
-      "html",
-      "css",
-      "java-script",
-      "react-js",
-      "node-js",
-      "nextjs",
-      "mern-stack",
-      "mean-stack",
-      "flask",
-      "complete-java-full-stack-development",
-      "python-full-stack",
-      "full-stack-web-development",
-    ];
-    const mobileAppDevelopment = ["react-native", "dart", "flutter"];
-    const databases = ["sql", "mongodb"];
-    try {
-      const courseFileName = programming.includes(courseid)
-        ? "programming"
-        : webDebevelopment.includes(courseid)
-        ? "webDevelopment"
-        : mobileAppDevelopment.includes(courseid)
-        ? "mobileAppDevelopment"
-        : databases.includes(courseid)
-        ? "databases"
-        : null;
-      if (courseFileName === null) {
-        setCourseInfo();
-      } else {
-        const jsonModule = await import(`../../data/${courseFileName}.json`);
-        const jsonData = jsonModule.default;
-        setMergedData(jsonData);
-        const filteredResults = jsonData?.filter((course) =>
-          course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
-        );
-        setCourseInfo(filteredResults[0]);
-      }
-
-      // mergedData = mergedData.concat(jsonData);
-      // if () {
-      // }
-      // for (let i = 0; i < fileList.length; i++) {
-      //   const jsonModule = await import(`../../data/${fileList[i]}.json`);
-      //   const jsonData = jsonModule.default;
-      //   mergedData = mergedData.concat(jsonData);
-      // }
-      // setMergedData(mergedData);
-      // const filteredResults = mergedData?.filter((course) =>
-      //   course?.slug?.toLowerCase().includes(courseid?.toLowerCase())
-      // );
-      // setCourseInfo(filteredResults[0]);
-    } catch (error) {
-      // console.error("Error merging JSON files:", error);
-    }
-  };
-  useEffect(() => {
-    // mergeJSONData();
-  }, [false]);
-
-  // useEffect(() => {
-  //   mergeJSONData();
-  // }, [courseid]);
-
-  console.log(courseid);
-  const getCourses = async () => {
-    setIsLoading(true);
-    const data = await axios.get(
-      `http://localhost:3000//api/course/${coursename}`
-    );
-    console.log(data?.data.data);
-    // setOutCoursesData(data.data?.data);
-    setCourseInfo(data.data?.data);
-    if (data?.data?.data) {
-      setIsLoading(false);
-    }
-  };
 
   useEffect(() => {
-    // getCourses();
     const filteredResults = allCourses?.filter(
-      (course) =>
-        // course?.name?.toLowerCase().includes(courseid?.toLowerCase())
-        course?.slug.toLowerCase() === courseid?.toLowerCase()
+      (course) => course?.slug.toLowerCase() === courseid?.toLowerCase()
     );
-    console.log(filteredResults[0]);
     setCourseInfo(filteredResults[0]);
-  }, []);
+  }, [, courseid]);
 
   const HeadSection = () => {
     return (
@@ -171,7 +66,7 @@ const PaidCourse = ({ courseid, data }) => {
       </Head>
     );
   };
-  console.log({ courseInfo });
+
   return (
     <>
       <HomeLayout>
@@ -186,6 +81,7 @@ const PaidCourse = ({ courseid, data }) => {
 
 export async function getServerSideProps(context) {
   const { courseid } = context.params;
+
   return {
     props: {
       courseid,

@@ -6,7 +6,7 @@ import { BsDot } from "react-icons/bs";
 
 const Accordion = ({ sno, header, body, isOpen, toggleAccordion }) => {
   // const [clicked, setClicked] = useState(a_status);
-// console.log(isOpen);
+  // console.log(isOpen);
   const txt_color = isOpen ? "#fff" : "#0f1923";
   const bg_color = isOpen ? "#0f1923" : "#fff";
 

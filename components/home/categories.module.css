@@ -119,7 +119,7 @@
 .coursesList {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
     text-align: center;
     gap: 50px;
 
@@ -219,7 +219,7 @@
     }
 
     .coursesList {
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
 
     .courseName {

@@ -1,14 +1,14 @@
 /* Accordion */
 .accordion_container {
     width: 100%;
-    margin: 40px 0;
-    padding-bottom: 20px;
-    padding: 10px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.078);
+    /* margin: 40px 0; */
+    /* padding-bottom: 20px; */
+    /* padding: 10px; */
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.078); */
     backdrop-filter: blur(0.5px);
     -webkit-backdrop-filter: blur(0.5px);
     /* border: 1px solid rgba(255, 255, 255, 0.18); */
-    border: 1px solid #04233f3a;
+
     position: relative;
     overflow: hidden;
 
@@ -25,8 +25,10 @@
     transition: left 0.7s ease;
 
 }
+
 .acc_icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
     color: gray;
 
     display: flex;
@@ -41,23 +43,30 @@
     justify-content: flex-start;
     gap: 30px;
     cursor: pointer;
+    padding-bottom: 20px;
+    padding: 10px;
+    background-color: #f7f9fac0;
+    border: 1px solid #04233f27;
 }
 
 .acc_head h4 {
-    font-size: 1.4rem;
-    font-weight: normal;
-    color: rgb(2, 13, 45);
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(2, 13, 45, 0.675);
 }
 
 .acc_body {
-    width: 80%;
-    margin: 6px auto;
-    padding: 0 20px;
+    /* width: 100%; */
+    /* margin: 6px auto; */
+    padding: 10px 0 10px 50px;
+    border-left: 1px solid #04233f27;
+    border-right: 1px solid #04233f27;
+    border-bottom: 1px solid #04233f27;
 }
 
 .acc_body .acc_list {
-    font-size: 1.1rem;
-    font-weight: normal;
+    font-size: 0.9rem;
+    font-weight: 200;
     padding: 7px 0;
     display: flex;
     align-items: center;
@@ -67,7 +76,7 @@
     color: gray;
     font-size: 1.3rem;
     font-weight: regular;
-    margin: 40px 0 0 60px
+    /* margin: 40px 0 0 60px */
 }
 
 /* Media query for small devices (up to 768px wide) */

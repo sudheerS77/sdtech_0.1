@@ -2,57 +2,66 @@ import React, { useState } from "react";
 
 import fl from "./filter.module.css";
 
-const FiltersAccordion = () => {
+const FiltersAccordion = ({ filters, setFilters }) => {
   const [isOpen, setIsOpen] = useState({
-    language: false,
-    courseCategory: false,
-    level: false,
-    price: false,     
-    duration: false,
+    language: true,
+    courseCategory: true,
+    level: true,
+    price: true,
+    duration: true,
   });
-
+  const filterNames = ["language", "courseCategory", "level"];
   const toggleAccordion = (section) => {
-    setIsOpen({ ...isOpen, [section]: !isOpen[section] });
+    // setIsOpen({ ...isOpen, [section]: !isOpen[section] });
+  };
+  const handleFilterChange = (name, value) => {
+    setFilters((prev) => ({
+      ...prev,
+      [name]: {
+        ...prev[name],
+        [value]: !prev[name][value],
+      },
+    }));
   };
 
   return (
-    <div className={fl.acc_container}>
-      <div
-        className={fl.acc_header}
-        onClick={() => toggleAccordion("language")}
-      >
-        <h4>Language</h4>
-      </div>
-      {isOpen.language && (
-        <div>
-          <label>
-            <input type="checkbox" name="language" value="english" />
-            English
-          </label>
-          <label>
-            <input type="checkbox" name="language" value="Hindi" />
-            Hindi
-          </label>
+    <div>
+      {filterNames.map((fname, index) => (
+        <div className={fl.acc_container}>
+          <div
+            className={fl.filters_acc_header}
+            onClick={() => toggleAccordion("language")}
+          >
+            <h4>{fname}</h4>
+          </div>
+          {isOpen.language && (
+            <div className={fl.filters_acc_body}>
+              {Object.keys(filters[fname]).map((filterIndividualName, indx) => (
+                <label key={indx}>
+                  <input
+                    type="checkbox"
+                    checked={filters[fname][filterIndividualName]}
+                    onChange={() =>
+                      handleFilterChange(fname, filterIndividualName)
+                    }
+                  />
+                  {filterIndividualName.split("_").join(" ").toUpperCase()}
+                </label>
+              ))}
+            </div>
+          )}
         </div>
-      )}
+      ))}
     </div>
   );
 };
 
-const FilterComponent = () => {
-  const initialValues = {
-    language: [],
-    courseCategory: [],
-    level: [],
-    price: [],
-    duration: [],
-  };
-  console.log(initialValues);
+const FilterComponent = ({ filters, setFilters }) => {
   return (
     <>
-      <div className={fl.filters_container   }>
-        <h4>Filter by</h4>
-        <FiltersAccordion />
+      <div className={fl.filters_container}>
+        <h3>Filter by</h3>
+        <FiltersAccordion filters={filters} setFilters={setFilters} />
       </div>
     </>
   );

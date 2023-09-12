@@ -18,24 +18,31 @@
 
 }
 
-.wul_container {
+.coursOverView_section {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.coursOverView_container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: c;
     align-items: flex-start;
     justify-content: space-between;
     gap: 50px;
     position: relative;
 }
 
-.cb_wul_section h3 {
-    font-size: 1.8rem;
+.cb_container h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
     font-weight: 600;
     color: #000;
 }
 
-.cb_wul {
-    width: 60%;
-    margin: 40px 0;
-}
+.cb_wul {}
 
 .cb_wul ul {
     margin: 0px 50px;
@@ -89,19 +96,20 @@
 
 /* Course content */
 .cc_section {
-    width: 80%;
+    width: 100%;
     margin: 50px 0;
 }
-.tr_header{
+
+.tr_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.cc_section h3 {
+
+/* .cc_section h3 {
     font-size: 1.8rem;
-    /* text-align: center; */
     margin: 0 0 50px 0;
-}
+} */
 
 .level_Section {
     display: flex;
@@ -133,23 +141,38 @@
     border: 2px solid #04233f;
     transition: 0.4s ease-in;
 }
-.expand_collapse_btn button{
+
+.expand_collapse_btn button {
     /* width: 150px; */
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #04233f;
     background: none;
     border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.course_information {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.course_information p {
+    font-size: .9rem;
 }
 
 .acc_container {
     width: 100%;
 }
-.fee_container{
+
+.fee_container {
     width: 100%;
     height: auto;
-    background-image: linear-gradient(to bottom,  #05040c, transparent);
-    background-color:#1F1E28;
+    background-image: linear-gradient(to bottom, #05040c, transparent);
+    background-color: #1F1E28;
 
 }
 
@@ -159,12 +182,12 @@
         width: 90%;
     }
 
-    .wul_container {
+    .coursOverView_container {
         flex-direction: column;
         gap: 25px;
     }
 
-    .cb_wul_section h3 {
+    .coursOverView_section h3 {
         font-size: 1.4rem;
     }
 
@@ -191,12 +214,13 @@
         width: 90%;
         padding: 10px;
     }
-    .tr_header{
+
+    .tr_header {
         flex-direction: column;
         align-items: start;
         gap: 15px;
     }
-   
+
     .level_Section {
         justify-content: center;
         gap: 10px;

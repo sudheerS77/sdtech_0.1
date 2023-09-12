@@ -21,7 +21,16 @@
             "Front-end Development",
             "Web Design"
         ],
-        "course_category": "64eed1a5f83277710d14b98f",
+        "languages": [
+            "English"
+        ],
+        "level": [
+            "beginner"
+        ],
+        "duration": [
+            "2Months"
+        ],
+        "course_category": "web development",
         "levels": [
             "default"
         ],
@@ -459,7 +468,17 @@
             "Web Design",
             "Front-end Development"
         ],
-        "course_category": "64eed1a5f83277710d14b98f",
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "level": [
+            "beginner"
+        ],
+        "duration": [
+            "2Months"
+        ],
+        "course_category": "web development",
         "levels": [
             "default"
         ],
@@ -687,7 +706,17 @@
             "Web Design",
             "Front-end Development"
         ],
-        "course_category": "64eed1a5f83277710d14b98f",
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "level": [
+            "beginner"
+        ],
+        "duration": [
+            "2Months"
+        ],
+        "course_category": "web development",
         "levels": [
             "default"
         ],
@@ -968,7 +997,17 @@
             "Front-end Development",
             "Web Programming"
         ],
-        "course_category": "64eed1a5f83277710d14b98f",
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "level": [
+            "beginner"
+        ],
+        "duration": [
+            "2Months"
+        ],
+        "course_category": "web development",
         "levels": [
             "default"
         ],
@@ -1220,7 +1259,17 @@
             "Front-end Development",
             "Web Development"
         ],
-        "course_category": "64eed1a5f83277710d14b98f",
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "level": [
+            "beginner"
+        ],
+        "duration": [
+            "2Months"
+        ],
+        "course_category": "web development",
         "levels": [
             "default"
         ],
@@ -1420,7 +1469,17 @@
             "Server-side Rendering",
             "Front-end Development"
         ],
-        "course_category": "64eed1a5f83277710d14b98f",
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "level": [
+            "beginner"
+        ],
+        "duration": [
+            "2Months"
+        ],
+        "course_category": "web development",
         "levels": [
             "default"
         ],
@@ -1623,7 +1682,18 @@
             "React.js",
             "Node.js"
         ],
-        "course_category": "64eed1a5f83277710d14b98f",
+        "languages": [
+            "English",
+            "Hindi"
+        ],
+        "level": [
+            "beginner",
+            "intermediate"
+        ],
+        "duration": [
+            "2Months"
+        ],
+        "course_category": "web development",
         "levels": [
             "default"
         ],
@@ -1859,7 +1929,17 @@
         "tags": [
             "Industrial Robots"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "intermediate"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
@@ -2008,7 +2088,17 @@
             "Diodes",
             "Transistors"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
@@ -2195,7 +2285,17 @@
             "Robotics History",
             "Simple Machines"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
@@ -2331,7 +2431,17 @@
             "Coding for Robotics",
             "Numbering Systems"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
@@ -2460,7 +2570,17 @@
             "Microcontroller Programming",
             "Electronics Intermediate Course"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
@@ -2672,7 +2792,7 @@
     },
     {
         "_id": "64f822c9ceb2f7220723294e",
-        "name": "Advanced Robotics: Intermediate 2 - Mastering Robot Control",
+        "name": "Robotics: Intermediate 2 - Mastering Robot Control",
         "title": "intermediate 2: robot",
         "description": "Elevate your robotics skills in our Intermediate 2: Robot course. This advanced program delves into the essential topics required to become a proficient roboticist. You'll explore the intricacies of engines, motor drivers, H-bridge circuits, and robot body optimization while prioritizing safety. Learn about various types of motor drivers, how to program them, and establish connections. Discover the power of Module L298 and embark on projects involving motor control, PWM (Pulse Width Modulation), and advanced robot movements. With a focus on balance, safety, and real-world applications, this course prepares you to create and control robots for various purposes.",
         "meta_title": "Advanced Robotics: Intermediate 2 - Mastering Robot Control",
@@ -2692,7 +2812,17 @@
             "Real-World Applications",
             "Robotics Intermediate Course"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
@@ -2822,7 +2952,7 @@
     },
     {
         "_id": "64f8237eceb2f72207232a35",
-        "name": "Advanced Robotics: Intermediate 3 - Multi-Robots Projects Mastery",
+        "name": "Robotics: Intermediate 3 - Multi-Robots Projects Mastery",
         "title": "Multi-robots projects",
         "description": "Take your robotics expertise to the next level with our Intermediate 3: Multi-Robots Projects course. In this advanced program, you'll dive into a series of challenging multi-robot projects designed to showcase your skills and creativity. From maze-solving robots to firefighter robots, advanced line followers, and robotic arms, you'll explore diverse applications of robotics technology. Work on projects that demand problem-solving, precision, and innovation. By the end of this course, you'll have the experience and knowledge to tackle complex multi-robot challenges and contribute to the field of robotics.",
         "meta_title": "Advanced Robotics: Intermediate 3 - Multi-Robots Projects Mastery",
@@ -2842,7 +2972,17 @@
             "Multi-Robot Projects",
             "Robotics Mastery"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
@@ -2970,7 +3110,17 @@
             "Robotics Projects",
             "Mechanical Design Proficiency"
         ],
-        "course_category": "64c9f7b15794d7e86283a106",
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
         "levels": [
             "default"
         ],
