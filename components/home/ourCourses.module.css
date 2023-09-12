@@ -53,7 +53,7 @@
 /* Course Card */
 
 .oc_card {
-    width: auto;
+    width: calc(100vw/4);
     height: auto;
     background-color: #fff;
     border-radius: 10px;

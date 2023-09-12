@@ -226,9 +226,11 @@ const CourseCategories = () => {
                 <div className={hcc.courseName}>{courses.name}</div>
               </Link>
             ))}
-            <div className={hcc.animate}>
-              <Image src={robotImage} alt="" width={100} height={100} />
-            </div>
+            {activeCourse === "Robotics" && (
+              <div className={hcc.animate}>
+                <Image src={robotImage} alt="" width={100} height={100} />
+              </div>
+            )}
           </div>
         </div>
         <div></div>

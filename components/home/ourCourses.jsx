@@ -7,49 +7,52 @@ import Link from "next/link";
 const OurCourses = () => {
   const ourCoursesData = [
     {
-      name: "Python Mastery: Unlock Your Coding Superpowers",
-      image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1689850188/images/pamvha9lzu6mkpmobqep.png",
-      cost: 5000,
+      name: "Foundations of Robotics: From History to AI Integration",
       description:
-        "Elevate your programming skills with our Python Mastery course! Whether you're a novice or a seasoned coder, our hands-on curriculum covers it all. From mastering Python fundamentals to crafting dynamic web apps and diving into data science, you'll conquer real-world projects and emerge a Python pro. Enroll now to supercharge your coding journey! 🐍🚀",
-      slug: "python-programming",
+        "Learn the fundamentals of robotics in our introductory course, Introduction to Robotics. Dive into the exciting world of robots, their history, and their applications. Discover the types of robots, the connection between robotics and artificial intelligence, and explore various career opportunities in this dynamic field. Whether you're a curious beginner or aspiring robotics engineer, this course will equip you with essential knowledge and skills to kickstart your journey into robotics.",
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+      slug: "zero-beginner",
     },
     {
-      name: "Mastering JavaScript: From Basics to Advanced",
-      image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/enwdonu3ntfbsgpklqht.png",
-      cost: 0,
+      name: "Programming Fundamentals for Robotics: Mastering the Basics",
       description:
-        "Learn JavaScript from the basics to advanced concepts with hands-on projects and real-world applications.",
-      slug: "java-script",
+        "Unlock the power of programming in the realm of robotics with our Programming Fundamentals for Robotics beginner course. This course offers a comprehensive introduction to the world of programming, covering its history, different programming languages, and its unique applications in robotics. Explore the nuances that distinguish robot programming from other forms of programming and get to grips with numbering systems. By the end of this course, you'll be well-equipped to tackle programming challenges in the robotics field.",
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+      slug: "programming-fundamentals-for-robotics",
     },
     {
       name: "Web Development: Comprehensive Guide to HTML, CSS, and JavaScript",
-      image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1690558647/images/fcvphmn3rdszg3vausn0.png",
-      cost: 0,
       description:
         "Learn web development from the basics of HTML, CSS to building interactive websites with JavaScript.",
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1690558647/images/fcvphmn3rdszg3vausn0.png",
       slug: "html-css-js",
     },
     {
       name: "React.js Mastery: Comprehensive Guide to React.js",
-      image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1689850185/images/gwz3e2lo0j30se3qqw3v.png",
-      cost: 0,
       description:
         "Learn React.js from the basics to advanced techniques for building modern web applications.",
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1689850185/images/gwz3e2lo0j30se3qqw3v.png",
       slug: "react-js",
     },
     {
-      name: "Complete Java - Full Stack Development",
-      image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/u4jzfmfxakcgliqoca0m.png",
-      cost: 0,
+      name: "Next.js Mastery: Comprehensive Guide to Next.js",
       description:
-        "Learn Java programming and build full-stack applications with Spring, Spring Boot, and microservices.",
-      slug: "complete-java-full-stack-development",
+        "Learn Next.js from the basics to advanced techniques for building modern and server-rendered React applications.",
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/gzgedeevea8juoif6u2t.png",
+      slug: "nextjs",
+    },
+    {
+      name: "MERN Stack Mastery: Comprehensive Guide to Full-Stack Web Development",
+      description:
+        "Learn the MERN stack to build modern and powerful full-stack web applications.",
+      image:
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1690558939/images/uccycj0urlhlnaka12la.png",
+      slug: "mern-stack",
     },
   ];
 
@@ -57,7 +60,7 @@ const OurCourses = () => {
     <>
       <div className={hc.oc_container}>
         <div className={hc.oc_header}>
-          <h1>Our Courses</h1>
+          <h1>Popular Courses</h1>
           <Link href="/courses" className={hc.oc_view_all}>
             <span>View All</span>
           </Link>
