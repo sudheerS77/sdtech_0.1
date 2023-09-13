@@ -19,9 +19,7 @@ import allCourses from "../../data/allcourses.json";
 const PaidCourse = ({ courseid, data }) => {
   const router = useRouter();
 
-  console.log(courseid, data);
   const [courseInfo, setCourseInfo] = useState(data);
-  console.log(courseInfo);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {

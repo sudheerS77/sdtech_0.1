@@ -13,6 +13,7 @@ const Banner = ({ courseInfo }) => {
     <>
       <div className={b.b_container}>
         <div className={b.b_left}>
+          {/* <span className={b.b_level_tag}>Level - {data?.level[0]}</span> */}
           <h1>{data?.title}</h1>
           <p>{data?.description}</p>
           <div>
@@ -22,7 +23,11 @@ const Banner = ({ courseInfo }) => {
           </div>
         </div>
         <div className={b.b_right} onClick={() => setPlayVideo(!playVideo)}>
-          <img src={data?.image} alt="image" />
+          <div className={b.course_cover_img}>
+            <img src={data?.image} alt="image" />
+          </div>
+          <span className={b.b_level_tag}>Level - {data?.level[0]}</span>
+
           {/* <div className={b.b_right_container}>
             {playVideo ? (
               <iframe

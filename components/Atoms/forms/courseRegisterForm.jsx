@@ -215,9 +215,9 @@ const CourseRegisterForm = ({ courseName }) => {
     }
   };
   const stepCounter = [];
-  // for (let i = 0; i < step; i++) {
-  //   stepCounter.push(<div className={crf.step} key={i} />);
-  // }
+  for (let i = 0; i < currentStep + 1; i++) {
+    stepCounter.push(<div className={crf.step} key={i} />);
+  }
   return (
     <div className={crf.register__from__container}>
       <div className={crf.heading}>

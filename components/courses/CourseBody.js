@@ -16,6 +16,7 @@ import FeeCard from "./courseFee/feeCard";
 import cf from "./courseFee/courseFee.module.css";
 import TechnicalRoadMapComponent from "./technicalRoadMap.component";
 import CourseFeaturesComponent from "./courseFeatures.component";
+import CourseAdditionalInforComponent from "./courseAdditionalInfor.component";
 
 const CourseBody = ({ courseInfo }) => {
   const data = courseInfo;
@@ -61,6 +62,7 @@ const CourseBody = ({ courseInfo }) => {
               level={level}
               courseContent={courseContent}
             />
+            <CourseAdditionalInforComponent data={data} />
           </div>
           <CourseFeaturesComponent />
           {/* <div className={cb.cb_wul_img}>
@@ -70,34 +72,7 @@ const CourseBody = ({ courseInfo }) => {
               />
             </div> */}
         </div>
-        <div className={cb.course_information}>
-          <div>
-            <h3>Description</h3>
-            <p>{data?.description}</p>
-          </div>
-          <div>
-            <h3>Why Choose This Course?</h3>
-            <p>{data?.description}</p>
-          </div>
-          <div>
-            <h3>Why Learn {data?.name}</h3>
-            <p>{data?.description}</p>
-          </div>
-          <div>
-            <h3>Who this course is for:</h3>
-            <ul>
-              <li>
-                Java programmers who want to create web applications
-                Professionals
-              </li>
-              <li>willing to develop a Java skill Future developers of web</li>
-              <li>
-                applications People willing to create a fast web application
-                using Java
-              </li>
-            </ul>
-          </div>
-        </div>
+
         {/* <FeeCard /> */}
       </div>
     </>

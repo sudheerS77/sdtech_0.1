@@ -38,10 +38,6 @@ const CourseFeaturesComponent = () => {
           icon: <AiFillSafetyCertificate />,
         },
         {
-          name: "IDE (Eclipse, VS Code, IntelliJ IDEA)",
-          icon: <MdComputer />,
-        },
-        {
           name: "Passion to learn new things",
           icon: <MdFeedback />,
         },

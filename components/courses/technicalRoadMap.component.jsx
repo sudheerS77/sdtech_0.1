@@ -3,7 +3,7 @@ import cb from "./coursebody.module.css";
 import Accordion from "../Atoms/Accordion/accordion";
 
 const TechnicalRoadMapComponent = ({ data, level, courseContent }) => {
-  const [openIndex, setOpenIndex] = useState([]);
+  const [openIndex, setOpenIndex] = useState([0]);
   const [expandAll, setExpandAll] = useState(false);
   const toggleAccordion = (index) => {
     // setOpenIndex((prev) => (prev === index ? null : index));
@@ -63,6 +63,7 @@ const TechnicalRoadMapComponent = ({ data, level, courseContent }) => {
                   header={acdata.topicName}
                   body={acdata.subtopics}
                   isOpen={openIndex.includes(index)}
+                  expandAll={expandAll}
                   toggleAccordion={() => toggleAccordion(index)}
                 />
               ))
@@ -73,6 +74,7 @@ const TechnicalRoadMapComponent = ({ data, level, courseContent }) => {
                   header={acdata.topicName}
                   body={acdata.subtopics}
                   isOpen={openIndex.includes(index)}
+                  expandAll={expandAll}
                   toggleAccordion={() => toggleAccordion(index)}
                 />
               ))}

@@ -116,16 +116,17 @@ const Navbar = () => {
                   </Link>
                   <Link href="/about-us">
                     <li>About Us</li>
-                  </Link>
-                  {/* <Link href="#">
-                <li>Blogs</li>
-              </Link> */}
+                  </Link>                 
                   <Link href="/contact-us">
                     <li>Contact Us</li>
                   </Link>
                   <Link href="/faqs">
                     <li>FAQ</li>
                   </Link>
+                  <Link href="/roadMaps">
+                    <li>RoadMaps</li>
+                  </Link>
+
                 </ul>
                 <div className={navcss.btn_group}>
                   {/* <button className={navcss.signin_btn}>SignIn</button>

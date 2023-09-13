@@ -14,6 +14,7 @@ import allCourses from "../../data/allcourses.json";
 const AllPaidCourses = () => {
   const [filteredCourses, setFilteredCourses] = useState();
   const [allCoursesData, setAllCoursesData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [filters, setFilters] = useState({
     language: { English: false, Hindi: false, Persian: false },
     courseCategory: {
@@ -36,8 +37,6 @@ const AllPaidCourses = () => {
     //   two_months: false,
     //   three_months: false,
     // },
-
-    
   });
   const handleInputChange = (e) => {
     // Search string
@@ -54,6 +53,7 @@ const AllPaidCourses = () => {
   };
 
   const applyFilters = () => {
+    setIsLoading(true);
     const filteredCoursesData = allCoursesData.filter((item) => {
       // Language Filter
       const languageKeys = Object.keys(filters.language).filter((data) => {
@@ -101,17 +101,27 @@ const AllPaidCourses = () => {
         return false;
       return true;
     });
-    console.log(filteredCoursesData);
-    setFilteredCourses(filteredCoursesData);
+    setTimeout(() => {
+      setIsLoading(false);
+      if (!filteredCourses) {
+        setFilteredCourses(allCourses);
+      } else {
+        setFilteredCourses(filteredCoursesData);
+      }
+    }, 400);
   };
 
   useEffect(() => {
     applyFilters();
+    // setIsLoading(true);
+    // setTimeout(() => {
+    // }, 400);
+    // setIsLoading(false);
   }, [filters]);
 
   useEffect(() => {
     // getCourses();
-    console.log(allCourses);
+    // console.log(allCourses);
     setAllCoursesData(allCourses);
     setFilteredCourses(allCourses);
   }, []);
@@ -133,18 +143,22 @@ const AllPaidCourses = () => {
           <div className={allc.allc_courses_container}>
             <FilterComponent filters={filters} setFilters={setFilters} />
             <div className={allc.allc_body}>
-              {filteredCourses?.length !== 0 ? (
-                <>
-                  {filteredCourses?.map((data, indx) => (
-                    <RowCourseCard key={indx} data={data} />
-                  ))}
-                </>
+              {!isLoading ? (
+                filteredCourses?.length !== 0 ? (
+                  <>
+                    {filteredCourses?.map((data, indx) => (
+                      <RowCourseCard key={indx} data={data} />
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    <div className={allc.notFound}>
+                      <p>!oopse</p>
+                    </div>
+                  </>
+                )
               ) : (
-                <>
-                  <div className={allc.notFound}>
-                    <p>!oopse</p>
-                  </div>
-                </>
+                <>Loading</>
               )}
             </div>
           </div>
