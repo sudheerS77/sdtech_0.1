@@ -100,8 +100,8 @@ const CourseFeaturesComponent = () => {
         {courseFeatures?.map((cfItems, index) => (
           <div key={index} className={`${cb.cb_card}`}>
             <h4>{cfItems.title}</h4>
-            {cfItems?.feature?.map((features, index) => (
-              <div>
+            {cfItems?.feature?.map((features, indx) => (
+              <div key={indx}>
                 {features.icon}
                 {features.name}
               </div>
