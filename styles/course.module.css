@@ -2,7 +2,12 @@
     width: 100%;
     /* margin-top: 70px; */
     padding: 50px 0;
-    background-color: #f2f5f7;
+    /* background-color: #f2f5f7; */
+    /*
+    fbfcf8 - perl
+    f5fefd - snow
+     */
+    background-color: #fbfbf9;
 }
 
 .allc_head {

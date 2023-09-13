@@ -98,7 +98,7 @@ const CourseFeaturesComponent = () => {
     <>
       <div className={`${cb.cb_course_features}`}>
         {courseFeatures?.map((cfItems, index) => (
-          <div className={`${cb.cb_card}`}>
+          <div key={index} className={`${cb.cb_card}`}>
             <h4>{cfItems.title}</h4>
             {cfItems?.feature?.map((features, index) => (
               <div>

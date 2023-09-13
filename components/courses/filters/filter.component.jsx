@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import fl from "./filter.module.css";
+import { BsChevronDown } from "react-icons/bs";
 
 const FiltersAccordion = ({ filters, setFilters }) => {
   const [isOpen, setIsOpen] = useState({
@@ -27,12 +28,15 @@ const FiltersAccordion = ({ filters, setFilters }) => {
   return (
     <div>
       {filterNames.map((fname, index) => (
-        <div className={fl.acc_container}>
+        <div key={index} className={fl.acc_container}>
           <div
             className={fl.filters_acc_header}
             onClick={() => toggleAccordion("language")}
           >
-            <h4>{fname}</h4>
+            <h4>{fname.charAt(0).toUpperCase() + fname.slice(1)}</h4>
+            <div>
+              <BsChevronDown />
+            </div>
           </div>
           {isOpen.language && (
             <div className={fl.filters_acc_body}>
@@ -45,7 +49,11 @@ const FiltersAccordion = ({ filters, setFilters }) => {
                       handleFilterChange(fname, filterIndividualName)
                     }
                   />
-                  {filterIndividualName.split("_").join(" ").toUpperCase()}
+                  {
+                    filterIndividualName.charAt(0).toUpperCase() +
+                      filterIndividualName.slice(1).split("_").join(" ")
+                    // .toLowerCase()
+                  }
                 </label>
               ))}
             </div>
