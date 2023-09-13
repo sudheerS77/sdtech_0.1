@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import fl from "./filter.module.css";
-import { BsChevronDown } from "react-icons/bs";
+import { BsChevronDown, BsSearch } from "react-icons/bs";
 
 const FiltersAccordion = ({ filters, setFilters }) => {
   const [isOpen, setIsOpen] = useState({
@@ -64,11 +64,23 @@ const FiltersAccordion = ({ filters, setFilters }) => {
   );
 };
 
-const FilterComponent = ({ filters, setFilters }) => {
+const FilterComponent = ({ filters, setFilters, handleInputChange }) => {
   return (
     <>
       <div className={fl.filters_container}>
         <h3>Filter by</h3>
+        <div>
+          <div className={fl.fl_search_section}>
+            <input
+              type="search"
+              placeholder="search courses"
+              onChange={handleInputChange}
+            />
+            <span className={fl.fl_search_icon_section}>
+              <BsSearch className={fl.fl_search_icon} />
+            </span>
+          </div>
+        </div>
         <FiltersAccordion filters={filters} setFilters={setFilters} />
       </div>
     </>

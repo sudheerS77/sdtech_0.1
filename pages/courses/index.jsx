@@ -130,18 +130,12 @@ const AllPaidCourses = () => {
     <>
       <HomeLayout>
         <div className={allc.allc_container}>
-          <div className={allc.allc_head}>
-            <input
-              type="search"
-              placeholder="search courses"
-              onChange={handleInputChange}
-            />
-            <span className={allc.allc_search_icon}>
-              <BsSearch />
-            </span>
-          </div>
           <div className={allc.allc_courses_container}>
-            <FilterComponent filters={filters} setFilters={setFilters} />
+            <FilterComponent
+              filters={filters}
+              setFilters={setFilters}
+              handleInputChange={handleInputChange}
+            />
             <div className={allc.allc_body}>
               {!isLoading ? (
                 filteredCourses?.length !== 0 ? (

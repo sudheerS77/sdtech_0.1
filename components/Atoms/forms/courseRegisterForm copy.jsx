@@ -206,3 +206,10 @@ const CourseRegisterForm = ({ courseName }) => {
 };
 
 export default CourseRegisterForm;
+address: "sdkgjb";
+
+country: "Afghanistan";
+
+
+region: "Badakhshan";
+

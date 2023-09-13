@@ -10,15 +10,15 @@
     background-color: #fbfbf9;
 }
 
-.allc_head {
+/* .allc_head {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80%;
     margin: 0px auto;
-}
+} */
 
-.allc_head input[type=search] {
+/* .allc_head input[type=search] {
     width: 500px;
     height: 40px;
     padding: 10px;
@@ -27,11 +27,11 @@
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
 }
-
+ */
 /* .allc_head input[type=search]:focus{
     outline: none;
 } */
-.allc_search_icon {
+/* .allc_search_icon {
     width: 50px;
     height: 40px;
     font-size: 1.5rem;
@@ -43,11 +43,11 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 
-}
+} */
 
 .allc_courses_container {
     width: 80%;
-    margin: 80px auto;
+    margin: 0px auto;
     display: flex;
     gap: 50px;
 }
@@ -58,7 +58,7 @@
     grid-template-columns: auto;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 10px;
 }
 
 .notFound {

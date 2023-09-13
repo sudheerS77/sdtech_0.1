@@ -27,12 +27,14 @@ const StudentDetails = ({ setCurrentStep, values, setFieldValue }) => {
             <InputComponent
               name="firstName"
               type="text"
+              value={values.firstName}
               placeholder="First Name"
             />
           </div>
           <div>
             <InputComponent
               name="lastName"
+              value={values.lastName}
               type="text"
               placeholder="Last Name"
             />
@@ -44,6 +46,7 @@ const StudentDetails = ({ setCurrentStep, values, setFieldValue }) => {
           <InputComponent
             label="Student Date of Birth"
             name="dob"
+            value={values.dob}
             type="date"
           />
         </div>
@@ -51,6 +54,7 @@ const StudentDetails = ({ setCurrentStep, values, setFieldValue }) => {
           <InputComponent
             label="Student Email"
             name="studentEmail"
+            value={values.studentEmail}
             type="email"
           />
         </div>
@@ -79,6 +83,8 @@ const ParentDetails = ({ setCurrentStep, values, setFieldValue }) => {
         <div className={crf.form_group}>
           <div>
             <InputComponent
+              label="empty"
+              value={values.parentFirstName}
               name="parentFirstName"
               type="text"
               placeholder="First Name"
@@ -87,6 +93,7 @@ const ParentDetails = ({ setCurrentStep, values, setFieldValue }) => {
           <div>
             <InputComponent
               name="parentLastName"
+              value={values.parentLastName}
               type="text"
               placeholder="Last Name"
             />
@@ -110,6 +117,7 @@ const ParentDetails = ({ setCurrentStep, values, setFieldValue }) => {
               label="Parent Email"
               name="parentEmail"
               type="text"
+              value={values.parentEmail}
               placeholder="Last Name"
             />
           </div>
@@ -128,6 +136,7 @@ const Address = ({ setCurrentStep, values, setFieldValue }) => {
           style={{ width: "97%" }}
           label="Address"
           name="address"
+          value={values.address}
           type="textArea"
         />
         <ErrorMessage
@@ -137,21 +146,26 @@ const Address = ({ setCurrentStep, values, setFieldValue }) => {
         />
       </div>
       <CountrySelectComponent values={values} setFieldValue={setFieldValue} />
-      <InputComponent label="Postal Code" name="postalCode" type="number" />
+      <InputComponent
+        label="Postal Code"
+        name="postalCode"
+        value={values.postalCode}
+        type="number"
+      />
     </>
   );
 };
 const CourseRegisterForm = ({ courseName }) => {
   const stepData = [
     {
-      label: "",
+      label: "sudent Details",
       initialValues: {
-        firstName: "",
-        lastName: "",
-        dob: "",
+        firstName: "asd",
+        lastName: "ads",
+        dob: "2007-12-31",
         age: 0,
-        studentEmail: "",
-        studentWhatsAppNumber: "",
+        studentEmail: "sdkj@gmail.com",
+        studentWhatsAppNumber: "919856985698",
       },
       validation: Yup.object({
         firstName: Yup.string().required("First Name is required"),
@@ -166,7 +180,7 @@ const CourseRegisterForm = ({ courseName }) => {
       }),
     },
     {
-      label: "",
+      label: "parent Details",
       initialValues: {
         parentFirstName: "",
         parentLastName: "",
@@ -183,7 +197,7 @@ const CourseRegisterForm = ({ courseName }) => {
       }),
     },
     {
-      label: "",
+      label: "Address",
       initialValues: {
         address: "",
         country: "",
@@ -204,11 +218,29 @@ const CourseRegisterForm = ({ courseName }) => {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({});
   const isLastStep = currentStep === stepData.length - 1;
-
+  const [isFormSubmitting, setIsFormSubmitting] = useState(false);
+  const router = useRouter();
+  const submitDetails = async (values) => {
+    try {
+      setIsFormSubmitting(true);
+      const data = await axios.post(`/api/courseregister`, {
+        data: values,
+      });
+      if (data.status === 200) {
+        setTimeout(() => {
+          setIsFormSubmitting(false);
+          router.push("/thanks");
+        }, 400);
+      }
+    } catch (error) {
+      console.log({ error });
+    }
+  };
   const handleNext = (values) => {
     setFormData({ ...formData, ...values });
 
     if (isLastStep) {
+      submitDetails(values);
       console.log({ values });
     } else {
       setCurrentStep((prev) => prev + 1);
@@ -251,7 +283,9 @@ const CourseRegisterForm = ({ courseName }) => {
             {JSON.stringify({ values })} */}
             <div className={crf.step_container}>{stepCounter}</div>
             <div>
-              <p>Student Details - Step 1 of 4</p>
+              <p>
+                {stepData[currentStep].label} - Step {currentStep + 1} of 3
+              </p>
               <div></div>
             </div>
             <div className={crf.forms_container}>
@@ -286,40 +320,46 @@ const CourseRegisterForm = ({ courseName }) => {
                   ? "Submit"
                   : "Next"}
               </button> */}
-              <div className={crf.np_btn_group}>
-                <div>
-                  {currentStep !== 0 && (
-                    <div
-                      className={crf.prev_btn}
-                      onClick={() => setCurrentStep((prev) => prev - 1)}
-                    >
-                      <div className={crf.left_arrow}>
-                        <BsArrowLeft />
-                      </div>
-                      Prev
-                    </div>
-                  )}
-                </div>
-                <button
-                  className={crf.next_btn}
-                  type="submit"
-
-                  // onClick={() => setCurrentStep((prev) => prev + 1)}
-                >
-                  {isSubmitting ? (
-                    "Submitting..."
-                  ) : isLastStep ? (
-                    "Submit"
-                  ) : (
-                    <>
-                      Next
-                      <div className={crf.right_arrow}>
-                        <BsArrowRight />
-                      </div>
-                    </>
-                  )}
+              {isFormSubmitting ? (
+                <button className={crf.next_btn} type="submit">
+                  Submitting
                 </button>
-              </div>
+              ) : (
+                <div className={crf.np_btn_group}>
+                  <div>
+                    {currentStep !== 0 && (
+                      <div
+                        className={crf.prev_btn}
+                        onClick={() => setCurrentStep((prev) => prev - 1)}
+                      >
+                        <div className={crf.left_arrow}>
+                          <BsArrowLeft />
+                        </div>
+                        Prev
+                      </div>
+                    )}
+                  </div>
+                  <button
+                    className={crf.next_btn}
+                    type="submit"
+
+                    // onClick={() => setCurrentStep((prev) => prev + 1)}
+                  >
+                    {isSubmitting ? (
+                      "Submitting..."
+                    ) : isLastStep ? (
+                      "Submit"
+                    ) : (
+                      <>
+                        Next
+                        <div className={crf.right_arrow}>
+                          <BsArrowRight />
+                        </div>
+                      </>
+                    )}
+                  </button>
+                </div>
+              )}
             </div>
           </Form>
         )}

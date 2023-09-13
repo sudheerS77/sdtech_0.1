@@ -13,6 +13,7 @@ const PhoneInputComponent = ({ field, name, values, setFieldValue }) => {
   return (
     <PhoneInput
       {...field}
+      defaultCountry="IN"
       placeholder="Enter phone number"
       value={values[name]}
       onChange={(value) => setFieldValue(name, value)}

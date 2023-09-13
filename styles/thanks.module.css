@@ -1,6 +1,6 @@
 .footer_container {
-    width: 100vw;
-    height: 60vh;
+    /* width: 100vw; */
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
