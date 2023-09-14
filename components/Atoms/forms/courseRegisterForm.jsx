@@ -160,6 +160,7 @@ const Address = ({ setCurrentStep, values, setFieldValue }) => {
   );
 };
 const CourseRegisterForm = ({ courseName }) => {
+  console.log(courseName);
   const stepData = [
     {
       label: "sudent Details",
@@ -170,6 +171,7 @@ const CourseRegisterForm = ({ courseName }) => {
         age: 0,
         studentEmail: "",
         studentWhatsAppNumber: "",
+        courseRegisterName: courseName ? courseName : "",
       },
       validation: Yup.object({
         firstName: Yup.string().required("First Name is required"),
@@ -223,6 +225,7 @@ const CourseRegisterForm = ({ courseName }) => {
   const [formData, setFormData] = useState({});
   const isLastStep = currentStep === stepData.length - 1;
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
+  const [error, setError] = useState({ show: true, message: "message" });
   const router = useRouter();
   const submitDetails = async (values) => {
     try {
@@ -237,13 +240,26 @@ const CourseRegisterForm = ({ courseName }) => {
         }, 400);
       }
     } catch (error) {
+      setError({
+        show: true,
+        message: error.message,
+      });
       console.log({ error });
     }
   };
+  useEffect(() => {
+    setTimeout(() => {
+      setError({
+        show: false,
+        message: "",
+      });
+    }, 3000);
+  }, [error]);
   const handleNext = (values) => {
     setFormData({ ...formData, ...values });
 
     if (isLastStep) {
+      setFormData({ ...formData, courseRegisterName: courseName });
       submitDetails(values);
       console.log({ values });
     } else {
@@ -265,7 +281,9 @@ const CourseRegisterForm = ({ courseName }) => {
       </div>
       <Formik
         initialValues={stepData[currentStep]?.initialValues}
-        validationSchema={stepData[currentStep]?.validation}
+        validationSchema={
+          currentStep !== 1 ? stepData[currentStep]?.validation : null
+        }
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             // console.log(values);
@@ -290,7 +308,13 @@ const CourseRegisterForm = ({ courseName }) => {
               <p>
                 {stepData[currentStep].label} - Step {currentStep + 1} of 3
               </p>
-              <div></div>
+              <div>
+                {error.show === true && (
+                  <div style={{ color: "red", fontSize: "1rem" }}>
+                    {error.message}
+                  </div>
+                )}
+              </div>
             </div>
             <div className={crf.forms_container}>
               {}

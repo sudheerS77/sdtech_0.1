@@ -28,47 +28,49 @@ const CourseRegisterSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-
+  courseRegisterName: {
+    type: String,
+  },
   parentFirstName: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
   parentLastName: {
     type: String,
-    required: true,
+    // required: true,
     trim: true,
   },
   parentEmail: {
     type: String,
-    require: true,
+    // require: true,
   },
 
   parentWhatsAppNumber: {
     type: Number,
-    required: true,
+    // required: true,
     trim: true,
   },
   address: {
     type: String,
-    required: true,
+    // required: true,
   },
   country: {
     type: String,
-    required: true,
+    // required: true,
   },
   region: {
     type: String,
-    required: true,
+    // required: true,
   },
   postalCode: {
     type: String,
-    required: true,
+    // required: true,
   },
 });
 
 const courseRegisterModal =
-  mongoose.models.courseRegister1 ||
-  mongoose.model("courseRegister1", CourseRegisterSchema);
+  mongoose.models.courseRegister3 ||
+  mongoose.model("courseRegister3", CourseRegisterSchema);
 
 export default courseRegisterModal;
