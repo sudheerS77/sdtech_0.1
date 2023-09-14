@@ -20,10 +20,10 @@ import CourseAdditionalInforComponent from "./courseAdditionalInfor.component";
 
 const CourseBody = ({
   courseInfo,
-  levelHandler,
-  level,
-  setLevel,
-  courseContent,
+  // levelHandler,
+  // level,
+  // setLevel,
+  // courseContent,
 }) => {
   // const data = courseInfo;
   // const [level, setLevel] = useState(data?.levels[0] || "default");
@@ -77,10 +77,11 @@ const CourseBody = ({
               </ul>
             </div>
             <TechnicalRoadMapComponent
-              data={data}
-              level={level}
-              levelHandler={levelHandler}
-              courseContent={courseContent}
+              // data={data}
+              // level={level}
+              courseInfo={courseInfo}
+              // levelHandler={levelHandler}
+              // courseContent={courseContent}
             />
             {/* {JSON.stringify(level)} */}
             {/* {JSON.stringify(courseContent)} */}

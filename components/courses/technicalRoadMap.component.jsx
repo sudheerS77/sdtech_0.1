@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import cb from "./coursebody.module.css";
 import Accordion from "../Atoms/Accordion/accordion";
 
 const TechnicalRoadMapComponent = ({
-  data,
-  level,
-  levelHandler,
-  courseContent,
+  // data,
+  // level,
+  // levelHandler,
+  courseInfo,
+  // courseContent,
 }) => {
   const [openIndex, setOpenIndex] = useState([0]);
   const [expandAll, setExpandAll] = useState(false);
@@ -30,6 +31,56 @@ const TechnicalRoadMapComponent = ({
       else setOpenIndex([...Array(courseInfo?.course_content.length).keys()]);
     }
   };
+
+  //
+  const [level, setLevel] = useState(
+    "default"
+    // courseInfo?.levels[0] ? courseInfo.levels[0] : "default"
+  );
+  const [courseContent, setCourseContent] = useState();
+
+  const getLevelContent = () => {
+    courseInfo?.course_content?.technicalRoadMap?.filter((item) => {
+      console.log(level, { item });
+      if (item.level === "default") {
+        setCourseContent(item?.data);
+      }
+    });
+  };
+  const levelHandler = (e) => {
+    setLevel(e.target.name);
+    console.log("=>", level);
+  };
+
+  useEffect(() => {
+    // console.log(level);
+
+    // if (courseInfo?.levels[0] === "default") {
+    //   console.log("defalt level here");
+    // } else {
+    //   console.log("NOT DEFAULT", courseInfo);
+    // }
+
+    // if (data?.levels?.length > 1) {
+    //   console.log("greater than 1");
+    //   setCourseContent(data?.course_content?.technicalRoadMap[0]?.data);
+    // } else {
+    // }
+
+    getLevelContent();
+    // setCourseContent(courseInfo?.course_content?.technicalRoadMap[0].data);
+  });
+
+  useEffect(() => {
+    getLevelContent();
+  }, [level]);
+
+  useEffect(() => {
+    console.log();
+    if (courseInfo?.levels[0] !== "default") {
+      // setCourseInfo;
+    }
+  }, []);
   return (
     <>
       <div className={cb.cc_section}>
@@ -37,8 +88,9 @@ const TechnicalRoadMapComponent = ({
         {/* <h3>Course Content</h3> */}
         <div className={cb.tr_header}>
           <div className={cb.level_Section}>
-            {data?.levels[0] !== null && data?.levels[0] !== "default" ? (
-              data?.levels.map((level_name, indx) => (
+            {courseInfo?.levels[0] !== null &&
+            courseInfo?.levels[0] !== "default" ? (
+              courseInfo?.levels.map((level_name, indx) => (
                 <button
                   key={indx}
                   className={level === level_name ? cb.active_btn : ""}

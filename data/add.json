@@ -1,0 +1,847 @@
+[
+    {
+        "name": "Complete Java - Full Stack Development",
+        "title": "Complete Java - Full Stack Development",
+        "description": "Learn Java programming and build full-stack applications with Spring, Spring Boot, and microservices.",
+        "meta_title": "Complete Java Course - Full Stack Development",
+        "meta_description": "Master Java programming, Spring, Spring Boot, and microservices. Build full-stack applications with hands-on projects.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/u4jzfmfxakcgliqoca0m.png",
+        "slug": "complete-java-full-stack-development",
+        "categories": [
+            "Programming",
+            "Web Development",
+            "Java"
+        ],
+        "tags": [
+            "Java",
+            "Full Stack",
+            "Spring",
+            "Spring Boot",
+            "Microservices",
+            "Web Development"
+        ],
+        "languages": [
+            "english",
+            "hindi",
+            "persian"
+        ],
+        "level": [
+            "beginner",
+            "intermediate",
+            "advance"
+        ],
+        "duration": [
+            30
+        ],
+        "course_category": "",
+        "levels": [
+            "beginner",
+            "intermediate",
+            "advance"
+        ],
+        "learning_outcomes": [
+            "Develop a solid understanding of the Java programming language and its key features.",
+            "Apply object-oriented programming (OOP) principles to design and build Java applications.",
+            "Utilize SQL and NoSQL databases (MongoDB) to perform CRUD operations and interact with data.",
+            "Create web APIs and RESTful services using Spring Framework and Spring Boot.",
+            "Implement and manage a microservices architecture for scalable and maintainable applications.",
+            "Secure web applications and microservices using Spring Security.",
+            "Apply caching techniques to optimize application performance.",
+            "Build full-stack applications, including front-end and back-end components, using Java and related frameworks.",
+            "Gain hands-on experience by working on real-world projects at each level of the course."
+        ],
+        "course_content": {
+            "technicalRoadMap": [
+                {
+                    "level": "beginner",
+                    "data": [
+                        {
+                            "topicName": "introduction to Java",
+                            "subtopics": [
+                                "History and features of Java",
+                                "Setting up the development environment"
+                            ]
+                        },
+                        {
+                            "topicName": "Java Basics",
+                            "subtopics": [
+                                "Variables, data types, and operators",
+                                "Control statements (if, else, loops)"
+                            ]
+                        },
+                        {
+                            "topicName": "Object-Oriented Programming (OOP) Fundamentals",
+                            "subtopics": [
+                                "Classes and objects",
+                                "Constructors and methods",
+                                "Inheritance and polymorphism"
+                            ]
+                        },
+                        {
+                            "topicName": "Working with SQL",
+                            "subtopics": [
+                                "Introduction to relational databases",
+                                "SQL queries for CRUD operations",
+                                "Connecting Java applications to SQL databases"
+                            ]
+                        },
+                        {
+                            "topicName": "Introduction to MongoDB",
+                            "subtopics": [
+                                "NoSQL databases and MongoDB basics",
+                                "CRUD operations with MongoDB in Java"
+                            ]
+                        },
+                        {
+                            "topicName": "Arrays and Strings",
+                            "subtopics": [
+                                "Declaring and using arrays",
+                                "String manipulation"
+                            ]
+                        },
+                        {
+                            "topicName": "Exception Handling",
+                            "subtopics": [
+                                "Handling errors and exceptions",
+                                "Using try-catch blocks"
+                            ]
+                        },
+                        {
+                            "topicName": "Console Application Projects",
+                            "subtopics": [
+                                "Project 1: Simple Calculator",
+                                "Project 2: To-Do List Manager",
+                                "Project 3: Basic Library Management System"
+                            ]
+                        }
+                    ],
+                    "learning_outcomes": [
+                        "Understand fundamental Java concepts and syntax.",
+                        "Build simple console applications using Java.",
+                        "Perform basic database operations with SQL and MongoDB.",
+                        "Create object-oriented Java programs.",
+                        "Handle exceptions in Java applications.",
+                        "Develop foundational skills for full-stack Java development."
+                    ],
+                    "no_of_classes": 30,
+                    "no_of_months": "2",
+                    "certificationName": "Beginer Java Certification"
+                },
+                {
+                    "level": "intermediate",
+                    "data": [
+                        {
+                            "topicName": "Advanced OOP Concepts",
+                            "subtopics": [
+                                "Interfaces and abstract classes",
+                                "Packages and access control",
+                                "Exception hierarchy and custom exceptions"
+                            ]
+                        },
+                        {
+                            "topicName": "Java Collections Framework",
+                            "subtopics": [
+                                "Lists, Sets, and Maps",
+                                "Iterators and foreach loop"
+                            ]
+                        },
+                        {
+                            "topicName": "Generics",
+                            "subtopics": [
+                                "Creating and using generic classes and methods"
+                            ]
+                        },
+                        {
+                            "topicName": "File Handling",
+                            "subtopics": [
+                                "Reading and writing to files",
+                                "Working with streams"
+                            ]
+                        },
+                        {
+                            "topicName": "Introduction to Spring Framework",
+                            "subtopics": [
+                                "Dependency Injection and IoC",
+                                "Aspect-Oriented Programming (AOP)"
+                            ]
+                        },
+                        {
+                            "topicName": "Java Persistence API (JPA)",
+                            "subtopics": [
+                                "Entity classes and annotations",
+                                "EntityManager and CRUD operations"
+                            ]
+                        },
+                        {
+                            "topicName": "Spring Boot Development",
+                            "subtopics": [
+                                "Building RESTful APIs with Spring Boot",
+                                "Introduction to Spring Data JPA"
+                            ]
+                        },
+                        {
+                            "topicName": "Intermediate Projects",
+                            "subtopics": [
+                                "Project 1: Online Bookstore API using Spring Boot and JPA",
+                                "Project 2: Basic Employee Management System with CRUD operations",
+                                "Project 3: RESTful Blog API with MongoDB as the backend"
+                            ]
+                        }
+                    ],
+                    "learning_outcomes": [
+                        "Advance Java skills with topics like generics and collections.",
+                        "Create web APIs using Spring Framework and Spring Boot.",
+                        "Implement database interactions with Java Persistence API (JPA).",
+                        "Build intermediate-level full-stack applications.",
+                        "Apply security measures to RESTful APIs.",
+                        "Develop real-world projects using Spring and JPA."
+                    ],
+                    "no_of_classes": 30,
+                    "no_of_months": "2",
+                    "certificationName": "Intermediate Java Certification"
+                },
+                {
+                    "level": "advance",
+                    "data": [
+                        {
+                            "topicName": "Spring MVC",
+                            "subtopics": [
+                                "Controller, Service, and Repository layers",
+                                "View templates and Thymeleaf"
+                            ]
+                        },
+                        {
+                            "topicName": "Spring Security",
+                            "subtopics": [
+                                "Authentication and authorization",
+                                "Securing RESTful APIs"
+                            ]
+                        },
+                        {
+                            "topicName": "Microservices Architecture",
+                            "subtopics": [
+                                "Introduction to microservices and their benefits",
+                                "Communication between microservices"
+                            ]
+                        },
+                        {
+                            "topicName": "Spring Cloud",
+                            "subtopics": [
+                                "Service discovery with Eureka",
+                                "Load balancing with Ribbon",
+                                "API Gateway with Zuul"
+                            ]
+                        },
+                        {
+                            "topicName": "Caching in Java",
+                            "subtopics": [
+                                "Introduction to caching and caching frameworks",
+                                "Implementing caching in Spring applications"
+                            ]
+                        },
+                        {
+                            "topicName": "Advanced Projects",
+                            "subtopics": [
+                                "Project 1: Microservices-based E-commerce platform",
+                                "Project 2: Secure RESTful API for a Social Media Network",
+                                "Project 3: Implementing caching in a Spring-based application"
+                            ]
+                        }
+                    ],
+                    "learning_outcomes": [
+                        "Master Spring MVC for building robust web applications.",
+                        "Design and implement microservices architecture.",
+                        "Secure microservices and RESTful APIs using Spring Security.",
+                        "Apply caching strategies to optimize application performance.",
+                        "Build advanced full-stack projects using microservices.",
+                        "Optimize application performance and scalability."
+                    ],
+                    "no_of_classes": 30,
+                    "no_of_months": "2",
+                    "certificationName": "Advance Java Certification"
+                }
+            ]
+        },
+        "pricingData": []
+    },
+    {
+        "name": "Core Java Programming Course",
+        "title": "Learn Core Java Programming from Beginner to Advanced",
+        "description": "This comprehensive Core Java programming course is designed to take you from a complete beginner to an advanced Java developer. You will learn the fundamentals of Java programming, object-oriented principles, and advanced Java features, equipping you with the skills to build robust applications.",
+        "meta_title": "Core Java Programming Course",
+        "meta_description": "Master Core Java programming with our structured course. Learn Java syntax, object-oriented concepts, advanced Java features, and build real-world applications.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/u4jzfmfxakcgliqoca0m.png",
+        "slug": "core-java-programming-course",
+        "categories": [
+            "Programming",
+            "Java"
+        ],
+        "tags": [
+            "Core Java",
+            "Java Programming",
+            "Object-Oriented Programming",
+            "Java Development"
+        ],
+        "languages": [
+            "english",
+            "hindi",
+            "persian"
+        ],
+        "level": [
+            "beginner",
+            "intermediate",
+            "advance"
+        ],
+        "levels": [
+            "Level - 1",
+            "Level - 2"
+        ],
+        "duration": [
+            30
+        ],
+        "course_category": "programming",
+        "learning_outcomes": [
+            "Understand the core concepts of Java programming language.",
+            "Apply object-oriented programming principles in Java.",
+            "Master Java's Collections Framework for data handling.",
+            "Develop robust and error-handling Java applications.",
+            "Build a real-world Java project to showcase your skills.",
+            "Explore advanced Java topics like multithreading and networking.",
+            "Effectively use Java for file I/O and database connectivity."
+        ],
+        "course_content": {
+            "technicalRoadMap": [
+                {
+                    "level": "Level - 1",
+                    "data": [
+                        {
+                            "topicName": "Introduction to Core Java",
+                            "subtopics": [
+                                "What is Java?",
+                                "History and Purpose of Java",
+                                "Setting Up Java Development Environment",
+                                "Your First Java Program"
+                            ]
+                        },
+                        {
+                            "topicName": "Basic Java Syntax and Variables",
+                            "subtopics": [
+                                "Java Syntax and Structure",
+                                "Variables and Data Types",
+                                "Control Statements (if, for, switch)",
+                                "Functions and Error Handling"
+                            ]
+                        },
+                        {
+                            "topicName": "Object-Oriented Programming in Java",
+                            "subtopics": [
+                                "Classes and Objects",
+                                "Inheritance and Polymorphism",
+                                "Encapsulation and Abstraction",
+                                "Interfaces and Abstract Classes"
+                            ]
+                        },
+                        {
+                            "topicName": "Working with Collections in Java",
+                            "subtopics": [
+                                "Java Collections Framework",
+                                "List, Set, and Map Interfaces",
+                                "Iterators and Streams",
+                                "Common Collection Classes"
+                            ]
+                        },
+                        {
+                            "topicName": "Exception Handling in Java",
+                            "subtopics": [
+                                "Exception Hierarchy",
+                                "Try-Catch Blocks",
+                                "Custom Exceptions",
+                                "Best Practices for Exception Handling"
+                            ]
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": ""
+                },
+                {
+                    "level": "Level - 2",
+                    "data": [
+                        {
+                            "topicName": "Advanced Java Features",
+                            "subtopics": [
+                                "Generics and Type Safety",
+                                "Annotations and Reflection",
+                                "Lambda Expressions",
+                                "Java Streams API",
+                                "Concurrency and Multithreading"
+                            ]
+                        },
+                        {
+                            "topicName": "File I/O and Networking in Java",
+                            "subtopics": [
+                                "Reading and Writing Files",
+                                "Socket Programming",
+                                "URL Handling and HTTP Connections",
+                                "Working with JSON and XML"
+                            ]
+                        },
+                        {
+                            "topicName": "Database Connectivity in Java",
+                            "subtopics": [
+                                "Using JDBC for Database Access",
+                                "Working with SQL Databases (e.g., MySQL, PostgreSQL)",
+                                "Connection Pooling",
+                                "ORM (Object-Relational Mapping) with Hibernate"
+                            ]
+                        },
+                        {
+                            "topicName": "Advanced Java Topics",
+                            "subtopics": [
+                                "Multithreading and Synchronization",
+                                "Design Patterns in Java",
+                                "Memory Management and Garbage Collection",
+                                "Internationalization and Localization (i18n)"
+                            ]
+                        },
+                        {
+                            "topicName": "Java Project Development",
+                            "subtopics": [
+                                "Building a Java Application or Service",
+                                "Implementing Advanced Features and Functionality",
+                                "Testing and Deployment",
+                                "Performance Tuning and Scalability",
+                                "Best Practices and Code Organization"
+                            ]
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": ""
+                }
+            ]
+        },
+        "pricingData": [
+            {
+                "course_level_category": "",
+                "course_level_pricing": [
+                    {
+                        "level": "beginner",
+                        "rupees": 40000,
+                        "dollars": 30
+                    },
+                    {
+                        "level": "intermediate",
+                        "rupees": 80000,
+                        "dollars": 50
+                    },
+                    {
+                        "level": "advance",
+                        "rupees": 1000000,
+                        "dollars": 100
+                    }
+                ]
+            },
+            {
+                "course_level_category": "group",
+                "course_level_pricing": [
+                    {
+                        "level": "beginner",
+                        "rupees": 40000,
+                        "dollars": 30
+                    },
+                    {
+                        "level": "intermediate",
+                        "rupees": 80000,
+                        "dollars": 50
+                    },
+                    {
+                        "level": "advance",
+                        "rupees": 1000000,
+                        "dollars": 100
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "PHP Programming: From Basics to Web Development",
+        "title": "PHP Programming: From Basics to Web Development",
+        "description": "Learn PHP programming language from the fundamentals to building dynamic web applications.",
+        "meta_title": "PHP Programming Course | From Basics to Web Development",
+        "meta_description": "Join our comprehensive PHP programming course and become proficient in building dynamic web applications with PHP.",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/lojx9gllpkniuuvxiob5.png",
+        "slug": "php-programming",
+        "categories": [
+            "Programming",
+            "Web Development",
+            "PHP"
+        ],
+        "tags": [
+            "PHP",
+            "Web Development",
+            "Backend Development",
+            "MySQL",
+            "Laravel"
+        ],
+        "languages": [
+            "english",
+            "hindi",
+            "persian"
+        ],
+        "level": [
+            "beginner",
+            "intermediate",
+            "advance"
+        ],
+        "duration": [
+            30
+        ],
+        "course_category": "programming",
+        "learning_outcomes": [
+            "Understand the fundamental concepts of PHP",
+            "Work with PHP data types and control structures",
+            "Handle user input and forms",
+            "Interact with databases (MySQL) using PHP",
+            "Build dynamic web applications with PHP",
+            "Implement PHP security best practices",
+            "Utilize popular PHP frameworks for web development",
+            "Integrate PHP with front-end technologies (HTML, CSS, JavaScript)"
+        ],
+        "levels": [
+            "Level - 1",
+            "Level - 2"
+        ],
+        "course_content": {
+            "technicalRoadMap": [
+                {
+                    "level": "Level - 1",
+                    "data": [
+                        {
+                            "topicName": "Introduction to PHP",
+                            "subtopics": [
+                                "What is PHP?",
+                                "History and Uses of PHP",
+                                "Installing PHP and PHP Development Environment"
+                            ]
+                        },
+                        {
+                            "topicName": "Basic PHP Syntax and Variables",
+                            "subtopics": [
+                                "PHP Tags and Syntax",
+                                "Variables and Data Types",
+                                "Operators and Expressions"
+                            ]
+                        },
+                        {
+                            "topicName": "Working with PHP in a Web Server",
+                            "subtopics": [
+                                "Setting Up a Local Development Environment",
+                                "Creating Your First PHP Script",
+                                "Debugging PHP Code"
+                            ]
+                        },
+                        {
+                            "topicName": "PHP Functions and File Handling",
+                            "subtopics": [
+                                "Creating and Using PHP Functions",
+                                "Passing Arguments to Functions",
+                                "Function Return Values and Scope",
+                                "Working with Files in PHP",
+                                "File Upload and File Handling"
+                            ]
+                        },
+                        {
+                            "topicName": "PHP Control Structures",
+                            "subtopics": [
+                                "Conditional Statements (if, else, switch)",
+                                "Loops (for, while, do...while)",
+                                "Working with Arrays",
+                                "Functions in PHP",
+                                "Handling Forms and User Input"
+                            ]
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 30,
+                    "no_of_months": "1",
+                    "certification_name": ""
+                },
+                {
+                    "level": "Level - 2",
+                    "data": [
+                        {
+                            "topicName": "PHP with HTML",
+                            "subtopics": [
+                                "Embedding PHP in HTML",
+                                "Using PHP to Generate Dynamic Content",
+                                "Form Handling with PHP",
+                                "Introduction to Server-Side Validation"
+                            ]
+                        },
+                        {
+                            "topicName": "Working with Databases (MySQL)",
+                            "subtopics": [
+                                "Connecting to MySQL Database",
+                                "Performing CRUD Operations (Create, Read, Update, Delete)",
+                                "Executing Prepared Statements",
+                                "Handling MySQL Errors",
+                                "Database Security and Best Practices"
+                            ]
+                        },
+                        {
+                            "topicName": "Object-Oriented PHP",
+                            "subtopics": [
+                                "Introduction to Object-Oriented Programming (OOP)",
+                                "Classes and Objects in PHP",
+                                "Encapsulation, Inheritance, and Polymorphism",
+                                "Working with PHP OOP Patterns",
+                                "Using OOP in Web Development"
+                            ]
+                        },
+                        {
+                            "topicName": "Web Development with PHP",
+                            "subtopics": [
+                                "PHP Templating and Separation of Concerns",
+                                "Session and Cookie Management",
+                                "Handling User Authentication and Authorization",
+                                "Implementing Basic Security Measures",
+                                "Introduction to PHP Frameworks (e.g., Laravel)"
+                            ]
+                        },
+                        {
+                            "topicName": "PHP Security and Performance Optimization",
+                            "subtopics": [
+                                "Common PHP Security Vulnerabilities",
+                                "Preventing SQL Injection and Cross-Site Scripting (XSS)",
+                                "Securing File Uploads",
+                                "Using Password Hashing and Salting",
+                                "Caching and Performance Optimization"
+                            ]
+                        },
+                        {
+                            "topicName": "PHP Integration with Front-End Technologies",
+                            "subtopics": [
+                                "Using PHP with JavaScript (AJAX)",
+                                "Creating JSON APIs with PHP",
+                                "Integrating PHP with Front-End Frameworks (e.g., React, Vue.js)",
+                                "Implementing Template Engines (e.g., Twig)"
+                            ]
+                        },
+                        {
+                            "topicName": "PHP Project Development",
+                            "subtopics": [
+                                "Building a Dynamic Web Application with PHP and MySQL",
+                                "Implementing Advanced Features and Functionality",
+                                "Deploying and Hosting PHP Applications",
+                                "Optimizing Performance and Scalability",
+                                "Managing and Maintaining PHP Projects"
+                            ]
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 50,
+                    "no_of_months": "2 - 3 Months",
+                    "certification_name": ""
+                }
+            ]
+        },
+        "pricingData": []
+    },
+    {
+        "name": "Go Programming: The Complete Guide",
+        "title": "Go Programming: The Complete Guide",
+        "description": "Learn Go (Golang) programming language from the basics to building robust and efficient applications.",
+        "meta-title": "Go Programming Course | The Complete Guide",
+        "meta-description": "Join our comprehensive Go programming course and become proficient in building efficient and scalable applications with Go (Golang).",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690544575/images/jiaego2tequgeeblicee.png",
+        "slug": "go-programming",
+        "categories": [
+            "Programming",
+            "Go (Golang)"
+        ],
+        "tags": [
+            "Go Programming",
+            "Backend Development",
+            "Systems Programming",
+            "Concurrency"
+        ],
+        "languages": [
+            "english",
+            "hindi",
+            "persian"
+        ],
+        "level": [
+            "beginner",
+            "intermediate",
+            "advance"
+        ],
+        "duration": [
+            30
+        ],
+        "course_category": "programming",
+        "learning_outcomes": [
+            "Understand the fundamentals of Go programming language",
+            "Work with Go's syntax, data types, and control structures",
+            "Build concurrent and efficient applications",
+            "Utilize Go's standard library and packages",
+            "Create RESTful APIs with Go",
+            "Work with databases and perform CRUD operations",
+            "Develop high-performance web servers",
+            "Deploy Go applications to production environments"
+        ],
+        "levels": [
+            "beginner",
+            "intermediate",
+            "advance"
+        ],
+        "course_content": {
+            "technicalRoadMap": [
+                {
+                    "level": "Level - 1",
+                    "data": [
+                        {
+                            "topicName": "Introduction to Go",
+                            "subtopics": [
+                                "What is Go?",
+                                "History and Purpose of Go",
+                                "Installing Go and Development Environment"
+                            ]
+                        },
+                        {
+                            "topicName": "Basic Go Syntax and Variables",
+                            "subtopics": [
+                                "Go's Syntax and Structure",
+                                "Variables and Data Types",
+                                "Control Structures (if, for, switch)",
+                                "Functions and Error Handling"
+                            ]
+                        },
+                        {
+                            "topicName": "Working with Go Packages",
+                            "subtopics": [
+                                "Understanding Packages in Go",
+                                "Creating and Using Custom Packages",
+                                "Dependency Management (go mod)",
+                                "Error Handling in Go"
+                            ]
+                        },
+                        {
+                            "topicName": "Concurrency in Go",
+                            "subtopics": [
+                                "Goroutines and Parallelism",
+                                "Channels and Synchronization",
+                                "Concurrency Patterns",
+                                "Handling Errors in Concurrent Programs"
+                            ]
+                        },
+                        {
+                            "topicName": "Advanced Go Concepts",
+                            "subtopics": [
+                                "Structs and Interfaces",
+                                "Error Handling Patterns",
+                                "Reflection and Unsafe Packages",
+                                "Testing and Benchmarking in Go",
+                                "Best Practices and Code Organization"
+                            ]
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": ""
+                },
+                {
+                    "level": "Level - 2",
+                    "data": [
+                        {
+                            "topicName": "Advanced Concurrency in Go",
+                            "subtopics": [
+                                "Advanced Goroutines and Channels",
+                                "Context and Cancellation",
+                                "Concurrency Patterns and Design",
+                                "Using Wait Groups and Select"
+                            ]
+                        },
+                        {
+                            "topicName": "Working with Data and Databases in Go",
+                            "subtopics": [
+                                "Working with JSON and XML",
+                                "Database Connectivity (SQL and NoSQL)",
+                                "ORMs in Go",
+                                "Data Validation and Serialization"
+                            ]
+                        },
+                        {
+                            "topicName": "Web Development with Go (HTTP/REST)",
+                            "subtopics": [
+                                "Building HTTP Servers in Go",
+                                "RESTful API Design and Implementation",
+                                "Middleware and Routing",
+                                "Authentication and Authorization",
+                                "Testing Web Applications"
+                            ]
+                        },
+                        {
+                            "topicName": "Building CLI Tools and DevOps in Go",
+                            "subtopics": [
+                                "Creating Command-Line Interfaces (Cobra)",
+                                "Interacting with the OS and File I/O",
+                                "Containerization and Deployment",
+                                "CI/CD Pipelines with Go"
+                            ]
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": ""
+                }
+            ]
+        },
+        "pricingData": [
+            {
+                "course_level_category": "",
+                "course_level_pricing": [
+                    {
+                        "level": "beginner",
+                        "rupees": 40000,
+                        "dollars": 30
+                    },
+                    {
+                        "level": "intermediate",
+                        "rupees": 80000,
+                        "dollars": 50
+                    },
+                    {
+                        "level": "advance",
+                        "rupees": 1000000,
+                        "dollars": 100
+                    }
+                ]
+            },
+            {
+                "course_level_category": "group",
+                "course_level_pricing": [
+                    {
+                        "level": "beginner",
+                        "rupees": 40000,
+                        "dollars": 30
+                    },
+                    {
+                        "level": "intermediate",
+                        "rupees": 80000,
+                        "dollars": 50
+                    },
+                    {
+                        "level": "advance",
+                        "rupees": 1000000,
+                        "dollars": 100
+                    }
+                ]
+            }
+        ]
+    }
+]
