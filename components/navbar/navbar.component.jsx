@@ -123,9 +123,9 @@ const Navbar = () => {
                   <Link href="/faqs">
                     <li>FAQ</li>
                   </Link>
-                  <Link href="/roadMaps">
+                  {/* <Link href="/roadMaps">
                     <li>RoadMaps</li>
-                  </Link>
+                  </Link> */}
 
                 </ul>
                 <div className={navcss.btn_group}>
