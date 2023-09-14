@@ -62,7 +62,7 @@ const CourseBody = ({ courseInfo }) => {
               level={level}
               courseContent={courseContent}
             />
-            <CourseAdditionalInforComponent data={data} />
+            {/* <CourseAdditionalInforComponent data={data} /> */}
           </div>
           <CourseFeaturesComponent />
           {/* <div className={cb.cb_wul_img}>

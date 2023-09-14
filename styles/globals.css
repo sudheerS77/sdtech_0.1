@@ -4,97 +4,101 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    /* outline: 1px solid rgba(0, 255, 174, 0.63) !important; */
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid rgba(0, 255, 174, 0.63) !important; */
 }
 
 body {
-    /* font-family: 'Barlow', sans-serif; */
-    font-family: 'Barlow', sans-serif;
-    font-family: 'DM Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    /* color: #333333; */
+  /* font-family: 'Barlow', sans-serif; */
+  font-family: 'Barlow', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* color: #333333; */
 }
-.container{
+
+.container {
   margin-top: 70px;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 /* Headings */
 h1 {
-    font-size: 32px;
-    /* color: #333333; */
-    color: #042541;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 28px;
-    color: #444444;
-    font-weight: bold;
-    margin-bottom: 18px;
-  }
-  
-  h3 {
-    font-size: 24px;
-    color: #555555;
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-  
-  h4 {
-    font-size: 20px;
-    color: #666666;
-    font-weight: bold;
-    margin-bottom: 14px;
-  }
-  
-  h5 {
-    font-size: 18px;
-    color: #777777;
-    font-weight: bold;
-    margin-bottom: 12px;
-  }
-  
-  h6 {
-    font-size: 16px;
-    color: #888888;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /* Paragraphs */
-  p {
-    font-size: 16px;
-    color: #333333;
-    line-height: 1.5;
-    margin-bottom: 12px;
-  }
-  
- 
-  button{
-    border: none;
-    background-color: none;
-    outline: none;
+  font-size: 32px;
+  /* color: #333333; */
+  color: #042541;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+
+h2 {
+  font-size: 28px;
+  color: #444444;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #555555;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 20px;
+  color: #666666;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+h5 {
+  font-size: 18px;
+  color: #777777;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+h6 {
+  font-size: 16px;
+  color: #888888;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+
+button {
+  border: none;
+  background-color: none;
+  outline: none;
+}
+
 .react-tel-input {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   position: relative;
   width: 100%;
 }
+
 .react-tel-input .special-label {
   display: none;
   position: absolute;
@@ -106,6 +110,7 @@ h1 {
   padding: 0 5px;
   white-space: nowrap;
 }
+
 .react-tel-input .form-control {
   width: 100%;
   font-size: 1px;
@@ -115,10 +120,11 @@ h1 {
   /* width: 300px; */
   outline: none;
   padding: 18.5px 14px 18.5px 60px;
-  transition: box-shadow ease .25s,border-color ease .25s;
+  transition: box-shadow ease .25s, border-color ease .25s;
   color: #495057;
   background-color: green;
 }
+
 .react-tel-input .flag-dropdown {
   position: absolute;
   top: 0;
@@ -126,6 +132,7 @@ h1 {
   padding: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .react-tel-input .selected-flag {
   outline: none;
   position: relative;
@@ -134,9 +141,11 @@ h1 {
   padding: 0 0 0 11px;
   border-radius: 3px 0 0 3px;
 }
+
 .react-tel-input .in {
   background-position: -48px -168px;
 }
+
 .react-tel-input .selected-flag .arrow {
   position: relative;
   top: 50%;
@@ -164,8 +173,70 @@ h1 {
 
 } */
 
-.inputFieldErrorMessage{
+.inputFieldErrorMessage {
   font-size: small;
   color: rgba(255, 0, 0, 0.825);
   font-weight: bold;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Media queries for even smaller screens */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
 }

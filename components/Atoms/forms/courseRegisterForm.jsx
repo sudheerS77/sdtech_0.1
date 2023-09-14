@@ -160,12 +160,12 @@ const CourseRegisterForm = ({ courseName }) => {
     {
       label: "sudent Details",
       initialValues: {
-        firstName: "asd",
-        lastName: "ads",
-        dob: "2007-12-31",
+        firstName: "",
+        lastName: "",
+        dob: "",
         age: 0,
-        studentEmail: "sdkj@gmail.com",
-        studentWhatsAppNumber: "919856985698",
+        studentEmail: "",
+        studentWhatsAppNumber: "",
       },
       validation: Yup.object({
         firstName: Yup.string().required("First Name is required"),
