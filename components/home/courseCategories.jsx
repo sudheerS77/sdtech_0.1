@@ -67,30 +67,30 @@ const CourseCategories = () => {
           name: "Python",
           link: "python-programming",
         },
-        {
-          name: "Java",
-          link: "complete-java-full-stack-development",
-        },
+        // {
+        //   name: "Java",
+        //   link: "complete-java-full-stack-development",
+        // },
         {
           name: "JavaScript",
           link: "java-script",
         },
-        {
-          name: "GOLANG",
-          link: "go-programming",
-        },
-        {
-          name: "PHP",
-          link: "php-programming",
-        },
-        {
-          name: "R",
-          link: "R-programming",
-        },
-        {
-          name: "C",
-          link: "c-programming",
-        },
+        // // {
+        // //   name: "GOLANG",
+        // //   link: "go-programming",
+        // // },
+        // {
+        //   name: "PHP",
+        //   link: "php-programming",
+        // },
+        // {
+        //   name: "R",
+        //   link: "R-programming",
+        // },
+        // {
+        //   name: "C",
+        //   link: "c-programming",
+        // },
         // {
         //   name: "C++",
         //   link: "c++",
@@ -101,10 +101,10 @@ const CourseCategories = () => {
       name: "Web Development",
       icon: <SiWebflow className={hcc.caticon} />,
       children: [
-        {
-          name: "Full Stack Wev Development",
-          link: "full-stack-web-development",
-        },
+        // {
+        //   name: "Full Stack Wev Development",
+        //   link: "full-stack-web-development",
+        // },
         {
           name: "HTML CSS JS",
           link: "html-css-js",
@@ -121,10 +121,10 @@ const CourseCategories = () => {
           name: "JavaScript",
           link: "java-script",
         },
-        {
-          name: "NodeJS",
-          link: "node-js",
-        },
+        // {
+        //   name: "NodeJS",
+        //   link: "node-js",
+        // },
         {
           name: "ReactJS",
           link: "react-js",
@@ -137,10 +137,10 @@ const CourseCategories = () => {
           name: "Mern Stack",
           link: "mern-stack",
         },
-        {
-          name: "Mean Stack",
-          link: "mean-stack",
-        },
+        // {
+        //   name: "Mean Stack",
+        //   link: "mean-stack",
+        // },
         // {
         //   name: "Frontend",
         //   link: "frontend",
@@ -149,18 +149,18 @@ const CourseCategories = () => {
         //   name: "Backend",
         //   link: "backend",
         // },
-        {
-          name: "flask",
-          link: "flask",
-        },
-        {
-          name: "Java Full Stack",
-          link: "complete-java-full-stack-development",
-        },
-        {
-          name: "Python Full Stack",
-          link: "python-full-stack",
-        },
+        // {
+        //   name: "flask",
+        //   link: "flask",
+        // },
+        // {
+        //   name: "Java Full Stack",
+        //   link: "complete-java-full-stack-development",
+        // },
+        // {
+        //   name: "Python Full Stack",
+        //   link: "python-full-stack",
+        // },
       ],
     },
     {

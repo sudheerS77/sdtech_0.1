@@ -78,6 +78,10 @@ const StudentDetails = ({ setCurrentStep, values, setFieldValue }) => {
 const ParentDetails = ({ setCurrentStep, values, setFieldValue }) => {
   return (
     <>
+      <p style={{ color: "gray", fontSize: "0.9rem" }}>
+        {" "}
+        Note - Please fill the parent detils if your age is less than 18
+      </p>
       <div>
         <label htmlFor="name">Parent Name</label>
         <div className={crf.form_group}>
@@ -188,12 +192,12 @@ const CourseRegisterForm = ({ courseName }) => {
         parentEmail: "",
       },
       validation: Yup.object({
-        parentFirstName: Yup.string().required("Parent First Name is required"),
-        parentLastName: Yup.string().required("Parent Last Name is required"),
-        parentWhatsAppNumber: Yup.string().required(
-          "Parent WhatsApp Number is required"
-        ),
-        parentEmail: Yup.string().email().required("Email is required"),
+        // parentFirstName: Yup.string().required("Parent First Name is required"),
+        // parentLastName: Yup.string().required("Parent Last Name is required"),
+        // parentWhatsAppNumber: Yup.string().required(
+        //   "Parent WhatsApp Number is required"
+        // ),
+        // parentEmail: Yup.string().email().required("Email is required"),
       }),
     },
     {
