@@ -160,7 +160,6 @@ const Address = ({ setCurrentStep, values, setFieldValue }) => {
   );
 };
 const CourseRegisterForm = ({ courseName }) => {
-  console.log(courseName);
   const stepData = [
     {
       label: "sudent Details",
@@ -225,7 +224,7 @@ const CourseRegisterForm = ({ courseName }) => {
   const [formData, setFormData] = useState({});
   const isLastStep = currentStep === stepData.length - 1;
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
-  const [error, setError] = useState({ show: true, message: "message" });
+  const [error, setError] = useState({ show: false, message: "message" });
   const router = useRouter();
   const submitDetails = async (values) => {
     try {
@@ -244,7 +243,6 @@ const CourseRegisterForm = ({ courseName }) => {
         show: true,
         message: error.message,
       });
-      console.log({ error });
     }
   };
   useEffect(() => {
@@ -261,7 +259,6 @@ const CourseRegisterForm = ({ courseName }) => {
     if (isLastStep) {
       setFormData({ ...formData, courseRegisterName: courseName });
       submitDetails(values);
-      console.log({ values });
     } else {
       setCurrentStep((prev) => prev + 1);
     }
@@ -286,7 +283,6 @@ const CourseRegisterForm = ({ courseName }) => {
         }
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            // console.log(values);
             setSubmitting(false);
             handleNext(values);
           }, 400); // Simulate async submission

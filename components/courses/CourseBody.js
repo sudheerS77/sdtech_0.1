@@ -33,7 +33,6 @@ const CourseBody = ({
 
   // const getLevelContent = () => {
   //   data?.course_content?.technicalRoadMap?.filter((item) => {
-  //     console.log(level, item?.level);
   //     if (item.level === level) {
   //       setCourseContent(item?.data);
   //     }
@@ -41,12 +40,10 @@ const CourseBody = ({
   // };
   // const levelHandler = (e) => {
   //   setLevel(e.target.name);
-  //   console.log("clicked", e.target.name);
   //   getLevelContent(e.target.name);
   // };
   // useEffect(() => {
   //   data?.course_content?.technicalRoadMap?.filter((item) => {
-  //     console.log(level, item?.level);
   //     if (item.level === level) {
   //       setCourseContent(item?.data);
   //     }
@@ -62,7 +59,6 @@ const CourseBody = ({
 
   // useEffect(() => {}, []);
 
-  // console.log(data.levels[0], level);
   return (
     <>
       <div className={cb.cb_container}>

@@ -121,7 +121,6 @@ const AllPaidCourses = () => {
 
   useEffect(() => {
     // getCourses();
-    // console.log(allCourses);
     setAllCoursesData(allCourses);
     setFilteredCourses(allCourses);
   }, []);
