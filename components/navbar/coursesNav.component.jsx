@@ -44,14 +44,14 @@ const CoursesNav = () => {
       name: "Python",
       link: "python-programming",
     },
-    {
-      name: "Java",
-      link: "complete-java-full-stack-development",
-    },
-    {
-      name: "PHP",
-      link: "php-programming",
-    },
+    // {
+    //   name: "Java",
+    //   link: "complete-java-full-stack-development",
+    // },
+    // {
+    //   name: "PHP",
+    //   link: "php-programming",
+    // },
     {
       name: "HTML",
       link: "html",
@@ -64,10 +64,10 @@ const CoursesNav = () => {
       name: "JavaScript",
       link: "java-script",
     },
-    {
-      name: "NodeJS",
-      link: "node-js",
-    },
+    // {
+    //   name: "NodeJS",
+    //   link: "node-js",
+    // },
     {
       name: "ReactJS",
       link: "react-js",
