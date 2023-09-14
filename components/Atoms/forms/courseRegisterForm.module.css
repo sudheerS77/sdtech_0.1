@@ -17,41 +17,6 @@
   color: rgb(47, 47, 47);
   font-size: 16px;
 }
-.np_btn_group{
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.next_btn, .prev_btn {
-  width: 100px;
-  padding: 10px 30px;
-  font-size: 14px;
-  float: right;
-  cursor: pointer;
-  
-  color: #fff;
-  background-color: #242539;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  
-  border-radius: 4px;
-  /* font-weight: 400; */
-}
-.prev_btn{
-  background-color: #fff;
-  color: #242539;
-  border: 2px solid #242539;
-}
-
-.right_arrow {
-  color: #fff;
-}
 
 .step_container {
   /* margin: -20px; */
@@ -204,18 +169,59 @@
   background-color: #ccc;
   cursor: not-allowed;
 }
+.np_btn_group{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.next_btn, .prev_btn {
+  width: 100px;
+  padding: 10px 30px;
+  font-size: 14px;
+  float: right;
+  cursor: pointer;
+  
+  color: #fff;
+  background-color: #242539;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  border-radius: 4px;
+  /* font-weight: 400; */
+}
+.prev_btn{
+  background-color: #fff;
+  color: #242539;
+  border: 2px solid #242539;
+}
+
+.right_arrow {
+  color: #fff;
+}
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
   .register__from__container {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
     padding: 30px 0;
   }
 
   .register__from__container form {
-    width: 100%;
+    width: 90%;
+    gap: 20px;
+    padding: 20px 10px;
 
   }
 
+  
   .form_group {
     width: 100%;
     display: flex;
@@ -237,3 +243,7 @@
     font-size: 16px;
   }
 }
+
+
+/* Media query for tablets devices (For screens between 768px and 1024px ) */
+@media (min-width: 768px) and (max-width: 1023px) {}
