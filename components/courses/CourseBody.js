@@ -18,32 +18,51 @@ import TechnicalRoadMapComponent from "./technicalRoadMap.component";
 import CourseFeaturesComponent from "./courseFeatures.component";
 import CourseAdditionalInforComponent from "./courseAdditionalInfor.component";
 
-const CourseBody = ({ courseInfo }) => {
+const CourseBody = ({
+  courseInfo,
+  levelHandler,
+  level,
+  setLevel,
+  courseContent,
+}) => {
+  // const data = courseInfo;
+  // const [level, setLevel] = useState(data?.levels[0] || "default");
+  // const [courseContent, setCourseContent] = useState();
+  // const [openIndex, setOpenIndex] = useState([]);
+  // const [expandAll, setExpandAll] = useState(false);
+
+  // const getLevelContent = () => {
+  //   data?.course_content?.technicalRoadMap?.filter((item) => {
+  //     console.log(level, item?.level);
+  //     if (item.level === level) {
+  //       setCourseContent(item?.data);
+  //     }
+  //   });
+  // };
+  // const levelHandler = (e) => {
+  //   setLevel(e.target.name);
+  //   console.log("clicked", e.target.name);
+  //   getLevelContent(e.target.name);
+  // };
+  // useEffect(() => {
+  //   data?.course_content?.technicalRoadMap?.filter((item) => {
+  //     console.log(level, item?.level);
+  //     if (item.level === level) {
+  //       setCourseContent(item?.data);
+  //     }
+  //   });
+  // }, []);
+
+  // useEffect(() => {
+  //   getLevelContent();
+  // }, [level]);
   const data = courseInfo;
-  const [level, setLevel] = useState(data?.levels[0] || "default");
-  const [courseContent, setCourseContent] = useState();
   const [openIndex, setOpenIndex] = useState([]);
   const [expandAll, setExpandAll] = useState(false);
 
-  const levelHandler = (e) => {
-    setLevel(e.target.name);
-  };
-  const getLevelContent = () => {
-    data?.course_content?.technicalRoadMap?.filter((item) => {
-      if (item.level === level) {
-        setCourseContent(item?.data);
-      }
-    });
-  };
+  // useEffect(() => {}, []);
 
-  useEffect(() => {
-    getLevelContent();
-  });
-
-  useEffect(() => {
-    getLevelContent();
-  }, [level]);
-
+  // console.log(data.levels[0], level);
   return (
     <>
       <div className={cb.cb_container}>
@@ -60,8 +79,11 @@ const CourseBody = ({ courseInfo }) => {
             <TechnicalRoadMapComponent
               data={data}
               level={level}
+              levelHandler={levelHandler}
               courseContent={courseContent}
             />
+            {/* {JSON.stringify(level)} */}
+            {/* {JSON.stringify(courseContent)} */}
             {/* <CourseAdditionalInforComponent data={data} /> */}
           </div>
           <CourseFeaturesComponent />

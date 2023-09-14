@@ -28,6 +28,46 @@ const PaidCourse = ({ courseid, data }) => {
     );
     setCourseInfo(filteredResults[0]);
   }, [, courseid]);
+  //
+  const [level, setLevel] = useState(data?.levels[0] || "default");
+  const [courseContent, setCourseContent] = useState();
+
+  const getLevelContent = () => {
+    courseInfo?.course_content?.technicalRoadMap?.filter((item) => {
+      console.log(level, { item });
+      if (item.level === level) {
+        setCourseContent(item?.data);
+      }
+    });
+  };
+  const levelHandler = (e) => {
+    setLevel(e.target.name);
+    console.log("=>", level);
+  };
+
+  useEffect(() => {
+
+    console.log(level);
+
+    if (data?.levels[0] === "default") {
+      console.log("defalt level here");
+    } else {
+      console.log("NOT DEFAULT", courseInfo);
+    }
+
+    // if (data?.levels?.length > 1) {
+    //   console.log("greater than 1");
+    //   setCourseContent(data?.course_content?.technicalRoadMap[0]?.data);
+    // } else {
+    // }
+
+    getLevelContent();
+
+  }, []);
+
+  useEffect(() => {
+    getLevelContent();
+  }, [level]);
 
   const HeadSection = () => {
     return (
@@ -70,7 +110,13 @@ const PaidCourse = ({ courseid, data }) => {
       <HomeLayout>
         <HeadSection />
         <Banner courseInfo={courseInfo} />
-        <CourseBody courseInfo={courseInfo} />
+        <CourseBody
+          courseInfo={courseInfo}
+          levelHandler={levelHandler}
+          level={level}
+          setLevel={setLevel}
+          courseContent={courseContent}
+        />
         {/* <SimilarCourses /> */}
       </HomeLayout>
     </>

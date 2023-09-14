@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import cb from "./coursebody.module.css";
 import Accordion from "../Atoms/Accordion/accordion";
 
-const TechnicalRoadMapComponent = ({ data, level, courseContent }) => {
+const TechnicalRoadMapComponent = ({
+  data,
+  level,
+  levelHandler,
+  courseContent,
+}) => {
   const [openIndex, setOpenIndex] = useState([0]);
   const [expandAll, setExpandAll] = useState(false);
   const toggleAccordion = (index) => {
@@ -55,8 +60,9 @@ const TechnicalRoadMapComponent = ({ data, level, courseContent }) => {
         </div>
 
         <div className={cb.acc_container}>
-          {level !== null
-            ? courseContent?.map((acdata, index) => (
+          {
+            level !== null ? (
+              courseContent?.map((acdata, index) => (
                 <Accordion
                   key={index}
                   sno={index}
@@ -67,17 +73,22 @@ const TechnicalRoadMapComponent = ({ data, level, courseContent }) => {
                   toggleAccordion={() => toggleAccordion(index)}
                 />
               ))
-            : courseInfo.course_content.map((acdata, index) => (
-                <Accordion
-                  key={index}
-                  sno={index}
-                  header={acdata.topicName}
-                  body={acdata.subtopics}
-                  isOpen={openIndex.includes(index)}
-                  expandAll={expandAll}
-                  toggleAccordion={() => toggleAccordion(index)}
-                />
-              ))}
+            ) : (
+              <></>
+            )
+            // courseInfo.course_content.map((acdata, index) => (
+            // <Accordion
+            //   key={index}
+            //   sno={index}
+            //   header={acdata.topicName}
+            //   body={acdata.subtopics}
+            //   isOpen={openIndex.includes(index)}
+            //   expandAll={expandAll}
+            //   toggleAccordion={() => toggleAccordion(index)}
+            // />
+            // )
+            // )
+          }
         </div>
       </div>
     </>
