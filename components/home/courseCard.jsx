@@ -15,7 +15,10 @@ const CourseCard = ({ data }) => {
             query: { coursename: `${data?.name}` },
           }}
         >
-          <div className={hc.oc_card_h}>
+          <div
+            className={`${data?.isBig ? hc.big_oc_card_h : hc.oc_card_h} `}
+            // className={hc.oc_card_h}
+          >
             <img src={data?.image} alt="" />
           </div>
           <div className={hc.oc_card_b}>

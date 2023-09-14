@@ -11,7 +11,8 @@ const OurCourses = () => {
       description:
         "Learn the fundamentals of robotics in our introductory course, Introduction to Robotics. Dive into the exciting world of robots, their history, and their applications. Discover the types of robots, the connection between robotics and artificial intelligence, and explore various career opportunities in this dynamic field. Whether you're a curious beginner or aspiring robotics engineer, this course will equip you with essential knowledge and skills to kickstart your journey into robotics.",
       image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1694713471/images/ozvlwqv0lx383xqm0teh.jpg",
+      isBig: true,
       slug: "zero-beginner",
     },
     {
@@ -19,7 +20,8 @@ const OurCourses = () => {
       description:
         "Unlock the power of programming in the realm of robotics with our Programming Fundamentals for Robotics beginner course. This course offers a comprehensive introduction to the world of programming, covering its history, different programming languages, and its unique applications in robotics. Explore the nuances that distinguish robot programming from other forms of programming and get to grips with numbering systems. By the end of this course, you'll be well-equipped to tackle programming challenges in the robotics field.",
       image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1694713757/images/b5qviotprutwjdeic5kx.jpg",
+      isBig: true,
       slug: "programming-fundamentals-for-robotics",
     },
     {
@@ -28,6 +30,7 @@ const OurCourses = () => {
         "Learn web development from the basics of HTML, CSS to building interactive websites with JavaScript.",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1690558647/images/fcvphmn3rdszg3vausn0.png",
+      isBig: false,
       slug: "html-css-js",
     },
     {
@@ -36,6 +39,7 @@ const OurCourses = () => {
         "Learn React.js from the basics to advanced techniques for building modern web applications.",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1689850185/images/gwz3e2lo0j30se3qqw3v.png",
+      isBig: false,
       slug: "react-js",
     },
     {
@@ -44,6 +48,7 @@ const OurCourses = () => {
         "Learn Next.js from the basics to advanced techniques for building modern and server-rendered React applications.",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/gzgedeevea8juoif6u2t.png",
+      isBig: false,
       slug: "nextjs",
     },
     {
@@ -52,6 +57,7 @@ const OurCourses = () => {
         "Learn the MERN stack to build modern and powerful full-stack web applications.",
       image:
         "https://res.cloudinary.com/df8aswwta/image/upload/v1690558939/images/uccycj0urlhlnaka12la.png",
+      isBig: false,
       slug: "mern-stack",
     },
   ];

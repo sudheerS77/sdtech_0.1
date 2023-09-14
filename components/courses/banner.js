@@ -29,10 +29,15 @@ const Banner = ({ courseInfo }) => {
           </div>
         </div>
         <div className={b.b_right} onClick={() => setPlayVideo(!playVideo)}>
-          <div className={b.course_cover_img}>
+          <div
+            className={`${
+              data?.isbigimage ? b.fullCoverImage : b.course_cover_img
+            } `}
+            // className={b.course_cover_img}
+          >
             <img src={data?.image} alt="image" />
           </div>
-          <span className={b.b_level_tag}>Level - {data?.level[0]}</span>
+          {/* <span className={b.b_level_tag}>Level - {data?.level[0]}</span> */}
 
           {/* <div className={b.b_right_container}>
             {playVideo ? (

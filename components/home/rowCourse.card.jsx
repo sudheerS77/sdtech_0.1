@@ -16,7 +16,12 @@ const RowCourseCard = ({ data }) => {
           //   query: { coursename: `${data?.name}` },
           // }}
         >
-          <div className={hc.oc_rcard_h}>
+          <div
+            className={`${
+              data?.isbigimage ? hc.rfullCoverImage : hc.oc_rcard_h
+            } `}
+            // className={hc.oc_rcard_h}
+          >
             <img src={data?.image} alt="" />
           </div>
           <div className={hc.oc_rcard_b}>

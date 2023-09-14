@@ -7,6 +7,7 @@
         "meta_title": "Web Development Course | Comprehensive Guide to HTML, CSS, and JavaScript",
         "meta_description": "Join our comprehensive web development course and become proficient in creating dynamic websites using HTML, CSS, and JavaScript.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690558647/images/fcvphmn3rdszg3vausn0.png",
+        "isbigimage": false,
         "slug": "html-css-js",
         "categories": [
             "Web Development",
@@ -458,6 +459,7 @@
         "meta_title": "HTML Mastery | Comprehensive Guide to HTML",
         "meta_description": "Join our comprehensive HTML course and become proficient in building modern web pages.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850186/images/xockg9oohd2zexldmxni.png",
+        "isbigimage": false,
         "slug": "html",
         "categories": [
             "Web Development",
@@ -708,6 +710,7 @@
         "meta_title": "CSS Mastery | Comprehensive Guide to CSS",
         "meta_description": "Join our comprehensive CSS course and become proficient in styling modern web pages.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/kuody8ih8nzxnfept76o.png",
+        "isbigimage": false,
         "slug": "css",
         "categories": [
             "Web Development",
@@ -999,6 +1002,7 @@
         "meta_title": "JavaScript Mastery | Comprehensive Guide to JavaScript",
         "meta_description": "Join our comprehensive JavaScript course and become proficient in building interactive web applications.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850187/images/enwdonu3ntfbsgpklqht.png",
+        "isbigimage": false,
         "slug": "java-script",
         "categories": [
             "Web Development",
@@ -1274,6 +1278,7 @@
         "meta_title": "React.js Mastery | Comprehensive Guide to React.js",
         "meta_description": "Join our comprehensive React.js course and become proficient in building modern web applications.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850185/images/gwz3e2lo0j30se3qqw3v.png",
+        "isbigimage": false,
         "slug": "react-js",
         "categories": [
             "Web Development",
@@ -1483,6 +1488,7 @@
         "meta_title": "Next.js Mastery | Comprehensive Guide to Next.js",
         "meta_description": "Join our comprehensive Next.js course and become proficient in building modern and server-rendered React applications.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/gzgedeevea8juoif6u2t.png",
+        "isbigimage": false,
         "slug": "nextjs",
         "categories": [
             "Web Development",
@@ -1693,6 +1699,7 @@
         "meta_title": "MERN Stack Mastery | Comprehensive Guide to Full-Stack Web Development",
         "meta_description": "Join our comprehensive MERN stack course and become proficient in building full-stack web applications.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690558939/images/uccycj0urlhlnaka12la.png",
+        "isbigimage": false,
         "slug": "mern-stack",
         "categories": [
             "Web Development",
@@ -1938,7 +1945,6 @@
         "updatedAt": "2023-08-30T13:28:27.975Z",
         "__v": 0
     },
-  
     {
         "_id": "64f80f84323f1823e59db11c",
         "name": "Foundations of Robotics: From History to AI Integration",
@@ -1946,7 +1952,8 @@
         "description": "Learn the fundamentals of robotics in our introductory course, Introduction to Robotics. Dive into the exciting world of robots, their history, and their applications. Discover the types of robots, the connection between robotics and artificial intelligence, and explore various career opportunities in this dynamic field. Whether you're a curious beginner or aspiring robotics engineer, this course will equip you with essential knowledge and skills to kickstart your journey into robotics.",
         "meta_title": "Introduction to Robotics: Explore History, Types, and AI Connection | Beginner Course",
         "meta_description": "Unlock the world of robotics in our beginner course. Explore the history of robotics, learn about different robot types, and understand the link between AI and robotics. Discover exciting career opportunities in this rapidly evolving field.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713471/images/ozvlwqv0lx383xqm0teh.jpg",
+        "isbigimage": true,
         "slug": "zero-beginner",
         "categories": [
             "Robotics Fundamentals",
@@ -2097,7 +2104,8 @@
         "description": "Explore the fundamental principles of electronics in our comprehensive beginner course, Electronics Essentials: From Current to Transistors. From the basics of electricity and circuit components to advanced concepts like transistors, you'll build a strong foundation in electronics. Dive into practical projects, including LED control, circuit analysis, and component understanding. This course is your gateway to mastering the world of electronics.",
         "meta_title": "Beginner Electronics Course: Learn Electronics Essentials and Practical Projects",
         "meta_description": "Start your journey into electronics with our beginner course. Understand electricity, components, circuits, and even transistors. Hands-on projects included. Join today!",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713757/images/b5qviotprutwjdeic5kx.jpg",
+        "isbigimage": true,
         "slug": "beginner-1",
         "categories": [
             "Electronics",
@@ -2296,7 +2304,8 @@
         "description": "Embark on your journey into the world of robotics with our Mechanics for Robotics beginner course. This course serves as your gateway to understanding the fundamental mechanical principles that underpin robotics. Delve into the history and significance of mechanics in robotics, explore core concepts such as force, energy, and motion, and grasp essential units of measurement. Gain insights into the role of simple machines and structural strength, setting the stage for your robotics adventure. By the end of this course, you'll be well-prepared to dive deeper into the mechanical aspects of robotics.",
         "meta_title": "Mechanics for Robotics: Master the Basics | Beginner Robotics Mechanics Course",
         "meta_description": "Discover the essentials of robotics mechanics in our beginner course. From understanding the history of mechanics in robotics to mastering concepts like force and power transmission systems, this course equips you with the mechanical knowledge required for building and designing robots.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713802/images/lvlfgv79bak7iwcejeht.jpg",
+        "isbigimage": true,
         "slug": "mechanics-for-robotics",
         "categories": [
             "Robotics Mechanics",
@@ -2443,7 +2452,8 @@
         "description": "Unlock the power of programming in the realm of robotics with our Programming Fundamentals for Robotics beginner course. This course offers a comprehensive introduction to the world of programming, covering its history, different programming languages, and its unique applications in robotics. Explore the nuances that distinguish robot programming from other forms of programming and get to grips with numbering systems. By the end of this course, you'll be well-equipped to tackle programming challenges in the robotics field.",
         "meta_title": "Programming Fundamentals for Robotics: Master the Basics | Beginner Robotics Programming Course",
         "meta_description": "Embark on your programming journey in robotics with our beginner course. Explore the history of programming, grasp fundamental programming concepts, and dive into hands-on programming using Scratch. Get ready to create your first robot program and unleash your creativity in the world of robotics.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693978317/images/wxrhjlwtilcdvbzrkraj.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713851/images/a5obyadiqbijnwa6dgn5.jpg",
+        "isbigimage": true,
         "slug": "programming-fundamentals-for-robotics",
         "categories": [
             "Robotics Programming",
@@ -2581,7 +2591,8 @@
         "description": "Master the world of Arduino and sensors in our intermediate course, Arduino and Sensors with M-Block Software. Begin with a comprehensive introduction to Arduino, exploring its history, types, components, and the significance of microcontrollers. Discover the differences between microcontrollers and CPUs and delve into the world of IoT (Internet of Things). In this course, we will focus on coding using SCRATCH-based M-Block Software, Arduino IDE, and sensor integration. By the end of this course, you'll be proficient in using Arduino to create a wide range of projects and applications.",
         "meta_title": "Intermediate Arduino and Sensors Course: M-Block Software Mastery",
         "meta_description": "Take your Arduino skills to the next level with our intermediate course. Explore Arduino history, coding with M-Block Software, and dive into exciting projects with LEDs, ultrasonic modules, buzzers, and more. Master sensor integration and unleash your creativity in the world of electronics and IoT.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693982427/images/uuanphcdti9em2r1c6k7.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713894/images/vij18vwnnbasgrrurzqq.jpg",
+        "isbigimage": true,
         "slug": "Arduino-and-sensors-(M-Block_Software)",
         "categories": [
             "Arduino Programming",
@@ -2823,7 +2834,8 @@
         "description": "Elevate your robotics skills in our Intermediate 2: Robot course. This advanced program delves into the essential topics required to become a proficient roboticist. You'll explore the intricacies of engines, motor drivers, H-bridge circuits, and robot body optimization while prioritizing safety. Learn about various types of motor drivers, how to program them, and establish connections. Discover the power of Module L298 and embark on projects involving motor control, PWM (Pulse Width Modulation), and advanced robot movements. With a focus on balance, safety, and real-world applications, this course prepares you to create and control robots for various purposes.",
         "meta_title": "Advanced Robotics: Intermediate 2 - Mastering Robot Control",
         "meta_description": "Take your robotics skills to the next level with our Intermediate 2 course. Dive deep into motor drivers, H-bridge circuits, and robot optimization while creating robots for various applications. Explore advanced control methods, obstacle detection, line tracking, and more.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693982427/images/uuanphcdti9em2r1c6k7.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713925/images/xpssukczsfmqendym7oc.jpg",
+        "isbigimage": true,
         "slug": "mastering-robot-control",
         "categories": [
             "Advanced Robotics",
@@ -2983,7 +2995,8 @@
         "description": "Take your robotics expertise to the next level with our Intermediate 3: Multi-Robots Projects course. In this advanced program, you'll dive into a series of challenging multi-robot projects designed to showcase your skills and creativity. From maze-solving robots to firefighter robots, advanced line followers, and robotic arms, you'll explore diverse applications of robotics technology. Work on projects that demand problem-solving, precision, and innovation. By the end of this course, you'll have the experience and knowledge to tackle complex multi-robot challenges and contribute to the field of robotics.",
         "meta_title": "Advanced Robotics: Intermediate 3 - Multi-Robots Projects Mastery",
         "meta_description": "Challenge yourself with our Intermediate 3 course focused on Multi-Robots Projects. Embark on diverse robotics endeavors, including maze-solving robots, firefighter robots, and advanced line followers. Build a robotic arm and explore obstacle-moving robots. Get ready for a series of combined final projects that showcase your robotics prowess.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693982427/images/uuanphcdti9em2r1c6k7.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713962/images/hkeajshmjtit8jiwuqid.jpg",
+        "isbigimage": true,
         "slug": "mulit-robots-projects",
         "categories": [
             "Advanced Robotics",
@@ -3120,7 +3133,8 @@
         "description": "Master the art of mechanical design with SOLIDWORKS in our Proficient 1: Mechanical Design (SOLIDWORKS) course. Dive into the world of 3D design, CAD (Computer-Aided Design), and discover the power of SOLIDWORKS. Explore industrial design principles, sketching, and design intent. Familiarize yourself with the SOLIDWORKS user interface and learn about industrial sketching and its application in robotics. This course equips you with the skills needed for mechanical design, referencing standards, and understanding design planes. Whether you're an aspiring industrial designer or a robotics enthusiast, this course will take your design capabilities to the next level.",
         "meta_title": "Mechanical Design Mastery with SOLIDWORKS: Proficient 1 Course",
         "meta_description": "Advance your mechanical design skills with SOLIDWORKS in our Proficient 1 course. Learn 3D design, CAD principles, and delve into industrial sketching. Gain expertise in SOLIDWORKS basics, part modeling, patterning, and advanced features. Explore assembly techniques and robotics projects to showcase your mechanical design proficiency",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1693989697/images/e0ababy2ivsos6xfab7t.jpg",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694714007/images/akioj1gxv6aalkxnozug.jpg",
+        "isbigimage": true,
         "slug": "mechanical-desin-solidWorks",
         "categories": [
             "Mechanical Design",
@@ -3504,6 +3518,7 @@
         "meta_title": "Python Mastery Course | Python Programming | Hands-On Learning",
         "meta_description": "Master Python programming with our comprehensive course. Learn Python from scratch, build real-world projects, work with web frameworks, explore data science, and more.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1689850188/images/pamvha9lzu6mkpmobqep.png",
+        "isbigimage": false,
         "slug": "python-programming",
         "categories": [
             "Programming",
@@ -3712,7 +3727,6 @@
             }
         ]
     },
-   
     {
         "name": "React Native Mastery: Comprehensive Guide to Mobile App Development",
         "title": "React Native Mastery: Comprehensive Guide to Mobile App Development",
@@ -3720,6 +3734,7 @@
         "meta_title": "React Native Mastery | Comprehensive Guide to Mobile App Development",
         "meta_description": "Join our comprehensive React Native course and become proficient in building cross-platform mobile applications.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690380107/images/eqzugbvssj15xcdhqgkf.png",
+        "isbigimage": false,
         "slug": "react-native",
         "categories": [
             "Mobile App Development",
@@ -3872,6 +3887,7 @@
         "meta-title": "Dart Mastery | Comprehensive Guide to Modern App Development",
         "meta-description": "Join our comprehensive Dart course and become proficient in building web, mobile, and desktop applications.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690380107/images/ctlcyp9ztsbow0anjxqw.png",
+        "isbigimage": false,
         "slug": "dart",
         "categories": [
             "App Development",
@@ -4044,6 +4060,7 @@
         "meta_title": "Flutter Mastery | Comprehensive Guide to Cross-Platform App Development",
         "meta_description": "Join our comprehensive Flutter course and become proficient in building cross-platform mobile applications.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/jlhkhczmcjb9gpa6x4ph.png",
+        "isbigimage": false,
         "slug": "flutter",
         "categories": [
             "Mobile App Development",
@@ -4214,6 +4231,7 @@
         "meta_title": "MongoDB Mastery | Comprehensive Guide to NoSQL Database Management",
         "meta_description": "Join our comprehensive MongoDB course and become proficient in managing NoSQL databases.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/oc9erpre9l7ztcd4hvki.png",
+        "isbigimage": false,
         "slug": "mongodb",
         "categories": [
             "Database Management",
@@ -4375,6 +4393,7 @@
         "meta_title": "MYSQL Mastery | Comprehensive Guide to Database Management",
         "meta_description": "Join our comprehensive SQL course and become proficient in managing databases and querying data.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690557497/images/fo0u0zxtcad1clnujwmt.png",
+        "isbigimage": false,
         "slug": "sql",
         "categories": [
             "Database Management",
