@@ -224,7 +224,7 @@ const CourseRegisterForm = ({ courseName }) => {
   const [formData, setFormData] = useState({});
   const isLastStep = currentStep === stepData.length - 1;
   const [isFormSubmitting, setIsFormSubmitting] = useState(false);
-  const [error, setError] = useState({ show: false, message: "message" });
+  const [error, setError] = useState({ show: false, message: "" });
   const router = useRouter();
   const submitDetails = async (values) => {
     try {
