@@ -193,12 +193,10 @@ const CourseRegisterForm = ({ courseName }) => {
         parentEmail: "",
       },
       validation: Yup.object({
-        // parentFirstName: Yup.string().required("Parent First Name is required"),
-        // parentLastName: Yup.string().required("Parent Last Name is required"),
-        // parentWhatsAppNumber: Yup.string().required(
-        //   "Parent WhatsApp Number is required"
-        // ),
-        // parentEmail: Yup.string().email().required("Email is required"),
+        // parentFirstName: Yup.string(),
+        // parentLastName: Yup.string(),
+        // parentWhatsAppNumber: Yup.string(),
+        parentEmail: Yup.string().email("Enter a valid email"),
       }),
     },
     {
@@ -279,7 +277,8 @@ const CourseRegisterForm = ({ courseName }) => {
       <Formik
         initialValues={stepData[currentStep]?.initialValues}
         validationSchema={
-          currentStep !== 1 ? stepData[currentStep]?.validation : null
+          stepData[currentStep]?.validation
+          // currentStep !== 1 ? stepData[currentStep]?.validation : null
         }
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -313,8 +312,6 @@ const CourseRegisterForm = ({ courseName }) => {
               </div>
             </div>
             <div className={crf.forms_container}>
-              {}
-
               {currentStep === 0 ? (
                 <StudentDetails
                   setCurrentStep={setCurrentStep}
@@ -345,9 +342,7 @@ const CourseRegisterForm = ({ courseName }) => {
                   : "Next"}
               </button> */}
               {isFormSubmitting ? (
-                <button className={crf.next_btn} type="submit">
-                  Submitting
-                </button>
+                <div className={crf.next_btn}>Submitting</div>
               ) : (
                 <div className={crf.np_btn_group}>
                   <div>
@@ -393,16 +388,3 @@ const CourseRegisterForm = ({ courseName }) => {
 };
 
 export default CourseRegisterForm;
-{
-  /* <div className={crf.np_btn_group} style={{ justifyContent: "flex-end" }}>
-  <div
-    className={crf.next_btn}
-    onClick={() => setCurrentStep((prev) => prev + 1)}
-  >
-    Next
-    <div className={crf.right_arrow}>
-      <BsArrowRight />
-    </div>
-  </div>
-</div>; */
-}

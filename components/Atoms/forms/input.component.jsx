@@ -21,11 +21,11 @@ const InputComponent = ({
         />
       </div>
       <div>
-        {/* <ErrorMessage
+        <ErrorMessage
           name={name}
           component={"div"}
           className="inputFieldErrorMessage"
-        /> */}
+        />
       </div>
     </>
   );
