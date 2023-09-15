@@ -2586,21 +2586,20 @@
     },
     {
         "_id": "64f81f54ceb2f72207232863",
-        "name": "Intermediate Arduino and Sensors with M-Block Software",
-        "title": "Intermediate Arduino and Sensors with M-Block Software",
-        "description": "Master the world of Arduino and sensors in our intermediate course, Arduino and Sensors with M-Block Software. Begin with a comprehensive introduction to Arduino, exploring its history, types, components, and the significance of microcontrollers. Discover the differences between microcontrollers and CPUs and delve into the world of IoT (Internet of Things). In this course, we will focus on coding using SCRATCH-based M-Block Software, Arduino IDE, and sensor integration. By the end of this course, you'll be proficient in using Arduino to create a wide range of projects and applications.",
+        "name": "Intermediate Arduino and Sensors",
+        "title": "Intermediate Arduino and Sensors",
+        "description": "Master the world of Arduino and sensors in our intermediate course, Arduino and Sensors. Begin with a comprehensive introduction to Arduino, exploring its history, types, components, and the significance of microcontrollers. Discover the differences between microcontrollers and CPUs and delve into the world of IoT (Internet of Things). In this course, we will focus on coding using SCRATCH-based M-Block Software, Arduino IDE, and sensor integration. By the end of this course, you'll be proficient in using Arduino to create a wide range of projects and applications.",
         "meta_title": "Intermediate Arduino and Sensors Course: M-Block Software Mastery",
-        "meta_description": "Take your Arduino skills to the next level with our intermediate course. Explore Arduino history, coding with M-Block Software, and dive into exciting projects with LEDs, ultrasonic modules, buzzers, and more. Master sensor integration and unleash your creativity in the world of electronics and IoT.",
+        "meta_description": "Take your Arduino skills to the next level with our intermediate course. Explore Arduino history, and dive into exciting projects with LEDs, ultrasonic modules, buzzers, and more. Master sensor integration and unleash your creativity in the world of electronics and IoT.",
         "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694713894/images/vij18vwnnbasgrrurzqq.jpg",
         "isbigimage": true,
-        "slug": "Arduino-and-sensors-(M-Block_Software)",
+        "slug": "Arduino-and-sensors",
         "categories": [
             "Arduino Programming",
             "Sensors Integration",
             "Intermediate Electronics Course"
         ],
         "tags": [
-            "M-Block Software",
             "IoT",
             "Arduino Projects",
             "Sensor Coding",
