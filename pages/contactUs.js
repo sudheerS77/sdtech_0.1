@@ -4,7 +4,7 @@ import React from "react";
 import HomeLayout from "@/Layout/Home.layout";
 
 // Components
-// import ContactBanner from "@/components/contact/contactBanner";
+import ContactBanner from "@/components/contact/contactBanner";
 import ContactForm from "@/components/contact/contactForm";
 import HeroBanner from "@/components/Atoms/Banners/heroBanner";
 
@@ -21,8 +21,8 @@ const ContactUs = () => {
   return (
     <HomeLayout>
       {/* <ContactBanner /> */}
-      <HeroBanner bannerData={bannerData} poster={true} />
-      <ContactForm />
+      {/* <HeroBanner bannerData={bannerData} poster={true} />
+      <ContactForm /> */}
     </HomeLayout>
   );
 };
