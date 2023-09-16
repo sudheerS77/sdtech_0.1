@@ -7,37 +7,35 @@ const Accordion = ({ data, count }) => {
   const [clicked, setClicked] = useState(false);
   return (
     <>
-      <div className={hf.f_accordion} key={count}>
+      <div className={hf.f_accordion}>
         <div>
           <div className={hf.f_acc_head} onClick={() => setClicked(!clicked)}>
             <div className={hf.f_acc_icon}>
-              {" "}
               {clicked === true ? <BiMinus /> : <BiPlus />}
             </div>
             <h4>{data.title}</h4>
           </div>
-          {clicked ? (
+          {clicked && (
             <div className={hf.f_acc_body}>
-              {data.description.map((a_body, indx) => (
-                <p key={indx}>{a_body}</p>
+              {data.description.map((a_body, index) => (
+                <p key={index}>{a_body}</p>
               ))}
               <dl>
-                {data?.children.length > 0 ? (
-                  data.children.map((c_data, indx) => (
-                    <>
-                      <dt key={indx + "1"}>{c_data?.title}</dt>
-                      {c_data?.data?.map((c_data, ind2x) => (
-                        <dd key={indx + "12"}> - {c_data}</dd>
-                      ))}
-                    </>
-                  ))
-                ) : (
-                  <></>
-                )}
+                {data?.children.length > 0 &&
+                  data?.children?.map(
+                    (c_data, indx) =>
+                      c_data !== null && (
+                        <>
+                          {/* {JSON.stringify(indx)} */}
+                          <dt key={indx + 1}>{c_data?.title}</dt>
+                          {c_data?.data?.map((c_data, index) => (
+                            <dd key={indx + "" + index}> - {c_data}</dd>
+                          ))}
+                        </>
+                      )
+                  )}
               </dl>
             </div>
-          ) : (
-            <></>
           )}
         </div>
       </div>
@@ -54,7 +52,7 @@ const FAQ = () => {
         "SD Tech Academy is an international education and tech research company.",
         "The teachers and staff of this company have several years of experience in teaching and working in this field.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -62,7 +60,7 @@ const FAQ = () => {
       description: [
         "We are a team of senior programmers and engineers who have taught for years in the field of robotics, programming, Web development, industrial design, etc., and have carried out various industrial projects nationally and internationally, and members of this team have more than 12 international positions and awards In international competitions.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -70,7 +68,7 @@ const FAQ = () => {
       description: [
         "Our purpose is to create an international and safe platform for learning everything you want to learn with guaranteed quality and expertise. Also, our guidance and support team will be by your side in this learning path to make the path smoother and clear for you and we prepare you to enter the job market and the real world.",
       ],
-      children: [null],
+      children: [],
     },
     {
       title:
@@ -78,7 +76,7 @@ const FAQ = () => {
       description: [
         "No, you will be taught all the knowledge and background needed for each course. You can also see its prerequisites in each course. All you need is interest and persistence and leave the rest to us.",
       ],
-      children: [null],
+      children: [],
     },
     {
       title:
@@ -86,7 +84,7 @@ const FAQ = () => {
       description: [
         "Yes, The course is designed and leveled in such a way that it will match your age and level. Even if you are a beginner or zero-beginner we have courses that suits you.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -94,7 +92,7 @@ const FAQ = () => {
       description: [
         "Yes, most of our courses start from the very basic and since it is a technology anybody and everyone can take part in it. (However please check course pre-requisites once before enrolling)",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -102,7 +100,7 @@ const FAQ = () => {
       description: [
         "If you don't know which course is right for you or if you have doubts about your interests, our expert team is here to help you and you can use our free consultation. We are always here to help and guide you.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -137,7 +135,7 @@ const FAQ = () => {
       description: [
         "You can contact us through the contact section on the site or by email or contact number, and our support team is ready to answer your questions.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -145,7 +143,7 @@ const FAQ = () => {
       description: [
         "Please fill out the relevant form in the contact section or via email or contact number. We are ready to cooperate with universities, schools and institutes",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -153,7 +151,7 @@ const FAQ = () => {
       description: [
         "Yes, but currently this section is not active on the site and you can send your request to do this through the contact form.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -162,7 +160,7 @@ const FAQ = () => {
         "Enter the page of your desired course, All the contents are completely detailed and exclusive to SD Tech Academy.",
         "You can also refer to the specific roadmap of each course and watch the course introduction video.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -170,7 +168,7 @@ const FAQ = () => {
       description: [
         "Yes, most of our courses have no pre-requisite until and unless it is specifically mentioned in the course description. And in most courses, we teach everything that is needed.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -178,7 +176,7 @@ const FAQ = () => {
       description: [
         "Unfortunately, that cannot be done. We monitor each and every student and teacher to maintain quality and educational and moral evaluation , so all the work is done through our communication.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -186,7 +184,7 @@ const FAQ = () => {
       description: [
         "No, we hold online and offline classes in several models so that you can find the course that suits your needs.",
       ],
-      children: [null],
+      children: [],
     },
     {
       id: "1",
@@ -195,19 +193,19 @@ const FAQ = () => {
         "The courses are completely assigned for each age group, which can be seen in the description of each course.",
         "But in general, we have classes for all age groups according to their language and learning level and learningmethod.",
       ],
-      children: [null],
+      children: [],
     },
     // {
     // id: "1",
     //   title: "How to register for courses?",
     //   description: ["???idk"],
-    //   children: [null],
+    //   children: [],
     // },
     // {
     // id: "1",
     //   title: "What is the price of the classes and how to pay?",
     //   description: ["??"],
-    //   children: [null],
+    //   children: [],
     // },
     {
       id: "1",
@@ -228,7 +226,7 @@ const FAQ = () => {
         "Diversity in how to hold classes according to your needs",
         "The ability to build a team and communicate with the international scientific community",
       ],
-      children: [null],
+      children: [],
     },
   ];
   return (
@@ -244,8 +242,8 @@ const FAQ = () => {
         <div className={hf.f_acc_container}>
           {
             faqs.length > 0 &&
-              faqs.map((data, indx) => (
-                <Accordion data={data} key={indx} count={indx} />
+              faqs.map((data, index) => (
+                <Accordion data={data} key={index} count={index} />
               ))
             // : (
             //   <></>

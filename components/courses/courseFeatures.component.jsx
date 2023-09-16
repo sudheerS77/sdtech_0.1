@@ -112,7 +112,6 @@ const CourseFeaturesComponent = ({ pricing }) => {
   const getPricing = () => {
     pricing?.pricing?.map((pric) => {
       if (pric?.course_level_category === "1 : 1 Private Sessions") {
-        console.log(pric.course_level_pricing[0].dollars);
         setPricingValues((prev) => ({
           ...prev,
           one_one: pric.course_level_pricing[0],
@@ -129,7 +128,6 @@ const CourseFeaturesComponent = ({ pricing }) => {
   useEffect(() => {
     getPricing();
   }, [pricing]);
-  console.log(pricingValues);
   return (
     <>
       <div className={`${cb.cb_course_features}`}>
@@ -160,9 +158,11 @@ const CourseFeaturesComponent = ({ pricing }) => {
                         </div>
                       </div>
                     ))}
-                    <div>
-                      No - of Classes -{" "}
-                      {parseInt(pricingValues?.one_one?.rupees / 600)}
+                    <div className={cb.pricing_container}>
+                      <div className={cb.pricing_category}>No - of Classes</div>
+                      <div className={cb.price}>
+                        {parseInt(pricingValues?.one_one?.rupees / 600)} - Classes
+                      </div>
                     </div>
                   </>
                 ) : (
