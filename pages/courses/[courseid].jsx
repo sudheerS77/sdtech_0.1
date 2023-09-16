@@ -28,7 +28,6 @@ const PaidCourse = ({ courseid, data }) => {
     );
     setCourseInfo(filteredResults[0]);
   }, [, courseid]);
- 
 
   const HeadSection = () => {
     return (

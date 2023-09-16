@@ -5,7 +5,6 @@ import HomeLayout from "@/Layout/Home.layout";
 import CourseRegisterForm from "@/components/Atoms/forms/courseRegisterForm";
 
 const CourseRegister = ({ name }) => {
-  console.log(name);
   return (
     <>
       <HomeLayout>

@@ -17,13 +17,17 @@ const Banner = ({ courseInfo }) => {
           <h1>{data?.title}</h1>
           <p>{data?.description}</p>
           <div>
-            {/* <Link href="/courses/course-register"> */}
             <Link
+              href={`/courses/course-register?name${encodeURIComponent(
+                data?.name
+              )}`}
+            >
+              {/* <Link
               href={{
                 pathname: "/courses/course-register",
-                query: { name: data?.name },
+                query: { name: encodeURIComponent(data?.name) },
               }}
-            >
+            > */}
               <button>Enroll Now</button>
             </Link>
           </div>

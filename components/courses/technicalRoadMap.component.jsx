@@ -41,7 +41,6 @@ const TechnicalRoadMapComponent = ({
 
   const getLevelContent = () => {
     courseInfo?.course_content?.technicalRoadMap?.filter((item) => {
-      console.log(level, { item });
       if (item.level === "default") {
         setCourseContent(item?.data);
       }
@@ -49,20 +48,14 @@ const TechnicalRoadMapComponent = ({
   };
   const levelHandler = (e) => {
     setLevel(e.target.name);
-    console.log("=>", level);
   };
 
   useEffect(() => {
-    // console.log(level);
-
     // if (courseInfo?.levels[0] === "default") {
-    //   console.log("defalt level here");
     // } else {
-    //   console.log("NOT DEFAULT", courseInfo);
     // }
 
     // if (data?.levels?.length > 1) {
-    //   console.log("greater than 1");
     //   setCourseContent(data?.course_content?.technicalRoadMap[0]?.data);
     // } else {
     // }
@@ -76,7 +69,6 @@ const TechnicalRoadMapComponent = ({
   }, [level]);
 
   useEffect(() => {
-    console.log();
     if (courseInfo?.levels[0] !== "default") {
       // setCourseInfo;
     }

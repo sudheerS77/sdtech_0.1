@@ -417,10 +417,9 @@
             "__v": 0
         },
         "pricing": {
-            "_id": "64eed26eda05b4219356ef46",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -428,11 +427,10 @@
                             "dollars": "375",
                             "_id": "64eed26eda05b4219356ef48"
                         }
-                    ],
-                    "_id": "64eed26eda05b4219356ef47"
+                    ]
                 },
                 {
-                    "course_level_category": "group",
+                    "course_level_category": "Group Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -440,8 +438,7 @@
                             "dollars": "250",
                             "_id": "64eed26eda05b4219356ef4a"
                         }
-                    ],
-                    "_id": "64eed26eda05b4219356ef49"
+                    ]
                 }
             ],
             "__v": 0
@@ -671,7 +668,7 @@
             "_id": "64eee221da05b4219356f05c",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -963,7 +960,7 @@
             "_id": "64eee228da05b4219356f075",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -1239,7 +1236,7 @@
             "_id": "64ef26b4da05b4219356f176",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -1449,7 +1446,7 @@
             "_id": "64ef29bfda05b4219356f201",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -1660,7 +1657,7 @@
             "_id": "64ef3dbbda05b4219356f284",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -1698,8 +1695,8 @@
         "description": "Learn the MERN stack to build modern and powerful full-stack web applications.",
         "meta_title": "MERN Stack Mastery | Comprehensive Guide to Full-Stack Web Development",
         "meta_description": "Join our comprehensive MERN stack course and become proficient in building full-stack web applications.",
-        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1690558939/images/uccycj0urlhlnaka12la.png",
-        "isbigimage": false,
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1694767185/images/d4j4bog1ycgetivjhn5o.png",
+        "isbigimage": true,
         "slug": "mern-stack",
         "categories": [
             "Web Development",
@@ -1914,7 +1911,7 @@
             "_id": "64ef43fbda05b4219356f42a",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
@@ -1963,7 +1960,7 @@
             "Industrial Robots"
         ],
         "languages": [
-            "Persian"
+            "persian"
         ],
         "level": [
             "beginner"

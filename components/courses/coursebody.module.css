@@ -60,11 +60,12 @@
     gap: 25px;
 }
 
-.cb_course_features div {
+.cb_course_features .cb_card {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 
 .cb_course_features div h4 {
     font-size: 1.2rem;
@@ -72,13 +73,37 @@
     margin: 10px 0;
 }
 
-.cb_course_features div div {
+.cb_course_features .features_name {
     display: flex;
     flex-direction: row;
     color: gray;
 }
 
 
+.pricing_container {
+    width: 90%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.pricing_category {
+    color: rgba(29, 27, 27, 0.944);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.price {
+    color: #04233f;
+    font-size: 24px;
+    font-weight: bold;
+    /* border-bottom: 1px solid #04233f; */
+}
+.price del{
+    font-size: 12px;
+}
 .cb_wul_img {
     width: 500px;
     height: 400px;
@@ -239,7 +264,7 @@
 
     .tr_header {
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         gap: 15px;
     }
 
@@ -247,9 +272,10 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: flex-end;
 
     }
+
     .level_Section {
         justify-content: center;
         gap: 10px;

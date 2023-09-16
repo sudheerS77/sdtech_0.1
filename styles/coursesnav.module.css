@@ -1,8 +1,9 @@
 .csnavContainer {
     height: 45px;
-    background: #242539;
+    background: #001f3f;
+    /* background: #242539; */
     /* background: #04213e; */
-    
+
     /* background: #064273; */
     /* background: #021E44; */
     /* background: #043464; */
@@ -12,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 0px;
 }
 
 .csnav {
@@ -58,9 +59,11 @@
     .csnavContainer {
         /* display: none; */
     }
+
     .csnav {
         width: 85%;
     }
+
     .chip {
         width: auto;
     }

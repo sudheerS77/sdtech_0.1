@@ -83,7 +83,7 @@ const CourseBody = ({
             {/* {JSON.stringify(courseContent)} */}
             {/* <CourseAdditionalInforComponent data={data} /> */}
           </div>
-          <CourseFeaturesComponent />
+          <CourseFeaturesComponent pricing={courseInfo?.pricing} />
           {/* <div className={cb.cb_wul_img}>
               <img
                 src="https://static.vecteezy.com/system/resources/previews/005/658/299/original/boy-studying-with-computer-and-books-illustration-concept-in-cartoon-style-vector.jpg"
