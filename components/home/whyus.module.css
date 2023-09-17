@@ -17,6 +17,8 @@
     color: #04233f;
     font-size: 3rem;
     font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #FF6F00;
 }
 
 .wu_section {

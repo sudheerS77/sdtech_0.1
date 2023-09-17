@@ -1,5 +1,20 @@
+.rm_layout1 {
+    background-color: #003F30;
+    border-radius: 10%;
+}
+
+.rm_layout2 {
+    background-color: #3F001F;
+    border-radius: 20%;
+}
+
+.rm_layout3 {
+    background-color: #FF6F00;
+    border-radius: 30%;
+}
+
 .rm_container {
-    background-color: #001f3f;
+    background-color: #001F3F;
     border-top-right-radius: 40%;
     border-top: 5px solid #00f;
     border-right: 5px solid #00f;
@@ -9,15 +24,18 @@
 
 @keyframes borderGlowing {
     0% {
-        border-color: #00f;
+        /* border-color: #00f; */
+        /* border-color: #f06; */
+        border-color: #FF6F00;
     }
 
     50% {
-        border-color: #f06;
+        border-color: #3F001F;
+        /* border-color: #003F28; */
     }
 
     100% {
-        border-color: #00f;
+        border-color: #003F30;
     }
 }
 
