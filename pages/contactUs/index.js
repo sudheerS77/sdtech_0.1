@@ -20,7 +20,7 @@ const ContactUs = () => {
   return (
     <HomeLayout>
       <HeroBanner bannerData={bannerData} poster={true} />
-      <ContactForm />
+      {/* <ContactForm /> */}
     </HomeLayout>
   );
 };
