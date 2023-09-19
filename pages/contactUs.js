@@ -16,7 +16,7 @@ const contactUs = () => {
   return (
     <HomeLayout>
       <HeroBanner bannerData={bannerData} poster={true} />
-      <ContactForm />
+      
     </HomeLayout>
   );
 };
