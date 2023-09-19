@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // Icons
 import { BsCode, BsRobot } from "react-icons/bs";
 import { SiWebflow } from "react-icons/si";
@@ -131,7 +131,7 @@ const CourseCategories = () => {
         },
         {
           name: "NextJS",
-          link: "next-js",
+          link: "nextjs",
         },
         {
           name: "Mern Stack",
@@ -188,7 +188,7 @@ const CourseCategories = () => {
       children: [
         {
           name: "MySql",
-          link: "mysql",
+          link: "sql",
         },
         {
           name: "MongoDB",
@@ -199,6 +199,15 @@ const CourseCategories = () => {
   ];
   const coursesList = categories.filter((data) => data.name === activeCourse);
 
+  const activeCourseHandler = (name) => {
+    setActiveCourse(name);
+    localStorage.setItem("courseCategoryName", name);
+  };
+
+  useEffect(() => {
+    const ccName = localStorage.getItem("courseCategoryName");
+    ccName ? setActiveCourse(ccName) : setActiveCourse("Robotics");
+  }, []);
   return (
     <>
       <div className={hcc.category_container} id="courseCategories">
@@ -213,7 +222,7 @@ const CourseCategories = () => {
                 className={`${hcc.catbtn} ${
                   activeCourse === cdata.name ? hcc.cactive : ""
                 }`}
-                onClick={() => setActiveCourse(cdata.name)}
+                onClick={() => activeCourseHandler(cdata.name)}
               >
                 {cdata.icon}
                 {cdata.name}

@@ -1,5 +1,6 @@
 import HomeLayout from "@/Layout/Home.layout";
 import HeroBanner from "@/components/Atoms/Banners/heroBanner";
+import ContactForm from "@/components/contact/contactForm";
 import React from "react";
 
 const contactUs = () => {
@@ -15,6 +16,7 @@ const contactUs = () => {
   return (
     <HomeLayout>
       <HeroBanner bannerData={bannerData} poster={true} />
+      <ContactForm />
     </HomeLayout>
   );
 };

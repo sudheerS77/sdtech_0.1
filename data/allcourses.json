@@ -2060,31 +2060,28 @@
             "__v": 0
         },
         "pricing": {
-            "_id": "64f80f84323f1823e59db115",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "0",
-                            "dollars": "0",
-                            "_id": "64f80f84323f1823e59db117"
+                            "rupees": "1000",
+                            "dollars": "12",
+                            "_id": "64eed26eda05b4219356ef48"
                         }
-                    ],
-                    "_id": "64f80f84323f1823e59db116"
+                    ]
                 },
                 {
-                    "course_level_category": "group",
+                    "course_level_category": "Group Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "0",
-                            "dollars": "0",
-                            "_id": "64f80f84323f1823e59db119"
+                            "rupees": "500",
+                            "dollars": "6",
+                            "_id": "64eed26eda05b4219356ef4a"
                         }
-                    ],
-                    "_id": "64f80f84323f1823e59db118"
+                    ]
                 }
             ],
             "__v": 0
@@ -3694,34 +3691,38 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
-                    "no_of_months": " - ",
+                    "no_of_classes": 45,
+                    "no_of_months": "1 - 2",
                     "certification_name": ""
                 }
             ]
         },
-        "pricingData": [
-            {
-                "course_level_category": "",
-                "course_level_pricing": [
-                    {
-                        "level": "default",
-                        "rupees": 27000,
-                        "dollars": 330
-                    }
-                ]
-            },
-            {
-                "course_level_category": "group",
-                "course_level_pricing": [
-                    {
-                        "level": "default",
-                        "rupees": 18000,
-                        "dollars": 220
-                    }
-                ]
-            }
-        ]
+        "pricing": {
+            "_id": "64ef26b4da05b4219356f176",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": 27000,
+                            "dollars": 330
+                        }
+                    ]
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": 18000,
+                            "dollars": 220
+                        }
+                    ]
+                }
+            ],
+            "__v": 0
+        }
     },
     {
         "name": "React Native Mastery: Comprehensive Guide to Mobile App Development",
@@ -3874,7 +3875,36 @@
                 }
             ]
         },
-        "pricingData": []
+        "pricing": {
+            "_id": "64ef26b4da05b4219356f176",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "365",
+                            "_id": "64ef26b4da05b4219356f178"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f177"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20,000",
+                            "dollars": "245",
+                            "_id": "64ef26b4da05b4219356f17a"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f179"
+                }
+            ],
+            "__v": 0
+        }
     },
     {
         "name": "Dart Mastery: Comprehensive Guide to Modern App Development",
@@ -4047,7 +4077,36 @@
                 }
             ]
         },
-        "pricingData": []
+        "pricing": {
+            "_id": "64ef26b4da05b4219356f176",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "365",
+                            "_id": "64ef26b4da05b4219356f178"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f177"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20,000",
+                            "dollars": "245",
+                            "_id": "64ef26b4da05b4219356f17a"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f179"
+                }
+            ],
+            "__v": 0
+        }
     },
     {
         "name": "Flutter Mastery: Comprehensive Guide to Cross-Platform App Development",
@@ -4218,7 +4277,36 @@
                 }
             ]
         },
-        "pricingData": []
+        "pricing": {
+            "_id": "64ef26b4da05b4219356f176",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "365",
+                            "_id": "64ef26b4da05b4219356f178"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f177"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20,000",
+                            "dollars": "245",
+                            "_id": "64ef26b4da05b4219356f17a"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f179"
+                }
+            ],
+            "__v": 0
+        }
     },
     {
         "name": "MongoDB Mastery: Comprehensive Guide to NoSQL Database Management",
@@ -4380,7 +4468,36 @@
                 }
             ]
         },
-        "pricingData": []
+        "pricing": {
+            "_id": "64ef26b4da05b4219356f176",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "365",
+                            "_id": "64ef26b4da05b4219356f178"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f177"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20,000",
+                            "dollars": "245",
+                            "_id": "64ef26b4da05b4219356f17a"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f179"
+                }
+            ],
+            "__v": 0
+        }
     },
     {
         "name": "MYSQL Mastery: Comprehensive Guide to Database Management",
@@ -4522,6 +4639,35 @@
                 }
             ]
         },
-        "pricingData": []
+        "pricing": {
+            "_id": "64ef26b4da05b4219356f176",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "30000",
+                            "dollars": "365",
+                            "_id": "64ef26b4da05b4219356f178"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f177"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "20,000",
+                            "dollars": "245",
+                            "_id": "64ef26b4da05b4219356f17a"
+                        }
+                    ],
+                    "_id": "64ef26b4da05b4219356f179"
+                }
+            ],
+            "__v": 0
+        }
     }
 ]

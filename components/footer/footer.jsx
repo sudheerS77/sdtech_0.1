@@ -29,7 +29,11 @@ const Footer = () => {
         <div className={footer.footer_section}>
           <div className={footer.footer_header}>
             <div className={footer.logo}>
-              <Image src={logo} alt="image" />
+              {/* <Image src={logo} alt="image" /> */}
+              <img
+                src="https://ik.imagekit.io/zygrsqfyt/img/sd7.png"
+                alt="SD"
+              />{" "}
             </div>
             <div className={footer.social_links}>
               <Link href="#">

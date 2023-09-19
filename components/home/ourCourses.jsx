@@ -14,6 +14,7 @@ const OurCourses = () => {
         "https://res.cloudinary.com/df8aswwta/image/upload/v1694713471/images/ozvlwqv0lx383xqm0teh.jpg",
       isBig: true,
       slug: "zero-beginner",
+      price: 6,
     },
     {
       name: "Programming Fundamentals for Robotics: Mastering the Basics",
@@ -23,6 +24,7 @@ const OurCourses = () => {
         "https://res.cloudinary.com/df8aswwta/image/upload/v1694713757/images/b5qviotprutwjdeic5kx.jpg",
       isBig: true,
       slug: "programming-fundamentals-for-robotics",
+      price: 100,
     },
     {
       name: "Web Development: Comprehensive Guide to HTML, CSS, and JavaScript",
@@ -32,6 +34,7 @@ const OurCourses = () => {
         "https://res.cloudinary.com/df8aswwta/image/upload/v1690558647/images/fcvphmn3rdszg3vausn0.png",
       isBig: false,
       slug: "html-css-js",
+      price: 250,
     },
     {
       name: "React.js Mastery: Comprehensive Guide to React.js",
@@ -41,6 +44,7 @@ const OurCourses = () => {
         "https://res.cloudinary.com/df8aswwta/image/upload/v1689850185/images/gwz3e2lo0j30se3qqw3v.png",
       isBig: false,
       slug: "react-js",
+      price: 250,
     },
     {
       name: "Next.js Mastery: Comprehensive Guide to Next.js",
@@ -50,6 +54,7 @@ const OurCourses = () => {
         "https://res.cloudinary.com/df8aswwta/image/upload/v1690557205/images/gzgedeevea8juoif6u2t.png",
       isBig: false,
       slug: "nextjs",
+      price: 170,
     },
     {
       name: "MERN Stack Mastery: Comprehensive Guide to Full-Stack Web Development",
@@ -59,6 +64,7 @@ const OurCourses = () => {
         "https://res.cloudinary.com/df8aswwta/image/upload/v1690558939/images/uccycj0urlhlnaka12la.png",
       isBig: false,
       slug: "mern-stack",
+      price: 245,
     },
   ];
 

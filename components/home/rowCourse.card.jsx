@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import hc from "./ourCourses.module.css";
 import Link from "next/link";
 
@@ -6,6 +6,10 @@ import { FaChevronRight } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 
 const RowCourseCard = ({ data }) => {
+  const [coursePrice, setCoursePrice] = useState(
+    parseInt(data?.pricing?.pricing[1]?.course_level_pricing[0]?.dollars)
+  );
+  console.log(data.name, coursePrice);
   return (
     <>
       <div className={hc.oc_rcard}>
@@ -30,7 +34,14 @@ const RowCourseCard = ({ data }) => {
               <p>{data?.description?.slice(0, 200) + "..."}</p>
             </div>
             <div className={hc.oc_card_bprice + " " + hc.oc_rcard_bprice}>
-              <span className={hc.oc_price}>{/* ₹ {data?.cost} */}</span>
+              <span className={hc.oc_price}>
+                {" "}
+                ${" "}
+                <del style={{ fontSize: "1rem" }}>
+                  {coursePrice + Math.floor(coursePrice / 2)}
+                </del>{" "}
+                {coursePrice}
+              </span>
               <span className={hc.oc_live}>
                 <span className={hc.live__symbol}></span>
                 Live

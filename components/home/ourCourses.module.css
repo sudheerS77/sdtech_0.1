@@ -89,11 +89,13 @@
 .oc_card:nth-child(3n+3) .oc_card_h {
     background-color: #2D3846;
 }
+
 .big_oc_card_h img {
     height: 190px;
     width: 100%;
     border-radius: 10px;
 }
+
 .oc_card_h img {
     width: 100px;
     height: 100px;
@@ -130,9 +132,10 @@
 }
 
 .oc_card_bprice .oc_price {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(26, 4, 4);
+    color: #001230;
+    /* color: rgb(26, 4, 4); */
 }
 
 .oc_card_bprice .oc_live {
@@ -259,7 +262,7 @@
 }
 
 .oc_rcard_bprice {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 
 /* Media query for small devices (up to 768px wide) */

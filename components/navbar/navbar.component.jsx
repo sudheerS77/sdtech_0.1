@@ -62,7 +62,8 @@ const Navbar = () => {
                   className={navcss.img}
                 /> */}
                 <img
-                  src="https://ik.imagekit.io/zygrsqfyt/img/sd13.png"
+                  // src="https://ik.imagekit.io/zygrsqfyt/img/sd13.png"
+                  src="https://ik.imagekit.io/zygrsqfyt/img/sd7.png"
                   alt="SD"
                   className={navcss.img}
                 />
