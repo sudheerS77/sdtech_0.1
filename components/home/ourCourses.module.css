@@ -90,10 +90,18 @@
     background-color: #2D3846;
 }
 
+.big_oc_card_h {
+    position: relative;
+}
+
 .big_oc_card_h img {
     height: 190px;
     width: 100%;
     border-radius: 10px;
+}
+
+.oc_card_h {
+    position: relative;
 }
 
 .oc_card_h img {
@@ -196,7 +204,9 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
+    border: 1px solid rgba(128, 128, 128, 0.46);
+    border-radius: 10px;
 
 }
 
@@ -228,14 +238,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #1F1E28;
+    /* background: #1F1E28; */
+    background: #04233f;
     border-radius: 10px;
+    position: relative;
 
 }
 
 .oc_rcard_h img {
     width: 100px;
     height: 100px;
+}
+
+.rfullCoverImage {
+    position: relative;
+}
+
+.discounted__label {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    /* width: 45px; */
+    padding: 1px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FFCC00;
 }
 
 .rfullCoverImage img {
@@ -245,7 +273,7 @@
 }
 
 .oc_rcard_b {
-    width: 50%;
+    width: 60%;
 }
 
 .oc_rcard_b h4 {
@@ -261,9 +289,23 @@
 
 }
 
-.oc_rcard_bprice {
-    /* justify-content: flex-start; */
+
+
+.price_area {
+    color: #04233f;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.stricked__line {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: #070130;
+}
+
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
@@ -302,6 +344,13 @@
         padding: 5px;
 
     }
+
+    .oc_rcard {
+        border: 1px solid rgba(128, 128, 128, 0.46);
+        border-radius: 10px;
+    }
+
+
 
     .oc_rcard a {
         flex-direction: column;

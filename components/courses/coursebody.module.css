@@ -14,8 +14,18 @@
     -webkit-backdrop-filter: blur(0.5px);
     border-radius: 10px;
     border: 1px solid rgba(3, 1, 1, 0.082);
+    position: relative;
 
-
+}
+.discount__label{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 1px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FFCC00;
 }
 
 .coursOverView_section {
@@ -82,28 +92,33 @@
 
 .pricing_container {
     width: 90%;
-    color: #000;
+    color: #04233f;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    font-weight: 600;
 }
 
 .pricing_category {
-    color: rgba(29, 27, 27, 0.944);
-    font-weight: bold;
     font-size: 1rem;
 }
 
 .price {
     color: #04233f;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     /* border-bottom: 1px solid #04233f; */
 }
-.price del{
-    font-size: 12px;
+
+.stricked__line {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color:#070130;
 }
+
 .cb_wul_img {
     width: 500px;
     height: 400px;

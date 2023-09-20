@@ -20,6 +20,11 @@ const CourseCard = ({ data }) => {
             // className={hc.oc_card_h}
           >
             <img src={data?.image} alt="" />
+            {data.isDiscounted?.status && (
+              <div className={hc.discounted__label}>
+                <span>{data?.isDiscounted?.percentage} % Discount</span>
+              </div>
+            )}
           </div>
           <div className={hc.oc_card_b}>
             <h4>{data?.name}</h4>
@@ -27,13 +32,21 @@ const CourseCard = ({ data }) => {
               <p>{data?.description?.slice(0, 140) + "..."}</p>
             </div>
             <div className={hc.oc_card_bprice}>
-              <span className={hc.oc_price}>
+              <span className={hc.price_area}>
+                <span className={hc.stricked__line}>$ {data?.price}</span>
+                <span>
+                  ${" "}
+                  {data.isDiscounted?.status &&
+                    data?.price - (data?.price * data.isDiscounted.percentage) / 100}
+                </span>
+              </span>
+              {/* <span className={hc.oc_price}>
                 ${" "}
                 <del style={{ fontSize: "1rem" }}>
                   {data?.price + Math.floor(data?.price / 2)}
                 </del>{" "}
                 {data?.price}
-              </span>
+              </span> */}
               <span className={hc.oc_live}>
                 <span className={hc.live__symbol}></span>
                 Live

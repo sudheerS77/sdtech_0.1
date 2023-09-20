@@ -14,7 +14,11 @@ const OurCourses = () => {
         "https://res.cloudinary.com/df8aswwta/image/upload/v1694713471/images/ozvlwqv0lx383xqm0teh.jpg",
       isBig: true,
       slug: "zero-beginner",
-      price: 6,
+      price: 10,
+      isDiscounted: {
+        status: true,
+        percentage: 100,
+      },
     },
     {
       name: "Programming Fundamentals for Robotics: Mastering the Basics",
@@ -25,6 +29,10 @@ const OurCourses = () => {
       isBig: true,
       slug: "programming-fundamentals-for-robotics",
       price: 100,
+      isDiscounted: {
+        status: true,
+        percentage: 50,
+      },
     },
     {
       name: "Web Development: Comprehensive Guide to HTML, CSS, and JavaScript",
@@ -35,6 +43,10 @@ const OurCourses = () => {
       isBig: false,
       slug: "html-css-js",
       price: 250,
+      isDiscounted: {
+        status: true,
+        percentage: 50,
+      },
     },
     {
       name: "React.js Mastery: Comprehensive Guide to React.js",
@@ -45,6 +57,10 @@ const OurCourses = () => {
       isBig: false,
       slug: "react-js",
       price: 250,
+      isDiscounted: {
+        status: true,
+        percentage: 50,
+      },
     },
     {
       name: "Next.js Mastery: Comprehensive Guide to Next.js",
@@ -55,6 +71,10 @@ const OurCourses = () => {
       isBig: false,
       slug: "nextjs",
       price: 170,
+      isDiscounted: {
+        status: true,
+        percentage: 50,
+      },
     },
     {
       name: "MERN Stack Mastery: Comprehensive Guide to Full-Stack Web Development",
@@ -65,6 +85,10 @@ const OurCourses = () => {
       isBig: false,
       slug: "mern-stack",
       price: 245,
+      isDiscounted: {
+        status: true,
+        percentage: 50,
+      },
     },
   ];
 

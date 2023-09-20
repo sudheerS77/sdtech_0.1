@@ -1,5 +1,4 @@
-.banner,
-.cnform {
+.banner {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -60,78 +59,130 @@
 
 /* Form */
 .cnform {
-    margin: 100px 0;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cnform__header{
+    text-align: center;
+    width: 50%;
+    margin: 30px;
+}
+.cnform__header h2{
+    color: #04233f;
+}
+.cnform__header p{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .cnform__container {
     width: 80%;
     height: auto;
+    margin: 50px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    /* justify-content: space-around; */
 }
 
 .form__left {
-    padding: 50px 60px;
+    /* width: 50%; */
+    width: fit-content;
+    /* padding: 50px 60px; */
 }
 
-.form__left form {
+.courseRegister__form {}
+
+.courseRegister__form__header h3 {
+    color: #04233f;
+    display: flex;
+
+}
+
+.courseRegister__form__header p {
+    color: gray;
+}
+
+.courseRegister__form__body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+
 }
 
-.form__left form div {
+.form__group {}
+
+/* .form__group {
+
+    width: inherit;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
 }
 
-.form__left form div p {
-    width: 280px;
-}
+.form__group {
+    width: 100%;
 
-.form__left form textarea {
-    height: 100px;
-    width: 280px;
-    padding: 8px 12px;
+} */
+
+.courseRegister__form__body label {
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
     font-size: 16px;
+    font-weight: bold;
+    color: #333333e6;
+
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    color: #333;
+}
+
+.courseRegister__form__body input {
+    width: 280px;
+    height: 35px;
+    /* padding: 10px 0 10px 10px; */
+    font-size: 14px;
+    /* Adjust the font size as needed */
     border: 1px solid #ccc;
     border-radius: 4px;
-    outline: none;
+
 }
 
-.cn_tinput {
-    width: 280px;
-    height: 25px;
-    padding: 8px 12px;
-    font-size: 16px;
+.courseRegister__form__body textarea {
+    width: 100%;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    resize: none;
     outline: none;
+
 }
 
-/* Style for when the input is focused */
-.form__left form input:focus,
-.form__right form input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+.courseRegister__form__body input[type="text"] {
+    /* padding: 0 0 0 10px; */
 }
 
-/* Style for placeholder text */
-.form__left form input::placeholder {
-    color: #aaa;
+.courseRegister__form__body input[type="tel"] {
+    width: 240px;
+    /* padding: 0 0 0 10px; */
 }
 
-/* Style for disabled input */
-.form__left form input:disabled {
-    background-color: #f2f2f2;
-    color: #888;
+.phoneInput {
+    width: 305px;
+    display: block;
 }
+
 
 .phoneNumber {
-    width: 100%;
     font-size: 1rem;
 }
 
@@ -139,7 +190,8 @@
     border: none;
 }
 
-.submit_btn {
+
+.submit__btn {
     width: 280px;
     height: 40px;
 
@@ -165,9 +217,9 @@
     white-space: nowrap;
 }
 
-.submit_btn:hover {
+.submit__btn:hover {
 
-    background-color: rgb(24, 25, 52);
+    /* background-color: rgb(3, 4, 26);
     border: 1px solid #333445;
     transition: .5s;
 
@@ -177,8 +229,11 @@
 
     box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.126);
     backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); */
 }
+
+
+
 
 
 /* Media query for small devices (up to 768px wide) */
@@ -193,7 +248,9 @@
     .cnform {
         margin: 50px 0;
     }
-
+    .cnform__header{
+        width: 80%;
+    }
     .cnform__container {
         width: 90%;
         margin: 40px 0;
@@ -204,8 +261,8 @@
     }
 
     .form__left {
-        margin-bottom: 50px;
-        padding: 0px 0px;
+        /* margin-bottom: 50px; */
+        /* padding: 0px 50px; */
     }
 
     .form__left form {
@@ -228,6 +285,27 @@
         padding: 25px 20px;
         box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.19);
         border-radius: 0px;
+    }
+
+    .form_group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .submit_btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit_btn button {
+        width: 280px;
+        font-size: 16px;
     }
 }
 

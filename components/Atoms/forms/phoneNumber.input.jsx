@@ -44,14 +44,14 @@ const PhoneNumberInput = ({ label, name, values, setFieldValue }) => {
           )}
         </Field>
         {/* <PhoneInputComponent name={name} setFieldValue={setFieldValue} /> */}
-      </div>
-      <div>
         <ErrorMessage
           name={name}
           component={"div"}
           className="inputFieldErrorMessage"
         />
       </div>
+      {/* <div>
+      </div> */}
     </>
   );
 };

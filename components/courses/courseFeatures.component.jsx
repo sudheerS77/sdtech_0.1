@@ -11,7 +11,8 @@ import {
 } from "react-icons/md";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 
-const CourseFeaturesComponent = ({ pricing }) => {
+const CourseFeaturesComponent = ({ pricing, discount }) => {
+  console.log();
   const [courseFeatures, setCourseFeatures] = useState([
     {
       title: "Course Fee",
@@ -146,13 +147,31 @@ const CourseFeaturesComponent = ({ pricing }) => {
                         <div className={cb.price}>
                           {features.name === "1 : 1 Private Sessions" ? (
                             <>
-                              <del>$ {pricingValues?.one_one.dollars}</del> ${" "}
-                              {parseInt(pricingValues?.one_one.dollars / 2)}
+                              <span className={cb.stricked__line}>
+                                $ {pricingValues?.one_one.dollars}
+                              </span>
+                              <span>
+                                $
+                                {discount?.status &&
+                                  pricingValues?.one_one.dollars -
+                                    (pricingValues?.one_one.dollars *
+                                      discount.percentage) /
+                                      100}
+                              </span>
                             </>
                           ) : (
                             <>
-                              <del>$ {pricingValues?.group.dollars}</del> ${" "}
-                              {parseInt(pricingValues?.group.dollars / 2)}
+                              <span className={cb.stricked__line}>
+                                $ {pricingValues?.group.dollars}
+                              </span>
+                              <span>
+                                $
+                                {discount?.status &&
+                                  pricingValues?.group.dollars -
+                                    (pricingValues?.group.dollars *
+                                      discount.percentage) /
+                                      100}
+                              </span>
                             </>
                           )}
                         </div>
@@ -161,9 +180,15 @@ const CourseFeaturesComponent = ({ pricing }) => {
                     <div className={cb.pricing_container}>
                       <div className={cb.pricing_category}>No - of Classes</div>
                       <div className={cb.price}>
-                        {parseInt(pricingValues?.one_one?.rupees / 600)} - Classes
+                        {parseInt(pricingValues?.one_one?.dollars / 7.3)} -
+                        Classes
                       </div>
                     </div>
+                    {discount?.status && (
+                      <div className={cb.discount__label}>
+                        <span>{discount.percentage} % OFF</span>
+                      </div>
+                    )}
                   </>
                 ) : (
                   <></>

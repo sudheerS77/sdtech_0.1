@@ -416,6 +416,10 @@
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "pricing": [
                 {
@@ -663,6 +667,10 @@
                 }
             ],
             "__v": 0
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
         },
         "pricing": {
             "_id": "64eee221da05b4219356f05c",
@@ -956,6 +964,10 @@
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64eee228da05b4219356f075",
             "pricing": [
@@ -1232,6 +1244,10 @@
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
             "pricing": [
@@ -1441,6 +1457,10 @@
                 }
             ],
             "__v": 0
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
         },
         "pricing": {
             "_id": "64ef29bfda05b4219356f201",
@@ -1652,6 +1672,10 @@
                 }
             ],
             "__v": 0
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
         },
         "pricing": {
             "_id": "64ef3dbbda05b4219356f284",
@@ -1907,6 +1931,10 @@
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64ef43fbda05b4219356f42a",
             "pricing": [
@@ -2051,13 +2079,17 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
+                    "no_of_classes": 7,
                     "no_of_months": " - ",
                     "certification_name": "",
                     "_id": "64f80f83323f1823e59db10c"
                 }
             ],
             "__v": 0
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 100
         },
         "pricing": {
             "pricing": [
@@ -2066,8 +2098,8 @@
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "1000",
-                            "dollars": "12",
+                            "rupees": "0",
+                            "dollars": "14",
                             "_id": "64eed26eda05b4219356ef48"
                         }
                     ]
@@ -2077,8 +2109,8 @@
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "500",
-                            "dollars": "6",
+                            "rupees": "0",
+                            "dollars": "10",
                             "_id": "64eed26eda05b4219356ef4a"
                         }
                     ]
@@ -2248,24 +2280,28 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
-                    "no_of_months": " - ",
+                    "no_of_classes": 30,
+                    "no_of_months": "1 - 2",
                     "certification_name": "",
                     "_id": "64f81c64ceb2f722072323aa"
                 }
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64f81c64ceb2f722072323b6",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "220",
                             "_id": "64f81c64ceb2f722072323b8"
                         }
                     ],
@@ -2277,7 +2313,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "150",
                             "_id": "64f81c64ceb2f722072323ba"
                         }
                     ],
@@ -2396,24 +2432,28 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
-                    "no_of_months": " - ",
+                    "no_of_classes": 20,
+                    "no_of_months": "1 - 2",
                     "certification_name": "",
                     "_id": "64f81c6bceb2f722072323bf"
                 }
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64f81c6bceb2f722072323c5",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "150",
                             "_id": "64f81c6bceb2f722072323c7"
                         }
                     ],
@@ -2425,7 +2465,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "100",
                             "_id": "64f81c6bceb2f722072323c9"
                         }
                     ],
@@ -2535,7 +2575,7 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
+                    "no_of_classes": 20,
                     "no_of_months": " - ",
                     "certification_name": "",
                     "_id": "64f81f47ceb2f72207232789"
@@ -2543,16 +2583,20 @@
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64f81f47ceb2f7220723278f",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "150",
                             "_id": "64f81f47ceb2f72207232791"
                         }
                     ],
@@ -2564,7 +2608,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "100",
                             "_id": "64f81f47ceb2f72207232793"
                         }
                     ],
@@ -2777,24 +2821,28 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
-                    "no_of_months": " - ",
+                    "no_of_classes": 30,
+                    "no_of_months": "1 - 2",
                     "certification_name": "",
                     "_id": "64f81f54ceb2f72207232852"
                 }
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64f81f54ceb2f7220723285d",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "220",
                             "_id": "64f81f54ceb2f7220723285f"
                         }
                     ],
@@ -2806,7 +2854,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "150",
                             "_id": "64f81f54ceb2f72207232861"
                         }
                     ],
@@ -2938,24 +2986,28 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
-                    "no_of_months": " - ",
+                    "no_of_classes": 30,
+                    "no_of_months": "1 - 2",
                     "certification_name": "",
                     "_id": "64f822c9ceb2f7220723293f"
                 }
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64f822c9ceb2f72207232948",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "220",
                             "_id": "64f822c9ceb2f7220723294a"
                         }
                     ],
@@ -2967,7 +3019,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "150",
                             "_id": "64f822c9ceb2f7220723294c"
                         }
                     ],
@@ -3076,23 +3128,27 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
-                    "no_of_months": " - ",
+                    "no_of_classes": 30,
+                    "no_of_months": "1 - 2",
                     "certification_name": "",
                     "_id": "64f8237eceb2f72207232a25"
                 }
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64f8237eceb2f72207232a2f",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "0",
+                            "rupees": "220",
                             "dollars": "0",
                             "_id": "64f8237eceb2f72207232a31"
                         }
@@ -3105,7 +3161,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "150",
                             "_id": "64f8237eceb2f72207232a33"
                         }
                     ],
@@ -3461,24 +3517,28 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 0,
-                    "no_of_months": " - ",
+                    "no_of_classes": 30,
+                    "no_of_months": "1 - 2",
                     "certification_name": "",
                     "_id": "64f83b68ceb2f72207232bfa"
                 }
             ],
             "__v": 0
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64f83b6aceb2f72207232c08",
             "pricing": [
                 {
-                    "course_level_category": "",
+                    "course_level_category": "1 : 1 Private Sessions",
                     "course_level_pricing": [
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "220",
                             "_id": "64f83b6aceb2f72207232c0a"
                         }
                     ],
@@ -3490,7 +3550,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "0",
+                            "dollars": "150",
                             "_id": "64f83b6aceb2f72207232c0c"
                         }
                     ],
@@ -3697,6 +3757,10 @@
                 }
             ]
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
             "pricing": [
@@ -3874,6 +3938,10 @@
                     "certification_name": ""
                 }
             ]
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
@@ -4077,6 +4145,10 @@
                 }
             ]
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
             "pricing": [
@@ -4277,6 +4349,10 @@
                 }
             ]
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
             "pricing": [
@@ -4468,6 +4544,10 @@
                 }
             ]
         },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
             "pricing": [
@@ -4638,6 +4718,10 @@
                     "certification_name": ""
                 }
             ]
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",

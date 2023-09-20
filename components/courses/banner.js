@@ -40,6 +40,11 @@ const Banner = ({ courseInfo }) => {
             // className={b.course_cover_img}
           >
             <img src={data?.image} alt="image" />
+            {data?.isDiscounted?.status && (
+              <div className={b.discounted__label}>
+                <span>{data?.isDiscounted?.percentage} %</span>
+              </div>
+            )}
           </div>
           {/* <span className={b.b_level_tag}>Level - {data?.level[0]}</span> */}
 

@@ -1,23 +1,17 @@
 import { ErrorMessage, Field } from "formik";
 import React from "react";
 
-const InputComponent = ({
-  label = "empty",
-  name,
-  value,
-  type,
-  placeholder,
-}) => {
+const TeaxtAreaComponent = ({ label, name, value }) => {
   return (
     <>
-      <div className="form__input">
+      <div>
         {label !== "empty" && <label htmlFor={name}>{label}</label>}
         <Field
-          type={type}
-          id={name}
-          name={name}
+          as="textarea"
+          id="message"
+          name="message"
           value={value}
-          placeholder={placeholder}
+          rows="5"
         />
         <ErrorMessage
           name={name}
@@ -30,4 +24,4 @@ const InputComponent = ({
   );
 };
 
-export default InputComponent;
+export default TeaxtAreaComponent;

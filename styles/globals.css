@@ -174,9 +174,12 @@ button {
 } */
 
 .inputFieldErrorMessage {
-  font-size: small;
+  height: 15px;
+  font-size: 12px;
   color: rgba(255, 0, 0, 0.825);
-  font-weight: bold;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 /* Media queries for smaller screens */

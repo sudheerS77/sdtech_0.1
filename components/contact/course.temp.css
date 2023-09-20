@@ -1,0 +1,106 @@
+
+.form__left form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form__left form div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form__left form div p {
+    width: 280px;
+}
+
+.form__left form textarea {
+    height: 100px;
+    width: 280px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.cn_tinput {
+    width: 280px;
+    height: 25px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Style for when the input is focused */
+.form__left form input:focus,
+.form__right form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for placeholder text */
+.form__left form input::placeholder {
+    color: #aaa;
+}
+
+/* Style for disabled input */
+.form__left form input:disabled {
+    background-color: #f2f2f2;
+    color: #888;
+}
+
+.phoneNumber {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.phoneNumber:outline {
+    border: none;
+}
+
+.submit_btn {
+    width: 280px;
+    height: 40px;
+
+    padding: 10px 30px;
+    background: #04233f;
+    border: 1px solid #333445;
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: regular;
+    font-size: 1.2rem;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    width: auto;
+    white-space: nowrap;
+}
+
+.submit_btn:hover {
+
+    background-color: rgb(24, 25, 52);
+    border: 1px solid #333445;
+    transition: .5s;
+
+    color: gray;
+    border: 1px solid rgba(128, 128, 128, 0.17);
+    transition: 0.4s;
+
+    box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.126);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
