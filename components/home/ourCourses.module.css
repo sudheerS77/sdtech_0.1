@@ -4,7 +4,8 @@
     background-color: #f2f5f7;
     padding: 100px 0;
 }
-.oc_courses__container{
+
+.oc_courses__container {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -22,6 +23,7 @@
 .oc_header h4 {
     font-size: 1.7rem;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .oc_view_all {
@@ -29,7 +31,11 @@
     padding: 5px 8px;
     color: #000;
     border: 2px solid gray;
-    border-radius: 5px;    
+    border-radius: 5px;
+}
+
+.oc_view_all span {
+    white-space: nowrap;
 }
 
 .oc_view_all:hover {
