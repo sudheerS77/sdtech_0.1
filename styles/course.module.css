@@ -71,9 +71,18 @@
 
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
-    .allc_head {
+    .allc_container{
+        width: 100%;
+    }
+    /* .allc_head {
         width: 90%;
-        /* margin: 10px auto; */
+        margin: 10px auto;
+    } */
+    .allc_courses_container {
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        gap: 50px;
     }
 
     .allc_search_icon {
@@ -81,13 +90,18 @@
     }
 
     .allc_body {
-        width: 90%;
-        margin: 50px auto;
-        grid-template-columns: auto;
+        width: 100%;
+        /* margin: 50px 0; */
+        /* grid-template-columns: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     .similar_container {
-        margin: 25px 0;
+        /* margin: 25px 0; */
     }
 }
 

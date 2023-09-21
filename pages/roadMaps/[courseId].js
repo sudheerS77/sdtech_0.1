@@ -10,6 +10,7 @@ const IndividualRoadMap = () => {
     fontSize: "2rem",
     color: "#091520",
     fontWeight: "700",
+    textAlign: "center",
   };
   return (
     <HomeLayout>
