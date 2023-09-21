@@ -1,13 +1,14 @@
 .category_container {
     width: 100%;
-    min-height: 60vh;
+    height: auto;
+    min-height: 500px;
     max-height: fit-content;
     /* background-color: #242538; */
     /* background-color: #001F3F; */
     /* background-color: #001627; */
     background-color: #001230;
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 .category_header {
