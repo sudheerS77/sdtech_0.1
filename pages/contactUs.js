@@ -1,6 +1,5 @@
 import HomeLayout from "@/Layout/Home.layout";
 import HeroBanner from "@/components/Atoms/Banners/heroBanner";
-import ContactForm from "@/components/contact/contactForm";
 import CourseEnqueryForm from "@/components/contact/courseEnquery.form";
 import React from "react";
 
