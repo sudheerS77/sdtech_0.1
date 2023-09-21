@@ -1,6 +1,6 @@
 .container {
     width: 80%;
-    height: 60vh;
+    /* height: 60vh; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -14,16 +14,9 @@
 }
 
 .home_content h1 {
-    /* font-size: 3rem; */
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    /* color: #060606; */
-    /* color: #1F1E28; */
-    /* color: #071d2b; */
-    /* color: #062441; */
     color: #001F3F;
-
-    /* color: #42414d; */
     margin-bottom: 20px
 }
 
@@ -82,14 +75,36 @@
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        height: fit-content;
-        /* height: 60vh; */
-        /* margin: 0; */
-        /* display: flex;
-        align-items: center;
-        justify-content: space-between; */
         padding: 50px 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .home_content {
+        width: 90%;
+        /* height: auto; */
+    }
+
+    .home_content h1 {
+        /* font-size: 3rem; */
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    .home_image {
+        width: 90%;
+        /* display: none; */
+    }
+
+}
+
+/* Media query for tablets devices (For screens between 768px and 1024px ) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+        padding: 50px 0;
+        gap: 20px;
     }
 
     .home_content {
@@ -102,10 +117,6 @@
         font-size: 2.3rem;
         margin-bottom: 10px
     }
-
-    .home_image {
-        display: none;
-    }
-
+   
 
 }

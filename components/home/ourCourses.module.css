@@ -388,4 +388,9 @@
         grid-template-columns: auto auto;
         gap: 50px;
     }
+
+    .oc_card {
+        width: 100%;
+    }
+
 }

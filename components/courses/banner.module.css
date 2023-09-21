@@ -53,7 +53,8 @@
 
 .b_right {
     width: 40%;
-    height: calc(100vh - 400px);
+    /* height: calc(100vh - 400px); */
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
