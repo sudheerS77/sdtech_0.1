@@ -95,16 +95,18 @@ const OurCourses = () => {
   return (
     <>
       <div className={hc.oc_container}>
-        <div className={hc.oc_header}>
-          <h1>Popular Courses</h1>
-          <Link href="/courses" className={hc.oc_view_all}>
-            <span>View All</span>
-          </Link>
-        </div>
-        <div className={hc.oc_section}>
-          {ourCoursesData.map((data, indx) => (
-            <CourseCard key={indx} data={data} />
-          ))}
+        <div className={hc.oc_courses__container}>
+          <div className={hc.oc_header}>
+            <h1>Popular Courses</h1>
+            <Link href="/courses" className={hc.oc_view_all}>
+              <span>View All</span>
+            </Link>
+          </div>
+          <div className={hc.oc_section}>
+            {ourCoursesData.map((data, indx) => (
+              <CourseCard key={indx} data={data} />
+            ))}
+          </div>
         </div>
       </div>
     </>
