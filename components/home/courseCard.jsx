@@ -33,12 +33,20 @@ const CourseCard = ({ data }) => {
             </div>
             <div className={hc.oc_card_bprice}>
               <span className={hc.price_area}>
-                <span className={hc.stricked__line}>$ {data?.price}</span>
-                <span>
-                  ${" "}
-                  {data.isDiscounted?.status &&
-                    data?.price - (data?.price * data.isDiscounted.percentage) / 100}
-                </span>
+                {data.isDiscounted?.status ? (
+                  <>
+                    <span className={hc.stricked__line}>$ {data?.price}</span>
+                    <span>
+                      ${" "}
+                      {data?.price -
+                        (data?.price * data.isDiscounted.percentage) / 100}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <span>$ {data?.price}</span>
+                  </>
+                )}
               </span>
               {/* <span className={hc.oc_price}>
                 ${" "}

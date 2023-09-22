@@ -86,6 +86,7 @@ const CourseBody = ({
           <CourseFeaturesComponent
             pricing={courseInfo?.pricing}
             discount={courseInfo?.isDiscounted}
+            name={courseInfo?.name}
           />
           {/* <div className={cb.cb_wul_img}>
               <img

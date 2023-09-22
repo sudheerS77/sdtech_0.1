@@ -11,8 +11,8 @@ import {
 } from "react-icons/md";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 
-const CourseFeaturesComponent = ({ pricing, discount }) => {
-  console.log();
+const CourseFeaturesComponent = ({ pricing, discount, name }) => {
+  console.log(pricing, discount);
   const [courseFeatures, setCourseFeatures] = useState([
     {
       title: "Course Fee",
@@ -147,20 +147,24 @@ const CourseFeaturesComponent = ({ pricing, discount }) => {
                         <div className={cb.price}>
                           {features.name === "1 : 1 Private Sessions" ? (
                             <>
-                              <span className={cb.stricked__line}>
+                              {/* <del>$ {pricingValues?.one_one.dollars}</del> ${" "}
+                              {parseInt(pricingValues?.one_one.dollars / 2)} */}
+                              {/* <span className={cb.stricked__line}>
                                 $ {pricingValues?.one_one.dollars}
-                              </span>
+                              </span> */}
                               <span>
-                                $
-                                {discount?.status &&
-                                  pricingValues?.one_one.dollars -
+                                $ {pricingValues?.one_one.dollars}
+                                {/* {discount?.status &&
+                                   -
                                     (pricingValues?.one_one.dollars *
                                       discount.percentage) /
-                                      100}
+                                      100} */}
                               </span>
                             </>
                           ) : (
                             <>
+                              {/* <del>$ {pricingValues?.group.dollars}</del> ${" "}
+                              {parseInt(pricingValues?.group.dollars / 2)} */}
                               <span className={cb.stricked__line}>
                                 $ {pricingValues?.group.dollars}
                               </span>

@@ -29,7 +29,7 @@ const RowCourseCard = ({ data }) => {
             <img src={data?.image} alt="" />
             {data.isDiscounted?.status && (
               <div className={hc.discounted__label}>
-                <span>{data?.isDiscounted?.percentage} %</span>
+                <span>{data?.isDiscounted?.percentage} % Discount</span>
               </div>
             )}
           </div>
@@ -40,12 +40,18 @@ const RowCourseCard = ({ data }) => {
             </div>
             <div className={hc.oc_card_bprice + " " + hc.oc_rcard_bprice}>
               <span className={hc.price_area}>
-                <span className={hc.stricked__line}>$ {coursePrice}</span>
-                <span>
-                  ${" "}
-                  {data.isDiscounted?.status &&
-                    coursePrice - (coursePrice * data?.isDiscounted?.percentage) / 100}
-                </span>
+                {data.isDiscounted?.status ? (
+                  <>
+                    <span className={hc.stricked__line}>$ {coursePrice}</span>
+                    <span>
+                      ${" "}
+                      {coursePrice -
+                        (coursePrice * data?.isDiscounted?.percentage) / 100}
+                    </span>
+                  </>
+                ) : (
+                  <span> $ {coursePrice}</span>
+                )}
               </span>
               {/* <span className={hc.oc_price}>
                 {" "}

@@ -73,7 +73,7 @@ const OurCourses = () => {
       price: 170,
       isDiscounted: {
         status: true,
-        percentage: 50,
+        percentage: 30,
       },
     },
     {
@@ -81,12 +81,12 @@ const OurCourses = () => {
       description:
         "Learn the MERN stack to build modern and powerful full-stack web applications.",
       image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1690558939/images/uccycj0urlhlnaka12la.png",
-      isBig: false,
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1694767185/images/d4j4bog1ycgetivjhn5o.png",
+      isBig: true,
       slug: "mern-stack",
       price: 245,
       isDiscounted: {
-        status: true,
+        status: false,
         percentage: 50,
       },
     },

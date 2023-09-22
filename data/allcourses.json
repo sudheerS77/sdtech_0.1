@@ -670,7 +670,7 @@
         },
         "isDiscounted": {
             "status": true,
-            "percentage": 50
+            "percentage": 70
         },
         "pricing": {
             "_id": "64eee221da05b4219356f05c",
@@ -966,7 +966,7 @@
         },
         "isDiscounted": {
             "status": true,
-            "percentage": 50
+            "percentage": 70
         },
         "pricing": {
             "_id": "64eee228da05b4219356f075",
@@ -1675,7 +1675,7 @@
         },
         "isDiscounted": {
             "status": true,
-            "percentage": 50
+            "percentage": 30
         },
         "pricing": {
             "_id": "64ef3dbbda05b4219356f284",
@@ -1932,7 +1932,7 @@
             "__v": 0
         },
         "isDiscounted": {
-            "status": true,
+            "status": false,
             "percentage": 50
         },
         "pricing": {

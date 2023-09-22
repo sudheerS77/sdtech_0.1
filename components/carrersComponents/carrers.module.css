@@ -1,0 +1,168 @@
+.c__hero__container {
+
+    position: relative;
+    height: 500px;
+}
+
+.c__image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px;
+    /* height: 500px; */
+}
+
+.c__image img {
+    width: 50%;
+    height: 500px;
+
+}
+
+.c__hero__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.c__hero__content__container {
+    width: 50%;
+    margin: 100px;
+}
+
+.c__hero__icons {
+    font-size: 2rem;
+    color: #04233f;
+}
+
+.c__hero__content__container h4 {
+    color: #FC0;
+}
+
+.c__hero__content__container h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+
+.c__hero__content__container p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000dd;
+}
+
+.c__letsgo a {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    gap: 10px;
+    margin: 20px 0;
+    color: #04233f;
+}
+
+.c__letsgo a p {
+    margin: 0;
+    color: #04233f;
+}
+
+.c__letsgo a p:hover {
+    border-bottom: 2px solid #04233f;
+}
+
+.c__downarrow__icons {}
+
+
+
+/* Openings */
+.c__openings__container {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.c__openings__header h2 {
+    color: #04233f;
+}
+
+.c__openings__header p {
+    font-size: 1rem;
+    color: #000;
+}
+.c__jobs__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 50px 0;
+}
+/* Job Card */
+.c__job__card {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.33);
+    border-left: 4px solid #FF6F00;
+}
+.c__job__card:hover {
+    border-left-width: 8px;
+}
+.c__job__card h4{
+    color: #071c2fd2;
+}
+
+<div className={cb.price}>
+                          {features.name === "1 : 1 Private Sessions" ? (
+                            <>
+                              {discount?.status ? (
+                                <>
+                                  <span className={cb.stricked__line}>
+                                    $ {pricingValues?.one_one.dollars}
+                                  </span>
+                                  <span>
+                                    ${" "}
+                                    {pricingValues?.one_one.dollars -
+                                      (pricingValues?.one_one.dollars *
+                                        discount.percentage) /
+                                        100}
+                                  </span>
+                                </>
+                              ) : (
+                                <span>$ {pricingValues?.one_one.dollars}</span>
+                              )}
+                            </>
+                          ) : (
+                            <>
+                              {discount?.status ? (
+                                <>
+                                  {name === "" ? <><span className={cb.stricked__line}>
+                                    $ {pricingValues?.group.dollars}
+                                  </span>
+                                  <span>
+                                    ${" "}
+                                    {pricingValues?.group.dollars -
+                                      (pricingValues?.group.dollars *
+                                        discount.percentage) /
+                                        100}
+                                  </span></>} 
+                                </>
+                              ) : name ===
+                                "Foundations of Robotics: From History to AI Integration" ? (
+                                <>
+                                  <span className={cb.stricked__line}>
+                                    $ {pricingValues?.group.dollars}
+                                  </span>
+                                  <span>
+                                    ${" "}
+                                    {pricingValues?.group.dollars -
+                                      (pricingValues?.group.dollars *
+                                        discount.percentage) /
+                                        100}
+                                  </span>
+                                </>
+                              ) : (
+                                <span>$ {pricingValues?.group.dollars}</span>
+                              )}
+                            </>
+                          )}
+                        </div>
