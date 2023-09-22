@@ -3148,8 +3148,8 @@
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "220",
-                            "dollars": "0",
+                            "rupees": "0",
+                            "dollars": "220",
                             "_id": "64f8237eceb2f72207232a31"
                         }
                     ],
