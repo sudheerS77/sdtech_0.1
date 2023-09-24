@@ -14,6 +14,72 @@ const CourseCategories = () => {
 
   const categories = [
     {
+      name: "Web Development",
+      icon: <SiWebflow className={hcc.caticon} />,
+      children: [
+        // {
+        //   name: "Full Stack Wev Development",
+        //   link: "full-stack-web-development",
+        // },
+        {
+          name: "HTML CSS JS",
+          link: "html-css-js",
+        },
+        {
+          name: "HTML",
+          link: "html",
+        },
+        {
+          name: "CSS",
+          link: "css",
+        },
+        {
+          name: "JavaScript",
+          link: "java-script",
+        },
+        // {
+        //   name: "NodeJS",
+        //   link: "node-js",
+        // },
+        {
+          name: "ReactJS",
+          link: "react-js",
+        },
+        {
+          name: "NextJS",
+          link: "nextjs",
+        },
+        {
+          name: "Mern Stack",
+          link: "mern-stack",
+        },
+        // {
+        //   name: "Mean Stack",
+        //   link: "mean-stack",
+        // },
+        // {
+        //   name: "Frontend",
+        //   link: "frontend",
+        // },
+        // {
+        //   name: "Backend",
+        //   link: "backend",
+        // },
+        // {
+        //   name: "flask",
+        //   link: "flask",
+        // },
+        // {
+        //   name: "Java Full Stack",
+        //   link: "complete-java-full-stack-development",
+        // },
+        // {
+        //   name: "Python Full Stack",
+        //   link: "python-full-stack",
+        // },
+      ],
+    },
+    {
       name: "Robotics",
       icon: <BsRobot className={hcc.caticon} />,
       children: [
@@ -97,72 +163,7 @@ const CourseCategories = () => {
         // },
       ],
     },
-    {
-      name: "Web Development",
-      icon: <SiWebflow className={hcc.caticon} />,
-      children: [
-        // {
-        //   name: "Full Stack Wev Development",
-        //   link: "full-stack-web-development",
-        // },
-        {
-          name: "HTML CSS JS",
-          link: "html-css-js",
-        },
-        {
-          name: "HTML",
-          link: "html",
-        },
-        {
-          name: "CSS",
-          link: "css",
-        },
-        {
-          name: "JavaScript",
-          link: "java-script",
-        },
-        // {
-        //   name: "NodeJS",
-        //   link: "node-js",
-        // },
-        {
-          name: "ReactJS",
-          link: "react-js",
-        },
-        {
-          name: "NextJS",
-          link: "nextjs",
-        },
-        {
-          name: "Mern Stack",
-          link: "mern-stack",
-        },
-        // {
-        //   name: "Mean Stack",
-        //   link: "mean-stack",
-        // },
-        // {
-        //   name: "Frontend",
-        //   link: "frontend",
-        // },
-        // {
-        //   name: "Backend",
-        //   link: "backend",
-        // },
-        // {
-        //   name: "flask",
-        //   link: "flask",
-        // },
-        // {
-        //   name: "Java Full Stack",
-        //   link: "complete-java-full-stack-development",
-        // },
-        // {
-        //   name: "Python Full Stack",
-        //   link: "python-full-stack",
-        // },
-      ],
-    },
+
     {
       name: "Mobile APP Development",
       icon: <BsRobot className={hcc.caticon} />,
