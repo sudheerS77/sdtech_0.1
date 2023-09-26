@@ -17,7 +17,8 @@
     position: relative;
 
 }
-.discount__label{
+
+.discount__label {
     position: absolute;
     top: 10px;
     right: 0;
@@ -85,10 +86,15 @@
 
 .cb_course_features .features_name {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    color: gray;
+    gap: 5px;
 }
 
+.cb__f__name {
+    color: #000;
+
+}
 
 .pricing_container {
     width: 90%;
@@ -116,7 +122,7 @@
 .stricked__line {
     text-decoration: line-through;
     font-size: 1rem;
-    color:#070130;
+    color: #070130;
 }
 
 .cb_wul_img {

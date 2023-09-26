@@ -58,12 +58,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #04233f;
+    background: #04233fe0;
+    /* background-color: #ffcc0011; */
     border-radius: 10px;
     position: relative;
     /* border-radius: 10px; */
 
-    /* background-color: #ffcc0011;
+    /* 
     padding: 10px;
     box-shadow: 0 8px 28px 0 rgba(31, 38, 135, 0.19);
     backdrop-filter: blur(0.5px);

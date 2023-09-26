@@ -408,9 +408,6 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "2",
-                    "certification_name": "",
                     "_id": "64eed26dda05b4219356ef29"
                 }
             ],
@@ -420,6 +417,11 @@
             "status": true,
             "percentage": 50
         },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "2",
+            "certification_name": ""
+        },
         "pricing": {
             "pricing": [
                 {
@@ -427,7 +429,7 @@
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "30000",
+                            "rupees": "",
                             "dollars": "375",
                             "_id": "64eed26eda05b4219356ef48"
                         }
@@ -660,9 +662,6 @@
                         }
                     ],
                     "level_learning_outcomes": [],
-                    "no_of_classes": 15,
-                    "no_of_months": "1",
-                    "certification_name": "",
                     "_id": "64eee220da05b4219356f04e"
                 }
             ],
@@ -672,6 +671,11 @@
             "status": true,
             "percentage": 70
         },
+        "classes": {
+            "no_of_classes": 15,
+            "no_of_months": "1",
+            "certification_name": ""
+        },
         "pricing": {
             "_id": "64eee221da05b4219356f05c",
             "pricing": [
@@ -680,8 +684,8 @@
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "9000",
-                            "dollars": "110",
+                            "rupees": "",
+                            "dollars": "112",
                             "_id": "64eee221da05b4219356f05e"
                         }
                     ],
@@ -955,11 +959,7 @@
                             "_id": "64eee228da05b4219356f073"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 15,
-                    "no_of_months": "1",
-                    "certification_name": "",
-                    "_id": "64eee228da05b4219356f065"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -967,6 +967,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 70
+        },
+        "classes": {
+            "no_of_classes": 15,
+            "no_of_months": "1",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64eee228da05b4219356f075",
@@ -977,7 +982,7 @@
                         {
                             "level": "default",
                             "rupees": "9000",
-                            "dollars": "110",
+                            "dollars": "112",
                             "_id": "64eee228da05b4219356f077"
                         }
                     ],
@@ -1235,11 +1240,7 @@
                             "_id": "64ef26b3da05b4219356f174"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 45,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64ef26b3da05b4219356f166"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -1248,16 +1249,22 @@
             "status": true,
             "percentage": 50
         },
+        "classes": {
+            "no_of_classes": 45,
+            "no_of_months": "1 - 2",
+            "certification_name": ""
+        },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
             "pricing": [
                 {
                     "course_level_category": "1 : 1 Private Sessions",
+                    "no_of_classes": 45,
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "27000",
-                            "dollars": "330",
+                            "rupees": "",
+                            "dollars": "337",
                             "_id": "64ef26b4da05b4219356f178"
                         }
                     ],
@@ -1449,11 +1456,7 @@
                             "_id": "64ef29bfda05b4219356f1ff"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64ef29bfda05b4219356f1f3"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -1461,6 +1464,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "1 - 2",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef29bfda05b4219356f201",
@@ -1470,7 +1478,7 @@
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "30000",
+                            "rupees": "",
                             "dollars": "375",
                             "_id": "64ef29bfda05b4219356f203"
                         }
@@ -1664,11 +1672,7 @@
                             "_id": "64ef3dbbda05b4219356f282"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 35,
-                    "no_of_months": " - ",
-                    "certification_name": "",
-                    "_id": "64ef3dbbda05b4219356f279"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -1676,6 +1680,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 30
+        },
+        "classes": {
+            "no_of_classes": 35,
+            "no_of_months": " - ",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef3dbbda05b4219356f284",
@@ -1686,7 +1695,7 @@
                         {
                             "level": "default",
                             "rupees": "21000",
-                            "dollars": "260",
+                            "dollars": "262",
                             "_id": "64ef3dbbda05b4219356f286"
                         }
                     ],
@@ -1922,11 +1931,7 @@
                             "_id": "64ef43fbda05b4219356f428"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64ef43fbda05b4219356f41b"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -1934,6 +1939,11 @@
         "isDiscounted": {
             "status": false,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "1 - 2",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef43fbda05b4219356f42a",
@@ -1943,8 +1953,8 @@
                     "course_level_pricing": [
                         {
                             "level": "default",
-                            "rupees": "30000",
-                            "dollars": "370",
+                            "rupees": "",
+                            "dollars": "375",
                             "_id": "64ef43fbda05b4219356f42c"
                         }
                     ],
@@ -2078,11 +2088,7 @@
                             "_id": "64f80f83323f1823e59db111"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 7,
-                    "no_of_months": " - ",
-                    "certification_name": "",
-                    "_id": "64f80f83323f1823e59db10c"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -2090,6 +2096,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 100
+        },
+        "classes": {
+            "no_of_classes": 7,
+            "no_of_months": " - ",
+            "certification_name": ""
         },
         "pricing": {
             "pricing": [
@@ -2099,7 +2110,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "14",
+                            "dollars": "52",
                             "_id": "64eed26eda05b4219356ef48"
                         }
                     ]
@@ -2279,11 +2290,7 @@
                             "_id": "64f81c64ceb2f722072323b4"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 30,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64f81c64ceb2f722072323aa"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -2291,6 +2298,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 30,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64f81c64ceb2f722072323b6",
@@ -2301,7 +2313,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "220",
+                            "dollars": "225",
                             "_id": "64f81c64ceb2f722072323b8"
                         }
                     ],
@@ -2431,11 +2443,7 @@
                             "_id": "64f81c6bceb2f722072323c3"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 20,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64f81c6bceb2f722072323bf"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -2443,6 +2451,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 20,
+            "no_of_months": "1 - 2",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64f81c6bceb2f722072323c5",
@@ -2574,11 +2587,7 @@
                             "_id": "64f81f47ceb2f7220723278d"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 20,
-                    "no_of_months": " - ",
-                    "certification_name": "",
-                    "_id": "64f81f47ceb2f72207232789"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -2586,6 +2595,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 20,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64f81f47ceb2f7220723278f",
@@ -2820,11 +2834,7 @@
                             "_id": "64f81f54ceb2f7220723285b"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 30,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64f81f54ceb2f72207232852"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -2832,6 +2842,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 30,
+            "no_of_months": "1 - 2",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64f81f54ceb2f7220723285d",
@@ -2842,7 +2857,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "220",
+                            "dollars": "225",
                             "_id": "64f81f54ceb2f7220723285f"
                         }
                     ],
@@ -2985,11 +3000,7 @@
                             "_id": "64f822c9ceb2f72207232946"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 30,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64f822c9ceb2f7220723293f"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -2997,6 +3008,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 30,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64f822c9ceb2f72207232948",
@@ -3007,7 +3023,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "220",
+                            "dollars": "225",
                             "_id": "64f822c9ceb2f7220723294a"
                         }
                     ],
@@ -3127,11 +3143,7 @@
                             "_id": "64f8237eceb2f72207232a2d"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 30,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64f8237eceb2f72207232a25"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -3139,6 +3151,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 30,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64f8237eceb2f72207232a2f",
@@ -3149,7 +3166,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "220",
+                            "dollars": "225",
                             "_id": "64f8237eceb2f72207232a31"
                         }
                     ],
@@ -3516,11 +3533,7 @@
                             "_id": "64f83b68ceb2f72207232c05"
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 30,
-                    "no_of_months": "1 - 2",
-                    "certification_name": "",
-                    "_id": "64f83b68ceb2f72207232bfa"
+                    "level_learning_outcomes": []
                 }
             ],
             "__v": 0
@@ -3528,6 +3541,11 @@
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 30,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64f83b6aceb2f72207232c08",
@@ -3538,7 +3556,7 @@
                         {
                             "level": "default",
                             "rupees": "0",
-                            "dollars": "220",
+                            "dollars": "225",
                             "_id": "64f83b6aceb2f72207232c0a"
                         }
                     ],
@@ -3750,16 +3768,18 @@
                             ]
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 45,
-                    "no_of_months": "1 - 2",
-                    "certification_name": ""
+                    "level_learning_outcomes": []
                 }
             ]
         },
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 45,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
@@ -3770,7 +3790,7 @@
                         {
                             "level": "default",
                             "rupees": 27000,
-                            "dollars": 330
+                            "dollars": 337
                         }
                     ]
                 },
@@ -3932,16 +3952,18 @@
                             ]
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "1 - 2",
-                    "certification_name": ""
+                    "level_learning_outcomes": []
                 }
             ]
         },
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
@@ -3952,7 +3974,7 @@
                         {
                             "level": "default",
                             "rupees": "30000",
-                            "dollars": "365",
+                            "dollars": "375",
                             "_id": "64ef26b4da05b4219356f178"
                         }
                     ],
@@ -4138,16 +4160,18 @@
                             ]
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "1 - 2",
-                    "certification_name": ""
+                    "level_learning_outcomes": []
                 }
             ]
         },
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
@@ -4158,7 +4182,7 @@
                         {
                             "level": "default",
                             "rupees": "30000",
-                            "dollars": "365",
+                            "dollars": "375",
                             "_id": "64ef26b4da05b4219356f178"
                         }
                     ],
@@ -4342,16 +4366,18 @@
                             ]
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "1 - 2",
-                    "certification_name": ""
+                    "level_learning_outcomes": []
                 }
             ]
         },
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
@@ -4362,7 +4388,7 @@
                         {
                             "level": "default",
                             "rupees": "30000",
-                            "dollars": "365",
+                            "dollars": "375",
                             "_id": "64ef26b4da05b4219356f178"
                         }
                     ],
@@ -4537,16 +4563,18 @@
                             ]
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "1 - 2",
-                    "certification_name": ""
+                    "level_learning_outcomes": []
                 }
             ]
         },
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
@@ -4557,7 +4585,7 @@
                         {
                             "level": "default",
                             "rupees": "30000",
-                            "dollars": "365",
+                            "dollars": "375",
                             "_id": "64ef26b4da05b4219356f178"
                         }
                     ],
@@ -4712,16 +4740,18 @@
                             ]
                         }
                     ],
-                    "level_learning_outcomes": [],
-                    "no_of_classes": 50,
-                    "no_of_months": "1 - 2",
-                    "certification_name": ""
+                    "level_learning_outcomes": []
                 }
             ]
         },
         "isDiscounted": {
             "status": true,
             "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 50,
+            "no_of_months": "",
+            "certification_name": ""
         },
         "pricing": {
             "_id": "64ef26b4da05b4219356f176",
@@ -4732,7 +4762,7 @@
                         {
                             "level": "default",
                             "rupees": "30000",
-                            "dollars": "365",
+                            "dollars": "375",
                             "_id": "64ef26b4da05b4219356f178"
                         }
                     ],
