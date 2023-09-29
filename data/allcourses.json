@@ -3583,6 +3583,398 @@
         "__v": 0
     },
     {
+        "name": "Altium Designer Masterclass",
+        "title": "Altium Designer Masterclass",
+        "description": "This comprehensive Altium Designer Masterclass covers everything you need to know about using Altium Designer for printed circuit board (PCB) design. From the fundamentals of PCB technology to creating schematic designs and PCB layouts, this course will equip you with the skills needed to design electronic circuits with Altium Designer.",
+        "meta_title": "Altium Designer Masterclass - PCB Design Course",
+        "meta_description": "Learn PCB design with Altium Designer in this in-depth masterclass. Get hands-on experience with schematic design, PCB layout, and more. Enroll now!",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1695967929/images/gr8ug2ypnr01iks3okun.png",
+        "isbigimage": true,
+        "slug": "altium-designer-masterclass",
+        "categories": [
+            "PCB Design",
+            "Electronics",
+            "Engineering",
+            "Software Tools"
+        ],
+        "tags": [
+            "Altium Designer",
+            "PCB Design",
+            "Electronics",
+            "Schematic Design",
+            "PCB Layout",
+            "Circuit Design"
+        ],
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the history and methods of PCB printing.",
+            "Define what PCBs are and their types, including multilayer PCBs.",
+            "Identify applications and prerequisites for PCB design.",
+            "Compare Altium Designer with similar software tools.",
+            "Download, install, and activate Altium Designer software.",
+            "Navigate the main menu and panels in Altium Designer.",
+            "Work in the schematic and PCB document environments.",
+            "Create and manage different types of projects.",
+            "Construct a PCB project and install libraries.",
+            "Design schematic diagrams, including LED, resistance, button, and microcontroller circuits.",
+            "Make connections, number components, and prepare parts lists.",
+            "Design footprints and incorporate 3D shapes.",
+            "Create PCB files and import parts.",
+            "Arrange and route parts on the PCB, including single-layer and two-layer routing.",
+            "Use automatic routing and generate reports.",
+            "Convert schematics to PCB layouts and work with multi-part parts.",
+            "Manage multi-page schematics and construct schematic libraries.",
+            "Generate Gerber files and view them.",
+            "Find and install library components.",
+            "Import with EPW files and handle multi-part parts effectively."
+        ],
+        "course_content": {
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Module 1: Introduction to Printed Circuit Board (PCB) Design",
+                            "subtopics": [
+                                "History and methods of PCB printing",
+                                "What is PCB?",
+                                "Types of PCBs",
+                                "Multilayer PCBs",
+                                "Applications",
+                                "Prerequisites",
+                                "Similar software",
+                                "Prescriptions",
+                                "Packaging",
+                                "SMD, THT, and DIP components"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 2: Why Altium Designer?",
+                            "subtopics": [
+                                "Introducing Altium Designer software",
+                                "What is Altium Designer?",
+                                "Features of Altium",
+                                "Download and install Altium software",
+                                "Altium activation",
+                                "Introducing the main menu and panels",
+                                "Schematic environment",
+                                "PCB documents environment",
+                                "Types of projects",
+                                "Construction of PCB project",
+                                "How to install libraries"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 3: Schematic Design",
+                            "subtopics": [
+                                "Components of the schematic design section",
+                                "What is schematic design and why?",
+                                "Menu and panels",
+                                "Adding parts and notes",
+                                "Part settings",
+                                "Making connections",
+                                "Wiring numbering",
+                                "Schematic settings",
+                                "Diagnosis",
+                                "Preparation of parts list",
+                                "Making the LED schematic design",
+                                "Making a schematic design of resistance",
+                                "Making a schematic diagram of the button",
+                                "Making a microcontroller schematic design",
+                                "Wire connection",
+                                "Connection with bases",
+                                "Connection with ports",
+                                "LED control circuit with microcontroller",
+                                "Making footprints",
+                                "Adding 3D shapes to designed parts"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 4: PCB Design",
+                            "subtopics": [
+                                "Create PCB file",
+                                "Introduction of menus and panels",
+                                "Arrival of parts from your tick",
+                                "Arrangement of parts",
+                                "Layers",
+                                "Single layer routing",
+                                "Two-layer routing",
+                                "Additional tips related to routing",
+                                "Automatic routing",
+                                "Reports",
+                                "Convert schematic to PCB",
+                                "Arrange the pieces on the board",
+                                "Manual and automatic wiring",
+                                "Polygon technique",
+                                "Gerber output, PDF, and more",
+                                "View Gerber file",
+                                "Find parts file",
+                                "Install Library Loader",
+                                "Import with EPW file",
+                                "Multi-part parts",
+                                "Multi-page schematic",
+                                "Construction of schematic library"
+                            ]
+                        }
+                    ],
+                    "level_learning_outcomes": [],
+                    "no_of_classes": 0,
+                    "no_of_months": " - ",
+                    "certification_name": ""
+                }
+            ]
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 30,
+            "no_of_months": "1 - 2",
+            "certification_name": ""
+        },
+        "pricing": {
+            "_id": "64f83b6aceb2f72207232c08",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "225",
+                            "_id": "64f83b6aceb2f72207232c0a"
+                        }
+                    ],
+                    "_id": "64f83b6aceb2f72207232c09"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "150",
+                            "_id": "64f83b6aceb2f72207232c0c"
+                        }
+                    ],
+                    "_id": "64f83b6aceb2f72207232c0b"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active"
+    },
+    {
+        "name": "Soldering and Assembly Masterclass",
+        "title": "Soldering and Assembly Masterclass",
+        "description": "This comprehensive Soldering and Assembly Masterclass provides a deep dive into the art and science of soldering and electronic component assembly. From understanding the origins of soldering to mastering the techniques for precise connections, this course equips you with the skills needed to work with electronic components effectively.",
+        "meta_title": "Soldering and Assembly Masterclass - Electronics Component Course",
+        "meta_description": "Master the art of soldering and electronic component assembly in this in-depth masterclass. Learn soldering techniques, principles, and safety tips. Enroll now!",
+        "image": "https://res.cloudinary.com/df8aswwta/image/upload/v1695972420/images/kmj0j8udohbliced0cbn.png",
+        "image1": "https://res.cloudinary.com/df8aswwta/image/upload/v1695967926/images/uelfsjuhqhix2ufjfyl7.png",
+        "isbigimage": true,
+        "slug": "soldering-and-assembly-masterclass",
+        "categories": [
+            "Electronics",
+            "Engineering",
+            "DIY",
+            "Manufacturing"
+        ],
+        "tags": [
+            "Soldering",
+            "Assembly",
+            "Electronics Components",
+            "PCB",
+            "Safety",
+            "Techniques"
+        ],
+        "languages": [
+            "Persian"
+        ],
+        "level": [
+            "advance"
+        ],
+        "duration": [
+            "1Month",
+            "2Months"
+        ],
+        "course_category": "robotics",
+        "levels": [
+            "default"
+        ],
+        "learning_outcomes": [
+            "Understand the history and importance of soldering in electronics.",
+            "Identify various soldering materials and their uses.",
+            "Familiarize yourself with soldering tools and equipment.",
+            "Learn the principles and standards of soldering.",
+            "Master soldering techniques, including making geometric shapes and cleaning boards.",
+            "Effectively solder electronic components, including LEDs and simple circuits.",
+            "Gain expertise in component assembly, including DIP and SMD parts.",
+            "Handle disassembly and installation of ICs on boards.",
+            "Explore safety tips and best practices in soldering.",
+            "Create a final project showcasing your soldering and assembly skills."
+        ],
+        "course_content": {
+            "technicalRoadMap": [
+                {
+                    "level": "default",
+                    "data": [
+                        {
+                            "topicName": "Module 1: Introduction to Soldering",
+                            "subtopics": [
+                                "The origin of solder and soldering",
+                                "Background of soldering and conversion process",
+                                "Why solder?",
+                                "What is soldering?",
+                                "Soldering components",
+                                "The importance of soldering",
+                                "Usage of soldering in robotics",
+                                "Material type",
+                                "Parts buying guide"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 2: Introduction of Soldering Tools",
+                            "subtopics": [
+                                "Soldering System",
+                                "Types of Hoya series",
+                                "Types of tips",
+                                "Review of different brands",
+                                "Solder wire",
+                                "Tinsmith",
+                                "Tin wire",
+                                "Solder oil and flux",
+                                "Soldering pad",
+                                "Fireproof glue",
+                                "Identity card",
+                                "Board holder",
+                                "Soldering iron",
+                                "Effective tool in soldering",
+                                "Accessory tool"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 3: Principles of Soldering",
+                            "subtopics": [
+                                "Learning the principles of soldering",
+                                "Standards in this field",
+                                "How to solder",
+                                "Soldering steps",
+                                "Making geometric shapes",
+                                "Replacement of the tip",
+                                "Cleaning the board",
+                                "Precision in soldering",
+                                "Short circuit effect",
+                                "Schematic in soldering",
+                                "Optimization",
+                                "Perforated boards",
+                                "PCB",
+                                "Types of fiber boards",
+                                "Assembling parts on boards"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 4: Projects",
+                            "subtopics": [
+                                "Accuracy in soldering",
+                                "Soldering path",
+                                "How to connect the part to the board",
+                                "LED soldering",
+                                "Simple circuit soldering"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 5: Assembling",
+                            "subtopics": [
+                                "What is assembly?",
+                                "The difference between assembly and production",
+                                "Assembly of DIP parts",
+                                "Familiarity with SMD components",
+                                "Assembly of SMD parts",
+                                "Disassembly of DIP and SMD parts from various boards",
+                                "Removing and installing ICs on the board",
+                                "Getting to know the topics related to Footprint",
+                                "Getting to know the heater or hot air and its use",
+                                "THD",
+                                "SMD",
+                                "DIP"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 6: Safety and Operation",
+                            "subtopics": [
+                                "Safety tips in soldering",
+                                "Workplace",
+                                "Device temperature",
+                                "Soldering Station",
+                                "How to repair board and pad",
+                                "How to become self-sufficient"
+                            ]
+                        },
+                        {
+                            "topicName": "Module 7: Final Project"
+                        }
+                    ],
+                    "level_learning_outcomes": []
+                }
+            ]
+        },
+        "isDiscounted": {
+            "status": true,
+            "percentage": 50
+        },
+        "classes": {
+            "no_of_classes": 30,
+            "no_of_months": "",
+            "certification_name": ""
+        },
+        "pricing": {
+            "_id": "64f83b6aceb2f72207232c08",
+            "pricing": [
+                {
+                    "course_level_category": "1 : 1 Private Sessions",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "225",
+                            "_id": "64f83b6aceb2f72207232c0a"
+                        }
+                    ],
+                    "_id": "64f83b6aceb2f72207232c09"
+                },
+                {
+                    "course_level_category": "group",
+                    "course_level_pricing": [
+                        {
+                            "level": "default",
+                            "rupees": "0",
+                            "dollars": "150",
+                            "_id": "64f83b6aceb2f72207232c0c"
+                        }
+                    ],
+                    "_id": "64f83b6aceb2f72207232c0b"
+                }
+            ],
+            "__v": 0
+        },
+        "status": "active"
+    },
+    {
         "name": "Python Mastery: Unlock Your Coding Superpowers!",
         "title": "Complete Python Programming Course",
         "description": "Elevate your programming skills with our Python Mastery course! Whether you're a novice or a seasoned coder, our hands-on curriculum covers it all. From mastering Python fundamentals to crafting dynamic web apps and diving into data science, you'll conquer real-world projects and emerge a Python pro. Enroll now to supercharge your coding journey! 🐍🚀",
