@@ -12,7 +12,6 @@ import HomeLayout from "@/Layout/Home.layout";
 import Banner from "@/components/workshops/courses/banner";
 import CourseBody from "@/components/workshops/courses/CourseBody";
 
-
 // Data
 import allCourses from "../../data/allcourses.json";
 
@@ -32,7 +31,6 @@ const PaidCourse = ({ courseid, data }) => {
   const HeadSection = () => {
     return (
       <Head>
-        
         <title>{courseInfo?.title} | sdtechacademy.com</title>
         <meta name="description" content={courseInfo?.description} />
         <meta name="keywords" content={courseInfo?.tags} />
@@ -56,10 +54,10 @@ const PaidCourse = ({ courseid, data }) => {
         <meta property="og:site_name" content={"sdtechacademy.com"} />
         {/* <meta property="og:image" content={`${API}/blog/photo/${blog.slug}`} />
         <meta
-      property="og:image:secure_url"
-      ccontent={`${API}/blog/photo/${blog.slug}`}
-    />
-    <meta property="og:image:type" content="image/jpg" /> */}
+        property="og:image:secure_url"
+        ccontent={`${API}/blog/photo/${blog.slug}`}
+        />
+      <meta property="og:image:type" content="image/jpg" /> */}
 
         <meta name="robots" content="index, follow"></meta>
       </Head>
