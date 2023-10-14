@@ -67,7 +67,7 @@ const WorkshopComponent = () => {
                     </div>
                     <div className={hc.oc_rcard_venu}>
                       <div>Venu: </div>
-                      <h6>University Name</h6>
+                      <h6>Al-zahra university</h6>
                     </div>
                   </div>
                   <div className={hc.oc_card_bprice + " " + hc.oc_rcard_bprice}>
