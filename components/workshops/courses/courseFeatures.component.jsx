@@ -100,22 +100,7 @@ const CourseFeaturesComponent = ({
           name: "کاربردی و پروژه محور بودن دوره ",
           icon: <MdArrowForward />,
           color: "#071D2B",
-        },
-        {
-          name: "Material",
-          icon: <MdArrowForward />,
-          color: "#071D2B",
-        },
-        {
-          name: "Quiz in every module",
-          icon: <MdArrowForward />,
-          color: "#071D2B",
-        },
-        {
-          name: "Certificate",
-          icon: <MdArrowForward />,
-          color: "#071D2B",
-        },
+        }
       ],
     },
     {
@@ -125,17 +110,8 @@ const CourseFeaturesComponent = ({
           name: "Completion Certificate",
           icon: <AiFillSafetyCertificate />,
           color: "green",
-        },
-        {
-          name: "1:1 Parents Teacher Meeting",
-          icon: <MdComputer />,
-          color: "",
-        },
-        {
-          name: "Feedback From Instructors",
-          icon: <MdFeedback />,
-          color: "blue",
-        },
+        }        
+      
       ],
     },
   ]);

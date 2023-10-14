@@ -58,7 +58,7 @@ const CourseBody = ({
         <div className={cb.coursOverView_section}>
           <div className={cb.coursOverView_container}>
             <div className={cb.cb_wul}>
-              <h3>What You Will Learn</h3>
+              <h3>آنچه در این دوره می آموزید:</h3>
               <ul>
                 {data?.learning_outcomes?.map((wul, indx) => (
                   <li key={indx}>{wul}</li>
