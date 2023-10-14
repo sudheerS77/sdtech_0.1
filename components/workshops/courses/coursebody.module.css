@@ -1,0 +1,314 @@
+.cb_container {
+    width: 80%;
+    margin: 0 auto 100px auto;
+}
+
+/* What you will learn */
+.cb_card {
+
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 18px 0 rgba(31, 38, 135, 0.133);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(3, 1, 1, 0.082);
+    position: relative;
+
+}
+
+.discount__label {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 1px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #FFCC00;
+}
+
+.coursOverView_section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.coursOverView_container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: c; */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+
+.cb_container h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.cb_wul {}
+
+.cb_wul ul {
+    margin: 0px 50px;
+}
+
+.cb_wul ul li {
+    padding: 6px 0;
+}
+
+.cb_course_features {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.cb_course_features .cb_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.cb_course_features div h4 {
+    font-size: 1.2rem;
+    color: #111120;
+    margin: 10px 0;
+}
+
+.cb_course_features .features_name {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.cb__f__name {
+    color: #000;
+
+}
+
+.pricing_container {
+    width: 90%;
+    color: #04233f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.pricing_category {
+    font-size: 1rem;
+}
+
+.price {
+    color: #04233f;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border-bottom: 1px solid #04233f; */
+}
+
+.stricked__line {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: #070130;
+}
+
+.cb_wul_img {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    bottom: 100px;
+    right: 25%;
+    z-index: -1;
+    rotate: -15deg;
+}
+
+.cb_wul_img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Course content */
+.cc_section {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.tr_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .cc_section h3 {
+    font-size: 1.8rem;
+    margin: 0 0 50px 0;
+} */
+
+.level_Section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.level_Section button {
+    width: auto;
+    height: 40px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0f1923;
+    border: none;
+    border-radius: 3px;
+}
+
+.level_Section button:hover {
+    color: #04233f;
+    background-color: #fff;
+    border: 2px solid #04233f;
+    transition: 0.4s ease-in;
+}
+
+.level_Section .active_btn {
+    color: #04233f;
+    background-color: #fff;
+    border: 2px solid #04233f;
+    transition: 0.4s ease-in;
+}
+
+.expand_collapse_btn button {
+    /* width: 150px; */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #04233f;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.course_information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.course_information h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #000000ea;
+}
+
+.course_information p {
+    font-size: .9rem;
+}
+
+.acc_container {
+    width: 100%;
+}
+
+.fee_container {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #05040c, transparent);
+    background-color: #1F1E28;
+
+}
+
+/* Media query for small devices (up to 768px wide) */
+@media (max-width: 768px) {
+    .cb_container {
+        width: 90%;
+    }
+
+    .coursOverView_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: c; */
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 50px;
+        position: relative;
+
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .coursOverView_section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .coursOverView_section h3 {
+        font-size: 1.4rem;
+    }
+
+    .cb_wul {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .cb_wul ul {
+        margin: 0px 25px;
+    }
+
+    .cb_wul ul li {
+        padding: 3px 0;
+    }
+
+    .cb_course_features {
+        width: 100%;
+        gap: 13px;
+    }
+
+    /* What you will learn */
+    .cb_card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .tr_header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .expand_collapse_btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    .level_Section {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .level_Section button {
+        padding: 8px 15px;
+
+    }
+
+    .acc_container {
+        width: 100%;
+    }
+
+}
