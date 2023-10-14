@@ -1,6 +1,6 @@
 import React from "react";
 import allc from "@/styles/course.module.css";
-import CourseCard from "../../home/courseCard";
+import CourseCard from "../home/courseCard";
 
 const SimilarCourses = () => {
   

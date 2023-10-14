@@ -12,6 +12,7 @@ import HomeLayout from "@/Layout/Home.layout";
 import Banner from "@/components/workshops/courses/banner";
 import CourseBody from "@/components/workshops/courses/CourseBody";
 
+
 // Data
 import allCourses from "../../data/allcourses.json";
 
@@ -31,9 +32,8 @@ const PaidCourse = ({ courseid, data }) => {
   const HeadSection = () => {
     return (
       <Head>
+        
         <title>{courseInfo?.title} | sdtechacademy.com</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="Content-Language" content="fa" />
         <meta name="description" content={courseInfo?.description} />
         <meta name="keywords" content={courseInfo?.tags} />
         <meta
