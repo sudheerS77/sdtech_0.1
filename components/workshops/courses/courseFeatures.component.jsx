@@ -20,33 +20,49 @@ const CourseFeaturesComponent = ({
   console.log(pricing, discount);
   const [courseFeatures, setCourseFeatures] = useState([
     {
-      title: "Course Fee",
+      title: "هزینه ثبت نام",
       feature: [
         {
-          name: "1 : 1 Private Sessions",
-          // price: pricing ? pricing.pricing[0].course_level_pricing[0] : 0,
+          name: "الزهرایی ها و ربو آموزان آکادمی ",
+          // price: pricing ? pricing.pricing[0].course_level_pricing[0] : 1.550.000 تومان,
         },
         {
-          name: "Group Sessions",
-          // price: 0,
+          name: "سایر افراد",
+          // price: 1.650.000 تومان,
         },
       ],
     },
     {
-      title: "Class Details",
+      title: "درباه دوره",
       feature: [
         {
-          name: "Location: Online and Classroom",
+          name: "مکان برگزاری: تهران، دانشگاه الزهرا ",
           icon: <MdLocationOn />,
           color: "red",
         },
         {
-          name: "Mode of Delivery: Group Session and 1:1",
+          name: "نوع کلاس: حضوری",
           icon: <MdLocationOn />,
           color: "green",
         },
         {
-          name: "Language: English, Hindi, Persian",
+          name: "زمان شروع دوره: 15 آبان 1402 ",
+          icon: <MdLanguage />,
+          color: "blue",
+        },
+
+        {
+          name: "مدت زمان دوره : 35 ساعت  ",
+          icon: <MdLanguage />,
+          color: "blue",
+        },
+        {
+          name: "دوشنبه ها – ساعت 14 الی 18 ",
+          icon: <MdLanguage />,
+          color: "blue",
+        },
+        {
+          name: "بدون پیش نیاز قبلی",
           icon: <MdLanguage />,
           color: "blue",
         },
@@ -68,20 +84,20 @@ const CourseFeaturesComponent = ({
       ],
     },
     {
-      title: "Course Features",
+      title: "مزایای دوره",
       feature: [
         {
-          name: "Online Instructor-led learning",
+          name: "ارائه گواهی معتبر و بین المللی دو زبانه از دانشگاه الزهرا",
           icon: <MdArrowForward />,
           color: "#071D2B",
         },
         {
-          name: "Doubt Clearing",
+          name: "برگزاری مسابقه در دانشگاه الزهرا",
           icon: <MdArrowForward />,
           color: "#071D2B",
         },
         {
-          name: "Recording of Live Class",
+          name: "کاربردی و پروژه محور بودن دوره ",
           icon: <MdArrowForward />,
           color: "#071D2B",
         },
@@ -222,7 +238,7 @@ const CourseFeaturesComponent = ({
                     </div>
                     {discount?.status && (
                       <div className={cb.discount__label}>
-                        <span>{discount.percentage} % OFF</span>
+                        <span> ویژه دانشگاه الزهرا</span>
                       </div>
                     )}
                   </>

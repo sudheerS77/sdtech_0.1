@@ -186,6 +186,9 @@ const PaidCourse = ({ courseid, data }) => {
     return (
       <Head>
         <title>{courseInfo?.title} | sdtechacademy.com</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="fa" />
+        <meta charset="UTF-8"></meta>
         <meta name="description" content={courseInfo?.description} />
         <meta name="keywords" content={courseInfo?.tags} />
         <meta
