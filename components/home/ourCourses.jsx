@@ -11,7 +11,7 @@ const OurCourses = () => {
       description:
         "Learn the fundamentals of robotics in our introductory course, Introduction to Robotics. Dive into the exciting world of robots, their history, and their applications. Discover the types of robots, the connection between robotics and artificial intelligence, and explore various career opportunities in this dynamic field. Whether you're a curious beginner or aspiring robotics engineer, this course will equip you with essential knowledge and skills to kickstart your journey into robotics.",
       image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1694713471/images/ozvlwqv0lx383xqm0teh.jpg",
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1696048723/images/robotics/xhroybarnx4hpsyzw0ce.png",
       isBig: true,
       slug: "zero-beginner",
       price: 10,
@@ -25,7 +25,7 @@ const OurCourses = () => {
       description:
         "Unlock the power of programming in the realm of robotics with our Programming Fundamentals for Robotics beginner course. This course offers a comprehensive introduction to the world of programming, covering its history, different programming languages, and its unique applications in robotics. Explore the nuances that distinguish robot programming from other forms of programming and get to grips with numbering systems. By the end of this course, you'll be well-equipped to tackle programming challenges in the robotics field.",
       image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1694713757/images/b5qviotprutwjdeic5kx.jpg",
+        "https://res.cloudinary.com/df8aswwta/image/upload/v1696048732/images/robotics/dmzho515pnyxj4aecj0i.png",
       isBig: true,
       slug: "programming-fundamentals-for-robotics",
       price: 100,

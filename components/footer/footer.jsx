@@ -39,7 +39,7 @@ const Footer = () => {
               <Link href="#">
                 <MdFacebook className={footer.social_links_icon} />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/sdtechacademy/" target="_blank">
                 <BsInstagram className={footer.social_links_icon} />
               </Link>
               <Link href="#">
@@ -48,9 +48,9 @@ const Footer = () => {
               <Link href="#">
                 <BsLinkedin className={footer.social_links_icon} />
               </Link>
-              <Link href="#">
+              {/* <Link href="#">
                 <BsYoutube className={footer.social_links_icon} />
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className={footer.company_info}>

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -11,28 +12,29 @@ import Carousel from "@/components/carousel/carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import poster_1 from "../assets/logos/poster_1.png"
+import poster_1 from "../assets/logos/poster_1.png";
+import WorkshopComponent from "@/components/workshops/workshop.component";
 
 export default function Home() {
   const images = [
     {
-      image: {poster_1},
-        title: "Invest in your child's future, ",
-      text: 'where innovation and technology thrive.',
+      image: { poster_1 },
+      title: "Invest in your child's future, ",
+      text: "where innovation and technology thrive.",
       link: "",
     },
     {
       image:
         "https://img.freepik.com/free-vector/seminar-concept-illustration_114360-7480.jpg",
-        title: "Invest in your child's future, ",
-      text: 'where innovation and technology thrive.',
+      title: "Invest in your child's future, ",
+      text: "where innovation and technology thrive.",
       link: "",
     },
     {
       image:
         "https://img-c.udemycdn.com/notices/web_carousel_slide/image/69094169-f35e-470a-9146-d5955c7330b9.png",
-        title: "Invest in your child's future, ",
-      text: 'where innovation and technology thrive.',
+      title: "Invest in your child's future, ",
+      text: "where innovation and technology thrive.",
       link: "",
     },
     // {
@@ -45,11 +47,16 @@ export default function Home() {
       image:
         "https://img-c.udemycdn.com/notices/web_carousel_slide/image/09206fc2-d0f1-41f6-b714-36242be94ee7.jpg",
       title: "Unleash your digital potential,",
-        text: "Unleash and Amplify Your Digital Potential.",
-      link: "",    
+      text: "Unleash and Amplify Your Digital Potential.",
+      link: "",
     },
   ];
-  
+  const [timezone, setTimezone] = useState("");
+
+  useEffect(() => {
+    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    setTimezone(userTimezone);
+  }, []);
   return (
     <>
       <HomeLayout>
@@ -57,6 +64,7 @@ export default function Home() {
         <HomeHero />
         <CourseCategories />
         <OurCourses />
+        <WorkshopComponent />
         <WhyUs />
         {/* <FAQ /> */}
       </HomeLayout>
