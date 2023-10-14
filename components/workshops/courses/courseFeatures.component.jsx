@@ -100,7 +100,7 @@ const CourseFeaturesComponent = ({
           name: "کاربردی و پروژه محور بودن دوره ",
           icon: <MdArrowForward />,
           color: "#071D2B",
-        }
+        },
       ],
     },
     {
@@ -110,8 +110,7 @@ const CourseFeaturesComponent = ({
           name: "Completion Certificate",
           icon: <AiFillSafetyCertificate />,
           color: "green",
-        }        
-      
+        },
       ],
     },
   ]);
@@ -212,11 +211,14 @@ const CourseFeaturesComponent = ({
                         {classeDetails?.no_of_classes} - Classes
                       </div>
                     </div>
-                    {discount?.status && (
-                      <div className={cb.discount__label}>
-                        <span> ویژه دانشگاه الزهرا</span>
-                      </div>
-                    )}
+
+                    <div className={cb.discount__label}>
+                      <span> ویژه دانشگاه الزهرا</span>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolor nobis totam cupiditate recusandae sequi voluptatem
+                      temporibus quaerat, id impedit aspernatur repellendus modi
+                      expedita nemo dolore molestias ipsum atque at odio.
+                    </div>
                   </>
                 ) : (
                   <></>

@@ -65,13 +65,21 @@ const CourseBody = ({
                 ))}
               </ul>
             </div>
-            <TechnicalRoadMapComponent
+
+            <div className={cb.cb__workshop_poster}>
+              <img
+                src="https://res.cloudinary.com/df8aswwta/image/upload/v1697293882/images/workshop/hxqdkbgc2fwyz8lzxs2l.jpg"
+                alt=""
+              />
+            </div>
+            {/* <TechnicalRoadMapComponent
               // data={data}
               // level={level}
               courseInfo={courseInfo}
               // levelHandler={levelHandler}
               // courseContent={courseContent}
-            />
+            /> */}
+
             {/* {JSON.stringify(level)} */}
             {/* {JSON.stringify(courseContent)} */}
             {/* <CourseAdditionalInforComponent data={data} /> */}
