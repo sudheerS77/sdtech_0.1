@@ -36,7 +36,7 @@ const WorkshopComponent = () => {
         </div>
         <div className={hc.oc_section}>
           {ourCoursesData.map((data, indx) => (
-            <div className={hc.oc_rcard}>
+            <div className={hc.oc_rcard} key={indx}>
               <Link
                 href={`/workshops/${data?.slug}`}
                 // href={{
