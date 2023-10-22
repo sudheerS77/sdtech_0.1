@@ -14,8 +14,8 @@ const WorkshopComponent = () => {
       name: "Foundations of Robotics: From History to AI Integration",
       description:
         "Learn the fundamentals of robotics in our introductory course, Introduction to Robotics. Dive into the exciting world of robots, their history, and their applications. Discover the types of robots, the connection between robotics and artificial intelligence, and explore various career opportunities in this dynamic field. Whether you're a curious beginner or aspiring robotics engineer, this course will equip you with essential knowledge and skills to kickstart your journey into robotics.",
-      image:
-        "https://res.cloudinary.com/df8aswwta/image/upload/v1696048723/images/robotics/xhroybarnx4hpsyzw0ce.png",
+      image:"https://res.cloudinary.com/df8aswwta/image/upload/v1697980742/images/workshop/xno6qg5ct5sjaub88zqe.png",
+        // "https://res.cloudinary.com/df8aswwta/image/upload/v1696048723/images/robotics/xhroybarnx4hpsyzw0ce.png",
       isBig: true,
       slug: "zero-beginner",
       price: 10,

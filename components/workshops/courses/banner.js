@@ -39,32 +39,37 @@ const Banner = ({ courseInfo }) => {
             } `}
             // className={b.course_cover_img}
           >
-            <img src={data?.image} alt="image" />
-            {data?.isDiscounted?.status && (
+            {/* <img src={data?.image} alt="image" /> */}
+            <video src="https://res.cloudinary.com/df8aswwta/video/upload/v1697980543/images/workshop/s6nwboco8sft6wk93ev3.mp4" autoPlay muted loop>
+              </video>
+            {/* {data?.isDiscounted?.status && (
               <div className={b.discounted__label}>
                 <span>{data?.isDiscounted?.percentage} %</span>
               </div>
-            )}
+            )} */}
           </div>
           {/* <span className={b.b_level_tag}>Level - {data?.level[0]}</span> */}
 
           {/* <div className={b.b_right_container}>
             {playVideo ? (
-              <iframe
-                // width="640"
-                // height="360"
-                src="https://www.youtube.com/embed/Y6yYRWC2ITE"
-                title="Web Development"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                autoplay
-              ></iframe>
+              // <iframe
+              //   // width="640"
+              //   // height="360"
+              //   src="https://www.youtube.com/embed/Y6yYRWC2ITE"
+              //   title="Web Development"
+              //   frameborder="0"
+              //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              //   allowfullscreen
+              //   autoplay
+              // ></iframe>
+             <>
+             </>
             ) : (
               <div className={b.play_button}>
                 <FaPlay />
               </div>
             )}
+           
           </div> */}
         </div>
       </div>
