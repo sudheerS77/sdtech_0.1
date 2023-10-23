@@ -14,22 +14,41 @@ const Banner = ({ courseInfo }) => {
       <div className={b.b_container}>
         <div className={b.b_left}>
           {/* <span className={b.b_level_tag}>Level - {data?.level[0]}</span> */}
-          <h1>{data?.title}</h1>
-          <p>{data?.description}</p>
-          <div>
-            <Link
+          <h1 dir="rtl">
+            دوره مقدماتی مهندس رباتیک <br />( مبانی رباتیک - الکترونیک جامع )
+          </h1>
+          {/* <p>{data?.description}</p> */}
+          <p dir="rtl">
+            رباتیک یک علم میان رشته ای است که متشکل از علوم الکترونیک، مکانیک و
+            برنامه نویسی می باشد. همچنین رباتیک به عنوان زیر مجوعه ای از رشته
+            های مهندسی و به خصوص رشتهء علوم و مهندسی کامپیوتر تعریف می شود که با
+            طراحی، ساخت، بهره برداری و کاربرد ربات ها سروکار دارد. با گذراندن
+            دوره مقدماتی مهندس رباتیک در آکادمی بین المللی SD Tech، که با همکاری
+            دانشگاه الزهرا و انجمن رباتیک و مکاترونیک این دانشگاه برگزار می شود،
+            می توانید مسیر یادگیری خود را آغاز کنید. دراین دوره آموزشی حداقل 30
+            مینی پروژه و 5 پروژه انجام خواهید داد و در هر جلسه حداقل دو تمرین
+            عملی و یک تمرین تئوری وجود خواهد داشت. دوره به صورت کاملا خروجی محور
+            و کاربردی بوده و پاسخ تمامی مسائل و نحوه انجام پروژه ها نیز در
+            اختیارتان قرار خواهد گرفت. همچنین در انتهای دوره مدرک معتبر و بین
+            المللی دوزبانه به صورت الکترونیکی و فیزیکی در اختیار شما قرار خواهد
+            گرفت.",
+          </p>
+          <div className={b.link__section}>
+            {/* <Link
               href={`/courses/course-register?name${encodeURIComponent(
                 data?.name
               )}`}
-            >
+            > */}
               {/* <Link
               href={{
                 pathname: "/courses/course-register",
                 query: { name: encodeURIComponent(data?.name) },
               }}
             > */}
-              <button>Enroll Now</button>
-            </Link>
+              <Link href="https://forms.gle/6hSKTExKSZd8ES5V7" target="__blank">
+              ثبت نام کنید 
+              </Link>
+            {/* </Link> */}
           </div>
         </div>
         <div className={b.b_right} onClick={() => setPlayVideo(!playVideo)}>
@@ -40,8 +59,12 @@ const Banner = ({ courseInfo }) => {
             // className={b.course_cover_img}
           >
             {/* <img src={data?.image} alt="image" /> */}
-            <video src="https://res.cloudinary.com/df8aswwta/video/upload/v1697980543/images/workshop/s6nwboco8sft6wk93ev3.mp4" autoPlay muted loop>
-              </video>
+            <video
+              src="https://res.cloudinary.com/df8aswwta/video/upload/v1697980543/images/workshop/s6nwboco8sft6wk93ev3.mp4"
+              autoPlay
+              muted
+              loop
+            ></video>
             {/* {data?.isDiscounted?.status && (
               <div className={b.discounted__label}>
                 <span>{data?.isDiscounted?.percentage} %</span>

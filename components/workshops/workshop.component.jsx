@@ -9,6 +9,7 @@ import { BsArrowRight } from "react-icons/bs";
 import RowCourseCard from "../home/rowCourse.card";
 
 const WorkshopComponent = () => {
+  
   const ourCoursesData = [
     {
       name: "Foundations of Robotics: From History to AI Integration",
@@ -25,6 +26,7 @@ const WorkshopComponent = () => {
       },
     },
   ];
+
   return (
     <div className={hc.oc_container}>
       <div className={hc.oc_courses__container}>

@@ -96,6 +96,20 @@
 
 }
 
+.pricing__section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price {
+    color: #04233f;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
 .pricing_container {
     width: 90%;
     color: #04233f;
@@ -108,6 +122,9 @@
 
 .pricing_category {
     font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    border: 2px solid red;
 }
 
 .price {
@@ -229,15 +246,16 @@
 
 }
 
-.cb__workshop_poster{
+.cb__workshop_poster {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.cb__workshop_poster img{
-    width: 500px;
-    height: 500px;
+
+.cb__workshop_poster img {
+    width: 340px;
+    height: 440px;
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 4px 18px 0 rgba(31, 38, 135, 0.133);
@@ -247,6 +265,109 @@
     border: 1px solid rgba(3, 1, 1, 0.082);
 }
 
+.course__video {
+    width: 100%;
+    /* height: 500px; */
+
+}
+
+.course__video h3 {
+    text-align: center;
+    color: #04233f;
+}
+
+.course__video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 18px 0 rgba(31, 38, 135, 0.133);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(3, 1, 1, 0.082);
+}
+
+.cb__instructor {
+    margin: 50px 0;
+    width: 100%;
+}
+
+.ins__details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.ins__details h2{
+    color: #04233f;
+}
+.ins__details ul li {
+    margin: 10px;
+}
+.ins__details img {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    /* background-attachment: center; */
+    /* background-position:  */
+    /* background-size: contain; */
+}
+
+.certificate__section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.certificate__section img {
+    width: 500px;
+    height: 400px;
+}
+
+.cb__course__package {
+    width: 100%;
+}
+
+.cb__course__package h2 {
+    color: #04233f;
+}
+
+.cb__details {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.enroll__btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enroll__btn a{
+    width: 50%;
+    height: 40px;
+    margin: 20px 0px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* background-color: #04233f; */
+    background: #04233f;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 /* Media query for small devices (up to 768px wide) */
 @media (max-width: 768px) {
     .cb_container {
@@ -326,6 +447,34 @@
     }
 
     .acc_container {
+        width: 100%;
+    }
+    .cb__workshop_poster {
+        width: 100%;
+        flex-direction: column;
+    }
+    .ins__details, .certificate__section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ins__details ul{
+        list-style-position: inside;
+    }
+    .certificate__section img {
+        width: 100%;
+        height: 200px;
+    }
+    .cb__course__package{
+        margin-top: 50px;
+    }
+    .cb__details{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 0 40px;
+    }
+    .enroll__btn a{
         width: 100%;
     }
 

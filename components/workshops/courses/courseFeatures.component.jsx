@@ -19,19 +19,19 @@ const CourseFeaturesComponent = ({
 }) => {
   console.log(pricing, discount);
   const [courseFeatures, setCourseFeatures] = useState([
-    {
-      title: "هزینه ثبت نام",
-      feature: [
-        {
-          name: "الزهرایی ها و ربو آموزان آکادمی ",
-          // price: pricing ? pricing.pricing[0].course_level_pricing[0] : 1.550.000 تومان,
-        },
-        {
-          name: "سایر افراد",
-          // price: 1.650.000 تومان,
-        },
-      ],
-    },
+    // {
+    //   title: "هزینه ثبت نام",
+    //   feature: [
+    //     {
+    //       name: "الزهرایی ها و ربو آموزان آکادمی ",
+    //       // price: pricing ? pricing.pricing[0].course_level_pricing[0] : 1.550.000 تومان,
+    //     },
+    //     {
+    //       name: "سایر افراد",
+    //       // price: 1.650.000 تومان,
+    //     },
+    //   ],
+    // },
     {
       title: "درباه دوره",
       feature: [
@@ -66,18 +66,28 @@ const CourseFeaturesComponent = ({
           icon: <MdLanguage />,
           color: "blue",
         },
+        {
+          name: "شرکت برای عموم از تمامی رشته ها بلا مانع است",
+          icon: <MdLanguage />,
+          color: "blue",
+        },
       ],
     },
     {
-      title: "Requirements",
+      title: "ملزومات و گروه هدف",
       feature: [
         {
-          name: "A computer/Laptop",
+          name: "بالای 15 سال ",
           icon: <AiFillSafetyCertificate />,
           color: "#001F3F",
         },
         {
-          name: "Passion to learn new things",
+          name: "پک آموزشی (در هزینه دوره لحاظ شده است)",
+          icon: <MdFeedback />,
+          color: "#001F3F",
+        },
+        {
+          name: "علاقه و انگیزه",
           icon: <MdFeedback />,
           color: "#001F3F",
         },
@@ -101,18 +111,38 @@ const CourseFeaturesComponent = ({
           icon: <MdArrowForward />,
           color: "#071D2B",
         },
-      ],
-    },
-    {
-      title: "Bonus Features",
-      feature: [
         {
-          name: "Completion Certificate",
-          icon: <AiFillSafetyCertificate />,
-          color: "green",
+          name: "بدون پیش نیاز قبلی ",
+          icon: <MdArrowForward />,
+          color: "#071D2B",
+        },
+        {
+          name: "ارتباط سازی و تیم یابی ",
+          icon: <MdArrowForward />,
+          color: "#071D2B",
+        },
+        {
+          name: "پشتیبانی حین و بعد از دوره",
+          icon: <MdArrowForward />,
+          color: "#071D2B",
+        },
+        {
+          name: "دسترسی به جزوات و محتویات آموزشی",
+          icon: <MdArrowForward />,
+          color: "#071D2B",
+        },
+        {
+          name: "دسترسی به اساتید متخصص و با تجربه",
+          icon: <MdArrowForward />,
+          color: "#071D2B",
+        },
+        {
+          name: "دسترسی به جزوات و محتویات آموزشی ",
+          icon: <MdArrowForward />,
+          color: "#071D2B",
         },
       ],
-    },
+    }
   ]);
   const [pricingValues, setPricingValues] = useState({
     one_one: 0,
@@ -139,10 +169,35 @@ const CourseFeaturesComponent = ({
   }, [pricing]);
   return (
     <>
-      <div className={`${cb.cb_course_features}`}>
+      <div dir="rtl" className={`${cb.cb_course_features}`}>
+      <div className={`${cb.cb_card}`}>
+            <h4 style={{textAlign: "center"}}>هزینه ثبت نام
+              </h4>
+            <h2 style={{color: "#04233f", textAlign: "center", textDecoration: "line-through red 2px"  }}>7,500,000 تومان
+              </h2>
+            <div className={cb.features_name}>                    
+                    <span className={cb.cb__f__name}>
+                                       
+                    </span>                
+            </div>        
+            <div className={cb.pricing__section}>
+                    <span className={cb.price}>
+                    2,310,000 تومان
+                      </span>
+                      <span>
+                      الزهرایی ها و ربو آموزان آکادمی
+                      </span>
+                  </div>
+            <div className={cb.pricing__section}>                    
+                    <span className={cb.price}>
+                    2,760,000 تومان                      </span>
+                      <span>
+                      سایر افراد                      </span>
+                  </div>
+            </div>        
         {courseFeatures?.map((cfItems, index) => (
           <div key={index} className={`${cb.cb_card}`}>
-            <h4>{cfItems.title}</h4>
+            <h4 >{cfItems.title}</h4>
             {cfItems.title === "Course Fee" ? (
               <>
                 {pricingValues?.one_one?.dollars ? (
@@ -214,10 +269,7 @@ const CourseFeaturesComponent = ({
 
                     <div className={cb.discount__label}>
                       <span> ویژه دانشگاه الزهرا</span>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Dolor nobis totam cupiditate recusandae sequi voluptatem
-                      temporibus quaerat, id impedit aspernatur repellendus modi
-                      expedita nemo dolore molestias ipsum atque at odio.
+                  
                     </div>
                   </>
                 ) : (

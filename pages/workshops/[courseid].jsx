@@ -219,14 +219,25 @@ const PaidCourse = ({ courseid, data }) => {
       </Head>
     );
   };
+  const [timezone, setTimezone] = useState("");
 
+  useEffect(() => {
+    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    setTimezone(userTimezone);
+  }, []);
   return (
     <>
       <HomeLayout>
-        <HeadSection />
-        <Banner courseInfo={courseInfo} />
-        <CourseBody courseInfo={courseInfo} />
-        {/* <SimilarCourses /> */}
+        {timezone !== "Asia/Calcutta" ? (
+          <div style={{ height: "100vh" }}></div>
+        ) : (
+          <div lang="ur">
+            <HeadSection />
+            <Banner courseInfo={courseInfo} />
+            <CourseBody courseInfo={courseInfo} />
+            {/* <SimilarCourses /> */}
+          </div>
+        )}
       </HomeLayout>
     </>
   );
