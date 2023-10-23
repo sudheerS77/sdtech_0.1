@@ -228,16 +228,12 @@ const PaidCourse = ({ courseid, data }) => {
   return (
     <>
       <HomeLayout>
-        {timezone !== "Asia/Calcutta" ? (
-          <div style={{ height: "100vh" }}></div>
-        ) : (
           <div lang="ur">
             <HeadSection />
             <Banner courseInfo={courseInfo} />
             <CourseBody courseInfo={courseInfo} />
             {/* <SimilarCourses /> */}
-          </div>
-        )}
+          </div>        
       </HomeLayout>
     </>
   );
