@@ -9,9 +9,8 @@ import { APP_NAME, DOMAIN } from "@/config";
 import HomeLayout from "@/Layout/Home.layout";
 
 // Components
-import CourseBody from "@/components/workshops/courses/CourseBody";
-import Banner from "@/components/workshops/courses/banner";
-import SimilarCourses from "@/components/workshops/courses/similarCourses";
+import CourseBody from "@/components/courses/CourseBody";
+import Banner from "@/components/courses/banner";
 
 // Data
 import allCourses from "../../data/allcourses.json";
