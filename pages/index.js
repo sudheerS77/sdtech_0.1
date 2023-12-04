@@ -14,6 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import poster_1 from "../assets/logos/poster_1.png";
 import WorkshopComponent from "@/components/workshops/workshop.component";
+import OurPartners from "@/components/home/ourPartners";
 
 export default function Home() {
   const images = [
@@ -66,6 +67,7 @@ export default function Home() {
         <OurCourses />
         <WorkshopComponent />
         <WhyUs />
+        <OurPartners />
         {/* <FAQ /> */}
       </HomeLayout>
     </>
